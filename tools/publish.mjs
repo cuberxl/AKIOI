@@ -25,7 +25,14 @@ if (!token) {
 }
 
 const SKIP_DIRS = new Set(['.git', 'node_modules', 'tools/pages']);
-const SKIP_FILES = new Set(['tools/cookies.txt']);
+const SKIP_FILES = new Set(['tools/cookies.txt', 'tools/live-data.js', 'probe.html']);
+
+function skipped(rel) {
+  if (SKIP_FILES.has(rel)) return true;
+  if (rel.split('/').some((seg) => seg.startsWith('chrome-prof') || seg === 'node_modules')) return true;
+  if (rel.startsWith('tools/') && /\.(png|txt|bak\.json|backup\.json|html)$/.test(rel)) return true;
+  return false;
+}
 
 function walk(dir, out = []) {
   for (const name of readdirSync(dir)) {
@@ -33,11 +40,10 @@ function walk(dir, out = []) {
     const rel = relative(root, full).split(sep).join('/');
     const st = statSync(full);
     if (st.isDirectory()) {
-      if (SKIP_DIRS.has(rel)) continue;
+      if (SKIP_DIRS.has(rel) || skipped(rel)) continue;
       walk(full, out);
     } else {
-      if (SKIP_FILES.has(rel)) continue;
-      if (rel.startsWith('tools/') && /\.(png|txt|bak\.json|html)$/.test(rel)) continue;
+      if (skipped(rel)) continue;
       out.push(rel);
     }
   }
@@ -64,6 +70,11 @@ const base = ref.object.sha;
 const baseCommit = await call(`${api}/git/commits/${base}`);
 
 const files = walk(root).sort();
+if (files.length > 40) {
+  console.error(`文件数异常（${files.length}），可能混入了临时目录，已中止`);
+  console.error(files.slice(0, 20).join('\n'));
+  process.exit(1);
+}
 console.log(`files=${files.length} base=${base.slice(0, 7)}`);
 
 const tree = [];
