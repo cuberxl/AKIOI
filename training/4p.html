@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>4P 搜索进阶 · AKIOI 题单</title>
+<meta name="theme-color" id="meta-theme" content="#f6f7fb">
+<link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+<script>
+  (function () {
+    try {
+      var saved = localStorage.getItem('akioi.theme');
+      var forced = new URLSearchParams(location.search).get('theme');
+      var dark = forced ? forced === 'dark' : (saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches);
+      document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+    } catch (e) {}
+  })();
+</script>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="part" data-base="../" data-chapter="ch-4p">
+<header class="topbar">
+  <a class="brand" href="../index.html">
+    <img class="brand-logo" src="../assets/logo.svg" alt="" width="28" height="28">
+    <span class="brand-text">AKIOI</span>
+  </a>
+  <nav class="topnav">
+    <a href="../training/" class="active">专项训练</a>
+    <a href="../tools/">实用工具</a>
+    <a href="../exam/">真题模拟</a>
+  </nav>
+  <div class="topbar-right">
+    <button class="icon-btn" id="theme-toggle" type="button" title="切换主题" aria-label="切换主题">
+      <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg>
+      <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 13a8.5 8.5 0 1 1-9.6-9.4 7 7 0 0 0 9.6 9.4z"/></svg>
+    </button>
+  </div>
+</header>
+<main class="wrap">
+  <section class="part-hero">
+    <nav class="crumbs"><a href="../index.html">首页</a> / <a href="./">专项训练</a> / <span id="crumb-name">4P 搜索进阶</span></nav>
+    <div class="part-hero-main">
+      <span class="part-code" id="part-code">4P</span>
+      <h1 id="part-name">搜索进阶</h1>
+      <span class="part-count" id="part-count">11 题</span>
+      <a class="note-link" id="part-note" href="https://cuberxl.github.io/Coders-Note/4P-搜索进阶/" target="_blank" rel="noopener">笔记 ↗</a>
+    </div>
+    <div class="part-hero-meta">
+      <span id="part-span"></span>
+      <div class="part-progress">
+        <div class="progress-track"><div class="progress-fill" id="part-progress-fill"></div></div>
+        <b id="part-progress-pct">0%</b>
+      </div>
+      <span>已完成 <b id="part-done">0</b> 题</span>
+    </div>
+  </section>
+
+  <section class="toolbar toolbar-inline">
+    <div class="search-box">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      <input id="search" type="search" placeholder="搜索题号或题名，如 P3371 / 最短路" autocomplete="off" spellcheck="false">
+      <kbd>/</kbd>
+    </div>
+    <div class="toolbar-row">
+      <div class="toolbar-tools">
+        <button class="btn btn-ghost btn-sm" id="expand-all" type="button">全部展开</button>
+        <select id="diff-filter" title="按难度筛选">
+          <option value="all">全部难度</option>
+          <option value="1">入门</option>
+          <option value="2">普及−</option>
+          <option value="3">普及</option>
+          <option value="4">普及+/提高−</option>
+          <option value="5">提高</option>
+          <option value="6">提高+/省选−</option>
+          <option value="7">省选/NOI−</option>
+          <option value="8">NOI/NOI+/CTSC</option>
+        </select>
+        <label class="switch" title="只看还没做的题">
+          <input type="checkbox" id="hide-done">
+          <span>只看未完成</span>
+        </label>
+      </div>
+    </div>
+  </section>
+
+  <div id="topic-list"></div>
+  <p class="empty" id="empty" hidden>没有匹配的题目，换个关键词试试。</p>
+</main>
+<footer class="footer wrap">
+  <p>AKIOI · 题目版权归 <a href="https://www.luogu.com.cn/" target="_blank" rel="noopener">洛谷</a> 及原作者所有。</p>
+  <p class="muted">Built by cuberxl · 笔记站点：<a href="https://cuberxl.github.io/Coders-Note/" target="_blank" rel="noopener">Coders-Note</a></p>
+</footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="../data/problems.js"></script>
+<script src="../assets/app.js"></script>
+</body>
+</html>

@@ -7,7 +7,7 @@
  *
  * 用法：node tools/build.mjs
  */
-import { readFileSync, writeFileSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -87,7 +87,9 @@ const details = chapters.map((ch) => {
 
 const readme = `# AKIOI · 洛谷题单
 
-按算法编排的洛谷刷题路线，共 **${total}** 题，分 **${chapters.length}** 章：${chapters.map((c) => '**' + c.name + '**').join(' · ')}。
+按算法编排的洛谷刷题站，分三块：**专项训练**（${chapters.length} 个 Part、${total} 题）、**实用工具**、**真题模拟**。
+
+章节编号与 [Coders-Note](https://cuberxl.github.io/Coders-Note/) 的笔记一一对应（B 基础、P 提高），每个 Part 都能直接跳到对应笔记。
 
 经典题目参考《算法竞赛进阶指南》、AcWing 算法基础课 / 提高课与洛谷《深入浅出》，再按算法重新编排。每一章都从入门铺到省选——「算法基础」不等于简单。
 
@@ -114,21 +116,33 @@ ${distBar}
 ${details}
 ## 本地预览
 
-纯静态站点，没有任何构建依赖，直接打开即可：
+纯静态站点，没有任何构建依赖：
 
 \`\`\`bash
 # 方式一：直接双击 index.html
-# 方式二：起一个静态服务器（推荐，避免部分浏览器的 file:// 限制）
+# 方式二：起一个静态服务器（推荐）
 python -m http.server 8080
-# 然后访问 http://localhost:8080
+# 首页 http://localhost:8080/
+# 专项训练 http://localhost:8080/training/
 \`\`\`
+
+页面结构：
+
+| 路径 | 内容 |
+| :-- | :-- |
+| \`index.html\` | 首页：三块入口 + 总进度 |
+| \`training/\` | 专项训练总览（11 个 Part） |
+| \`training/<code>.html\` | 每个 Part 一页，题目 + 打卡 |
+| \`tools/\` | 实用工具（进度导入导出 + 建设中） |
+| \`exam/\` | 真题模拟（占位） |
 
 ## 功能
 
-- 按章、难度筛选，支持题号 / 题名搜索（快捷键 \`/\`）
-- 打卡后进度保存在浏览器 localStorage，可导出 / 导入 JSON
-- 浅色 / 深色主题，移动端适配
-- 数据与页面分离：题目在 \`data/problems.js\`，改题单只改 \`tools/source.json\` 再重新生成
+- 首页三入口，Part 独立页面，不再是单页折叠
+- 每个 Part 内按小题单折叠，支持题号 / 题名搜索（快捷键 \`/\`）、难度筛选
+- 打卡后进度保存在浏览器 localStorage，可在「实用工具」里导出 / 导入
+- 浅色 / 深色主题，全站共用；移动端适配
+- 数据与页面分离：题目在 \`data/problems.js\`，页面由 \`tools/build.mjs\` 生成
 
 ## 重新生成数据
 
@@ -154,3 +168,132 @@ writeFileSync(join(root, 'README.md'), readme, 'utf8');
 
 console.log(`chapters=${chapters.length} total=${total} missing=${missing.length}`);
 if (missing.length) console.log('missing pids:', [...new Set(missing)].join(', '));
+
+/* ---------------- 生成 training/ 页面 ---------------- */
+
+const THEME_BOOT = `<script>
+  (function () {
+    try {
+      var saved = localStorage.getItem('akioi.theme');
+      var forced = new URLSearchParams(location.search).get('theme');
+      var dark = forced ? forced === 'dark' : (saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches);
+      document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+    } catch (e) {}
+  })();
+</script>`;
+
+const SHELL = (o) => `<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>${o.title}</title>
+<meta name="theme-color" id="meta-theme" content="#f6f7fb">
+<link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+${THEME_BOOT}
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="${o.page}" data-base="../"${o.chapter ? ` data-chapter="${o.chapter}"` : ''}>
+<header class="topbar">
+  <a class="brand" href="../index.html">
+    <img class="brand-logo" src="../assets/logo.svg" alt="" width="28" height="28">
+    <span class="brand-text">AKIOI</span>
+  </a>
+  <nav class="topnav">
+    <a href="../training/"${o.active === 'training' ? ' class="active"' : ''}>专项训练</a>
+    <a href="../tools/">实用工具</a>
+    <a href="../exam/">真题模拟</a>
+  </nav>
+  <div class="topbar-right">
+    <button class="icon-btn" id="theme-toggle" type="button" title="切换主题" aria-label="切换主题">
+      <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg>
+      <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 13a8.5 8.5 0 1 1-9.6-9.4 7 7 0 0 0 9.6 9.4z"/></svg>
+    </button>
+  </div>
+</header>
+<main class="wrap">
+${o.main}
+</main>
+<footer class="footer wrap">
+  <p>AKIOI · 题目版权归 <a href="https://www.luogu.com.cn/" target="_blank" rel="noopener">洛谷</a> 及原作者所有。</p>
+  <p class="muted">Built by cuberxl · 笔记站点：<a href="https://cuberxl.github.io/Coders-Note/" target="_blank" rel="noopener">Coders-Note</a></p>
+</footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="../data/problems.js"></script>
+<script src="../assets/app.js"></script>
+</body>
+</html>
+`;
+
+const DIFF_OPTIONS = ['1', '2', '3', '4', '5', '6', '7', '8']
+  .map((v, i) => `          <option value="${v}">${DIFF_NAMES[Number(v)]}</option>`)
+  .join('\n');
+
+mkdirSync(join(root, 'training'), { recursive: true });
+
+/* 专项训练总览 */
+writeFileSync(join(root, 'training', 'index.html'), SHELL({
+  title: '专项训练 · AKIOI',
+  page: 'parts',
+  active: 'training',
+  main: `  <section class="page-head">
+    <nav class="crumbs"><a href="../index.html">首页</a> / <span>专项训练</span></nav>
+    <h1>专项训练</h1>
+    <p class="lead">按笔记章节编号划分 Part，共 ${chapters.length} 个 Part、${total} 道题。点进任意 Part 查看该章的题目与进度。</p>
+  </section>
+  <section class="part-list" id="part-list"></section>`
+}), 'utf8');
+
+/* 每个 Part 一页 */
+for (const ch of chapters) {
+  const slug = ch.id.replace(/^ch-/, '');
+  writeFileSync(join(root, 'training', slug + '.html'), SHELL({
+    title: `${ch.code} ${ch.name} · AKIOI 题单`,
+    page: 'part',
+    active: 'training',
+    chapter: ch.id,
+    main: `  <section class="part-hero">
+    <nav class="crumbs"><a href="../index.html">首页</a> / <a href="./">专项训练</a> / <span id="crumb-name">${ch.code} ${ch.name}</span></nav>
+    <div class="part-hero-main">
+      <span class="part-code" id="part-code">${ch.code}</span>
+      <h1 id="part-name">${ch.name}</h1>
+      <span class="part-count" id="part-count">${ch.count} 题</span>
+      <a class="note-link" id="part-note" href="${ch.note || '#'}" target="_blank" rel="noopener"${ch.note ? '' : ' hidden'}>笔记 ↗</a>
+    </div>
+    <div class="part-hero-meta">
+      <span id="part-span"></span>
+      <div class="part-progress">
+        <div class="progress-track"><div class="progress-fill" id="part-progress-fill"></div></div>
+        <b id="part-progress-pct">0%</b>
+      </div>
+      <span>已完成 <b id="part-done">0</b> 题</span>
+    </div>
+  </section>
+
+  <section class="toolbar toolbar-inline">
+    <div class="search-box">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      <input id="search" type="search" placeholder="搜索题号或题名，如 P3371 / 最短路" autocomplete="off" spellcheck="false">
+      <kbd>/</kbd>
+    </div>
+    <div class="toolbar-row">
+      <div class="toolbar-tools">
+        <button class="btn btn-ghost btn-sm" id="expand-all" type="button">全部展开</button>
+        <select id="diff-filter" title="按难度筛选">
+          <option value="all">全部难度</option>
+${DIFF_OPTIONS}
+        </select>
+        <label class="switch" title="只看还没做的题">
+          <input type="checkbox" id="hide-done">
+          <span>只看未完成</span>
+        </label>
+      </div>
+    </div>
+  </section>
+
+  <div id="topic-list"></div>
+  <p class="empty" id="empty" hidden>没有匹配的题目，换个关键词试试。</p>`
+  }), 'utf8');
+}
+
+console.log(`training pages: ${chapters.length + 1}`);
