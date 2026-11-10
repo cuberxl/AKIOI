@@ -182,6 +182,9 @@ const THEME_BOOT = `<script>
   })();
 </script>`;
 
+// 构建版本：写进静态资源的 query，发布后自动击穿旧缓存
+const VERSION = new Date().toISOString().replace(/[-:TZ.]/g, '').slice(0, 12);
+
 const SHELL = (o) => `<!DOCTYPE html>
 <html lang="zh-CN" data-theme="light">
 <head>
@@ -191,7 +194,7 @@ const SHELL = (o) => `<!DOCTYPE html>
 <meta name="theme-color" id="meta-theme" content="#f6f7fb">
 <link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
 ${THEME_BOOT}
-<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/style.css?v=${VERSION}">
 </head>
 <body data-page="${o.page}" data-base="../"${o.chapter ? ` data-chapter="${o.chapter}"` : ''}>
 <header class="topbar">
@@ -219,8 +222,8 @@ ${o.main}
   <p class="muted">Built by cuberxl · 笔记站点：<a href="https://cuberxl.github.io/Coders-Note/" target="_blank" rel="noopener">Coders-Note</a></p>
 </footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="../data/problems.js"></script>
-<script src="../assets/app.js"></script>
+<script src="../data/problems.js?v=${VERSION}"></script>
+<script src="../assets/app.js?v=${VERSION}"></script>
 </body>
 </html>
 `;
@@ -296,4 +299,17 @@ ${DIFF_OPTIONS}
   }), 'utf8');
 }
 
-console.log(`training pages: ${chapters.length + 1}`);
+console.log(`training pages: ${chapters.length + 1}  version=${VERSION}`);
+
+/* 手写页面（首页 / 工具 / 真题）的静态资源也带上版本号 */
+function versionize(file) {
+  const p = join(root, file);
+  let html;
+  try { html = readFileSync(p, 'utf8'); } catch (e) { return; }
+  const next = html
+    .replace(/((?:\.\.\/)?assets\/(?:style\.css|app\.js))(\?v=[^"']*)?/g, '$1?v=' + VERSION)
+    .replace(/((?:\.\.\/)?data\/(?:problems|exams)\.js)(\?v=[^"']*)?/g, '$1?v=' + VERSION);
+  if (next !== html) writeFileSync(p, next, 'utf8');
+}
+['index.html', 'tools/index.html', 'exam/index.html'].forEach(versionize);
+
