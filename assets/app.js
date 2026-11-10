@@ -220,7 +220,7 @@
       b.type = 'button';
       b.setAttribute('role', 'tab');
       b.dataset.chapter = ch.id;
-      b.innerHTML = ch.name + '<span class="n">' + ch.count + '</span>';
+      b.innerHTML = (ch.code ? ch.code + ' ' : '') + ch.name + '<span class="n">' + ch.count + '</span>';
       box.appendChild(b);
     });
 
@@ -267,9 +267,10 @@
 
       // 章头
       var head = el('header', 'chapter-head');
-      head.appendChild(el('span', 'chapter-idx', String(ci + 1).padStart(2, '0')));
+      head.appendChild(el('span', 'chapter-code', ch.code || String(ci + 1)));
       head.appendChild(el('h2', 'chapter-name', ch.name));
       head.appendChild(el('span', 'chapter-count', ch.count + ' 题'));
+      if (ch.note) head.appendChild(makeNoteLink(ch.note));
 
       var cprog = el('div', 'chapter-progress');
       var ctrack = el('div', 'progress-track');
@@ -327,6 +328,16 @@
     return svg;
   }
 
+  function makeNoteLink(href) {
+    var a = el('a', 'note-link', '笔记 ↗');
+    a.href = href;
+    a.target = '_blank';
+    a.rel = 'noopener';
+    a.title = '在 Coders-Note 查看对应笔记';
+    a.addEventListener('click', function (e) { e.stopPropagation(); });
+    return a;
+  }
+
   function renderTopic(t) {
     var card = el('section', 'group');
     card.dataset.topic = t.id;
@@ -334,6 +345,7 @@
     var head = el('div', 'group-head');
     head.appendChild(el('h4', 'group-title-text', t.name));
     head.appendChild(el('span', 'count', t.problems.length + ' 题'));
+    if (t.note) head.appendChild(makeNoteLink(t.note));
 
     var prog = el('div', 'group-progress');
     var track = el('div', 'progress-track');

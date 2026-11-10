@@ -32,13 +32,13 @@ const chapters = source.chapters.map((ch) => {
       }
       // 主题内部按难度从低到高，同难度保持人工编排顺序
       problems.sort((a, b) => a.difficulty - b.difficulty);
-      return { id: t.id, name: t.name, desc: t.desc, problems };
+      return { id: t.id, name: t.name, desc: t.desc, note: t.note || '', problems };
     }).filter((t) => t.problems.length > 0);
     const count = topics.reduce((n, t) => n + t.problems.length, 0);
     return { id: sec.id, name: sec.name, count, topics };
   }).filter((s) => s.topics.length > 0);
   const count = sections.reduce((n, s) => n + s.count, 0);
-  return { id: ch.id, name: ch.name, count, sections };
+  return { id: ch.id, code: ch.code || '', name: ch.name, note: ch.note || '', count, sections };
 }).filter((c) => c.sections.length > 0);
 
 const total = chapters.reduce((n, c) => n + c.count, 0);
@@ -57,9 +57,9 @@ const span = (list) => {
   return lo === hi ? lo : `${lo} → ${hi}`;
 };
 
-const overview = chapters.map((ch, i) => {
+const overview = chapters.map((ch) => {
   const all = ch.sections.flatMap((s) => s.topics.flatMap((t) => t.problems));
-  return `| ${i + 1} | **${ch.name}** | ${ch.sections.map((s) => s.name).join('、')} | ${ch.count} | ${span(all)} |`;
+  return `| **${ch.code}** | ${ch.name} | ${ch.count} | ${span(all)} | ${ch.note ? `[笔记](${ch.note})` : '—'} |`;
 }).join('\n');
 
 const dist = new Array(DIFF_NAMES.length).fill(0);
@@ -71,16 +71,18 @@ const distBar = DIFF_NAMES.map((n, i) => {
   return `| ${n} | ${c} | ${'█'.repeat(width)} |`;
 }).join('\n');
 
-const details = chapters.map((ch, i) => {
+const details = chapters.map((ch) => {
   const body = ch.sections.map((sec) => {
     const topicBlocks = sec.topics.map((t) => {
       const items = t.problems.map((p) => `- [${p.pid} ${p.name}](https://www.luogu.com.cn/problem/${p.pid}) · ${DIFF_NAMES[p.difficulty] ?? '未评定'}`).join('\n');
-      return `**${t.name}**（${t.problems.length} 题）\n\n${items}\n`;
+      const note = t.note ? ` · [笔记](${t.note})` : '';
+      return `**${t.name}**（${t.problems.length} 题${note}）\n\n${items}\n`;
     }).join('\n');
     const head = sec.name === ch.name ? '' : `#### ${sec.name}\n\n`;
     return head + topicBlocks;
   }).join('\n');
-  return `### ${i + 1}. ${ch.name}（${ch.count} 题）\n\n${body}`;
+  const note = ch.note ? ` · [对应笔记](${ch.note})` : '';
+  return `### ${ch.code} ${ch.name}（${ch.count} 题${note}）\n\n${body}`;
 }).join('\n');
 
 const readme = `# AKIOI · 洛谷题单
@@ -95,8 +97,10 @@ const readme = `# AKIOI · 洛谷题单
 
 ## 章节总览
 
-| # | 章 | 节 | 题数 | 难度跨度 |
-| :-: | :-- | :-- | :-: | :-- |
+编号与 [Coders-Note](https://cuberxl.github.io/Coders-Note/) 的笔记章节一一对应（B 为基础、P 为提高），每章末尾可直接跳到对应笔记。
+
+| 编号 | 章 | 题数 | 难度跨度 | 笔记 |
+| :-: | :-- | :-: | :-- | :-- |
 ${overview}
 
 ## 难度分布

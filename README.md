@@ -1,6 +1,6 @@
 # AKIOI · 洛谷题单
 
-按算法编排的洛谷刷题路线，共 **285** 题，分 **7** 章：**基本算法** · **数据结构** · **搜索** · **图论** · **动态规划** · **贪心** · **数学**。
+按算法编排的洛谷刷题路线，共 **285** 题，分 **11** 章：**基本算法** · **数据结构** · **数据结构进阶** · **搜索** · **搜索进阶** · **图论** · **图论进阶** · **动态规划** · **动态规划进阶** · **贪心** · **数学**。
 
 经典题目参考《算法竞赛进阶指南》、AcWing 算法基础课 / 提高课与洛谷《深入浅出》，再按算法重新编排。每一章都从入门铺到省选——「算法基础」不等于简单。
 
@@ -10,15 +10,21 @@
 
 ## 章节总览
 
-| # | 章 | 节 | 题数 | 难度跨度 |
-| :-: | :-- | :-- | :-: | :-- |
-| 1 | **基本算法** | 基本算法 | 74 | 入门 → 省选/NOI− |
-| 2 | **数据结构** | 数据结构、数据结构进阶 | 53 | 普及− → 省选/NOI− |
-| 3 | **搜索** | 搜索、搜索进阶 | 16 | 普及− → 提高 |
-| 4 | **图论** | 图论、图论进阶 | 49 | 普及 → 省选/NOI− |
-| 5 | **动态规划** | 动态规划、动态规划进阶 | 52 | 普及− → 提高+/省选− |
-| 6 | **贪心** | 贪心 | 16 | 普及− → 提高 |
-| 7 | **数学** | 数学 | 25 | 普及− → 提高 |
+编号与 [Coders-Note](https://cuberxl.github.io/Coders-Note/) 的笔记章节一一对应（B 为基础、P 为提高），每章末尾可直接跳到对应笔记。
+
+| 编号 | 章 | 题数 | 难度跨度 | 笔记 |
+| :-: | :-- | :-: | :-- | :-- |
+| **2B** | 基本算法 | 74 | 入门 → 省选/NOI− | [笔记](https://cuberxl.github.io/Coders-Note/2B-基本算法/) |
+| **3B** | 数据结构 | 28 | 普及− → 省选/NOI− | [笔记](https://cuberxl.github.io/Coders-Note/3B-数据结构/) |
+| **3P** | 数据结构进阶 | 31 | 普及− → 省选/NOI− | [笔记](https://cuberxl.github.io/Coders-Note/3P-数据结构进阶/) |
+| **4B** | 搜索 | 11 | 普及− → 普及+/提高− | [笔记](https://cuberxl.github.io/Coders-Note/4B-搜索/) |
+| **4P** | 搜索进阶 | 5 | 普及+/提高− → 提高 | [笔记](https://cuberxl.github.io/Coders-Note/4P-搜索进阶/) |
+| **5B** | 图论 | 19 | 普及 → 提高+/省选− | [笔记](https://cuberxl.github.io/Coders-Note/5B-图论/) |
+| **5P** | 图论进阶 | 24 | 普及 → 省选/NOI− | [笔记](https://cuberxl.github.io/Coders-Note/5P-图论进阶/) |
+| **6B** | 动态规划 | 36 | 普及− → 提高+/省选− | [笔记](https://cuberxl.github.io/Coders-Note/6B-动态规划/) |
+| **6P** | 动态规划进阶 | 16 | 普及 → 提高 | [笔记](https://cuberxl.github.io/Coders-Note/6P-动态规划进阶/) |
+| **7B** | 贪心 | 16 | 普及− → 提高 | [笔记](https://cuberxl.github.io/Coders-Note/7B-贪心/) |
+| **8B** | 数学 | 25 | 普及− → 提高 | [笔记](https://cuberxl.github.io/Coders-Note/8B-数学/) |
 
 ## 难度分布
 
@@ -36,9 +42,9 @@
 
 ## 章节明细
 
-### 1. 基本算法（74 题）
+### 2B 基本算法（74 题 · [对应笔记](https://cuberxl.github.io/Coders-Note/2B-基本算法/)）
 
-**模拟**（13 题）
+**模拟**（13 题 · [笔记](https://cuberxl.github.io/Coders-Note/2B-基本算法/)）
 
 - [P1001 A+B Problem](https://www.luogu.com.cn/problem/P1001) · 入门
 - [P1046 [NOIP 2005 普及组] 陶陶摘苹果](https://www.luogu.com.cn/problem/P1046) · 入门
@@ -54,7 +60,7 @@
 - [P3952 [NOIP 2017 提高组] 时间复杂度](https://www.luogu.com.cn/problem/P3952) · 普及+/提高−
 - [P1315 [NOIP 2011 提高组] 观光公交](https://www.luogu.com.cn/problem/P1315) · 提高
 
-**枚举**（11 题）
+**枚举**（11 题 · [笔记](https://cuberxl.github.io/Coders-Note/2B-基本算法/)）
 
 - [P1008 [NOIP 1998 普及组] 三连击](https://www.luogu.com.cn/problem/P1008) · 普及−
 - [P1036 [NOIP 2002 普及组] 选数](https://www.luogu.com.cn/problem/P1036) · 普及−
@@ -68,7 +74,7 @@
 - [P1311 [NOIP 2011 提高组] 选择客栈](https://www.luogu.com.cn/problem/P1311) · 普及
 - [P2119 [NOIP 2016 普及组] 魔法阵](https://www.luogu.com.cn/problem/P2119) · 普及+/提高−
 
-**排序**（10 题）
+**排序**（10 题 · [笔记](https://cuberxl.github.io/Coders-Note/2B-基本算法/2B.1-排序算法)）
 
 - [P1177 【模板】排序](https://www.luogu.com.cn/problem/P1177) · 普及−
 - [P1059 [NOIP 2006 普及组] 明明的随机数](https://www.luogu.com.cn/problem/P1059) · 普及−
@@ -81,7 +87,7 @@
 - [P5149 会议座位](https://www.luogu.com.cn/problem/P5149) · 普及
 - [P1012 [NOIP 1998 提高组] 拼数](https://www.luogu.com.cn/problem/P1012) · 普及+/提高−
 
-**二分**（13 题）
+**二分**（13 题 · [笔记](https://cuberxl.github.io/Coders-Note/2B-基本算法/2B.2-二分查找)）
 
 - [P2249 【深基13.例1】查找](https://www.luogu.com.cn/problem/P2249) · 普及−
 - [P1102 A-B 数对](https://www.luogu.com.cn/problem/P1102) · 普及−
@@ -97,14 +103,14 @@
 - [P3743 小鸟的设备](https://www.luogu.com.cn/problem/P3743) · 普及
 - [P3957 [NOIP 2017 普及组] 跳房子](https://www.luogu.com.cn/problem/P3957) · 提高
 
-**前缀和与差分**（4 题）
+**前缀和与差分**（4 题 · [笔记](https://cuberxl.github.io/Coders-Note/2B-基本算法/2B.4-前缀和、差分)）
 
 - [P3397 地毯](https://www.luogu.com.cn/problem/P3397) · 普及−
 - [P3406 海底高铁](https://www.luogu.com.cn/problem/P3406) · 普及
 - [P2879 [USACO07JAN] Tallest Cow S](https://www.luogu.com.cn/problem/P2879) · 普及
 - [P2280 [HNOI2003] 激光炸弹](https://www.luogu.com.cn/problem/P2280) · 普及
 
-**递推与递归**（10 题）
+**递推与递归**（10 题 · [笔记](https://cuberxl.github.io/Coders-Note/2B-基本算法/)）
 
 - [P1028 [NOIP 2001 普及组] 数的计算](https://www.luogu.com.cn/problem/P1028) · 普及−
 - [P1255 数楼梯](https://www.luogu.com.cn/problem/P1255) · 普及−
@@ -117,7 +123,7 @@
 - [P1259 黑白棋子的移动](https://www.luogu.com.cn/problem/P1259) · 普及
 - [P1228 地毯填补问题](https://www.luogu.com.cn/problem/P1228) · 普及
 
-**高精度**（6 题）
+**高精度**（6 题 · [笔记](https://cuberxl.github.io/Coders-Note/2B-基本算法/2B.3-高精度算法)）
 
 - [P1601 高精度加法](https://www.luogu.com.cn/problem/P1601) · 普及−
 - [P1303 A*B Problem](https://www.luogu.com.cn/problem/P1303) · 普及−
@@ -126,7 +132,7 @@
 - [P1480 A/B Problem（高精度除法Ⅰ）](https://www.luogu.com.cn/problem/P1480) · 普及−
 - [P2152 [SDOI2009] SuperGCD](https://www.luogu.com.cn/problem/P2152) · 提高
 
-**位运算**（7 题）
+**位运算**（7 题 · [笔记](https://cuberxl.github.io/Coders-Note/1B-基本语法/1B.10-位运算)）
 
 - [P1100 高低位交换](https://www.luogu.com.cn/problem/P1100) · 普及−
 - [P2114 [NOI2014] 起床困难综合症](https://www.luogu.com.cn/problem/P2114) · 普及+/提高−
@@ -136,9 +142,9 @@
 - [P4570 [BJWC2011] 元素](https://www.luogu.com.cn/problem/P4570) · 提高+/省选−
 - [P3292 [SCOI2016] 幸运数字](https://www.luogu.com.cn/problem/P3292) · 省选/NOI−
 
-### 2. 数据结构（53 题）
+### 3B 数据结构（28 题 · [对应笔记](https://cuberxl.github.io/Coders-Note/3B-数据结构/)）
 
-**栈、队列与堆**（14 题）
+**栈、队列与堆**（14 题 · [笔记](https://cuberxl.github.io/Coders-Note/3B-数据结构/3B.2-单调栈、单调队列)）
 
 - [P3378 【模板】堆](https://www.luogu.com.cn/problem/P3378) · 普及
 - [P1886 【模板】单调队列 / 滑动窗口](https://www.luogu.com.cn/problem/P1886) · 普及
@@ -155,7 +161,38 @@
 - [P2827 [NOIP 2016 提高组] 蚯蚓](https://www.luogu.com.cn/problem/P2827) · 提高
 - [P2048 [NOI2010] 超级钢琴](https://www.luogu.com.cn/problem/P2048) · 省选/NOI−
 
-**树状数组与线段树**（16 题）
+**字符串**（11 题 · [笔记](https://cuberxl.github.io/Coders-Note/3B-数据结构/3B.3-KMP模式匹配)）
+
+- [P3370 【模板】字符串哈希](https://www.luogu.com.cn/problem/P3370) · 普及−
+- [P3375 【模板】KMP](https://www.luogu.com.cn/problem/P3375) · 普及+/提高−
+- [P4391 [BalticOI 2009] Radio Transmission 无线传输](https://www.luogu.com.cn/problem/P4391) · 普及+/提高−
+- [P3805 【模板】Manacher](https://www.luogu.com.cn/problem/P3805) · 提高
+- [P2375 [NOI2014] 动物园](https://www.luogu.com.cn/problem/P2375) · 提高
+- [P3435 [POI 2006] OKR-Periods of Words](https://www.luogu.com.cn/problem/P3435) · 提高
+- [P5410 【模板】扩展 KMP / exKMP（Z 函数）](https://www.luogu.com.cn/problem/P5410) · 提高+/省选−
+- [P3808 AC 自动机（简单版）](https://www.luogu.com.cn/problem/P3808) · 提高+/省选−
+- [P2444 [POI 2000 R1] 病毒](https://www.luogu.com.cn/problem/P2444) · 提高+/省选−
+- [P3763 [TJOI2017] DNA](https://www.luogu.com.cn/problem/P3763) · 提高+/省选−
+- [P3809 【模板】后缀排序（SA）](https://www.luogu.com.cn/problem/P3809) · 提高+/省选−
+
+**Trie**（3 题 · [笔记](https://cuberxl.github.io/Coders-Note/3B-数据结构/3B.4-Trie树)）
+
+- [P8306 【模板】字典树 / Trie](https://www.luogu.com.cn/problem/P8306) · 普及
+- [P2580 于是他错误的点名开始了](https://www.luogu.com.cn/problem/P2580) · 普及
+- [P4551 最长异或路径](https://www.luogu.com.cn/problem/P4551) · 普及+/提高−
+
+### 3P 数据结构进阶（31 题 · [对应笔记](https://cuberxl.github.io/Coders-Note/3P-数据结构进阶/)）
+
+**并查集**（6 题 · [笔记](https://cuberxl.github.io/Coders-Note/3P-数据结构进阶/3P.1-并查集)）
+
+- [P3367 【模板】并查集](https://www.luogu.com.cn/problem/P3367) · 普及
+- [P1551 亲戚](https://www.luogu.com.cn/problem/P1551) · 普及
+- [P1111 修复公路](https://www.luogu.com.cn/problem/P1111) · 普及
+- [P1525 [NOIP 2010 提高组] 关押罪犯](https://www.luogu.com.cn/problem/P1525) · 普及+/提高−
+- [P2024 [NOI2001] 食物链](https://www.luogu.com.cn/problem/P2024) · 普及+/提高−
+- [P1892 [BalticOI 2003] 团伙 (Day 2)](https://www.luogu.com.cn/problem/P1892) · 普及+/提高−
+
+**树状数组与线段树**（16 题 · [笔记](https://cuberxl.github.io/Coders-Note/3P-数据结构进阶/3P.2-树状数组)）
 
 - [P1908 逆序对](https://www.luogu.com.cn/problem/P1908) · 普及
 - [P2880 [USACO07JAN] Balanced Lineup G](https://www.luogu.com.cn/problem/P2880) · 普及
@@ -174,33 +211,14 @@
 - [P4513 小白逛公园](https://www.luogu.com.cn/problem/P4513) · 提高
 - [P4198 楼房重建](https://www.luogu.com.cn/problem/P4198) · 提高+/省选−
 
-**字符串**（11 题）
-
-- [P3370 【模板】字符串哈希](https://www.luogu.com.cn/problem/P3370) · 普及−
-- [P3375 【模板】KMP](https://www.luogu.com.cn/problem/P3375) · 普及+/提高−
-- [P4391 [BalticOI 2009] Radio Transmission 无线传输](https://www.luogu.com.cn/problem/P4391) · 普及+/提高−
-- [P3805 【模板】Manacher](https://www.luogu.com.cn/problem/P3805) · 提高
-- [P2375 [NOI2014] 动物园](https://www.luogu.com.cn/problem/P2375) · 提高
-- [P3435 [POI 2006] OKR-Periods of Words](https://www.luogu.com.cn/problem/P3435) · 提高
-- [P5410 【模板】扩展 KMP / exKMP（Z 函数）](https://www.luogu.com.cn/problem/P5410) · 提高+/省选−
-- [P3808 AC 自动机（简单版）](https://www.luogu.com.cn/problem/P3808) · 提高+/省选−
-- [P2444 [POI 2000 R1] 病毒](https://www.luogu.com.cn/problem/P2444) · 提高+/省选−
-- [P3763 [TJOI2017] DNA](https://www.luogu.com.cn/problem/P3763) · 提高+/省选−
-- [P3809 【模板】后缀排序（SA）](https://www.luogu.com.cn/problem/P3809) · 提高+/省选−
-
-#### 数据结构进阶
-
-**Trie 与平衡树**（7 题）
+**平衡树**（4 题 · [笔记](https://cuberxl.github.io/Coders-Note/3P-数据结构进阶/)）
 
 - [P2234 [HNOI2002] 营业额统计](https://www.luogu.com.cn/problem/P2234) · 普及−
-- [P8306 【模板】字典树 / Trie](https://www.luogu.com.cn/problem/P8306) · 普及
-- [P2580 于是他错误的点名开始了](https://www.luogu.com.cn/problem/P2580) · 普及
-- [P4551 最长异或路径](https://www.luogu.com.cn/problem/P4551) · 普及+/提高−
 - [P1486 [NOI2004] 郁闷的出纳员](https://www.luogu.com.cn/problem/P1486) · 提高
 - [P3369 【模板】普通平衡树](https://www.luogu.com.cn/problem/P3369) · 提高+/省选−
 - [P3391 【模板】文艺平衡树](https://www.luogu.com.cn/problem/P3391) · 提高+/省选−
 
-**进阶数据结构**（5 题）
+**分块与可持久化**（5 题 · [笔记](https://cuberxl.github.io/Coders-Note/3P-数据结构进阶/)）
 
 - [P5490 【模板】扫描线 & 矩形面积并](https://www.luogu.com.cn/problem/P5490) · 提高
 - [P3806 【模板】点分治](https://www.luogu.com.cn/problem/P3806) · 提高+/省选−
@@ -208,9 +226,9 @@
 - [P3834 【模板】可持久化线段树 2（静态区间第 k 小）](https://www.luogu.com.cn/problem/P3834) · 提高+/省选−
 - [P4168 [Violet] 蒲公英](https://www.luogu.com.cn/problem/P4168) · 省选/NOI−
 
-### 3. 搜索（16 题）
+### 4B 搜索（11 题 · [对应笔记](https://cuberxl.github.io/Coders-Note/4B-搜索/)）
 
-**搜索**（11 题）
+**搜索**（11 题 · [笔记](https://cuberxl.github.io/Coders-Note/4B-搜索/)）
 
 - [P1605 迷宫](https://www.luogu.com.cn/problem/P1605) · 普及−
 - [P1443 马的遍历](https://www.luogu.com.cn/problem/P1443) · 普及−
@@ -224,9 +242,9 @@
 - [P1238 走迷宫](https://www.luogu.com.cn/problem/P1238) · 普及
 - [P3956 [NOIP 2017 普及组] 棋盘](https://www.luogu.com.cn/problem/P3956) · 普及+/提高−
 
-#### 搜索进阶
+### 4P 搜索进阶（5 题 · [对应笔记](https://cuberxl.github.io/Coders-Note/4P-搜索进阶/)）
 
-**剪枝与迭代加深**（5 题）
+**剪枝与迭代加深**（5 题 · [笔记](https://cuberxl.github.io/Coders-Note/4P-搜索进阶/)）
 
 - [P1379 八数码难题](https://www.luogu.com.cn/problem/P1379) · 普及+/提高−
 - [P1731 [NOI1999] 生日蛋糕](https://www.luogu.com.cn/problem/P1731) · 普及+/提高−
@@ -234,9 +252,9 @@
 - [P2324 [SCOI2005] 骑士精神](https://www.luogu.com.cn/problem/P2324) · 提高
 - [P1074 [NOIP 2009 提高组] 靶形数独](https://www.luogu.com.cn/problem/P1074) · 提高
 
-### 4. 图论（49 题）
+### 5B 图论（19 题 · [对应笔记](https://cuberxl.github.io/Coders-Note/5B-图论/)）
 
-**最短路**（12 题）
+**最短路**（11 题 · [笔记](https://cuberxl.github.io/Coders-Note/5B-图论/5B.3-最短路算法/5B.3.1-Dijkstra算法)）
 
 - [P3371 【模板】单源最短路径（弱化版）](https://www.luogu.com.cn/problem/P3371) · 普及
 - [P4779 【模板】单源最短路径（标准版）](https://www.luogu.com.cn/problem/P4779) · 普及
@@ -248,27 +266,25 @@
 - [P1608 路径统计](https://www.luogu.com.cn/problem/P1608) · 普及+/提高−
 - [P4568 [JLOI2011] 飞行路线](https://www.luogu.com.cn/problem/P4568) · 普及+/提高−
 - [P1073 [NOIP 2009 提高组] 最优贸易](https://www.luogu.com.cn/problem/P1073) · 普及+/提高−
-- [P5960 【模板】差分约束](https://www.luogu.com.cn/problem/P5960) · 普及+/提高−
 - [P5304 [GXOI/GZOI2019] 旅行者](https://www.luogu.com.cn/problem/P5304) · 提高
 
-**生成树与并查集**（12 题）
+**生成树**（6 题 · [笔记](https://cuberxl.github.io/Coders-Note/5B-图论/5B.4-最小生成树/5B.4.2-Kruskal算法)）
 
 - [P3366 【模板】最小生成树](https://www.luogu.com.cn/problem/P3366) · 普及
-- [P3367 【模板】并查集](https://www.luogu.com.cn/problem/P3367) · 普及
-- [P1551 亲戚](https://www.luogu.com.cn/problem/P1551) · 普及
-- [P1111 修复公路](https://www.luogu.com.cn/problem/P1111) · 普及
 - [P2330 [SCOI2005] 繁忙的都市](https://www.luogu.com.cn/problem/P2330) · 普及
 - [P1547 [USACO05MAR] Out of Hay S](https://www.luogu.com.cn/problem/P1547) · 普及
-- [P1525 [NOIP 2010 提高组] 关押罪犯](https://www.luogu.com.cn/problem/P1525) · 普及+/提高−
-- [P2024 [NOI2001] 食物链](https://www.luogu.com.cn/problem/P2024) · 普及+/提高−
-- [P1892 [BalticOI 2003] 团伙 (Day 2)](https://www.luogu.com.cn/problem/P1892) · 普及+/提高−
 - [P4047 [JSOI2010] 部落划分](https://www.luogu.com.cn/problem/P4047) · 普及+/提高−
 - [P1967 [NOIP 2013 提高组] 货车运输](https://www.luogu.com.cn/problem/P1967) · 提高
 - [P4180 [BJWC2010] 严格次小生成树](https://www.luogu.com.cn/problem/P4180) · 提高+/省选−
 
-#### 图论进阶
+**二分图**（2 题 · [笔记](https://cuberxl.github.io/Coders-Note/5B-图论/5B.5-二分图)）
 
-**拓扑排序与树**（13 题）
+- [P1330 封锁阳光大学](https://www.luogu.com.cn/problem/P1330) · 普及
+- [P3386 【模板】二分图最大匹配](https://www.luogu.com.cn/problem/P3386) · 普及+/提高−
+
+### 5P 图论进阶（24 题 · [对应笔记](https://cuberxl.github.io/Coders-Note/5P-图论进阶/)）
+
+**拓扑排序与树**（13 题 · [笔记](https://cuberxl.github.io/Coders-Note/5B-图论/5B.2-拓扑排序)）
 
 - [P4017 最大食物链计数](https://www.luogu.com.cn/problem/P4017) · 普及
 - [P1113 [USACO02FEB] 杂务](https://www.luogu.com.cn/problem/P1113) · 普及
@@ -284,12 +300,10 @@
 - [P1099 [NOIP 2007 提高组] 树网的核](https://www.luogu.com.cn/problem/P1099) · 提高
 - [P3629 [APIO2010] 巡逻](https://www.luogu.com.cn/problem/P3629) · 提高
 
-**连通性与网络流**（12 题）
+**连通性与网络流**（10 题 · [笔记](https://cuberxl.github.io/Coders-Note/5P-图论进阶/5P.5-Tarjan算法/5P.5.1-强连通分量（SCC）)）
 
-- [P1330 封锁阳光大学](https://www.luogu.com.cn/problem/P1330) · 普及
 - [P3387 【模板】缩点 / 强连通分量](https://www.luogu.com.cn/problem/P3387) · 普及+/提高−
 - [P3388 【模板】割点](https://www.luogu.com.cn/problem/P3388) · 普及+/提高−
-- [P3386 【模板】二分图最大匹配](https://www.luogu.com.cn/problem/P3386) · 普及+/提高−
 - [P2756 飞行员配对方案问题](https://www.luogu.com.cn/problem/P2756) · 普及+/提高−
 - [P5058 [ZJOI2004] 嗅探器](https://www.luogu.com.cn/problem/P5058) · 普及+/提高−
 - [P1262 [POI 1996 R3] 间谍网络](https://www.luogu.com.cn/problem/P1262) · 普及+/提高−
@@ -299,9 +313,30 @@
 - [P1402 酒店之王](https://www.luogu.com.cn/problem/P1402) · 省选/NOI−
 - [P2764 最小路径覆盖问题](https://www.luogu.com.cn/problem/P2764) · 省选/NOI−
 
-### 5. 动态规划（52 题）
+**差分约束**（1 题 · [笔记](https://cuberxl.github.io/Coders-Note/5P-图论进阶/5P.10-差分约束)）
 
-**线性 DP**（15 题）
+- [P5960 【模板】差分约束](https://www.luogu.com.cn/problem/P5960) · 普及+/提高−
+
+### 6B 动态规划（36 题 · [对应笔记](https://cuberxl.github.io/Coders-Note/6B-动态规划/)）
+
+**背包 DP**（14 题 · [笔记](https://cuberxl.github.io/Coders-Note/6B-动态规划/6B.1-背包DP)）
+
+- [P1048 [NOIP 2005 普及组] 采药](https://www.luogu.com.cn/problem/P1048) · 普及−
+- [P1616 疯狂的采药](https://www.luogu.com.cn/problem/P1616) · 普及−
+- [P1060 [NOIP 2006 普及组] 开心的金明](https://www.luogu.com.cn/problem/P1060) · 普及−
+- [P1164 小 A 点菜](https://www.luogu.com.cn/problem/P1164) · 普及−
+- [P2722 [USACO3.1] 总分 Score Inflation](https://www.luogu.com.cn/problem/P2722) · 普及−
+- [P2347 [NOIP 1996 提高组] 砝码称重](https://www.luogu.com.cn/problem/P2347) · 普及−
+- [P1757 通天之分组背包](https://www.luogu.com.cn/problem/P1757) · 普及−
+- [P1877 [HAOI2012] 音量调节](https://www.luogu.com.cn/problem/P1877) · 普及−
+- [P1853 [NWERC 2004] 投资的最大效益](https://www.luogu.com.cn/problem/P1853) · 普及
+- [P4141 消失之物](https://www.luogu.com.cn/problem/P4141) · 普及
+- [P5020 [NOIP 2018 提高组] 货币系统](https://www.luogu.com.cn/problem/P5020) · 普及+/提高−
+- [P1417 烹调方案](https://www.luogu.com.cn/problem/P1417) · 普及+/提高−
+- [P1776 宝物筛选](https://www.luogu.com.cn/problem/P1776) · 普及+/提高−
+- [P1941 [NOIP 2014 提高组] 飞扬的小鸟](https://www.luogu.com.cn/problem/P1941) · 普及+/提高−
+
+**线性 DP**（15 题 · [笔记](https://cuberxl.github.io/Coders-Note/6B-动态规划/6B.2-线性DP)）
 
 - [P1216 [IOI 1994 / USACO1.5] 数字三角形 Number Triangles](https://www.luogu.com.cn/problem/P1216) · 普及−
 - [P1002 [NOIP 2002 普及组] 过河卒](https://www.luogu.com.cn/problem/P1002) · 普及−
@@ -319,24 +354,7 @@
 - [P2365 [IOI 2002] 任务安排](https://www.luogu.com.cn/problem/P2365) · 普及+/提高−
 - [P3287 [SCOI2014] 方伯伯的玉米田](https://www.luogu.com.cn/problem/P3287) · 提高+/省选−
 
-**背包 DP**（14 题）
-
-- [P1048 [NOIP 2005 普及组] 采药](https://www.luogu.com.cn/problem/P1048) · 普及−
-- [P1616 疯狂的采药](https://www.luogu.com.cn/problem/P1616) · 普及−
-- [P1060 [NOIP 2006 普及组] 开心的金明](https://www.luogu.com.cn/problem/P1060) · 普及−
-- [P1164 小 A 点菜](https://www.luogu.com.cn/problem/P1164) · 普及−
-- [P2722 [USACO3.1] 总分 Score Inflation](https://www.luogu.com.cn/problem/P2722) · 普及−
-- [P2347 [NOIP 1996 提高组] 砝码称重](https://www.luogu.com.cn/problem/P2347) · 普及−
-- [P1757 通天之分组背包](https://www.luogu.com.cn/problem/P1757) · 普及−
-- [P1877 [HAOI2012] 音量调节](https://www.luogu.com.cn/problem/P1877) · 普及−
-- [P1853 [NWERC 2004] 投资的最大效益](https://www.luogu.com.cn/problem/P1853) · 普及
-- [P4141 消失之物](https://www.luogu.com.cn/problem/P4141) · 普及
-- [P5020 [NOIP 2018 提高组] 货币系统](https://www.luogu.com.cn/problem/P5020) · 普及+/提高−
-- [P1417 烹调方案](https://www.luogu.com.cn/problem/P1417) · 普及+/提高−
-- [P1776 宝物筛选](https://www.luogu.com.cn/problem/P1776) · 普及+/提高−
-- [P1941 [NOIP 2014 提高组] 飞扬的小鸟](https://www.luogu.com.cn/problem/P1941) · 普及+/提高−
-
-**区间 DP**（7 题）
+**区间 DP**（7 题 · [笔记](https://cuberxl.github.io/Coders-Note/6B-动态规划/6B.3-区间DP)）
 
 - [P1880 [NOI1995] 石子合并](https://www.luogu.com.cn/problem/P1880) · 普及+/提高−
 - [P1063 [NOIP 2006 提高组] 能量项链](https://www.luogu.com.cn/problem/P1063) · 普及+/提高−
@@ -346,9 +364,9 @@
 - [P4170 [CQOI2007] 涂色](https://www.luogu.com.cn/problem/P4170) · 提高+/省选−
 - [P7914 [CSP-S 2021] 括号序列](https://www.luogu.com.cn/problem/P7914) · 提高+/省选−
 
-#### 动态规划进阶
+### 6P 动态规划进阶（16 题 · [对应笔记](https://cuberxl.github.io/Coders-Note/6P-动态规划进阶/)）
 
-**树形 DP**（8 题）
+**树形 DP**（8 题 · [笔记](https://cuberxl.github.io/Coders-Note/6B-动态规划/6B.7-树形DP)）
 
 - [P1352 没有上司的舞会](https://www.luogu.com.cn/problem/P1352) · 普及
 - [P2016 [SEERC 2000] 战略游戏](https://www.luogu.com.cn/problem/P2016) · 普及
@@ -359,7 +377,7 @@
 - [P3174 [HAOI2009] 毛毛虫](https://www.luogu.com.cn/problem/P3174) · 普及+/提高−
 - [P2279 [HNOI2003] 消防局的设立](https://www.luogu.com.cn/problem/P2279) · 提高
 
-**状压与数位 DP**（8 题）
+**状压与数位 DP**（8 题 · [笔记](https://cuberxl.github.io/Coders-Note/6B-动态规划/6B.6-状态压缩DP)）
 
 - [P2657 [SCOI2009] windy 数](https://www.luogu.com.cn/problem/P2657) · 普及
 - [P1879 [USACO06NOV] Corn Fields G](https://www.luogu.com.cn/problem/P1879) · 普及+/提高−
@@ -370,9 +388,9 @@
 - [P4124 [CQOI2016] 手机号码](https://www.luogu.com.cn/problem/P4124) · 提高
 - [P4127 [AHOI2009] 同类分布](https://www.luogu.com.cn/problem/P4127) · 提高
 
-### 6. 贪心（16 题）
+### 7B 贪心（16 题 · [对应笔记](https://cuberxl.github.io/Coders-Note/7B-贪心/)）
 
-**贪心**（16 题）
+**贪心**（16 题 · [笔记](https://cuberxl.github.io/Coders-Note/7B-贪心/)）
 
 - [P1223 排队接水](https://www.luogu.com.cn/problem/P1223) · 普及−
 - [P1803 凌乱的yyy / 线段覆盖](https://www.luogu.com.cn/problem/P1803) · 普及−
@@ -391,9 +409,9 @@
 - [P3619 魔法](https://www.luogu.com.cn/problem/P3619) · 提高
 - [P4053 [JSOI2007] 建筑抢修](https://www.luogu.com.cn/problem/P4053) · 提高
 
-### 7. 数学（25 题）
+### 8B 数学（25 题 · [对应笔记](https://cuberxl.github.io/Coders-Note/8B-数学/)）
 
-**数论**（13 题）
+**数论**（13 题 · [笔记](https://cuberxl.github.io/Coders-Note/8B-数学/8B.1-初等数论/8B.1.1-质数)）
 
 - [P3383 【模板】线性筛素数](https://www.luogu.com.cn/problem/P3383) · 普及−
 - [P1226 【模板】快速幂](https://www.luogu.com.cn/problem/P1226) · 普及−
@@ -409,7 +427,7 @@
 - [P4777 【模板】扩展中国剩余定理（EXCRT）](https://www.luogu.com.cn/problem/P4777) · 提高
 - [P1463 [POI 2001 R1 / ZJOI2006 / HAOI2007] 反素数](https://www.luogu.com.cn/problem/P1463) · 提高
 
-**组合、矩阵与概率**（12 题）
+**组合、矩阵与概率**（12 题 · [笔记](https://cuberxl.github.io/Coders-Note/8B-数学/8B.3-离散数学/8B.3.1-组合计数)）
 
 - [P2822 [NOIP 2016 提高组] 组合数问题](https://www.luogu.com.cn/problem/P2822) · 普及
 - [P1313 [NOIP 2011 提高组] 计算系数](https://www.luogu.com.cn/problem/P1313) · 普及
