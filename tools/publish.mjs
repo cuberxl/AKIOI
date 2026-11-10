@@ -30,7 +30,7 @@ const SKIP_FILES = new Set(['tools/cookies.txt', 'tools/live-data.js', 'probe.ht
 function skipped(rel) {
   if (SKIP_FILES.has(rel)) return true;
   if (rel.split('/').some((seg) => seg.startsWith('chrome-prof') || seg === 'node_modules')) return true;
-  if (rel.startsWith('tools/') && /\.(png|txt|bak\.json|backup\.json|html)$/.test(rel)) return true;
+  if (rel.startsWith('tools/') && /\.(png|txt|bak\.json|backup\.json)$/.test(rel)) return true;
   return false;
 }
 
