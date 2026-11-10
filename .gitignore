@@ -2,6 +2,15 @@
 tools/pages/
 tools/cookies.txt
 
+# 本地预览 / 截图 / 临时产物
+tools/chrome-prof*/
+tools/*.png
+tools/*.txt
+tools/live-data.js
+tools/*.bak.json
+tools/*.backup.json
+probe.html
+
 # 系统杂项
 .DS_Store
 Thumbs.db
