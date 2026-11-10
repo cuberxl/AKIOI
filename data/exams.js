@@ -106,6 +106,68 @@ window.AKIOI_EXAMS = {
       "count": 4
     },
     {
+      "id": "csp-s-2022",
+      "name": "CSP-S 2022",
+      "group": "CSP",
+      "year": 2022,
+      "duration": 210,
+      "tag": "[CSP-S 2022]",
+      "problems": [
+        {
+          "pid": "P8817",
+          "name": "[CSP-S 2022] 假期计划",
+          "difficulty": 5
+        },
+        {
+          "pid": "P8818",
+          "name": "[CSP-S 2022] 策略游戏",
+          "difficulty": 4
+        },
+        {
+          "pid": "P8819",
+          "name": "[CSP-S 2022] 星战",
+          "difficulty": 7
+        },
+        {
+          "pid": "P8820",
+          "name": "[CSP-S 2022] 数据传输",
+          "difficulty": 7
+        }
+      ],
+      "count": 4
+    },
+    {
+      "id": "csp-s-2023",
+      "name": "CSP-S 2023",
+      "group": "CSP",
+      "year": 2023,
+      "duration": 210,
+      "tag": "[CSP-S 2023]",
+      "problems": [
+        {
+          "pid": "P9752",
+          "name": "[CSP-S 2023] 密码锁",
+          "difficulty": 2
+        },
+        {
+          "pid": "P9753",
+          "name": "[CSP-S 2023] 消消乐",
+          "difficulty": 5
+        },
+        {
+          "pid": "P9754",
+          "name": "[CSP-S 2023] 结构体",
+          "difficulty": 6
+        },
+        {
+          "pid": "P9755",
+          "name": "[CSP-S 2023] 种树",
+          "difficulty": 6
+        }
+      ],
+      "count": 4
+    },
+    {
       "id": "csp-j-2019",
       "name": "CSP-J 2019",
       "group": "CSP",
@@ -193,6 +255,356 @@ window.AKIOI_EXAMS = {
         {
           "pid": "P7912",
           "name": "[CSP-J 2021] 小熊的果篮",
+          "difficulty": 4
+        }
+      ],
+      "count": 4
+    },
+    {
+      "id": "csp-j-2022",
+      "name": "CSP-J 2022",
+      "group": "CSP",
+      "year": 2022,
+      "duration": 180,
+      "tag": "[CSP-J 2022]",
+      "problems": [
+        {
+          "pid": "P8813",
+          "name": "[CSP-J 2022] 乘方",
+          "difficulty": 1
+        },
+        {
+          "pid": "P8814",
+          "name": "[CSP-J 2022] 解密",
+          "difficulty": 2
+        },
+        {
+          "pid": "P8815",
+          "name": "[CSP-J 2022] 逻辑表达式",
+          "difficulty": 4
+        },
+        {
+          "pid": "P8816",
+          "name": "[CSP-J 2022] 上升点列",
+          "difficulty": 3
+        }
+      ],
+      "count": 4
+    },
+    {
+      "id": "csp-j-2023",
+      "name": "CSP-J 2023",
+      "group": "CSP",
+      "year": 2023,
+      "duration": 180,
+      "tag": "[CSP-J 2023]",
+      "problems": [
+        {
+          "pid": "P9748",
+          "name": "[CSP-J 2023] 小苹果",
+          "difficulty": 2
+        },
+        {
+          "pid": "P9749",
+          "name": "[CSP-J 2023] 公路",
+          "difficulty": 2
+        },
+        {
+          "pid": "P9750",
+          "name": "[CSP-J 2023] 一元二次方程",
+          "difficulty": 3
+        },
+        {
+          "pid": "P9751",
+          "name": "[CSP-J 2023] 旅游巴士",
+          "difficulty": 4
+        }
+      ],
+      "count": 4
+    },
+    {
+      "id": "noip-2013-s",
+      "name": "NOIP 2013 提高组",
+      "group": "NOIP",
+      "year": 2013,
+      "duration": 210,
+      "tag": "[NOIP 2013 提高组]",
+      "problems": [
+        {
+          "pid": "P1965",
+          "name": "[NOIP 2013 提高组] 转圈游戏",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1966",
+          "name": "[NOIP 2013 提高组] 火柴排队",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1967",
+          "name": "[NOIP 2013 提高组] 货车运输",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1969",
+          "name": "[NOIP 2013 提高组] 积木大赛",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1970",
+          "name": "[NOIP 2013 提高组] 花匠",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1979",
+          "name": "[NOIP 2013 提高组] 华容道",
+          "difficulty": 6
+        }
+      ],
+      "count": 6
+    },
+    {
+      "id": "noip-2013-j",
+      "name": "NOIP 2013 普及组",
+      "group": "NOIP",
+      "year": 2013,
+      "duration": 180,
+      "tag": "[NOIP 2013 普及组]",
+      "problems": [
+        {
+          "pid": "P1980",
+          "name": "[NOIP 2013 普及组] 计数问题",
+          "difficulty": 1
+        },
+        {
+          "pid": "P1981",
+          "name": "[NOIP 2013 普及组] 表达式求值",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1982",
+          "name": "[NOIP 2013 普及组] 小朋友的数字",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1983",
+          "name": "[NOIP 2013 普及组] 车站分级",
+          "difficulty": 4
+        }
+      ],
+      "count": 4
+    },
+    {
+      "id": "noip-2014-s",
+      "name": "NOIP 2014 提高组",
+      "group": "NOIP",
+      "year": 2014,
+      "duration": 210,
+      "tag": "[NOIP 2014 提高组]",
+      "problems": [
+        {
+          "pid": "P1328",
+          "name": "[NOIP 2014 提高组] 生活大爆炸版石头剪刀布",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1351",
+          "name": "[NOIP 2014 提高组] 联合权值",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1941",
+          "name": "[NOIP 2014 提高组] 飞扬的小鸟",
+          "difficulty": 4
+        },
+        {
+          "pid": "P2038",
+          "name": "[NOIP 2014 提高组] 无线网络发射器选址",
+          "difficulty": 2
+        },
+        {
+          "pid": "P2296",
+          "name": "[NOIP 2014 提高组] 寻找道路",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2312",
+          "name": "[NOIP 2014 提高组] 解方程",
+          "difficulty": 4
+        }
+      ],
+      "count": 6
+    },
+    {
+      "id": "noip-2014-j",
+      "name": "NOIP 2014 普及组",
+      "group": "NOIP",
+      "year": 2014,
+      "duration": 180,
+      "tag": "[NOIP 2014 普及组]",
+      "problems": [
+        {
+          "pid": "P2141",
+          "name": "[NOIP 2014 普及组] 珠心算测验",
+          "difficulty": 2
+        },
+        {
+          "pid": "P2118",
+          "name": "[NOIP 2014 普及组] 比例简化",
+          "difficulty": 2
+        },
+        {
+          "pid": "P2239",
+          "name": "[NOIP 2014 普及组] 螺旋矩阵",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2258",
+          "name": "[NOIP 2014 普及组] 子矩阵",
+          "difficulty": 5
+        }
+      ],
+      "count": 4
+    },
+    {
+      "id": "noip-2015-s",
+      "name": "NOIP 2015 提高组",
+      "group": "NOIP",
+      "year": 2015,
+      "duration": 210,
+      "tag": "[NOIP 2015 提高组]",
+      "problems": [
+        {
+          "pid": "P2615",
+          "name": "[NOIP 2015 提高组] 神奇的幻方",
+          "difficulty": 2
+        },
+        {
+          "pid": "P2661",
+          "name": "[NOIP 2015 提高组] 信息传递",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2668",
+          "name": "[NOIP 2015 提高组] 斗地主",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2678",
+          "name": "[NOIP 2015 提高组] 跳石头",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2679",
+          "name": "[NOIP 2015 提高组] 子串",
+          "difficulty": 4
+        },
+        {
+          "pid": "P2680",
+          "name": "[NOIP 2015 提高组] 运输计划",
+          "difficulty": 5
+        }
+      ],
+      "count": 6
+    },
+    {
+      "id": "noip-2015-j",
+      "name": "NOIP 2015 普及组",
+      "group": "NOIP",
+      "year": 2015,
+      "duration": 180,
+      "tag": "[NOIP 2015 普及组]",
+      "problems": [
+        {
+          "pid": "P2669",
+          "name": "[NOIP 2015 普及组] 金币",
+          "difficulty": 1
+        },
+        {
+          "pid": "P2670",
+          "name": "[NOIP 2015 普及组] 扫雷游戏",
+          "difficulty": 1
+        },
+        {
+          "pid": "P2671",
+          "name": "[NOIP 2015 普及组] 求和",
+          "difficulty": 4
+        },
+        {
+          "pid": "P2672",
+          "name": "[NOIP 2015 普及组] 推销员",
+          "difficulty": 5
+        }
+      ],
+      "count": 4
+    },
+    {
+      "id": "noip-2016-s",
+      "name": "NOIP 2016 提高组",
+      "group": "NOIP",
+      "year": 2016,
+      "duration": 210,
+      "tag": "[NOIP 2016 提高组]",
+      "problems": [
+        {
+          "pid": "P1563",
+          "name": "[NOIP 2016 提高组] 玩具谜题",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1600",
+          "name": "[NOIP 2016 提高组] 天天爱跑步",
+          "difficulty": 7
+        },
+        {
+          "pid": "P1850",
+          "name": "[NOIP 2016 提高组] 换教室",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2822",
+          "name": "[NOIP 2016 提高组] 组合数问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2827",
+          "name": "[NOIP 2016 提高组] 蚯蚓",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2831",
+          "name": "[NOIP 2016 提高组] 愤怒的小鸟",
+          "difficulty": 5
+        }
+      ],
+      "count": 6
+    },
+    {
+      "id": "noip-2016-j",
+      "name": "NOIP 2016 普及组",
+      "group": "NOIP",
+      "year": 2016,
+      "duration": 180,
+      "tag": "[NOIP 2016 普及组]",
+      "problems": [
+        {
+          "pid": "P1909",
+          "name": "[NOIP 2016 普及组] 买铅笔",
+          "difficulty": 1
+        },
+        {
+          "pid": "P2010",
+          "name": "[NOIP 2016 普及组] 回文日期",
+          "difficulty": 2
+        },
+        {
+          "pid": "P2058",
+          "name": "[NOIP 2016 普及组] 海港",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2119",
+          "name": "[NOIP 2016 普及组] 魔法阵",
           "difficulty": 4
         }
       ],

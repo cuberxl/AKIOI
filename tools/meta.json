@@ -1,7 +1,7 @@
 ﻿{
-    "P4995":  {
-                  "name":  "跳跳！",
-                  "difficulty":  2
+    "P1970":  {
+                  "name":  "[NOIP 2013 提高组] 花匠",
+                  "difficulty":  3
               },
     "P1550":  {
                   "name":  "[USACO08OCT] Watering Hole G",
@@ -27,8 +27,8 @@
                   "name":  "烤鸡",
                   "difficulty":  2
               },
-    "P1220":  {
-                  "name":  "关路灯",
+    "P4302":  {
+                  "name":  "[SCOI2003] 字符串折叠",
                   "difficulty":  4
               },
     "P2879":  {
@@ -41,10 +41,6 @@
               },
     "P2949":  {
                   "name":  "[USACO09OPEN] Work Scheduling G",
-                  "difficulty":  3
-              },
-    "P1056":  {
-                  "name":  "[NOIP 2008 普及组] 排座椅",
                   "difficulty":  3
               },
     "P2557":  {
@@ -115,10 +111,6 @@
                   "name":  "回文匹配",
                   "difficulty":  6
               },
-    "P1190":  {
-                  "name":  "[NOIP 2010 普及组] 接水问题",
-                  "difficulty":  2
-              },
     "P2365":  {
                   "name":  "[IOI 2002] 任务安排",
                   "difficulty":  4
@@ -151,10 +143,10 @@
                   "name":  "樱花",
                   "difficulty":  3
               },
-    "P9750":  {
-                  "name":  "[CSP-J 2023] 一元二次方程",
-                  "difficulty":  3
-              },
+    "P10113":  {
+                   "name":  "[GESP202312 八级] 大量的工作沟通",
+                   "difficulty":  3
+               },
     "P3368":  {
                   "name":  "【模板】树状数组 2",
                   "difficulty":  4
@@ -162,6 +154,10 @@
     "P5816":  {
                   "name":  "[CQOI2010] 内部白点",
                   "difficulty":  5
+              },
+    "P2415":  {
+                  "name":  "集合求和",
+                  "difficulty":  2
               },
     "P8025":  {
                   "name":  "[ONTAK2015] Związek Harcerstwa Bajtockiego",
@@ -179,16 +175,16 @@
                   "name":  "[CSP-J 2019] 纪念品",
                   "difficulty":  4
               },
+    "P8816":  {
+                  "name":  "[CSP-J 2022] 上升点列",
+                  "difficulty":  3
+              },
     "P2572":  {
                   "name":  "[SCOI2010] 序列操作",
                   "difficulty":  5
               },
-    "P1192":  {
-                  "name":  "台阶问题",
-                  "difficulty":  2
-              },
-    "P1016":  {
-                  "name":  "[NOIP 1999 普及组/提高组] 旅行家的预算",
+    "P5651":  {
+                  "name":  "基础最短路练习题",
                   "difficulty":  3
               },
     "P5960":  {
@@ -211,8 +207,8 @@
                   "name":  "[USACO03FALL / HAOI2006] 受欢迎的牛 G",
                   "difficulty":  4
               },
-    "P3958":  {
-                  "name":  "[NOIP 2017 提高组] 奶酪",
+    "P1259":  {
+                  "name":  "黑白棋子的移动",
                   "difficulty":  3
               },
     "P5507":  {
@@ -227,9 +223,9 @@
                   "name":  "[NOIP 2018 提高组] 货币系统",
                   "difficulty":  4
               },
-    "P1466":  {
-                  "name":  "[USACO2.2] 集合 Subset Sums",
-                  "difficulty":  3
+    "P1600":  {
+                  "name":  "[NOIP 2016 提高组] 天天爱跑步",
+                  "difficulty":  7
               },
     "P1402":  {
                   "name":  "酒店之王",
@@ -259,10 +255,10 @@
                   "name":  "[SDOI2010] 猪国杀",
                   "difficulty":  7
               },
-    "P10113":  {
-                   "name":  "[GESP202312 八级] 大量的工作沟通",
-                   "difficulty":  3
-               },
+    "P7074":  {
+                  "name":  "[CSP-J 2020] 方格取数",
+                  "difficulty":  4
+              },
     "P1106":  {
                   "name":  "删数问题",
                   "difficulty":  3
@@ -367,9 +363,9 @@
                   "name":  "【模板】快速幂",
                   "difficulty":  2
               },
-    "P1195":  {
-                  "name":  "口袋的天空",
-                  "difficulty":  3
+    "P2668":  {
+                  "name":  "[NOIP 2015 提高组] 斗地主",
+                  "difficulty":  5
               },
     "P1850":  {
                   "name":  "[NOIP 2016 提高组] 换教室",
@@ -407,6 +403,10 @@
                   "name":  "[NOIP 2009 普及组] 道路游戏",
                   "difficulty":  5
               },
+    "P2038":  {
+                  "name":  "[NOIP 2014 提高组] 无线网络发射器选址",
+                  "difficulty":  2
+              },
     "P10865":  {
                    "name":  "[HBCPC2024] Genshin Impact Startup Forbidden III",
                    "difficulty":  4
@@ -431,6 +431,10 @@
                   "name":  "[NOIP 2012 普及组] 寻宝",
                   "difficulty":  3
               },
+    "P2118":  {
+                  "name":  "[NOIP 2014 普及组] 比例简化",
+                  "difficulty":  2
+              },
     "P3376":  {
                   "name":  "【模板】网络最大流",
                   "difficulty":  6
@@ -443,17 +447,9 @@
                   "name":  "[CEOI 2015] 世界冰球锦标赛 (Day2)",
                   "difficulty":  4
               },
-    "P1177":  {
-                  "name":  "【模板】排序",
-                  "difficulty":  2
-              },
     "P1049":  {
                   "name":  "[NOIP 2001 普及组] 装箱问题",
                   "difficulty":  2
-              },
-    "P5663":  {
-                  "name":  "[CSP-J 2019] 加工零件",
-                  "difficulty":  4
               },
     "P2564":  {
                   "name":  "[SCOI2009] 生日礼物",
@@ -483,17 +479,13 @@
                   "name":  "[CSP-S 2020] 函数调用",
                   "difficulty":  6
               },
-    "P5019":  {
-                  "name":  "[NOIP 2018 提高组] 铺设道路",
-                  "difficulty":  3
+    "P8820":  {
+                  "name":  "[CSP-S 2022] 数据传输",
+                  "difficulty":  7
               },
     "P1591":  {
                   "name":  "阶乘数码",
                   "difficulty":  2
-              },
-    "P3275":  {
-                  "name":  "[SCOI2011] 糖果",
-                  "difficulty":  5
               },
     "P4999":  {
                   "name":  "烦人的数学作业",
@@ -543,6 +535,10 @@
                   "name":  "[COCI 2008/2009 #2] PERKET",
                   "difficulty":  2
               },
+    "P1923":  {
+                  "name":  "【深基9.例4】求第 k 小的数",
+                  "difficulty":  2
+              },
     "P4113":  {
                   "name":  "[HEOI2012] 采花",
                   "difficulty":  5
@@ -571,8 +567,8 @@
                   "name":  "[NOIP 2007 普及组] 奖学金",
                   "difficulty":  2
               },
-    "P1842":  {
-                  "name":  "[USACO05NOV] 奶牛玩杂技",
+    "P2431":  {
+                  "name":  "正妹吃月饼",
                   "difficulty":  3
               },
     "P1271":  {
@@ -643,13 +639,17 @@
                   "name":  "[CTSC2002] 月亮森林",
                   "difficulty":  5
               },
+    "P1842":  {
+                  "name":  "[USACO05NOV] 奶牛玩杂技",
+                  "difficulty":  3
+              },
     "P4997":  {
                   "name":  "不围棋",
                   "difficulty":  7
               },
-    "P1101":  {
-                  "name":  "单词方阵",
-                  "difficulty":  2
+    "P1884":  {
+                  "name":  "[USACO12FEB] Overplanting S",
+                  "difficulty":  4
               },
     "P4165":  {
                   "name":  "[SCOI2007] 组队",
@@ -658,6 +658,10 @@
     "P4310":  {
                   "name":  "绝世好题",
                   "difficulty":  4
+              },
+    "P2258":  {
+                  "name":  "[NOIP 2014 普及组] 子矩阵",
+                  "difficulty":  5
               },
     "P7916":  {
                   "name":  "[CSP-S 2021] 交通规划",
@@ -682,6 +686,10 @@
     "P5658":  {
                   "name":  "[CSP-S 2019] 括号树",
                   "difficulty":  4
+              },
+    "P1101":  {
+                  "name":  "单词方阵",
+                  "difficulty":  2
               },
     "P1059":  {
                   "name":  "[NOIP 2006 普及组] 明明的随机数",
@@ -715,17 +723,9 @@
                   "name":  "[USACO1.3] 混合牛奶 Mixing Milk",
                   "difficulty":  2
               },
-    "P1364":  {
-                  "name":  "医院设置",
-                  "difficulty":  3
-              },
     "P2590":  {
                   "name":  "[ZJOI2008] 树的统计",
                   "difficulty":  6
-              },
-    "P1910":  {
-                  "name":  "L 国的战斗之间谍",
-                  "difficulty":  2
               },
     "P5002":  {
                   "name":  "专心OI - 找祖先",
@@ -739,8 +739,8 @@
                   "name":  "[JLOI2014] 松鼠的新家",
                   "difficulty":  4
               },
-    "P1923":  {
-                  "name":  "【深基9.例4】求第 k 小的数",
+    "P2240":  {
+                  "name":  "【深基12.例1】部分背包问题",
                   "difficulty":  2
               },
     "P4549":  {
@@ -750,6 +750,10 @@
     "P3378":  {
                   "name":  "【模板】堆",
                   "difficulty":  3
+              },
+    "P9753":  {
+                  "name":  "[CSP-S 2023] 消消乐",
+                  "difficulty":  5
               },
     "P1088":  {
                   "name":  "[NOIP 2004 普及组] 火星人",
@@ -762,6 +766,10 @@
     "P5490":  {
                   "name":  "【模板】扫描线 \u0026 矩形面积并",
                   "difficulty":  5
+              },
+    "P2323":  {
+                  "name":  "[HNOI2006] 公路修建问题",
+                  "difficulty":  4
               },
     "P4301":  {
                   "name":  "[CQOI2013] 新Nim游戏",
@@ -799,8 +807,8 @@
                   "name":  "石子合并（弱化版）",
                   "difficulty":  3
               },
-    "P3385":  {
-                  "name":  "【模板】负环",
+    "P1364":  {
+                  "name":  "医院设置",
                   "difficulty":  3
               },
     "P4913":  {
@@ -831,9 +839,9 @@
                   "name":  "遍历问题",
                   "difficulty":  3
               },
-    "P9748":  {
-                  "name":  "[CSP-J 2023] 小苹果",
-                  "difficulty":  2
+    "P5149":  {
+                  "name":  "会议座位",
+                  "difficulty":  3
               },
     "P3956":  {
                   "name":  "[NOIP 2017 普及组] 棋盘",
@@ -935,13 +943,13 @@
                   "name":  "【模板】线段树 1",
                   "difficulty":  4
               },
+    "P1228":  {
+                  "name":  "地毯填补问题",
+                  "difficulty":  3
+              },
     "P1825":  {
                   "name":  "[USACO11OPEN] Corn Maze S",
                   "difficulty":  3
-              },
-    "P4290":  {
-                  "name":  "[HAOI2008] 玩具取名",
-                  "difficulty":  4
               },
     "P2058":  {
                   "name":  "[NOIP 2016 普及组] 海港",
@@ -954,10 +962,6 @@
     "P1001":  {
                   "name":  "A+B Problem",
                   "difficulty":  1
-              },
-    "P2668":  {
-                  "name":  "[NOIP 2015 提高组] 斗地主",
-                  "difficulty":  5
               },
     "P1486":  {
                   "name":  "[NOI2004] 郁闷的出纳员",
@@ -1027,10 +1031,14 @@
                   "name":  "[NOIP 2018 提高组] 保卫王国",
                   "difficulty":  7
               },
-    "P3156":  {
-                  "name":  "【深基15.例1】询问学号",
+    "P1909":  {
+                  "name":  "[NOIP 2016 普及组] 买铅笔",
                   "difficulty":  1
               },
+    "P10453":  {
+                   "name":  "七夕祭",
+                   "difficulty":  5
+               },
     "P3805":  {
                   "name":  "【模板】Manacher",
                   "difficulty":  5
@@ -1050,6 +1058,10 @@
     "P1902":  {
                   "name":  "刺杀大使",
                   "difficulty":  3
+              },
+    "P9748":  {
+                  "name":  "[CSP-J 2023] 小苹果",
+                  "difficulty":  2
               },
     "P1982":  {
                   "name":  "[NOIP 2013 普及组] 小朋友的数字",
@@ -1087,6 +1099,10 @@
                   "name":  "[NOI2014] 起床困难综合症",
                   "difficulty":  4
               },
+    "P9755":  {
+                  "name":  "[CSP-S 2023] 种树",
+                  "difficulty":  6
+              },
     "P8435":  {
                   "name":  "【模板】点双连通分量",
                   "difficulty":  4
@@ -1098,6 +1114,10 @@
     "P1726":  {
                   "name":  "上白泽慧音",
                   "difficulty":  4
+              },
+    "P1195":  {
+                  "name":  "口袋的天空",
+                  "difficulty":  3
               },
     "P3620":  {
                   "name":  "[APIO/CTSC2007] 数据备份",
@@ -1123,6 +1143,10 @@
                   "name":  "A/B Problem II",
                   "difficulty":  3
               },
+    "P3385":  {
+                  "name":  "【模板】负环",
+                  "difficulty":  3
+              },
     "P2671":  {
                   "name":  "[NOIP 2015 普及组] 求和",
                   "difficulty":  4
@@ -1131,14 +1155,6 @@
                    "name":  "Buy Low Sell High",
                    "difficulty":  5
                },
-    "P10453":  {
-                   "name":  "七夕祭",
-                   "difficulty":  5
-               },
-    "P7074":  {
-                  "name":  "[CSP-J 2020] 方格取数",
-                  "difficulty":  4
-              },
     "P8972":  {
                   "name":  "『GROI-R1』 一切都已过去",
                   "difficulty":  4
@@ -1155,17 +1171,9 @@
                   "name":  "【模板】文艺平衡树",
                   "difficulty":  6
               },
-    "P2240":  {
-                  "name":  "【深基12.例1】部分背包问题",
-                  "difficulty":  2
-              },
     "P3694":  {
                   "name":  "邦邦的大合唱站队",
                   "difficulty":  5
-              },
-    "P4180":  {
-                  "name":  "[BJWC2010] 严格次小生成树",
-                  "difficulty":  6
               },
     "P3627":  {
                   "name":  "[APIO2009] 抢掠计划",
@@ -1174,6 +1182,10 @@
     "P1198":  {
                   "name":  "[JSOI2008] 最大数",
                   "difficulty":  4
+              },
+    "P1965":  {
+                  "name":  "[NOIP 2013 提高组] 转圈游戏",
+                  "difficulty":  2
               },
     "P2855":  {
                   "name":  "[USACO06DEC] River Hopscotch S",
@@ -1203,12 +1215,16 @@
                    "name":  "ABCDEF",
                    "difficulty":  3
                },
+    "P8817":  {
+                  "name":  "[CSP-S 2022] 假期计划",
+                  "difficulty":  5
+              },
     "P6186":  {
                   "name":  "[NOI Online #1 提高组] 冒泡排序",
                   "difficulty":  5
               },
-    "P1228":  {
-                  "name":  "地毯填补问题",
+    "P3958":  {
+                  "name":  "[NOIP 2017 提高组] 奶酪",
                   "difficulty":  3
               },
     "P13976":  {
@@ -1231,6 +1247,14 @@
                   "name":  "消失之物",
                   "difficulty":  3
               },
+    "P1102":  {
+                  "name":  "A-B 数对",
+                  "difficulty":  2
+              },
+    "P2669":  {
+                  "name":  "[NOIP 2015 普及组] 金币",
+                  "difficulty":  1
+              },
     "P1258":  {
                   "name":  "小车问题",
                   "difficulty":  2
@@ -1243,6 +1267,10 @@
                   "name":  "求m区间内的最小值",
                   "difficulty":  3
               },
+    "CF1120D":  {
+                    "name":  "Power Tree",
+                    "difficulty":  7
+                },
     "P3386":  {
                   "name":  "【模板】二分图最大匹配",
                   "difficulty":  4
@@ -1274,10 +1302,6 @@
     "P7516":  {
                   "name":  "[省选联考 2021 A/B 卷] 图函数",
                   "difficulty":  7
-              },
-    "P1040":  {
-                  "name":  "[NOIP 2003 提高组] 加分二叉树",
-                  "difficulty":  4
               },
     "P1015":  {
                   "name":  "[NOIP 1999 普及组] 回文数",
@@ -1339,12 +1363,12 @@
                   "name":  "灾后重建",
                   "difficulty":  4
               },
-    "P2680":  {
-                  "name":  "[NOIP 2015 提高组] 运输计划",
+    "P2123":  {
+                  "name":  "皇后游戏",
                   "difficulty":  5
               },
-    "P1514":  {
-                  "name":  "[NOIP 2010 提高组] 引水入城",
+    "P2680":  {
+                  "name":  "[NOIP 2015 提高组] 运输计划",
                   "difficulty":  5
               },
     "P1039":  {
@@ -1359,6 +1383,10 @@
                   "name":  "[HNOI2003] 激光炸弹",
                   "difficulty":  3
               },
+    "P8819":  {
+                  "name":  "[CSP-S 2022] 星战",
+                  "difficulty":  7
+              },
     "P1008":  {
                   "name":  "[NOIP 1998 普及组] 三连击",
                   "difficulty":  2
@@ -1366,6 +1394,10 @@
     "P6771":  {
                   "name":  "[USACO05MAR] Space Elevator 太空电梯",
                   "difficulty":  3
+              },
+    "P1757":  {
+                  "name":  "通天之分组背包",
+                  "difficulty":  2
               },
     "P5017":  {
                   "name":  "[NOIP 2018 普及组] 摆渡车",
@@ -1427,6 +1459,10 @@
                   "name":  "买礼物",
                   "difficulty":  3
               },
+    "P1197":  {
+                  "name":  "[JSOI2008] 星球大战",
+                  "difficulty":  4
+              },
     "P2142":  {
                   "name":  "高精度减法",
                   "difficulty":  2
@@ -1442,6 +1478,10 @@
     "P2127":  {
                   "name":  "序列排序",
                   "difficulty":  5
+              },
+    "P2296":  {
+                  "name":  "[NOIP 2014 提高组] 寻找道路",
+                  "difficulty":  3
               },
     "P5836":  {
                   "name":  "[USACO19DEC] Milk Visits S",
@@ -1499,10 +1539,6 @@
                   "name":  "无聊的数列",
                   "difficulty":  4
               },
-    "P5665":  {
-                  "name":  "[CSP-S 2019] 划分",
-                  "difficulty":  7
-              },
     "P3842":  {
                   "name":  "[TJOI2007] 线段",
                   "difficulty":  3
@@ -1539,6 +1575,10 @@
                   "name":  "[USACO11NOV] Cow Lineup S",
                   "difficulty":  3
               },
+    "P1901":  {
+                  "name":  "发射站",
+                  "difficulty":  3
+              },
     "P4170":  {
                   "name":  "[CQOI2007] 涂色",
                   "difficulty":  6
@@ -1547,9 +1587,9 @@
                   "name":  "[USACO07NOV] Cow Hurdles S",
                   "difficulty":  3
               },
-    "P1616":  {
-                  "name":  "疯狂的采药",
-                  "difficulty":  2
+    "P7076":  {
+                  "name":  "[CSP-S 2020] 动物园",
+                  "difficulty":  3
               },
     "P2648":  {
                   "name":  "赚钱",
@@ -1603,13 +1643,17 @@
                   "name":  "神奇的四次方数",
                   "difficulty":  2
               },
-    "P5651":  {
-                  "name":  "基础最短路练习题",
-                  "difficulty":  3
+    "P1608":  {
+                  "name":  "路径统计",
+                  "difficulty":  4
               },
     "P4282":  {
                   "name":  "[AHOI2008] 计算器",
                   "difficulty":  2
+              },
+    "P2661":  {
+                  "name":  "[NOIP 2015 提高组] 信息传递",
+                  "difficulty":  3
               },
     "SP7579":  {
                    "name":  "YOKOF - Power Calculus",
@@ -1618,10 +1662,6 @@
     "P4924":  {
                   "name":  "[1007] 魔法少女小Scarlet",
                   "difficulty":  2
-              },
-    "P2431":  {
-                  "name":  "正妹吃月饼",
-                  "difficulty":  3
               },
     "P2656":  {
                   "name":  "采蘑菇",
@@ -1679,10 +1719,6 @@
                   "name":  "[USACO01OPEN] 垃圾陷阱",
                   "difficulty":  4
               },
-    "P8131":  {
-                  "name":  "[ICPC 2020 WF] Gene Folding",
-                  "difficulty":  5
-              },
     "P1904":  {
                   "name":  "天际线",
                   "difficulty":  2
@@ -1727,9 +1763,9 @@
                   "name":  "榨取kkksc03",
                   "difficulty":  2
               },
-    "P1884":  {
-                  "name":  "[USACO12FEB] Overplanting S",
-                  "difficulty":  4
+    "P1616":  {
+                  "name":  "疯狂的采药",
+                  "difficulty":  2
               },
     "P2895":  {
                   "name":  "[USACO08FEB] Meteor Shower S",
@@ -1767,6 +1803,10 @@
                   "name":  "[ZJOI2010] 数字计数",
                   "difficulty":  4
               },
+    "P9750":  {
+                  "name":  "[CSP-J 2023] 一元二次方程",
+                  "difficulty":  3
+              },
     "P1570":  {
                   "name":  "KC 喝咖啡",
                   "difficulty":  3
@@ -1783,8 +1823,16 @@
                   "name":  "[国家集训队] 稳定婚姻",
                   "difficulty":  5
               },
+    "P1220":  {
+                  "name":  "关路灯",
+                  "difficulty":  4
+              },
     "P1330":  {
                   "name":  "封锁阳光大学",
+                  "difficulty":  3
+              },
+    "P2370":  {
+                  "name":  "yyy2015c01 的 U 盘",
                   "difficulty":  3
               },
     "P2016":  {
@@ -1855,8 +1903,8 @@
                   "name":  "[NOIP 2016 提高组] 蚯蚓",
                   "difficulty":  5
               },
-    "P2415":  {
-                  "name":  "集合求和",
+    "P1177":  {
+                  "name":  "【模板】排序",
                   "difficulty":  2
               },
     "P4552":  {
@@ -1870,6 +1918,10 @@
     "P5410":  {
                   "name":  "【模板】扩展 KMP / exKMP（Z 函数）",
                   "difficulty":  6
+              },
+    "P2894":  {
+                  "name":  "[USACO08FEB] Hotel G",
+                  "difficulty":  5
               },
     "P1031":  {
                   "name":  "[NOIP 2002 提高组] 均分纸牌",
@@ -1991,10 +2043,6 @@
                   "name":  "[NOI2001] 方程的解数",
                   "difficulty":  4
               },
-    "P7076":  {
-                  "name":  "[CSP-S 2020] 动物园",
-                  "difficulty":  3
-              },
     "B3609":  {
                   "name":  "[图论与代数结构 701] 强连通分量",
                   "difficulty":  4
@@ -2007,6 +2055,10 @@
                   "name":  "小 A 点菜",
                   "difficulty":  2
               },
+    "P11232":  {
+                   "name":  "[CSP-S 2024] 超速检测",
+                   "difficulty":  4
+               },
     "P7113":  {
                   "name":  "[NOIP2020] 排水系统",
                   "difficulty":  3
@@ -2035,10 +2087,10 @@
                   "name":  "[NOIP 2004 提高组] 合并果子 加强版",
                   "difficulty":  4
               },
-    "CF1120D":  {
-                    "name":  "Power Tree",
-                    "difficulty":  7
-                },
+    "P5889":  {
+                  "name":  "跳树",
+                  "difficulty":  5
+              },
     "P5661":  {
                   "name":  "[CSP-J 2019] 公交换乘",
                   "difficulty":  2
@@ -2063,13 +2115,17 @@
                   "name":  "分数统计",
                   "difficulty":  3
               },
-    "P1608":  {
-                  "name":  "路径统计",
+    "P1979":  {
+                  "name":  "[NOIP 2013 提高组] 华容道",
+                  "difficulty":  6
+              },
+    "P1776":  {
+                  "name":  "宝物筛选",
                   "difficulty":  4
               },
-    "P1901":  {
-                  "name":  "发射站",
-                  "difficulty":  3
+    "P5663":  {
+                  "name":  "[CSP-J 2019] 加工零件",
+                  "difficulty":  4
               },
     "P2865":  {
                   "name":  "[USACO06NOV] Roadblocks G",
@@ -2103,9 +2159,13 @@
                   "name":  "[USACO1.5] 回文质数 Prime Palindromes",
                   "difficulty":  2
               },
-    "P2123":  {
-                  "name":  "皇后游戏",
-                  "difficulty":  5
+    "P1981":  {
+                  "name":  "[NOIP 2013 普及组] 表达式求值",
+                  "difficulty":  2
+              },
+    "P1056":  {
+                  "name":  "[NOIP 2008 普及组] 排座椅",
+                  "difficulty":  3
               },
     "P1766":  {
                   "name":  "液体滴落",
@@ -2134,10 +2194,6 @@
     "P4053":  {
                   "name":  "[JSOI2007] 建筑抢修",
                   "difficulty":  5
-              },
-    "P4302":  {
-                  "name":  "[SCOI2003] 字符串折叠",
-                  "difficulty":  4
               },
     "P1650":  {
                   "name":  "[ICPC 2004 Shanghai R] 田忌赛马",
@@ -2195,8 +2251,16 @@
                   "name":  "最大加权矩形",
                   "difficulty":  3
               },
-    "P1966":  {
-                  "name":  "[NOIP 2013 提高组] 火柴排队",
+    "P5019":  {
+                  "name":  "[NOIP 2018 提高组] 铺设道路",
+                  "difficulty":  3
+              },
+    "P8813":  {
+                  "name":  "[CSP-J 2022] 乘方",
+                  "difficulty":  1
+              },
+    "P2515":  {
+                  "name":  "[HAOI2010] 软件安装",
                   "difficulty":  5
               },
     "P1257":  {
@@ -2234,6 +2298,10 @@
     "P9754":  {
                   "name":  "[CSP-S 2023] 结构体",
                   "difficulty":  6
+              },
+    "P1969":  {
+                  "name":  "[NOIP 2013 提高组] 积木大赛",
+                  "difficulty":  3
               },
     "P1516":  {
                   "name":  "[ZJOI2002] 青蛙的约会",
@@ -2339,6 +2407,10 @@
                   "name":  "切绳子",
                   "difficulty":  3
               },
+    "P8818":  {
+                  "name":  "[CSP-S 2022] 策略游戏",
+                  "difficulty":  4
+              },
     "P1873":  {
                   "name":  "[COCI 2011/2012 #5] EKO / 砍树",
                   "difficulty":  2
@@ -2383,17 +2455,13 @@
                   "name":  "[NOIP 2017 普及组] 图书管理员",
                   "difficulty":  2
               },
-    "P1104":  {
-                  "name":  "生日",
+    "P1877":  {
+                  "name":  "[HAOI2012] 音量调节",
                   "difficulty":  2
               },
-    "P11232":  {
-                   "name":  "[CSP-S 2024] 超速检测",
-                   "difficulty":  4
-               },
-    "P5889":  {
-                  "name":  "跳树",
-                  "difficulty":  5
+    "P1190":  {
+                  "name":  "[NOIP 2010 普及组] 接水问题",
+                  "difficulty":  2
               },
     "P3953":  {
                   "name":  "[NOIP 2017 提高组] 逛公园",
@@ -2491,9 +2559,13 @@
                    "name":  "金字塔",
                    "difficulty":  4
                },
-    "P1259":  {
-                  "name":  "黑白棋子的移动",
-                  "difficulty":  3
+    "P8814":  {
+                  "name":  "[CSP-J 2022] 解密",
+                  "difficulty":  2
+              },
+    "P5665":  {
+                  "name":  "[CSP-S 2019] 划分",
+                  "difficulty":  7
               },
     "P2015":  {
                   "name":  "二叉苹果树",
@@ -2515,17 +2587,13 @@
                   "name":  "[NOIP 2005 普及组] 校门外的树",
                   "difficulty":  1
               },
-    "P5149":  {
-                  "name":  "会议座位",
-                  "difficulty":  3
-              },
-    "P1102":  {
-                  "name":  "A-B 数对",
+    "P1192":  {
+                  "name":  "台阶问题",
                   "difficulty":  2
               },
-    "P1877":  {
-                  "name":  "[HAOI2012] 音量调节",
-                  "difficulty":  2
+    "P1514":  {
+                  "name":  "[NOIP 2010 提高组] 引水入城",
+                  "difficulty":  5
               },
     "P1135":  {
                   "name":  "奇怪的电梯",
@@ -2555,8 +2623,8 @@
                    "name":  "Anya and Cubes",
                    "difficulty":  5
                },
-    "P2498":  {
-                  "name":  "[SDOI2012] 拯救小云公主",
+    "P3390":  {
+                  "name":  "【模板】矩阵快速幂",
                   "difficulty":  4
               },
     "P1502":  {
@@ -2575,9 +2643,9 @@
                   "name":  "高手过愚人节",
                   "difficulty":  5
               },
-    "P2822":  {
-                  "name":  "[NOIP 2016 提高组] 组合数问题",
-                  "difficulty":  3
+    "P1104":  {
+                  "name":  "生日",
+                  "difficulty":  2
               },
     "P2904":  {
                   "name":  "[USACO08MAR] River Crossing S",
@@ -2627,6 +2695,10 @@
                   "name":  "扩散",
                   "difficulty":  3
               },
+    "P1966":  {
+                  "name":  "[NOIP 2013 提高组] 火柴排队",
+                  "difficulty":  5
+              },
     "P1763":  {
                   "name":  "埃及分数",
                   "difficulty":  6
@@ -2647,8 +2719,8 @@
                   "name":  "[NOIP 2000 普及组] 计算器的改良",
                   "difficulty":  3
               },
-    "P1776":  {
-                  "name":  "宝物筛选",
+    "P4290":  {
+                  "name":  "[HAOI2008] 玩具取名",
                   "difficulty":  4
               },
     "P8742":  {
@@ -2675,9 +2747,9 @@
                   "name":  "高低位交换",
                   "difficulty":  2
               },
-    "P1433":  {
-                  "name":  "吃奶酪",
-                  "difficulty":  4
+    "P4180":  {
+                  "name":  "[BJWC2010] 严格次小生成树",
+                  "difficulty":  6
               },
     "P5365":  {
                   "name":  "[SNOI2017] 英雄联盟",
@@ -2719,6 +2791,10 @@
                   "name":  "[JSOI2015] 地铁线路",
                   "difficulty":  5
               },
+    "P1016":  {
+                  "name":  "[NOIP 1999 普及组/提高组] 旅行家的预算",
+                  "difficulty":  3
+              },
     "P3957":  {
                   "name":  "[NOIP 2017 普及组] 跳房子",
                   "difficulty":  5
@@ -2731,13 +2807,21 @@
                   "name":  "[POI 1996 R3] 间谍网络",
                   "difficulty":  4
               },
-    "P2370":  {
-                  "name":  "yyy2015c01 的 U 盘",
-                  "difficulty":  3
+    "P1040":  {
+                  "name":  "[NOIP 2003 提高组] 加分二叉树",
+                  "difficulty":  4
               },
     "P4127":  {
                   "name":  "[AHOI2009] 同类分布",
                   "difficulty":  5
+              },
+    "P9752":  {
+                  "name":  "[CSP-S 2023] 密码锁",
+                  "difficulty":  2
+              },
+    "P3156":  {
+                  "name":  "【深基15.例1】询问学号",
+                  "difficulty":  1
               },
     "P3366":  {
                   "name":  "【模板】最小生成树",
@@ -2751,20 +2835,24 @@
                   "name":  "挑战",
                   "difficulty":  4
               },
-    "P2323":  {
-                  "name":  "[HNOI2006] 公路修建问题",
-                  "difficulty":  4
+    "P4484":  {
+                  "name":  "[BJWC2018] 最长上升子序列",
+                  "difficulty":  6
               },
-    "P2894":  {
-                  "name":  "[USACO08FEB] Hotel G",
-                  "difficulty":  5
+    "P4995":  {
+                  "name":  "跳跳！",
+                  "difficulty":  2
+              },
+    "P1466":  {
+                  "name":  "[USACO2.2] 集合 Subset Sums",
+                  "difficulty":  3
               },
     "P1379":  {
                   "name":  "八数码难题",
                   "difficulty":  4
               },
-    "P2515":  {
-                  "name":  "[HAOI2010] 软件安装",
+    "P8131":  {
+                  "name":  "[ICPC 2020 WF] Gene Folding",
                   "difficulty":  5
               },
     "P1249":  {
@@ -2823,13 +2911,17 @@
                   "name":  "[ZJOI2009] 对称的正方形",
                   "difficulty":  5
               },
-    "P3390":  {
-                  "name":  "【模板】矩阵快速幂",
-                  "difficulty":  4
+    "P2822":  {
+                  "name":  "[NOIP 2016 提高组] 组合数问题",
+                  "difficulty":  3
               },
     "P4779":  {
                   "name":  "【模板】单源最短路径（标准版）",
                   "difficulty":  3
+              },
+    "P1433":  {
+                  "name":  "吃奶酪",
+                  "difficulty":  4
               },
     "P1111":  {
                   "name":  "修复公路",
@@ -2867,9 +2959,9 @@
                   "name":  "斐波那契数列",
                   "difficulty":  4
               },
-    "P4484":  {
-                  "name":  "[BJWC2018] 最长上升子序列",
-                  "difficulty":  6
+    "P2498":  {
+                  "name":  "[SDOI2012] 拯救小云公主",
+                  "difficulty":  4
               },
     "P1045":  {
                   "name":  "[NOIP 2003 普及组] 麦森数",
@@ -2879,9 +2971,9 @@
                   "name":  "【模板】三分 / 函数 / [ICPC 2010 Chengdu R] Error Curves",
                   "difficulty":  3
               },
-    "P1757":  {
-                  "name":  "通天之分组背包",
-                  "difficulty":  2
+    "P3275":  {
+                  "name":  "[SCOI2011] 糖果",
+                  "difficulty":  5
               },
     "P2922":  {
                   "name":  "[USACO08DEC] Secret Message G",
@@ -2927,9 +3019,9 @@
                   "name":  "[USACO11JAN] Roads and Planes G",
                   "difficulty":  5
               },
-    "P1197":  {
-                  "name":  "[JSOI2008] 星球大战",
-                  "difficulty":  4
+    "P1910":  {
+                  "name":  "L 国的战斗之间谍",
+                  "difficulty":  2
               },
     "P2141":  {
                   "name":  "[NOIP 2014 普及组] 珠心算测验",

@@ -16,6 +16,16 @@
       "problems": ["P7913", "P7914", "P7915", "P7916"]
     },
     {
+      "id": "csp-s-2022", "name": "CSP-S 2022", "group": "CSP", "year": 2022, "duration": 210,
+      "tag": "[CSP-S 2022]",
+      "problems": ["P8817", "P8818", "P8819", "P8820"]
+    },
+    {
+      "id": "csp-s-2023", "name": "CSP-S 2023", "group": "CSP", "year": 2023, "duration": 210,
+      "tag": "[CSP-S 2023]",
+      "problems": ["P9752", "P9753", "P9754", "P9755"]
+    },
+    {
       "id": "csp-j-2019", "name": "CSP-J 2019", "group": "CSP", "year": 2019, "duration": 180,
       "tag": "[CSP-J 2019]",
       "problems": ["P5660", "P5661", "P5662", "P5663"]
@@ -29,6 +39,56 @@
       "id": "csp-j-2021", "name": "CSP-J 2021", "group": "CSP", "year": 2021, "duration": 180,
       "tag": "[CSP-J 2021]",
       "problems": ["P7909", "P7910", "P7911", "P7912"]
+    },
+    {
+      "id": "csp-j-2022", "name": "CSP-J 2022", "group": "CSP", "year": 2022, "duration": 180,
+      "tag": "[CSP-J 2022]",
+      "problems": ["P8813", "P8814", "P8815", "P8816"]
+    },
+    {
+      "id": "csp-j-2023", "name": "CSP-J 2023", "group": "CSP", "year": 2023, "duration": 180,
+      "tag": "[CSP-J 2023]",
+      "problems": ["P9748", "P9749", "P9750", "P9751"]
+    },
+    {
+      "id": "noip-2013-s", "name": "NOIP 2013 提高组", "group": "NOIP", "year": 2013, "duration": 210,
+      "tag": "[NOIP 2013 提高组]",
+      "problems": ["P1965", "P1966", "P1967", "P1969", "P1970", "P1979"]
+    },
+    {
+      "id": "noip-2013-j", "name": "NOIP 2013 普及组", "group": "NOIP", "year": 2013, "duration": 180,
+      "tag": "[NOIP 2013 普及组]",
+      "problems": ["P1980", "P1981", "P1982", "P1983"]
+    },
+    {
+      "id": "noip-2014-s", "name": "NOIP 2014 提高组", "group": "NOIP", "year": 2014, "duration": 210,
+      "tag": "[NOIP 2014 提高组]",
+      "problems": ["P1328", "P1351", "P1941", "P2038", "P2296", "P2312"]
+    },
+    {
+      "id": "noip-2014-j", "name": "NOIP 2014 普及组", "group": "NOIP", "year": 2014, "duration": 180,
+      "tag": "[NOIP 2014 普及组]",
+      "problems": ["P2141", "P2118", "P2239", "P2258"]
+    },
+    {
+      "id": "noip-2015-s", "name": "NOIP 2015 提高组", "group": "NOIP", "year": 2015, "duration": 210,
+      "tag": "[NOIP 2015 提高组]",
+      "problems": ["P2615", "P2661", "P2668", "P2678", "P2679", "P2680"]
+    },
+    {
+      "id": "noip-2015-j", "name": "NOIP 2015 普及组", "group": "NOIP", "year": 2015, "duration": 180,
+      "tag": "[NOIP 2015 普及组]",
+      "problems": ["P2669", "P2670", "P2671", "P2672"]
+    },
+    {
+      "id": "noip-2016-s", "name": "NOIP 2016 提高组", "group": "NOIP", "year": 2016, "duration": 210,
+      "tag": "[NOIP 2016 提高组]",
+      "problems": ["P1563", "P1600", "P1850", "P2822", "P2827", "P2831"]
+    },
+    {
+      "id": "noip-2016-j", "name": "NOIP 2016 普及组", "group": "NOIP", "year": 2016, "duration": 180,
+      "tag": "[NOIP 2016 普及组]",
+      "problems": ["P1909", "P2010", "P2058", "P2119"]
     },
     {
       "id": "noip-2017-s", "name": "NOIP 2017 提高组", "group": "NOIP", "year": 2017, "duration": 210,

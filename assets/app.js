@@ -514,32 +514,55 @@
       return;
     }
 
-    EX.sets.forEach(function (set) {
-      var card = el('button', 'exam-card');
-      card.type = 'button';
+    var hint = document.getElementById('exam-hint');
+    if (hint) hint.textContent = '目前收录 ' + EX.sets.length + ' 套、' + EX.sets.reduce(function (n, s) { return n + s.problems.length; }, 0) + ' 道题，覆盖 CSP-J/S 与 NOIP 提高组 / 普及组。';
 
-      var top = el('div', 'exam-top');
-      top.appendChild(el('span', 'exam-group', set.group));
-      top.appendChild(el('h2', 'exam-name', set.name));
-      top.appendChild(el('span', 'exam-count', set.problems.length + ' 题'));
-      card.appendChild(top);
-
-      var meta = el('div', 'exam-meta');
-      meta.appendChild(el('span', null, set.duration + ' 分钟'));
-      meta.appendChild(el('span', null, spanOf(set.problems)));
-      var d = set.problems.filter(function (p) { return done.has(p.pid); }).length;
-      meta.appendChild(el('span', 'exam-done', '已完成 ' + d + '/' + set.problems.length));
-      card.appendChild(meta);
-
-      var bar = el('div', 'entry-bar');
-      var fill = el('i');
-      fill.style.width = pct(d, set.problems.length) + '%';
-      bar.appendChild(fill);
-      card.appendChild(bar);
-
-      card.addEventListener('click', function () { openExam(set, run); });
-      list.appendChild(card);
+    var groups = [];
+    EX.sets.forEach(function (s) {
+      var g = groups.filter(function (x) { return x.name === s.group; })[0];
+      if (!g) { g = { name: s.group, sets: [] }; groups.push(g); }
+      g.sets.push(s);
     });
+
+    groups.forEach(function (g) {
+      var title = el('h2', 'exam-section-title');
+      title.appendChild(el('span', null, g.name === 'CSP' ? 'CSP-J / CSP-S' : 'NOIP'));
+      title.appendChild(el('span', 'exam-section-count', g.sets.length + ' 套'));
+      list.appendChild(title);
+
+      var grid = el('div', 'exam-grid');
+      g.sets.slice().sort(function (a, b) { return b.year - a.year; }).forEach(function (set) {
+        grid.appendChild(renderExamCard(set, run));
+      });
+      list.appendChild(grid);
+    });
+  }
+
+  function renderExamCard(set, run) {
+    var card = el('button', 'exam-card');
+    card.type = 'button';
+
+    var top = el('div', 'exam-top');
+    top.appendChild(el('span', 'exam-group', set.group));
+    top.appendChild(el('h2', 'exam-name', set.name));
+    card.appendChild(top);
+
+    var meta = el('div', 'exam-meta');
+    meta.appendChild(el('span', 'exam-num', set.problems.length + ' 题'));
+    meta.appendChild(el('span', null, set.duration + ' 分钟'));
+    meta.appendChild(el('span', null, spanOf(set.problems)));
+    var d = set.problems.filter(function (p) { return done.has(p.pid); }).length;
+    meta.appendChild(el('span', 'exam-done', '已完成 ' + d + '/' + set.problems.length));
+    card.appendChild(meta);
+
+    var bar = el('div', 'entry-bar');
+    var fill = el('i');
+    fill.style.width = pct(d, set.problems.length) + '%';
+    bar.appendChild(fill);
+    card.appendChild(bar);
+
+    card.addEventListener('click', function () { openExam(set, run); });
+    return card;
   }
 
   function openExam(set, run) {

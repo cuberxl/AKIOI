@@ -8,6 +8,7 @@
  * 用法：node tools/build.mjs
  */
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
+import { createHash } from 'node:crypto';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -183,7 +184,12 @@ const THEME_BOOT = `<script>
 </script>`;
 
 // 构建版本：写进静态资源的 query，发布后自动击穿旧缓存
-const VERSION = new Date().toISOString().replace(/[-:TZ.]/g, '').slice(0, 12);
+const assetHash = createHash('sha1')
+  .update(readFileSync(join(root, 'assets', 'style.css')))
+  .update(readFileSync(join(root, 'assets', 'app.js')))
+  .digest('hex')
+  .slice(0, 7);
+const VERSION = assetHash;
 
 const SHELL = (o) => `<!DOCTYPE html>
 <html lang="zh-CN" data-theme="light">
@@ -312,5 +318,6 @@ function versionize(file) {
   if (next !== html) writeFileSync(p, next, 'utf8');
 }
 ['index.html', 'tools/index.html', 'exam/index.html'].forEach(versionize);
+
 
 
