@@ -1016,3 +1016,187 @@ body, .topbar, .toolbar, .entry-card, .part-card, .tool-card, .group, .chapter-h
 .part-main { padding: 16px 18px; }
 .part-note { position: static; align-self: center; margin: 0 0 0 8px; }
 .part-top .part-count { margin-left: auto; }
+
+/* ============================================================
+   实用工具 / 真题模拟
+   ============================================================ */
+
+.block { margin-bottom: 34px; }
+.block-title { font-size: 15px; font-weight: 700; color: var(--text-2); margin-bottom: 12px; letter-spacing: .01em; }
+
+/* ---------- 链接目录 ---------- */
+
+.link-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+
+.link-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 13px;
+  background: var(--card);
+  box-shadow: var(--shadow-sm);
+  transition: transform .15s ease, border-color .18s ease, box-shadow .18s ease;
+  min-width: 0;
+}
+.link-card:hover { transform: translateY(-2px); border-color: color-mix(in srgb, var(--accent) 32%, var(--line)); box-shadow: var(--shadow-md); }
+
+.link-mono {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 34px; height: 34px;
+  border-radius: 10px;
+  font-family: var(--mono);
+  font-size: 12px; font-weight: 700;
+  color: #fff;
+  background: var(--lc, var(--accent));
+}
+
+.link-name { display: block; font-size: 13.5px; font-weight: 600; line-height: 1.3; }
+.link-host { display: block; font-size: 11px; color: var(--muted); font-family: var(--mono); }
+.link-card > span:last-child { min-width: 0; }
+
+/* ---------- 代码块 / 表格 ---------- */
+
+.code-box {
+  margin: 0;
+  padding: 14px 16px;
+  max-height: 420px;
+  overflow: auto;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: var(--bg-soft);
+  color: var(--text);
+  font-family: var(--mono);
+  font-size: 12.5px;
+  line-height: 1.65;
+  white-space: pre;
+  tab-size: 4;
+}
+
+.data-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.data-table th, .data-table td { padding: 9px 12px; border-bottom: 1px solid var(--line); text-align: left; }
+.data-table th { color: var(--muted); font-weight: 600; font-size: 12px; }
+.data-table tr:last-child td { border-bottom: 0; }
+.data-table td:nth-child(2) { font-family: var(--mono); white-space: nowrap; }
+
+.tpl-select {
+  height: 34px;
+  padding: 0 10px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: var(--card);
+  color: var(--text-2);
+  font: inherit;
+  font-size: 13px;
+}
+.text-input {
+  height: 34px;
+  padding: 0 10px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: var(--card);
+  color: var(--text);
+  font: inherit;
+  font-size: 13px;
+}
+.hint { font-size: 12px; color: var(--muted); }
+
+/* ---------- 真题模拟 ---------- */
+
+.exam-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; padding-bottom: 26px; }
+
+.exam-card {
+  display: grid;
+  gap: 8px;
+  width: 100%;
+  padding: 16px 18px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--card);
+  box-shadow: var(--shadow-sm);
+  text-align: left;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  transition: transform .16s ease, border-color .18s ease, box-shadow .18s ease;
+}
+.exam-card:hover { transform: translateY(-2px); border-color: color-mix(in srgb, var(--accent) 30%, var(--line)); box-shadow: var(--shadow-md); }
+
+.exam-top { display: flex; align-items: baseline; gap: 10px; }
+.exam-group {
+  font-family: var(--mono); font-size: 11px; font-weight: 700;
+  padding: 1px 7px; border-radius: 6px;
+  color: var(--accent); background: var(--accent-soft);
+}
+.exam-name { font-size: 16.5px; font-weight: 700; }
+.exam-count { margin-left: auto; font-family: var(--mono); font-size: 12px; color: var(--muted); }
+.exam-meta { display: flex; flex-wrap: wrap; gap: 12px; font-size: 12px; color: var(--muted); }
+.exam-done { margin-left: auto; font-family: var(--mono); }
+
+.exam-run {
+  margin-top: 8px;
+  padding: 20px;
+  border: 1px solid color-mix(in srgb, var(--accent) 30%, var(--line));
+  border-radius: 18px;
+  background: var(--card);
+  box-shadow: var(--shadow-md);
+  scroll-margin-top: 80px;
+}
+
+.run-head { display: flex; align-items: flex-start; gap: 18px; flex-wrap: wrap; }
+.run-title { display: grid; gap: 4px; }
+.run-title h2 { font-size: 20px; font-weight: 800; }
+.exam-meta-line { font-size: 12.5px; color: var(--muted); }
+
+.run-timer { margin-left: auto; text-align: right; display: grid; gap: 2px; }
+.run-timer strong {
+  font-family: var(--mono);
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: .02em;
+  font-variant-numeric: tabular-nums;
+  color: var(--text);
+}
+.run-timer.running strong { color: var(--accent); }
+.run-timer.danger strong { color: var(--danger); }
+.run-timer-label { font-size: 11px; color: var(--muted); letter-spacing: .08em; }
+
+.run-actions { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin: 16px 0 18px; }
+.run-hint { font-size: 12px; color: var(--muted); margin-left: 4px; }
+
+.run-rows { display: grid; }
+.run-row {
+  display: grid;
+  grid-template-columns: 26px 26px 84px minmax(0, 1fr) 120px;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 4px;
+  border-bottom: 1px solid color-mix(in srgb, var(--line) 60%, transparent);
+}
+.run-row:last-child { border-bottom: 0; }
+.run-row.done .ptitle { color: var(--muted); text-decoration: line-through; }
+.run-idx { font-family: var(--mono); font-size: 12px; color: var(--muted); text-align: center; }
+.run-progress { margin: 14px 0 0; font-size: 12.5px; color: var(--muted); font-family: var(--mono); }
+
+@media (max-width: 860px) {
+  .link-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .exam-grid { grid-template-columns: 1fr; }
+  .run-row { grid-template-columns: 26px 22px minmax(0, 1fr) auto; }
+  .run-row .pid { display: none; }
+}
+
+/* 链接卡片：图标 + 两行文字 */
+.link-card {
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr);
+  grid-template-rows: auto auto;
+  column-gap: 10px;
+  row-gap: 1px;
+  align-items: center;
+}
+.link-mono { grid-row: 1 / span 2; }
+.link-name { grid-column: 2; grid-row: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.link-host { grid-column: 2; grid-row: 2; }

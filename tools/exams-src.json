@@ -1,0 +1,54 @@
+{
+  "sets": [
+    {
+      "id": "csp-s-2019", "name": "CSP-S 2019", "group": "CSP", "year": 2019, "duration": 210,
+      "tag": "[CSP-S 2019]",
+      "problems": ["P5657", "P5658", "P5659", "P5664", "P5665", "P5666"]
+    },
+    {
+      "id": "csp-s-2020", "name": "CSP-S 2020", "group": "CSP", "year": 2020, "duration": 210,
+      "tag": "[CSP-S 2020]",
+      "problems": ["P7075", "P7076", "P7077", "P7078"]
+    },
+    {
+      "id": "csp-s-2021", "name": "CSP-S 2021", "group": "CSP", "year": 2021, "duration": 210,
+      "tag": "[CSP-S 2021]",
+      "problems": ["P7913", "P7914", "P7915", "P7916"]
+    },
+    {
+      "id": "csp-j-2019", "name": "CSP-J 2019", "group": "CSP", "year": 2019, "duration": 180,
+      "tag": "[CSP-J 2019]",
+      "problems": ["P5660", "P5661", "P5662", "P5663"]
+    },
+    {
+      "id": "csp-j-2020", "name": "CSP-J 2020", "group": "CSP", "year": 2020, "duration": 180,
+      "tag": "[CSP-J 2020]",
+      "problems": ["P7071", "P7072", "P7073", "P7074"]
+    },
+    {
+      "id": "csp-j-2021", "name": "CSP-J 2021", "group": "CSP", "year": 2021, "duration": 180,
+      "tag": "[CSP-J 2021]",
+      "problems": ["P7909", "P7910", "P7911", "P7912"]
+    },
+    {
+      "id": "noip-2017-s", "name": "NOIP 2017 提高组", "group": "NOIP", "year": 2017, "duration": 210,
+      "tag": "[NOIP 2017 提高组]",
+      "problems": ["P3951", "P3952", "P3953", "P3958", "P3959", "P3960"]
+    },
+    {
+      "id": "noip-2017-j", "name": "NOIP 2017 普及组", "group": "NOIP", "year": 2017, "duration": 180,
+      "tag": "[NOIP 2017 普及组]",
+      "problems": ["P3954", "P3955", "P3956", "P3957"]
+    },
+    {
+      "id": "noip-2018-s", "name": "NOIP 2018 提高组", "group": "NOIP", "year": 2018, "duration": 210,
+      "tag": "[NOIP 2018 提高组]",
+      "problems": ["P5019", "P5020", "P5021", "P5022", "P5023", "P5024"]
+    },
+    {
+      "id": "noip-2018-j", "name": "NOIP 2018 普及组", "group": "NOIP", "year": 2018, "duration": 180,
+      "tag": "[NOIP 2018 普及组]",
+      "problems": ["P5015", "P5016", "P5017", "P5018"]
+    }
+  ]
+}

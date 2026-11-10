@@ -498,13 +498,205 @@
     });
   }
 
+  /* ---------------- 真题模拟 ---------------- */
+
+  var EXAM_EXPAND = {};
+  var examTick = null;
+
+  function renderExam() {
+    var EX = window.AKIOI_EXAMS || { sets: [] };
+    var list = document.getElementById('exam-list');
+    var run = document.getElementById('exam-run');
+    if (!list) return;
+
+    if (!EX.sets.length) {
+      list.innerHTML = '<p class="empty">还没有导入套卷。</p>';
+      return;
+    }
+
+    EX.sets.forEach(function (set) {
+      var card = el('button', 'exam-card');
+      card.type = 'button';
+
+      var top = el('div', 'exam-top');
+      top.appendChild(el('span', 'exam-group', set.group));
+      top.appendChild(el('h2', 'exam-name', set.name));
+      top.appendChild(el('span', 'exam-count', set.problems.length + ' 题'));
+      card.appendChild(top);
+
+      var meta = el('div', 'exam-meta');
+      meta.appendChild(el('span', null, set.duration + ' 分钟'));
+      meta.appendChild(el('span', null, spanOf(set.problems)));
+      var d = set.problems.filter(function (p) { return done.has(p.pid); }).length;
+      meta.appendChild(el('span', 'exam-done', '已完成 ' + d + '/' + set.problems.length));
+      card.appendChild(meta);
+
+      var bar = el('div', 'entry-bar');
+      var fill = el('i');
+      fill.style.width = pct(d, set.problems.length) + '%';
+      bar.appendChild(fill);
+      card.appendChild(bar);
+
+      card.addEventListener('click', function () { openExam(set, run); });
+      list.appendChild(card);
+    });
+  }
+
+  function openExam(set, run) {
+    run.hidden = false;
+    run.innerHTML = '';
+
+    var head = el('div', 'run-head');
+    var titleWrap = el('div', 'run-title');
+    titleWrap.appendChild(el('span', 'exam-group', set.group));
+    titleWrap.appendChild(el('h2', null, set.name));
+    titleWrap.appendChild(el('span', 'exam-meta-line', set.duration + ' 分钟 · ' + set.problems.length + ' 题'));
+    head.appendChild(titleWrap);
+
+    var timer = el('div', 'run-timer');
+    var clock = el('strong', null, '00:00');
+    clock.id = 'run-clock';
+    timer.appendChild(clock);
+    timer.appendChild(el('span', 'run-timer-label', '剩余时间'));
+    head.appendChild(timer);
+    run.appendChild(head);
+
+    var actions = el('div', 'run-actions');
+    var bStart = el('button', 'btn btn-primary btn-sm', '开始计时');
+    bStart.type = 'button';
+    var bPause = el('button', 'btn btn-ghost btn-sm', '暂停');
+    bPause.type = 'button';
+    var bReset = el('button', 'btn btn-ghost btn-sm', '重置');
+    bReset.type = 'button';
+    actions.appendChild(bStart);
+    actions.appendChild(bPause);
+    actions.appendChild(bReset);
+    actions.appendChild(el('span', 'run-hint', '题目在新标签页打开，做题进度可勾选'));
+    run.appendChild(actions);
+
+    var rows = el('div', 'run-rows');
+    set.problems.forEach(function (p, i) {
+      var row = el('div', 'run-row');
+      row.dataset.pid = p.pid;
+
+      var check = el('button', 'check');
+      check.type = 'button';
+      check.setAttribute('role', 'checkbox');
+      check.setAttribute('aria-checked', done.has(p.pid) ? 'true' : 'false');
+      check.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>';
+      check.addEventListener('click', function () {
+        if (done.has(p.pid)) done.delete(p.pid); else done.add(p.pid);
+        saveSet(PROGRESS_KEY, done);
+        row.classList.toggle('done', done.has(p.pid));
+        check.setAttribute('aria-checked', done.has(p.pid) ? 'true' : 'false');
+        var dd = set.problems.filter(function (x) { return done.has(x.pid); }).length;
+        if (progressText) progressText.textContent = '已完成 ' + dd + '/' + set.problems.length;
+      });
+      row.appendChild(check);
+
+      row.appendChild(el('span', 'run-idx', String(i + 1)));
+      row.appendChild(el('span', 'pid', p.pid));
+
+      var t = el('div', 'ptitle');
+      var a = el('a', null, p.name);
+      a.href = 'https://www.luogu.com.cn/problem/' + p.pid;
+      a.target = '_blank';
+      a.rel = 'noopener';
+      t.appendChild(a);
+      row.appendChild(t);
+
+      row.appendChild(el('span', 'diff diff-' + p.difficulty, diffName(p.difficulty)));
+      rows.appendChild(row);
+    });
+    run.appendChild(rows);
+
+    var progressText = el('p', 'run-progress');
+    var dd = set.problems.filter(function (x) { return done.has(x.pid); }).length;
+    progressText.textContent = '已完成 ' + dd + '/' + set.problems.length;
+    run.appendChild(progressText);
+
+    run.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+    /* --- 计时器 --- */
+    var storageKey = 'akioi.exam.' + set.id;
+    var state = loadTimer(storageKey, set.duration);
+
+    function save() {
+      try {
+        localStorage.setItem(storageKey, JSON.stringify({ endAt: state.endAt, remaining: state.remaining, running: state.running }));
+      } catch (e) {}
+    }
+
+    function paint() {
+      var left = state.running ? Math.max(0, Math.round((state.endAt - Date.now()) / 1000)) : state.remaining;
+      var h = Math.floor(left / 3600), m = Math.floor((left % 3600) / 60), s = left % 60;
+      clock.textContent = (h > 0 ? String(h).padStart(2, '0') + ':' : '') + String(m).padStart(2, '0') + ':' + String(s).padStart(2, '0');
+      timer.classList.toggle('running', state.running);
+      timer.classList.toggle('danger', left <= 60 && left > 0);
+      if (left <= 0 && state.running) {
+        state.running = false;
+        state.remaining = 0;
+        save();
+        bStart.disabled = false;
+        toast('时间到！');
+      }
+    }
+
+    bStart.addEventListener('click', function () {
+      if (state.running) return;
+      if (state.remaining <= 0) state.remaining = set.duration * 60;
+      state.endAt = Date.now() + state.remaining * 1000;
+      state.running = true;
+      save();
+      bStart.disabled = true;
+      paint();
+    });
+    bPause.addEventListener('click', function () {
+      if (!state.running) return;
+      state.remaining = Math.max(0, Math.round((state.endAt - Date.now()) / 1000));
+      state.running = false;
+      save();
+      bStart.disabled = false;
+      paint();
+    });
+    bReset.addEventListener('click', function () {
+      state.remaining = set.duration * 60;
+      state.running = false;
+      state.endAt = null;
+      save();
+      bStart.disabled = false;
+      paint();
+    });
+
+    bStart.disabled = state.running;
+    paint();
+    if (examTick) clearInterval(examTick);
+    examTick = setInterval(paint, 500);
+  }
+
+  function loadTimer(key, durationMin) {
+    try {
+      var s = JSON.parse(localStorage.getItem(key) || 'null');
+      if (!s) return { endAt: null, remaining: durationMin * 60, running: false };
+      if (s.running && s.endAt) {
+        var left = Math.max(0, Math.round((s.endAt - Date.now()) / 1000));
+        return { endAt: s.endAt, remaining: left, running: left > 0 };
+      }
+      return { endAt: null, remaining: s.remaining == null ? durationMin * 60 : s.remaining, running: false };
+    } catch (e) {
+      return { endAt: null, remaining: durationMin * 60, running: false };
+    }
+  }
+
   /* ---------------- 启动 ---------------- */
 
   function init() {
     initTheme();
+    window.__akioiToast = toast;
     if (PAGE === 'home') renderHome();
     else if (PAGE === 'parts') renderParts();
     else if (PAGE === 'part') renderPart();
+    else if (PAGE === 'exam') renderExam();
     initTransfer();
   }
 

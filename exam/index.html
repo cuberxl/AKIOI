@@ -42,20 +42,14 @@
   <section class="page-head">
     <nav class="crumbs"><a href="../index.html">首页</a> / <span>真题模拟</span></nav>
     <h1>真题模拟</h1>
-    <p class="lead">按套卷组织历年真题，模拟真实赛制：限时、顺序、不给提示。这一页正在搭，先占个位。</p>
+    <p class="lead">按套卷刷历年真题：选一套，开计时，题目在新标签页打开。计时器会记住进度，刷新不丢。</p>
   </section>
 
-  <section class="placeholder">
-    <h2>这块还在建设中</h2>
-    <p>计划做成「套卷 + 计时」的模拟场，做完能直接对答案、记错题。想先看专项训练可以点下面的按钮。</p>
-    <ul>
-      <li>CSP-J / CSP-S 历年真题，按年份组卷</li>
-      <li>NOIP 提高组 / 普及组历年真题</li>
-      <li>开启计时后锁定页面，交卷才出结果</li>
-      <li>错题自动归入「待复盘」清单</li>
-    </ul>
-    <p style="margin-top:22px"><a class="btn btn-primary" href="../training/">先去专项训练</a></p>
-  </section>
+  <section id="exam-list" class="exam-grid"></section>
+
+  <section id="exam-run" class="exam-run" hidden></section>
+
+  <p class="hint" style="padding-bottom:40px">套卷还在扩充，目前收录 CSP-J/S 与 NOIP 提高组 / 普及组 共 10 套。</p>
 </main>
 
 <footer class="footer wrap">
@@ -66,6 +60,7 @@
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
 <script src="../data/problems.js"></script>
+<script src="../data/exams.js"></script>
 <script src="../assets/app.js"></script>
 </body>
 </html>
