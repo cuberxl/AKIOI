@@ -1,0 +1,7 @@
+# 抓取过程的中间文件
+tools/pages/
+tools/cookies.txt
+
+# 系统杂项
+.DS_Store
+Thumbs.db
