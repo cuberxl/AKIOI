@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+﻿#!/usr/bin/env node
 /**
  * 把 tools/source.json（章 → 节 → 主题 → 题号）与 tools/meta.json（洛谷抓来的
  * 官方标题、难度）合并成：
@@ -194,7 +194,7 @@ const SHELL = (o) => `<!DOCTYPE html>
 <meta name="theme-color" id="meta-theme" content="#f6f7fb">
 <link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
 ${THEME_BOOT}
-<link rel="stylesheet" href="../assets/style.css?v=${VERSION}">
+<link rel="stylesheet" href="../assets/style.css?v=${VERSION}" onerror="this.onerror=null;this.href='https://cdn.jsdelivr.net/gh/cuberxl/AKIOI@main/assets/style.css'">
 </head>
 <body data-page="${o.page}" data-base="../"${o.chapter ? ` data-chapter="${o.chapter}"` : ''}>
 <header class="topbar">
@@ -312,4 +312,5 @@ function versionize(file) {
   if (next !== html) writeFileSync(p, next, 'utf8');
 }
 ['index.html', 'tools/index.html', 'exam/index.html'].forEach(versionize);
+
 
