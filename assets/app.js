@@ -728,7 +728,7 @@
 
   function initViewSwitch() {
     var list = document.getElementById('part-list');
-    var dag = document.getElementById('dag-wrap');
+    var dag = document.getElementById('dag-overlay');
     var bList = document.getElementById('view-list');
     var bDag = document.getElementById('view-dag');
     if (!list || !dag || !bList || !bDag) return;
@@ -736,8 +736,8 @@
     var built = false;
     function show(which) {
       var isDag = which === 'dag';
-      list.hidden = isDag;
       dag.hidden = !isDag;
+      document.body.classList.toggle('dag-open', isDag);
       bList.classList.toggle('active', !isDag);
       bDag.classList.toggle('active', isDag);
       try { localStorage.setItem('akioi.training.view', which); } catch (e) {}
@@ -750,6 +750,11 @@
     }
     bList.addEventListener('click', function () { show('list'); });
     bDag.addEventListener('click', function () { show('dag'); });
+    var closeBtn = document.getElementById('dag-close');
+    if (closeBtn) closeBtn.addEventListener('click', function () { show('list'); });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && !dag.hidden) show('list');
+    });
 
     var saved = 'list';
     try { saved = localStorage.getItem('akioi.training.view') || 'list'; } catch (e) {}
@@ -854,11 +859,9 @@
       var rect = document.createElementNS(NS, 'rect');
       rect.setAttribute('width', n.w);
       rect.setAttribute('height', n.h);
-      rect.setAttribute('rx', '13');
-      rect.setAttribute('fill', 'rgba(15,23,42,.92)');
+      rect.setAttribute('class', 'dag-box');
+      rect.setAttribute('rx', '14');
       rect.setAttribute('stroke', color);
-      rect.setAttribute('stroke-opacity', '.55');
-      rect.setAttribute('stroke-width', '1.3');
       g.appendChild(rect);
 
       var bar = document.createElementNS(NS, 'rect');
@@ -874,7 +877,6 @@
       t1.setAttribute('x', '24');
       t1.setAttribute('y', '30');
       t1.setAttribute('class', 'dag-t');
-      t1.setAttribute('fill', '#e8edf7');
       t1.setAttribute('font-size', '15');
       t1.setAttribute('font-weight', '600');
       t1.setAttribute('font-family', 'Segoe UI, Microsoft YaHei, sans-serif');
@@ -885,7 +887,6 @@
       t2.setAttribute('x', '24');
       t2.setAttribute('y', '51');
       t2.setAttribute('class', 'dag-s');
-      t2.setAttribute('fill', '#93a3bd');
       t2.setAttribute('font-size', '10');
       t2.setAttribute('font-family', 'Segoe UI, Microsoft YaHei, sans-serif');
       t2.textContent = '归属 · ' + n.ch.code + ' · NOI 大纲 ' + n.level + ' 级';
@@ -910,6 +911,20 @@
     svg.setAttribute('width', width);
     svg.setAttribute('height', height);
 
+    var legend = document.getElementById('dag-legend');
+    if (legend) {
+      legend.innerHTML = '';
+      DATA.chapters.forEach(function (ch, i) {
+        var item = el('span', 'dag-legend-item');
+        var dot = el('i');
+        dot.style.background = DAG_COLORS[i % DAG_COLORS.length];
+        item.appendChild(dot);
+        item.title = ch.code + ' ' + ch.name;
+        item.appendChild(el('span', null, ch.code));
+        legend.appendChild(item);
+      });
+    }
+
     initPanZoom(svg, vp, width, height);
   }
 
@@ -925,7 +940,7 @@
     }
     apply();
 
-    var host = document.getElementById('dag-wrap');
+    var host = document.getElementById('dag-overlay');
     var MIN_K = 0.62;
     function fit() {
       var cw = host.clientWidth, chh = host.clientHeight;
@@ -1023,7 +1038,7 @@
         if (s.x > w + 2) s.x = -2;
         ctx.beginPath();
         ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
-        ctx.fillStyle = 'rgba(226,232,240,' + alpha.toFixed(3) + ')';
+        ctx.fillStyle = 'rgba(99,102,241,' + (alpha * 0.85).toFixed(3) + ')';
         ctx.fill();
       }
       starRaf = requestAnimationFrame(frame);
@@ -1032,7 +1047,7 @@
       for (var i = 0; i < stars.length; i++) {
         ctx.beginPath();
         ctx.arc(stars[i].x, stars[i].y, stars[i].r, 0, Math.PI * 2);
-        ctx.fillStyle = 'rgba(226,232,240,.5)';
+        ctx.fillStyle = 'rgba(99,102,241,.45)';
         ctx.fill();
       }
       return;
@@ -1059,6 +1074,9 @@
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
   else init();
 })();
+
+
+
 
 
 

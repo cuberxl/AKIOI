@@ -139,7 +139,8 @@ python -m http.server 8080
 
 ## 功能
 
-- 首页三入口，Part 独立页面，不再是单页折叠`n- 专项训练支持「列表 / 图谱」切换：图谱是知识点 DAG（星空背景，可拖拽缩放），节点标注所属 Part 与 NOI 大纲级别
+- 首页三入口，Part 独立页面，不再是单页折叠
+- 专项训练支持「列表 / 图谱」切换：图谱是知识点 DAG（星空背景，可拖拽缩放），节点标注所属 Part 与 NOI 大纲级别
 - 每个 Part 内按小题单折叠，支持题号 / 题名搜索（快捷键 \`/\`）、难度筛选
 - 打卡后进度保存在浏览器 localStorage，可在「实用工具」里导出 / 导入
 - 浅色 / 深色主题，全站共用；移动端适配
@@ -256,16 +257,24 @@ writeFileSync(join(root, 'training', 'index.html'), SHELL({
   </section>
   <section class="part-list" id="part-list"></section>
 
-  <section class="dag-wrap" id="dag-wrap" hidden>
+  <div class="dag-overlay" id="dag-overlay" hidden>
     <canvas id="stars" class="dag-stars"></canvas>
-    <svg id="dag-svg" class="dag-svg" xmlns="http://www.w3.org/2000/svg"><g id="dag-viewport"></g></svg>
-    <div class="dag-hint">拖动平移 · 滚轮缩放 · 点节点跳到对应小题单</div>
-    <div class="dag-controls">
-      <button type="button" id="dag-zoom-in" title="放大">＋</button>
-      <button type="button" id="dag-zoom-out" title="缩小">－</button>
-      <button type="button" id="dag-reset" title="复位">复位</button>
+    <div class="dag-bar">
+      <div class="dag-bar-title">
+        <span class="dag-dot"></span>
+        知识图谱
+        <span class="dag-bar-sub">拖动平移 · 滚轮缩放 · 点节点跳到小题单</span>
+      </div>
+      <div class="dag-legend" id="dag-legend"></div>
+      <div class="dag-bar-actions">
+        <button type="button" id="dag-zoom-out" title="缩小">－</button>
+        <button type="button" id="dag-zoom-in" title="放大">＋</button>
+        <button type="button" id="dag-reset" title="复位">复位</button>
+        <button type="button" id="dag-close" class="primary">关闭</button>
+      </div>
     </div>
-  </section>`
+    <svg id="dag-svg" class="dag-svg" xmlns="http://www.w3.org/2000/svg"><g id="dag-viewport"></g></svg>
+  </div>`
 }), 'utf8');
 
 /* 每个 Part 一页 */
@@ -333,6 +342,10 @@ function versionize(file) {
   if (next !== html) writeFileSync(p, next, 'utf8');
 }
 ['index.html', 'tools/index.html', 'exam/index.html'].forEach(versionize);
+
+
+
+
 
 
 

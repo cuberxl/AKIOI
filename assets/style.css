@@ -1347,3 +1347,121 @@ body, .topbar, .toolbar, .entry-card, .part-card, .tool-card, .group, .chapter-h
 
 /* DAG 里的文字不要继承图标的描边样式 */
 .dag-svg text { stroke: none; stroke-width: 0; }
+
+/* ============================================================
+   知识图谱：全屏遮罩（AKIOI 自己的配色，不套用参考站）
+   ============================================================ */
+
+.dag-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  overflow: hidden;
+  touch-action: none;
+  background:
+    radial-gradient(900px 520px at 16% 6%, color-mix(in srgb, var(--accent) 15%, transparent), transparent 72%),
+    radial-gradient(760px 430px at 86% 90%, color-mix(in srgb, var(--accent-2) 14%, transparent), transparent 74%),
+    var(--bg);
+  animation: dag-in .22s ease both;
+}
+@keyframes dag-in { from { opacity: 0 } to { opacity: 1 } }
+body.dag-open { overflow: hidden; }
+
+.dag-stars { position: absolute; inset: 0; pointer-events: none; }
+
+.dag-bar {
+  position: absolute;
+  inset: 0 0 auto 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px clamp(16px, 3vw, 28px);
+  background: color-mix(in srgb, var(--bg) 78%, transparent);
+  backdrop-filter: saturate(160%) blur(12px);
+  border-bottom: 1px solid var(--line);
+}
+.dag-bar-title { display: flex; align-items: baseline; gap: 10px; font-size: 15px; font-weight: 700; letter-spacing: .01em; }
+.dag-dot {
+  width: 9px; height: 9px; border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  align-self: center;
+}
+.dag-bar-sub { font-size: 12px; font-weight: 400; color: var(--muted); }
+.dag-bar-actions { margin-left: auto; display: flex; gap: 8px; }
+.dag-bar-actions button {
+  height: 32px;
+  min-width: 34px;
+  padding: 0 12px;
+  border-radius: 9px;
+  border: 1px solid var(--line);
+  background: var(--card);
+  color: var(--text-2);
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+  transition: color .15s ease, border-color .15s ease, background .15s ease;
+}
+.dag-bar-actions button:hover { color: var(--text); border-color: var(--line-2); }
+.dag-bar-actions button.primary {
+  color: #fff;
+  border-color: transparent;
+  background: linear-gradient(140deg, var(--accent), var(--accent-2));
+  box-shadow: 0 8px 20px -12px color-mix(in srgb, var(--accent) 80%, transparent);
+}
+
+.dag-svg { top: 52px; }
+
+.dag-node .dag-box {
+  fill: var(--card);
+  stroke-width: 1.3;
+  stroke-opacity: .8;
+  transition: stroke-opacity .15s ease, stroke-width .15s ease;
+}
+.dag-node:hover .dag-box { stroke-opacity: 1; stroke-width: 2; }
+.dag-node { filter: drop-shadow(0 8px 18px rgba(15, 23, 42, .10)); }
+[data-theme="dark"] .dag-node { filter: drop-shadow(0 8px 20px rgba(0, 0, 0, .45)); }
+
+.dag-t { fill: var(--text); }
+.dag-s { fill: var(--muted); }
+.dag-edges path { stroke: color-mix(in srgb, var(--accent) 30%, var(--line)); }
+
+.dag-legend {
+  position: absolute;
+  left: clamp(16px, 3vw, 28px);
+  bottom: 14px;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  max-width: 72vw;
+  font-size: 11.5px;
+  color: var(--muted);
+}
+.dag-legend-item { display: inline-flex; align-items: center; gap: 6px; }
+.dag-legend-item i { display: inline-block; width: 8px; height: 8px; border-radius: 2px; }
+
+@media (max-width: 700px) {
+  .dag-bar-sub { display: none; }
+  .dag-legend { display: none; }
+}
+
+/* 图例放进顶栏，不压节点 */
+.dag-bar .dag-legend {
+  position: static;
+  margin-left: 18px;
+  max-width: none;
+  overflow: hidden;
+  flex: 0 1 auto;
+}
+.dag-bar .dag-legend-item { white-space: nowrap; }
+
+.dag-bar { flex-wrap: nowrap; }
+.dag-bar-title { white-space: nowrap; flex: none; }
+.dag-bar-sub { white-space: nowrap; }
+.dag-bar-actions { flex: none; }
+.dag-bar-actions button { white-space: nowrap; }
+.dag-bar .dag-legend { flex: 1 1 auto; min-width: 0; flex-wrap: nowrap; overflow: hidden; gap: 4px 12px; }
+.dag-bar .dag-legend-item { flex: none; }
+@media (max-width: 1200px) { .dag-bar-sub { display: none; } }
+@media (max-width: 900px) { .dag-bar .dag-legend { display: none; } }
