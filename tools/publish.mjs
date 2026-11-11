@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+﻿#!/usr/bin/env node
 /**
  * 通过 GitHub REST API 发布本站（本机连不上 github.com，只能走 api.github.com）。
  *
@@ -70,7 +70,7 @@ const base = ref.object.sha;
 const baseCommit = await call(`${api}/git/commits/${base}`);
 
 const files = walk(root).sort();
-if (files.length > 40) {
+if (files.length > 70) {
   console.error(`文件数异常（${files.length}），可能混入了临时目录，已中止`);
   console.error(files.slice(0, 20).join('\n'));
   process.exit(1);
@@ -91,3 +91,4 @@ await call(`${api}/git/refs/heads/${BRANCH}`, 'PATCH', { sha: commit.sha, force:
 
 console.log(`pushed ${commit.sha.slice(0, 7)} — ${message}`);
 console.log(`https://${OWNER.toLowerCase()}.github.io/${REPO}/`);
+

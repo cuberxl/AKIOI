@@ -16,7 +16,7 @@
     } catch (e) {}
   })();
 </script>
-<link rel="stylesheet" href="../assets/style.css?v=912022a" onerror="this.onerror=null;this.href='https://cdn.jsdelivr.net/gh/cuberxl/AKIOI@main/assets/style.css'">
+<link rel="stylesheet" href="../assets/style.css?v=8355350" onerror="this.onerror=null;this.href='https://cdn.jsdelivr.net/gh/cuberxl/AKIOI@main/assets/style.css'">
 </head>
 <body data-page="parts" data-base="../">
 <header class="topbar">
@@ -61,10 +61,23 @@
         <button type="button" id="dag-zoom-out" title="缩小">－</button>
         <button type="button" id="dag-zoom-in" title="放大">＋</button>
         <button type="button" id="dag-reset" title="复位">复位</button>
+        <button type="button" id="dag-theme" title="切换深浅色">◐</button>
         <button type="button" id="dag-close" class="primary">关闭</button>
       </div>
     </div>
     <svg id="dag-svg" class="dag-svg" xmlns="http://www.w3.org/2000/svg"><g id="dag-viewport"></g></svg>
+    <aside class="dag-panel" id="dag-panel" hidden>
+      <div class="dag-panel-head">
+        <div class="dag-panel-title">
+          <span class="dp-mod" id="dp-mod"></span>
+          <h2 id="dp-title"></h2>
+        </div>
+        <button type="button" id="dp-close" title="关闭">✕</button>
+      </div>
+      <p class="dag-panel-sub" id="dp-sub"></p>
+      <div class="dag-panel-meta" id="dp-meta"></div>
+      <div class="dag-panel-body" id="dp-body"></div>
+    </aside>
   </div>
 </main>
 <footer class="footer wrap">
@@ -72,7 +85,8 @@
   <p class="muted">Built by cuberxl · 笔记站点：<a href="https://cuberxl.github.io/Coders-Note/" target="_blank" rel="noopener">Coders-Note</a></p>
 </footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="../data/problems.js?v=912022a"></script>
-<script src="../assets/app.js?v=912022a"></script>
+<script src="../data/problems.js?v=8355350"></script>
+<script src="../data/syllabus.js?v=8355350"></script>
+<script src="../assets/app.js?v=8355350"></script>
 </body>
 </html>

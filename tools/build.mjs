@@ -140,7 +140,7 @@ python -m http.server 8080
 ## 功能
 
 - 首页三入口，Part 独立页面，不再是单页折叠
-- 专项训练支持「列表 / 图谱」切换：图谱是知识点 DAG（星空背景，可拖拽缩放），节点标注所属 Part 与 NOI 大纲级别
+- 专项训练支持「列表 / 图谱」切换：图谱按 NOI 大纲 79 条细目展开（全屏、可拖拽缩放、带星空背景），点节点看该条的必做题与前置知识
 - 每个 Part 内按小题单折叠，支持题号 / 题名搜索（快捷键 \`/\`）、难度筛选
 - 打卡后进度保存在浏览器 localStorage，可在「实用工具」里导出 / 导入
 - 浅色 / 深色主题，全站共用；移动端适配
@@ -230,6 +230,7 @@ ${o.main}
 </footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 <script src="../data/problems.js?v=${VERSION}"></script>
+<script src="../data/syllabus.js?v=${VERSION}"></script>
 <script src="../assets/app.js?v=${VERSION}"></script>
 </body>
 </html>
@@ -270,10 +271,23 @@ writeFileSync(join(root, 'training', 'index.html'), SHELL({
         <button type="button" id="dag-zoom-out" title="缩小">－</button>
         <button type="button" id="dag-zoom-in" title="放大">＋</button>
         <button type="button" id="dag-reset" title="复位">复位</button>
+        <button type="button" id="dag-theme" title="切换深浅色">◐</button>
         <button type="button" id="dag-close" class="primary">关闭</button>
       </div>
     </div>
     <svg id="dag-svg" class="dag-svg" xmlns="http://www.w3.org/2000/svg"><g id="dag-viewport"></g></svg>
+    <aside class="dag-panel" id="dag-panel" hidden>
+      <div class="dag-panel-head">
+        <div class="dag-panel-title">
+          <span class="dp-mod" id="dp-mod"></span>
+          <h2 id="dp-title"></h2>
+        </div>
+        <button type="button" id="dp-close" title="关闭">✕</button>
+      </div>
+      <p class="dag-panel-sub" id="dp-sub"></p>
+      <div class="dag-panel-meta" id="dp-meta"></div>
+      <div class="dag-panel-body" id="dp-body"></div>
+    </aside>
   </div>`
 }), 'utf8');
 
@@ -338,10 +352,12 @@ function versionize(file) {
   try { html = readFileSync(p, 'utf8'); } catch (e) { return; }
   const next = html
     .replace(/((?:\.\.\/)?assets\/(?:style\.css|app\.js))(\?v=[^"']*)?/g, '$1?v=' + VERSION)
-    .replace(/((?:\.\.\/)?data\/(?:problems|exams)\.js)(\?v=[^"']*)?/g, '$1?v=' + VERSION);
+    .replace(/((?:\.\.\/)?data\/(?:problems|exams|syllabus)\.js)(\?v=[^"']*)?/g, '$1?v=' + VERSION);
   if (next !== html) writeFileSync(p, next, 'utf8');
 }
 ['index.html', 'tools/index.html', 'exam/index.html'].forEach(versionize);
+
+
 
 
 

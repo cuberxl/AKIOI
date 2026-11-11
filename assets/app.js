@@ -738,6 +738,7 @@
       var isDag = which === 'dag';
       dag.hidden = !isDag;
       document.body.classList.toggle('dag-open', isDag);
+      if (!isDag) closeNodePanel();
       bList.classList.toggle('active', !isDag);
       bDag.classList.toggle('active', isDag);
       try { localStorage.setItem('akioi.training.view', which); } catch (e) {}
@@ -752,8 +753,23 @@
     bDag.addEventListener('click', function () { show('dag'); });
     var closeBtn = document.getElementById('dag-close');
     if (closeBtn) closeBtn.addEventListener('click', function () { show('list'); });
+    var dpClose = document.getElementById('dp-close');
+    if (dpClose) dpClose.addEventListener('click', closeNodePanel);
+
+    var themeBtn = document.getElementById('dag-theme');
+    if (themeBtn) themeBtn.addEventListener('click', function () {
+      var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      try { localStorage.setItem(THEME_KEY, next); } catch (e) {}
+      var m = document.getElementById('meta-theme');
+      if (m) m.setAttribute('content', next === 'dark' ? '#0c0e13' : '#f6f7fb');
+    });
+
     document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape' && !dag.hidden) show('list');
+      if (e.key !== 'Escape') return;
+      var panel = document.getElementById('dag-panel');
+      if (panel && !panel.hidden) { closeNodePanel(); return; }
+      if (!dag.hidden) show('list');
     });
 
     var saved = 'list';
@@ -762,70 +778,58 @@
   }
 
   function buildDag() {
+    var S = window.AKIOI_SYLLABUS;
     var svg = document.getElementById('dag-svg');
     var vp = document.getElementById('dag-viewport');
-    if (!svg || !vp) return;
+    if (!svg || !vp || !S || !S.nodes) return;
 
+    var mods = Object.keys(S.modules || {});
     var nodes = [];
     var byId = {};
-    DATA.chapters.forEach(function (ch, ci) {
-      ch.sections.forEach(function (sec) {
-        sec.topics.forEach(function (t, ti) {
-          var n = { id: t.id, name: t.name, level: t.level || 0, pre: (t.pre || []).filter(function (p) { return byId[p] || true; }), ch: ch, order: ci * 100 + ti };
-          nodes.push(n);
-          byId[t.id] = n;
-        });
-      });
+    S.nodes.forEach(function (n, i) {
+      var node = {
+        id: n.id, name: n.t, sub: n.s, level: n.level, mod: n.mod,
+        modName: n.modName, pre: n.pre || [], problems: n.problems || [],
+        order: i,
+        color: DAG_COLORS[(mods.indexOf(n.mod) + 1) % DAG_COLORS.length]
+      };
+      nodes.push(node);
+      byId[n.id] = node;
     });
     nodes.forEach(function (n) {
       n.pre = n.pre.filter(function (p) { return byId[p]; });
     });
 
-    // 分层：最长路径
-    var depth = {};
-    function calc(n, stack) {
-      if (depth[n.id] != null) return depth[n.id];
-      if (stack.indexOf(n.id) >= 0) return 0;      // 防环
-      stack.push(n.id);
-      var d = 0;
-      n.pre.forEach(function (p) { d = Math.max(d, calc(byId[p], stack) + 1); });
-      stack.pop();
-      depth[n.id] = d;
-      return d;
-    }
-    nodes.forEach(function (n) { calc(n, []); });
-
-    var COL = 250, ROW = 88, PAD = 40, NW = 206, NH = 66;
-    var layers = [];
+    var COL = 236, ROW = 82, PAD = 40, NW = 196, NH = 62;
+    var layers = mods.map(function () { return []; });
     nodes.forEach(function (n) {
-      var d = depth[n.id];
-      (layers[d] = layers[d] || []).push(n);
+      var mi = mods.indexOf(n.mod);
+      if (mi < 0) mi = 0;
+      layers[mi].push(n);
     });
     var maxRows = 0;
     layers.forEach(function (arr) {
-      if (!arr) return;
-      arr.sort(function (a, b) { return a.order - b.order; });
+      arr.sort(function (a, b) { return a.level - b.level || a.order - b.order; });
       maxRows = Math.max(maxRows, arr.length);
     });
-    layers.forEach(function (arr, d) {
-      if (!arr) return;
+    layers.forEach(function (arr, m) {
       var offset = (maxRows - arr.length) / 2;
       arr.forEach(function (n, i) {
-        n.x = PAD + d * COL;
+        n.x = PAD + m * COL;
         n.y = PAD + (i + offset) * ROW;
         n.w = NW;
         n.h = NH;
       });
     });
 
-    var width = PAD * 2 + (layers.length - 1) * COL + NW;
+    var width = PAD * 2 + Math.max(1, layers.length - 1) * COL + NW;
     var height = PAD * 2 + Math.max(1, maxRows) * ROW;
 
     var NS = 'http://www.w3.org/2000/svg';
     vp.innerHTML = '';
 
     var defs = document.createElementNS(NS, 'defs');
-    defs.innerHTML = '<marker id="dag-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="rgba(148,163,184,.75)"/></marker>';
+    defs.innerHTML = '<marker id="dag-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="currentColor"/></marker>';
     vp.appendChild(defs);
 
     var gEdges = document.createElementNS(NS, 'g');
@@ -842,8 +846,6 @@
         var path = document.createElementNS(NS, 'path');
         path.setAttribute('d', 'M' + x1 + ',' + y1 + ' C' + mx + ',' + y1 + ' ' + mx + ',' + y2 + ' ' + x2 + ',' + y2);
         path.setAttribute('fill', 'none');
-        path.setAttribute('stroke', 'rgba(148,163,184,.28)');
-        path.setAttribute('stroke-width', '1.4');
         path.setAttribute('marker-end', 'url(#dag-arrow)');
         gEdges.appendChild(path);
       });
@@ -855,52 +857,38 @@
       g.setAttribute('transform', 'translate(' + n.x + ',' + n.y + ')');
       g.setAttribute('data-id', n.id);
 
-      var color = DAG_COLORS[DATA.chapters.indexOf(n.ch) % DAG_COLORS.length];
       var rect = document.createElementNS(NS, 'rect');
       rect.setAttribute('width', n.w);
       rect.setAttribute('height', n.h);
       rect.setAttribute('class', 'dag-box');
-      rect.setAttribute('rx', '14');
-      rect.setAttribute('stroke', color);
+      rect.setAttribute('rx', '13');
+      rect.setAttribute('stroke', n.color);
       g.appendChild(rect);
 
       var bar = document.createElementNS(NS, 'rect');
       bar.setAttribute('width', '3');
-      bar.setAttribute('height', n.h - 26);
+      bar.setAttribute('height', n.h - 24);
       bar.setAttribute('x', '12');
-      bar.setAttribute('y', '13');
+      bar.setAttribute('y', '12');
       bar.setAttribute('rx', '2');
-      bar.setAttribute('fill', color);
+      bar.setAttribute('fill', n.color);
       g.appendChild(bar);
 
       var t1 = document.createElementNS(NS, 'text');
-      t1.setAttribute('x', '24');
-      t1.setAttribute('y', '30');
+      t1.setAttribute('x', '23');
+      t1.setAttribute('y', '27');
       t1.setAttribute('class', 'dag-t');
-      t1.setAttribute('font-size', '15');
-      t1.setAttribute('font-weight', '600');
-      t1.setAttribute('font-family', 'Segoe UI, Microsoft YaHei, sans-serif');
       t1.textContent = n.name;
       g.appendChild(t1);
 
       var t2 = document.createElementNS(NS, 'text');
-      t2.setAttribute('x', '24');
-      t2.setAttribute('y', '51');
+      t2.setAttribute('x', '23');
+      t2.setAttribute('y', '46');
       t2.setAttribute('class', 'dag-s');
-      t2.setAttribute('font-size', '10');
-      t2.setAttribute('font-family', 'Segoe UI, Microsoft YaHei, sans-serif');
-      t2.textContent = '归属 · ' + n.ch.code + ' · NOI 大纲 ' + n.level + ' 级';
+      t2.textContent = n.mod + ' ' + n.modName + ' · NOI 大纲 ' + n.level + ' 级';
       g.appendChild(t2);
 
-      var cnt = document.createElementNS(NS, 'text');
-      cnt.setAttribute('x', String(n.w - 12));
-      cnt.setAttribute('y', '27');
-      cnt.setAttribute('text-anchor', 'end');
-      cnt.setAttribute('class', 'dag-c');
-      cnt.textContent = n.problems ? '' : '';
-      g.appendChild(cnt);
-
-      g.addEventListener('click', function (e) { e.stopPropagation(); openTopic(n); });
+      g.addEventListener('click', function (e) { e.stopPropagation(); openNodePanel(n); });
       gNodes.appendChild(g);
     });
 
@@ -914,13 +902,12 @@
     var legend = document.getElementById('dag-legend');
     if (legend) {
       legend.innerHTML = '';
-      DATA.chapters.forEach(function (ch, i) {
+      mods.forEach(function (m, i) {
         var item = el('span', 'dag-legend-item');
         var dot = el('i');
-        dot.style.background = DAG_COLORS[i % DAG_COLORS.length];
+        dot.style.background = DAG_COLORS[(i + 1) % DAG_COLORS.length];
         item.appendChild(dot);
-        item.title = ch.code + ' ' + ch.name;
-        item.appendChild(el('span', null, ch.code));
+        item.appendChild(el('span', null, m + ' ' + (S.modules[m] || '')));
         legend.appendChild(item);
       });
     }
@@ -928,12 +915,91 @@
     initPanZoom(svg, vp, width, height);
   }
 
-  function openTopic(n) {
-    var slug = n.ch.id.replace(/^ch-/, '');
-    location.href = BASE + 'training/' + slug + '.html#t-' + encodeURIComponent(n.id);
+  function openNodePanel(n) {
+    var panel = document.getElementById('dag-panel');
+    if (!panel) return;
+    setText('dp-mod', n.mod + ' ' + n.modName);
+    setText('dp-title', n.name);
+    setText('dp-sub', n.sub || '');
+    var meta = document.getElementById('dp-meta');
+    if (meta) {
+      meta.innerHTML = '';
+      meta.appendChild(el('span', 'dp-pill', 'NOI 大纲 ' + n.level + ' 级'));
+      meta.appendChild(el('span', 'dp-pill', n.problems.length + ' 题'));
+      var hit = n.problems.filter(function (p) { return done.has(p.pid); }).length;
+      meta.appendChild(el('span', 'dp-pill', '已完成 ' + hit + '/' + n.problems.length));
+    }
+
+    var body = document.getElementById('dp-body');
+    if (!body) return;
+    body.innerHTML = '';
+
+    if (n.pre.length) {
+      var preBox = el('div', 'dp-pre');
+      preBox.appendChild(el('span', 'dp-label', '前置：'));
+      n.pre.forEach(function (pid, i) {
+        var other = null;
+        (window.AKIOI_SYLLABUS.nodes || []).forEach(function (x) { if (x.id === pid) other = x; });
+        if (i) preBox.appendChild(document.createTextNode(' '));
+        var a = el('button', 'dp-pre-link', other ? other.t : pid);
+        a.type = 'button';
+        a.addEventListener('click', function () {
+          if (other) openNodePanel({ id: other.id, name: other.t, sub: other.s, level: other.level, mod: other.mod, modName: other.modName, pre: other.pre || [], problems: other.problems || [] });
+        });
+        preBox.appendChild(a);
+      });
+      body.appendChild(preBox);
+    }
+
+    var list = el('div', 'dp-list');
+    if (!n.problems.length) {
+      list.appendChild(el('p', 'dp-empty', '这一条暂时没有收录题目。'));
+    }
+    n.problems.forEach(function (p) {
+      var row = el('div', 'dp-row');
+      row.dataset.pid = p.pid;
+      if (done.has(p.pid)) row.classList.add('done');
+
+      var check = el('button', 'check');
+      check.type = 'button';
+      check.setAttribute('role', 'checkbox');
+      check.setAttribute('aria-checked', done.has(p.pid) ? 'true' : 'false');
+      check.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>';
+      check.addEventListener('click', function () {
+        if (done.has(p.pid)) done.delete(p.pid); else done.add(p.pid);
+        saveSet(PROGRESS_KEY, done);
+        row.classList.toggle('done', done.has(p.pid));
+        check.setAttribute('aria-checked', done.has(p.pid) ? 'true' : 'false');
+        if (meta) {
+          var hit = n.problems.filter(function (x) { return done.has(x.pid); }).length;
+          meta.lastChild.textContent = '已完成 ' + hit + '/' + n.problems.length;
+        }
+      });
+      row.appendChild(check);
+      row.appendChild(el('span', 'pid', p.pid));
+
+      var t = el('div', 'ptitle');
+      var a = el('a', null, p.name);
+      a.href = 'https://www.luogu.com.cn/problem/' + p.pid;
+      a.target = '_blank';
+      a.rel = 'noopener';
+      t.appendChild(a);
+      row.appendChild(t);
+      row.appendChild(el('span', 'diff diff-' + p.difficulty, diffName(p.difficulty)));
+      list.appendChild(row);
+    });
+    body.appendChild(list);
+
+    panel.hidden = false;
+    document.body.classList.add('dag-panel-open');
   }
 
-  function initPanZoom(svg, vp, width, height) {
+  function closeNodePanel() {
+    var panel = document.getElementById('dag-panel');
+    if (panel) panel.hidden = true;
+    document.body.classList.remove('dag-panel-open');
+  }
+    function initPanZoom(svg, vp, width, height) {
     var state = { x: 0, y: 0, k: 1 };
     function apply() {
       vp.setAttribute('transform', 'translate(' + state.x + ',' + state.y + ') scale(' + state.k + ')');
@@ -1077,6 +1143,7 @@
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
   else init();
 })();
+
 
 
 
