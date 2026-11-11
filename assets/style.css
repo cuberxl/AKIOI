@@ -1377,8 +1377,7 @@ body.dag-open { overflow: hidden; }
   align-items: center;
   gap: 16px;
   padding: 12px clamp(16px, 3vw, 28px);
-  background: color-mix(in srgb, var(--bg) 78%, transparent);
-  backdrop-filter: saturate(160%) blur(12px);
+  background: color-mix(in srgb, var(--bg) 96%, transparent);
   border-bottom: 1px solid var(--line);
 }
 .dag-bar-title { display: flex; align-items: baseline; gap: 10px; font-size: 15px; font-weight: 700; letter-spacing: .01em; }
@@ -1419,11 +1418,12 @@ body.dag-open { overflow: hidden; }
   transition: stroke-opacity .15s ease, stroke-width .15s ease;
 }
 .dag-node:hover .dag-box { stroke-opacity: 1; stroke-width: 2; }
-.dag-node { filter: drop-shadow(0 8px 18px rgba(15, 23, 42, .10)); }
-[data-theme="dark"] .dag-node { filter: drop-shadow(0 8px 20px rgba(0, 0, 0, .45)); }
+.dag-node { }
+
 
 .dag-t { fill: var(--text); }
 .dag-s { fill: var(--muted); }
+.dag-edges { pointer-events: none; }
 .dag-edges path { stroke: color-mix(in srgb, var(--accent) 30%, var(--line)); }
 
 .dag-legend {
@@ -1557,3 +1557,10 @@ body.dag-panel-open .dag-legend { opacity: .25; }
 @media (max-width: 700px) {
   .dag-panel { top: 52px; width: 100vw; }
 }
+
+
+/* 拖拽流畅度 */
+#dag-viewport { will-change: transform; }
+.dag-svg { contain: layout style paint; }
+.dag-node .dag-box { transition: none; }
+.dag-node:hover .dag-box { stroke-width: 2; stroke-opacity: 1; }

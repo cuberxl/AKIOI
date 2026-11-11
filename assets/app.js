@@ -1001,8 +1001,14 @@
   }
     function initPanZoom(svg, vp, width, height) {
     var state = { x: 0, y: 0, k: 1 };
-    function apply() {
+    var raf = null;
+    function paintNow() {
+      raf = null;
       vp.setAttribute('transform', 'translate(' + state.x + ',' + state.y + ') scale(' + state.k + ')');
+    }
+    function apply() {
+      if (raf) return;
+      raf = requestAnimationFrame(paintNow);
     }
     apply();
 
@@ -1077,7 +1083,7 @@
       cv.style.height = host.clientHeight + 'px';
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
       stars = [];
-      var n = Math.round((host.clientWidth * host.clientHeight) / 5200);
+      var n = Math.round((host.clientWidth * host.clientHeight) / 11000);
       for (var i = 0; i < n; i++) {
         stars.push({
           x: Math.random() * host.clientWidth,
@@ -1143,6 +1149,7 @@
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
   else init();
 })();
+
 
 
 
