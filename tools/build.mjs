@@ -266,6 +266,7 @@ writeFileSync(join(root, 'training', 'index.html'), SHELL({
         知识图谱
         <span class="dag-bar-sub">拖动平移 · 滚轮缩放 · 点节点跳到小题单</span>
       </div>
+      <button type="button" class="dag-next" id="dag-next" hidden></button>
       <div class="dag-legend" id="dag-legend"></div>
       <div class="dag-bar-actions">
         <button type="button" id="dag-zoom-out" title="缩小">－</button>
@@ -334,6 +335,11 @@ ${DIFF_OPTIONS}
           <input type="checkbox" id="hide-done">
           <span>只看未完成</span>
         </label>
+        <label class="switch" title="只看标记为错题的">
+          <input type="checkbox" id="wrong-only">
+          <span>只看错题</span>
+        </label>
+        <button class="btn btn-ghost btn-sm" id="shuffle-btn" type="button">重排</button>
       </div>
     </div>
   </section>
@@ -356,6 +362,8 @@ function versionize(file) {
   if (next !== html) writeFileSync(p, next, 'utf8');
 }
 ['index.html', 'tools/index.html', 'exam/index.html'].forEach(versionize);
+
+
 
 
 

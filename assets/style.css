@@ -553,7 +553,7 @@ select:focus-visible { outline: 2px solid color-mix(in srgb, var(--accent) 50%, 
 
 .row {
   display: grid;
-  grid-template-columns: 30px 92px minmax(0, 1fr) 118px 34px;
+  grid-template-columns: 30px 92px 26px minmax(0, 1fr) 118px 34px;
   align-items: center;
   gap: 12px;
   padding: 11px 18px;
@@ -722,10 +722,10 @@ select:focus-visible { outline: 2px solid color-mix(in srgb, var(--accent) 50%, 
   .chapter-progress .progress-track { width: 64px; }
   .chapter { margin-bottom: 34px; }
   .row {
-    grid-template-columns: 26px minmax(0, 1fr) auto;
+    grid-template-columns: 26px 24px minmax(0, 1fr) auto;
     grid-template-areas:
-      "check title diff"
-      "check pid   diff";
+      "check flag title diff"
+      "check flag pid   diff";
     gap: 2px 10px;
     padding: 12px 14px;
   }
@@ -1564,3 +1564,59 @@ body.dag-panel-open .dag-legend { opacity: .25; }
 .dag-svg { contain: layout style paint; }
 .dag-node .dag-box { transition: none; }
 .dag-node:hover .dag-box { stroke-width: 2; stroke-opacity: 1; }
+
+
+/* ---------- 错题标记 ---------- */
+.flag {
+  width: 22px; height: 22px;
+  display: grid; place-items: center;
+  padding: 0;
+  border: 1px solid var(--line-2);
+  border-radius: 6px;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 11px;
+  cursor: pointer;
+  transition: color .15s ease, border-color .15s ease, background .15s ease;
+}
+.flag:hover { color: var(--danger); border-color: color-mix(in srgb, var(--danger) 45%, var(--line)); }
+.flag.on {
+  color: #fff;
+  border-color: transparent;
+  background: color-mix(in srgb, var(--danger) 82%, #000);
+}
+.row .flag { grid-area: flag; }
+@media (max-width: 700px) { .row .flag { align-self: center; } }
+
+/* ---------- 图谱：完成度圈 / 推荐 ---------- */
+.dag-ring-bg { fill: none; stroke: color-mix(in srgb, var(--muted) 28%, transparent); stroke-width: 3; }
+.dag-ring-fg { fill: none; stroke-width: 3; stroke-linecap: round; }
+.dag-pct { fill: var(--muted); font-size: 8px; font-family: var(--mono); }
+.dag-box.is-full { stroke-opacity: 1; }
+
+.dag-node.is-next .dag-box {
+  stroke-width: 2.4;
+  stroke-dasharray: 6 4;
+  animation: next-dash 12s linear infinite;
+}
+@keyframes next-dash { to { stroke-dashoffset: -100; } }
+
+.dag-next {
+  margin-left: 14px;
+  flex: none;
+  max-width: 260px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  height: 28px;
+  padding: 0 12px;
+  border-radius: 999px;
+  border: 1px dashed color-mix(in srgb, var(--accent) 55%, var(--line));
+  background: var(--accent-soft);
+  color: var(--accent);
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+}
+.dag-next:hover { border-style: solid; }

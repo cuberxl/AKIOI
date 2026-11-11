@@ -10,14 +10,16 @@
   var THEME_KEY = 'akioi.theme';
   var PROGRESS_KEY = 'akioi.progress.v1';
   var EXPANDED_TOPIC_KEY = 'akioi.expanded.topics.v2';
+  var WRONG_KEY = 'akioi.wrong.v1';
 
   var PAGE = document.body.getAttribute('data-page') || 'home';
   var BASE = document.body.getAttribute('data-base') || '';
   var RING_C = 2 * Math.PI * 52;
 
   var done = loadSet(PROGRESS_KEY);
+  var wrong = loadSet(WRONG_KEY);
   var expandedTopics = loadSet(EXPANDED_TOPIC_KEY);
-  var filters = { q: '', diff: 'all', hideDone: false };
+  var filters = { q: '', diff: 'all', hideDone: false, wrongOnly: false };
 
   /* ---------------- 小工具 ---------------- */
 
@@ -262,6 +264,14 @@
 
     row.appendChild(el('span', 'pid', p.pid));
 
+    var flag = el('button', 'flag' + (wrong.has(p.pid) ? ' on' : ''));
+    flag.type = 'button';
+    flag.title = '标记为不会/做错';
+    flag.setAttribute('aria-pressed', wrong.has(p.pid) ? 'true' : 'false');
+    flag.textContent = '错';
+    flag.addEventListener('click', function () { toggleWrong(p.pid, flag); });
+    row.appendChild(flag);
+
     var t = el('div', 'ptitle');
     var a = el('a', null, p.name);
     a.href = url; a.target = '_blank'; a.rel = 'noopener';
@@ -311,6 +321,16 @@
       row.style.opacity = '0';
       setTimeout(applyFilters, 160);
     }
+  }
+
+  function toggleWrong(pid, btn) {
+    if (wrong.has(pid)) wrong.delete(pid); else wrong.add(pid);
+    saveSet(WRONG_KEY, wrong);
+    if (btn) {
+      btn.classList.toggle('on', wrong.has(pid));
+      btn.setAttribute('aria-pressed', wrong.has(pid) ? 'true' : 'false');
+    }
+    if (filters.wrongOnly) applyFilters();
   }
 
   function updateProgress() {
@@ -403,6 +423,7 @@
   function match(p) {
     if (filters.diff !== 'all' && String(p.difficulty) !== filters.diff) return false;
     if (filters.hideDone && done.has(p.pid)) return false;
+    if (filters.wrongOnly && !wrong.has(p.pid)) return false;
     if (filters.q) {
       var q = filters.q.toLowerCase();
       if (p.pid.toLowerCase().indexOf(q) === -1 && p.name.toLowerCase().indexOf(q) === -1) return false;
@@ -446,6 +467,20 @@
     if (diff) diff.addEventListener('change', function (e) { filters.diff = e.target.value; applyFilters(); });
     var hide = document.getElementById('hide-done');
     if (hide) hide.addEventListener('change', function (e) { filters.hideDone = e.target.checked; applyFilters(); });
+
+    var wrongOnly = document.getElementById('wrong-only');
+    if (wrongOnly) wrongOnly.addEventListener('change', function (e) { filters.wrongOnly = e.target.checked; applyFilters(); });
+
+    var shuffle = document.getElementById('shuffle-btn');
+    if (shuffle) shuffle.addEventListener('click', function () {
+      ('.group').forEach(function (card) {
+        var rows = ('.row:not([hidden])', card);
+        if (rows.length < 2) return;
+        var box = rows[0].parentNode;
+        rows.slice().sort(function () { return Math.random() - 0.5; }).forEach(function (r) { box.appendChild(r); });
+      });
+      toast('已重排当前可见题目');
+    });
 
     var expand = document.getElementById('expand-all');
     if (expand) expand.addEventListener('click', function () {
@@ -798,6 +833,9 @@
     });
     nodes.forEach(function (n) {
       n.pre = n.pre.filter(function (p) { return byId[p]; });
+      var hit = n.problems.filter(function (p) { return done.has(p.pid); }).length;
+      n.hit = hit;
+      n.pct = n.problems.length ? Math.round(hit / n.problems.length * 100) : 0;
     });
 
     var COL = 236, ROW = 82, PAD = 40, NW = 196, NH = 62;
@@ -857,12 +895,13 @@
       g.setAttribute('transform', 'translate(' + n.x + ',' + n.y + ')');
       g.setAttribute('data-id', n.id);
 
+      var statusColor = n.pct === 100 ? '#10b981' : (n.pct > 0 ? n.color : '#94a3b8');
       var rect = document.createElementNS(NS, 'rect');
       rect.setAttribute('width', n.w);
       rect.setAttribute('height', n.h);
-      rect.setAttribute('class', 'dag-box');
+      rect.setAttribute('class', 'dag-box' + (n.pct === 100 ? ' is-full' : ''));
       rect.setAttribute('rx', '13');
-      rect.setAttribute('stroke', n.color);
+      rect.setAttribute('stroke', statusColor);
       g.appendChild(rect);
 
       var bar = document.createElementNS(NS, 'rect');
@@ -874,11 +913,35 @@
       bar.setAttribute('fill', n.color);
       g.appendChild(bar);
 
+      // 右侧完成度圆圈
+      var R = 10, C = 2 * Math.PI * R, cx = n.w - 24, cy = 24;
+      var ringBg = document.createElementNS(NS, 'circle');
+      ringBg.setAttribute('cx', cx); ringBg.setAttribute('cy', cy); ringBg.setAttribute('r', R);
+      ringBg.setAttribute('class', 'dag-ring-bg');
+      g.appendChild(ringBg);
+      var ringFg = document.createElementNS(NS, 'circle');
+      ringFg.setAttribute('cx', cx); ringFg.setAttribute('cy', cy); ringFg.setAttribute('r', R);
+      ringFg.setAttribute('class', 'dag-ring-fg');
+      ringFg.setAttribute('stroke', statusColor);
+      ringFg.setAttribute('stroke-dasharray', C.toFixed(2));
+      ringFg.setAttribute('stroke-dashoffset', (C * (1 - n.pct / 100)).toFixed(2));
+      ringFg.setAttribute('transform', 'rotate(-90 ' + cx + ' ' + cy + ')');
+      g.appendChild(ringFg);
+      var pctText = document.createElementNS(NS, 'text');
+      pctText.setAttribute('x', cx); pctText.setAttribute('y', cy + 3);
+      pctText.setAttribute('text-anchor', 'middle');
+      pctText.setAttribute('class', 'dag-pct');
+      pctText.textContent = n.pct + '%';
+      g.appendChild(pctText);
+      var tip = document.createElementNS(NS, 'title');
+      tip.textContent = n.name + ' 已完成 ' + n.hit + '/' + n.problems.length;
+      g.appendChild(tip);
+
       var t1 = document.createElementNS(NS, 'text');
       t1.setAttribute('x', '23');
       t1.setAttribute('y', '27');
       t1.setAttribute('class', 'dag-t');
-      t1.textContent = n.name;
+      t1.textContent = n.name.length > 9 ? n.name.slice(0, 9) + '…' : n.name;
       g.appendChild(t1);
 
       var t2 = document.createElementNS(NS, 'text');
@@ -910,6 +973,26 @@
         item.appendChild(el('span', null, m + ' ' + (S.modules[m] || '')));
         legend.appendChild(item);
       });
+    }
+
+    // 按拓扑推进：前置全部完成才解锁
+    var nextNode = null;
+    nodes.forEach(function (n) {
+      var unlocked = n.pre.every(function (pid) { return byId[pid].pct === 100; });
+      if (!unlocked || n.pct === 100) return;
+      if (!nextNode) { nextNode = n; return; }
+      if (n.pct > 0 && nextNode.pct === 0) { nextNode = n; return; }
+      if ((n.pct > 0) === (nextNode.pct > 0) && n.level < nextNode.level) nextNode = n;
+    });
+    if (nextNode) {
+      var g2 = gNodes.querySelector('[data-id="' + nextNode.id + '"]');
+      if (g2) g2.classList.add('is-next');
+      var pill = document.getElementById('dag-next');
+      if (pill) {
+        pill.hidden = false;
+        pill.textContent = '下一步 · ' + nextNode.mod + ' ' + nextNode.name;
+        pill.addEventListener('click', function () { openNodePanel(nextNode); });
+      }
     }
 
     initPanZoom(svg, vp, width, height);
@@ -1149,6 +1232,10 @@
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
   else init();
 })();
+
+
+
+
 
 
 
