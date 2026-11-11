@@ -1,4 +1,4 @@
-/* ============================================================
+﻿/* ============================================================
    AKIOI · 洛谷题单
    多页面运行时：首页 / 专项训练列表 / Part 页 / 工具 / 真题
    ============================================================ */
@@ -188,6 +188,16 @@
     initPartToolbar();
     applyFilters();
     applyCollapse(false);
+
+    // 从图谱点进来：展开对应小题单并滚到它
+    if (location.hash.indexOf('#t-') === 0) {
+      var tid = decodeURIComponent(location.hash.slice(3));
+      expandedTopics.add(tid);
+      saveSet(EXPANDED_TOPIC_KEY, expandedTopics);
+      applyCollapse(false);
+      var card = document.querySelector('.group[data-topic="' + tid + '"]');
+      if (card) setTimeout(function () { card.scrollIntoView({ behavior: 'smooth', block: 'center' }); }, 120);
+    }
   }
 
   function renderTopic(t) {
@@ -197,6 +207,7 @@
     var head = el('div', 'group-head');
     head.appendChild(el('h3', 'group-title-text', t.name));
     head.appendChild(el('span', 'count', t.problems.length + ' 题'));
+    if (t.level) head.appendChild(el('span', 'topic-level', 'NOI ' + t.level + ' 级'));
     if (t.note) head.appendChild(makeNoteLink(t.note));
     head.appendChild(el('span', 'topic-span', spanOf(t.problems)));
 
@@ -711,13 +722,335 @@
     }
   }
 
+  /* ---------------- 知识图谱（DAG） ---------------- */
+
+  var DAG_COLORS = ['#60a5fa', '#a78bfa', '#f472b6', '#fbbf24', '#34d399', '#22d3ee', '#fb923c', '#c084fc', '#4ade80', '#f87171', '#38bdf8'];
+
+  function initViewSwitch() {
+    var list = document.getElementById('part-list');
+    var dag = document.getElementById('dag-wrap');
+    var bList = document.getElementById('view-list');
+    var bDag = document.getElementById('view-dag');
+    if (!list || !dag || !bList || !bDag) return;
+
+    var built = false;
+    function show(which) {
+      var isDag = which === 'dag';
+      list.hidden = isDag;
+      dag.hidden = !isDag;
+      bList.classList.toggle('active', !isDag);
+      bDag.classList.toggle('active', isDag);
+      try { localStorage.setItem('akioi.training.view', which); } catch (e) {}
+      if (isDag) {
+        if (!built) { buildDag(); built = true; }
+        startStars();
+      } else {
+        stopStars();
+      }
+    }
+    bList.addEventListener('click', function () { show('list'); });
+    bDag.addEventListener('click', function () { show('dag'); });
+
+    var saved = 'list';
+    try { saved = localStorage.getItem('akioi.training.view') || 'list'; } catch (e) {}
+    show(saved);
+  }
+
+  function buildDag() {
+    var svg = document.getElementById('dag-svg');
+    var vp = document.getElementById('dag-viewport');
+    if (!svg || !vp) return;
+
+    var nodes = [];
+    var byId = {};
+    DATA.chapters.forEach(function (ch, ci) {
+      ch.sections.forEach(function (sec) {
+        sec.topics.forEach(function (t, ti) {
+          var n = { id: t.id, name: t.name, level: t.level || 0, pre: (t.pre || []).filter(function (p) { return byId[p] || true; }), ch: ch, order: ci * 100 + ti };
+          nodes.push(n);
+          byId[t.id] = n;
+        });
+      });
+    });
+    nodes.forEach(function (n) {
+      n.pre = n.pre.filter(function (p) { return byId[p]; });
+    });
+
+    // 分层：最长路径
+    var depth = {};
+    function calc(n, stack) {
+      if (depth[n.id] != null) return depth[n.id];
+      if (stack.indexOf(n.id) >= 0) return 0;      // 防环
+      stack.push(n.id);
+      var d = 0;
+      n.pre.forEach(function (p) { d = Math.max(d, calc(byId[p], stack) + 1); });
+      stack.pop();
+      depth[n.id] = d;
+      return d;
+    }
+    nodes.forEach(function (n) { calc(n, []); });
+
+    var COL = 250, ROW = 88, PAD = 40, NW = 206, NH = 66;
+    var layers = [];
+    nodes.forEach(function (n) {
+      var d = depth[n.id];
+      (layers[d] = layers[d] || []).push(n);
+    });
+    var maxRows = 0;
+    layers.forEach(function (arr) {
+      if (!arr) return;
+      arr.sort(function (a, b) { return a.order - b.order; });
+      maxRows = Math.max(maxRows, arr.length);
+    });
+    layers.forEach(function (arr, d) {
+      if (!arr) return;
+      var offset = (maxRows - arr.length) / 2;
+      arr.forEach(function (n, i) {
+        n.x = PAD + d * COL;
+        n.y = PAD + (i + offset) * ROW;
+        n.w = NW;
+        n.h = NH;
+      });
+    });
+
+    var width = PAD * 2 + (layers.length - 1) * COL + NW;
+    var height = PAD * 2 + Math.max(1, maxRows) * ROW;
+
+    var NS = 'http://www.w3.org/2000/svg';
+    vp.innerHTML = '';
+
+    var defs = document.createElementNS(NS, 'defs');
+    defs.innerHTML = '<marker id="dag-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="rgba(148,163,184,.75)"/></marker>';
+    vp.appendChild(defs);
+
+    var gEdges = document.createElementNS(NS, 'g');
+    gEdges.setAttribute('class', 'dag-edges');
+    var gNodes = document.createElementNS(NS, 'g');
+    gNodes.setAttribute('class', 'dag-nodes');
+
+    nodes.forEach(function (n) {
+      n.pre.forEach(function (pid) {
+        var p = byId[pid];
+        var x1 = p.x + p.w, y1 = p.y + p.h / 2;
+        var x2 = n.x, y2 = n.y + n.h / 2;
+        var mx = (x1 + x2) / 2;
+        var path = document.createElementNS(NS, 'path');
+        path.setAttribute('d', 'M' + x1 + ',' + y1 + ' C' + mx + ',' + y1 + ' ' + mx + ',' + y2 + ' ' + x2 + ',' + y2);
+        path.setAttribute('fill', 'none');
+        path.setAttribute('stroke', 'rgba(148,163,184,.28)');
+        path.setAttribute('stroke-width', '1.4');
+        path.setAttribute('marker-end', 'url(#dag-arrow)');
+        gEdges.appendChild(path);
+      });
+    });
+
+    nodes.forEach(function (n) {
+      var g = document.createElementNS(NS, 'g');
+      g.setAttribute('class', 'dag-node');
+      g.setAttribute('transform', 'translate(' + n.x + ',' + n.y + ')');
+      g.setAttribute('data-id', n.id);
+
+      var color = DAG_COLORS[DATA.chapters.indexOf(n.ch) % DAG_COLORS.length];
+      var rect = document.createElementNS(NS, 'rect');
+      rect.setAttribute('width', n.w);
+      rect.setAttribute('height', n.h);
+      rect.setAttribute('rx', '13');
+      rect.setAttribute('fill', 'rgba(15,23,42,.92)');
+      rect.setAttribute('stroke', color);
+      rect.setAttribute('stroke-opacity', '.55');
+      rect.setAttribute('stroke-width', '1.3');
+      g.appendChild(rect);
+
+      var bar = document.createElementNS(NS, 'rect');
+      bar.setAttribute('width', '3');
+      bar.setAttribute('height', n.h - 26);
+      bar.setAttribute('x', '12');
+      bar.setAttribute('y', '13');
+      bar.setAttribute('rx', '2');
+      bar.setAttribute('fill', color);
+      g.appendChild(bar);
+
+      var t1 = document.createElementNS(NS, 'text');
+      t1.setAttribute('x', '24');
+      t1.setAttribute('y', '30');
+      t1.setAttribute('class', 'dag-t');
+      t1.setAttribute('fill', '#e8edf7');
+      t1.setAttribute('font-size', '15');
+      t1.setAttribute('font-weight', '600');
+      t1.setAttribute('font-family', 'Segoe UI, Microsoft YaHei, sans-serif');
+      t1.textContent = n.name;
+      g.appendChild(t1);
+
+      var t2 = document.createElementNS(NS, 'text');
+      t2.setAttribute('x', '24');
+      t2.setAttribute('y', '51');
+      t2.setAttribute('class', 'dag-s');
+      t2.setAttribute('fill', '#93a3bd');
+      t2.setAttribute('font-size', '10');
+      t2.setAttribute('font-family', 'Segoe UI, Microsoft YaHei, sans-serif');
+      t2.textContent = '归属 · ' + n.ch.code + ' · NOI 大纲 ' + n.level + ' 级';
+      g.appendChild(t2);
+
+      var cnt = document.createElementNS(NS, 'text');
+      cnt.setAttribute('x', String(n.w - 12));
+      cnt.setAttribute('y', '27');
+      cnt.setAttribute('text-anchor', 'end');
+      cnt.setAttribute('class', 'dag-c');
+      cnt.textContent = n.problems ? '' : '';
+      g.appendChild(cnt);
+
+      g.addEventListener('click', function () { openTopic(n); });
+      gNodes.appendChild(g);
+    });
+
+    vp.appendChild(gEdges);
+    vp.appendChild(gNodes);
+
+    svg.setAttribute('viewBox', '0 0 ' + width + ' ' + height);
+    svg.setAttribute('width', width);
+    svg.setAttribute('height', height);
+
+    initPanZoom(svg, vp, width, height);
+  }
+
+  function openTopic(n) {
+    var slug = n.ch.id.replace(/^ch-/, '');
+    location.href = BASE + 'training/' + slug + '.html#t-' + encodeURIComponent(n.id);
+  }
+
+  function initPanZoom(svg, vp, width, height) {
+    var state = { x: 0, y: 0, k: 1 };
+    function apply() {
+      vp.setAttribute('transform', 'translate(' + state.x + ',' + state.y + ') scale(' + state.k + ')');
+    }
+    apply();
+
+    var host = document.getElementById('dag-wrap');
+    var MIN_K = 0.62;
+    function fit() {
+      var cw = host.clientWidth, chh = host.clientHeight;
+      var k = Math.min(1, (cw - 24) / width, (chh - 24) / height);
+      k = Math.max(MIN_K, k);
+      state.k = k;
+      state.x = (cw - width * k) / 2;
+      state.y = (chh - height * k) / 2;
+      apply();
+    }
+    requestAnimationFrame(fit);
+    if (window.ResizeObserver) new ResizeObserver(fit).observe(host);
+
+    svg.addEventListener('wheel', function (e) {
+      e.preventDefault();
+      var k = state.k * (e.deltaY > 0 ? 0.92 : 1.08);
+      k = Math.max(0.3, Math.min(2, k));
+      var r = svg.getBoundingClientRect();
+      var px = e.clientX - r.left, py = e.clientY - r.top;
+      state.x = px - (px - state.x) * (k / state.k);
+      state.y = py - (py - state.y) * (k / state.k);
+      state.k = k;
+      apply();
+    }, { passive: false });
+
+    var dragging = false, sx = 0, sy = 0;
+    svg.addEventListener('pointerdown', function (e) {
+      dragging = true; sx = e.clientX - state.x; sy = e.clientY - state.y;
+      svg.setPointerCapture(e.pointerId);
+      svg.classList.add('dragging');
+    });
+    svg.addEventListener('pointermove', function (e) {
+      if (!dragging) return;
+      state.x = e.clientX - sx; state.y = e.clientY - sy;
+      apply();
+    });
+    svg.addEventListener('pointerup', function (e) {
+      dragging = false;
+      try { svg.releasePointerCapture(e.pointerId); } catch (err) {}
+      svg.classList.remove('dragging');
+    });
+
+    var reset = document.getElementById('dag-reset');
+    if (reset) reset.addEventListener('click', fit);
+    var zin = document.getElementById('dag-zoom-in');
+    var zout = document.getElementById('dag-zoom-out');
+    if (zin) zin.addEventListener('click', function () { state.k = Math.min(2, state.k * 1.15); apply(); });
+    if (zout) zout.addEventListener('click', function () { state.k = Math.max(0.3, state.k / 1.15); apply(); });
+  }
+
+  /* ---------------- 星空背景 ---------------- */
+
+  var starRaf = null;
+  function startStars() {
+    var cv = document.getElementById('stars');
+    if (!cv || starRaf) return;
+    var ctx = cv.getContext('2d');
+    var host = cv.parentElement;
+    var stars = [];
+    function resize() {
+      var dpr = Math.min(2, window.devicePixelRatio || 1);
+      cv.width = host.clientWidth * dpr;
+      cv.height = host.clientHeight * dpr;
+      cv.style.width = host.clientWidth + 'px';
+      cv.style.height = host.clientHeight + 'px';
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      stars = [];
+      var n = Math.round((host.clientWidth * host.clientHeight) / 5200);
+      for (var i = 0; i < n; i++) {
+        stars.push({
+          x: Math.random() * host.clientWidth,
+          y: Math.random() * host.clientHeight,
+          r: Math.random() * 1.3 + 0.3,
+          a: Math.random(),
+          sp: Math.random() * 0.018 + 0.004,
+          dx: (Math.random() - 0.5) * 0.06,
+          dy: Math.random() * 0.05 + 0.012
+        });
+      }
+    }
+    resize();
+    var ro = window.ResizeObserver ? new ResizeObserver(resize) : null;
+    if (ro) ro.observe(host);
+
+    function frame() {
+      var w = host.clientWidth, h = host.clientHeight;
+      ctx.clearRect(0, 0, w, h);
+      for (var i = 0; i < stars.length; i++) {
+        var s = stars[i];
+        s.a += s.sp;
+        var alpha = 0.35 + 0.6 * Math.abs(Math.sin(s.a));
+        s.x += s.dx; s.y += s.dy;
+        if (s.y > h + 2) { s.y = -2; s.x = Math.random() * w; }
+        if (s.x < -2) s.x = w + 2;
+        if (s.x > w + 2) s.x = -2;
+        ctx.beginPath();
+        ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+        ctx.fillStyle = 'rgba(226,232,240,' + alpha.toFixed(3) + ')';
+        ctx.fill();
+      }
+      starRaf = requestAnimationFrame(frame);
+    }
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      for (var i = 0; i < stars.length; i++) {
+        ctx.beginPath();
+        ctx.arc(stars[i].x, stars[i].y, stars[i].r, 0, Math.PI * 2);
+        ctx.fillStyle = 'rgba(226,232,240,.5)';
+        ctx.fill();
+      }
+      return;
+    }
+    starRaf = requestAnimationFrame(frame);
+  }
+
+  function stopStars() {
+    if (starRaf) { cancelAnimationFrame(starRaf); starRaf = null; }
+  }
+
   /* ---------------- 启动 ---------------- */
 
   function init() {
     initTheme();
     window.__akioiToast = toast;
     if (PAGE === 'home') renderHome();
-    else if (PAGE === 'parts') renderParts();
+    else if (PAGE === 'parts') { renderParts(); initViewSwitch(); }
     else if (PAGE === 'part') renderPart();
     else if (PAGE === 'exam') renderExam();
     initTransfer();
@@ -726,3 +1059,6 @@
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
   else init();
 })();
+
+
+

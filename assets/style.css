@@ -1,4 +1,4 @@
-/* ============================================================
+﻿/* ============================================================
    AKIOI · 洛谷题单
    纯静态、零依赖。主题色板参考洛谷难度颜色。
    ============================================================ */
@@ -1226,3 +1226,124 @@ body, .topbar, .toolbar, .entry-card, .part-card, .tool-card, .group, .chapter-h
 .exam-name { font-size: 16px; }
 .exam-top .exam-count { margin-left: auto; }
 .exam-meta .exam-num { font-family: var(--mono); }
+
+/* ============================================================
+   知识图谱（DAG）+ 星空
+   ============================================================ */
+
+.view-switch {
+  display: inline-flex;
+  gap: 2px;
+  padding: 3px;
+  margin-top: 14px;
+  border-radius: 10px;
+  background: var(--bg-soft);
+  border: 1px solid var(--line);
+}
+.view-switch button {
+  padding: 5px 16px;
+  border: 0;
+  border-radius: 7px;
+  background: transparent;
+  color: var(--text-2);
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background .18s ease, color .18s ease;
+}
+.view-switch button:hover { color: var(--text); }
+.view-switch button.active { background: var(--card); color: var(--text); font-weight: 600; box-shadow: var(--shadow-sm); }
+
+.topic-level {
+  flex: none;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--accent);
+  background: var(--accent-soft);
+  border-radius: 999px;
+  padding: 1px 8px;
+  align-self: center;
+}
+
+.dag-wrap {
+  position: relative;
+  height: min(74vh, 720px);
+  min-height: 480px;
+  margin-bottom: 44px;
+  border-radius: 18px;
+  border: 1px solid #1e293b;
+  overflow: hidden;
+  background:
+    radial-gradient(720px 380px at 18% 12%, rgba(56, 189, 248, .12), transparent 70%),
+    radial-gradient(620px 360px at 82% 78%, rgba(168, 85, 247, .13), transparent 72%),
+    radial-gradient(900px 520px at 50% 120%, rgba(59, 130, 246, .10), transparent 70%),
+    #070b14;
+  box-shadow: inset 0 0 120px rgba(2, 6, 23, .9), 0 18px 50px -30px rgba(2, 6, 23, .8);
+  touch-action: none;
+}
+
+.dag-stars { position: absolute; inset: 0; display: block; pointer-events: none; }
+
+.dag-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  cursor: grab;
+  user-select: none;
+  max-width: none;
+}
+.dag-svg.dragging { cursor: grabbing; }
+
+.dag-t { fill: #e2e8f0; font-size: 14px; font-weight: 600; font-family: var(--font); }
+.dag-s { fill: #94a3b8; font-size: 10.5px; font-family: var(--font); }
+.dag-node { cursor: pointer; }
+.dag-node rect { transition: stroke-opacity .16s ease, fill .16s ease; }
+.dag-node:hover rect { stroke-opacity: 1; fill: rgba(30, 41, 59, .98); }
+.dag-node:hover .dag-t { fill: #ffffff; }
+.dag-node:hover .dag-s { fill: #cbd5e1; }
+
+.dag-hint {
+  position: absolute;
+  left: 16px; bottom: 14px;
+  font-size: 11.5px;
+  color: #64748b;
+  pointer-events: none;
+  letter-spacing: .02em;
+}
+
+.dag-controls {
+  position: absolute;
+  right: 14px; bottom: 12px;
+  display: flex;
+  gap: 6px;
+}
+.dag-controls button {
+  min-width: 32px;
+  height: 30px;
+  padding: 0 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(148, 163, 184, .28);
+  background: rgba(15, 23, 42, .8);
+  color: #cbd5e1;
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+}
+.dag-controls button:hover { border-color: rgba(148, 163, 184, .55); color: #fff; }
+
+@media (max-width: 700px) {
+  .dag-wrap { height: 62vh; min-height: 380px; }
+  .dag-hint { display: none; }
+}
+
+/* hidden 必须真的隐藏（避免被 display:grid 等覆盖） */
+[hidden] { display: none !important; }
+.dag-t { font-size: 15px; }
+.dag-s { font-size: 9.5px; }
+
+.dag-wrap { height: min(84vh, 820px); }
+
+/* DAG 里的文字不要继承图标的描边样式 */
+.dag-svg text { stroke: none; stroke-width: 0; }

@@ -2,7 +2,7 @@
 window.AKIOI_DATA = {
   "site": "AKIOI",
   "title": "AKIOI · 洛谷题单",
-  "updated": "2026-11-10",
+  "updated": "2026-11-11",
   "total": 707,
   "chapters": [
     {
@@ -22,6 +22,8 @@ window.AKIOI_DATA = {
               "name": "模拟",
               "desc": "照着题意一步步实现，练手感、练细节。输入输出格式、边界条件、多组数据都要看仔细；难一点的是把规则本身写清楚。",
               "note": "https://cuberxl.github.io/Coders-Note/2B-基本算法/",
+              "level": 3,
+              "pre": [],
               "problems": [
                 {
                   "pid": "P1001",
@@ -305,6 +307,10 @@ window.AKIOI_DATA = {
               "name": "枚举",
               "desc": "把可能的答案全部试一遍，再想办法剪掉明显不可能的。难点是设计枚举的维度，以及估算复杂度到底能不能过。",
               "note": "https://cuberxl.github.io/Coders-Note/2B-基本算法/",
+              "level": 3,
+              "pre": [
+                "basic"
+              ],
               "problems": [
                 {
                   "pid": "P1008",
@@ -428,6 +434,10 @@ window.AKIOI_DATA = {
               "name": "排序",
               "desc": "会用 sort 只是开始，真正要练的是自定义比较函数、结构体排序，以及排序之后能顺手解决什么。",
               "note": "https://cuberxl.github.io/Coders-Note/2B-基本算法/2B.1-排序算法",
+              "level": 3,
+              "pre": [
+                "basic"
+              ],
               "problems": [
                 {
                   "pid": "P1152",
@@ -571,6 +581,10 @@ window.AKIOI_DATA = {
               "name": "二分",
               "desc": "答案具有单调性就能二分。重点是写对边界：while 条件、mid 取值、最后返回谁；还有把「判定」写对。",
               "note": "https://cuberxl.github.io/Coders-Note/2B-基本算法/2B.2-二分查找",
+              "level": 4,
+              "pre": [
+                "sort"
+              ],
               "problems": [
                 {
                   "pid": "P2249",
@@ -774,6 +788,10 @@ window.AKIOI_DATA = {
               "name": "前缀和与差分",
               "desc": "把区间求和变成两个前缀相减，把区间加法变成两个差分点。二维前缀和、差分数组是「把 O(n) 降成 O(1)」最常用的一招。（参考《算法竞赛进阶指南》0x03）",
               "note": "https://cuberxl.github.io/Coders-Note/2B-基本算法/2B.4-前缀和、差分",
+              "level": 4,
+              "pre": [
+                "basic"
+              ],
               "problems": [
                 {
                   "pid": "P3397",
@@ -867,6 +885,10 @@ window.AKIOI_DATA = {
               "name": "递推与递归",
               "desc": "找出 f(n) 和 f(n-1) 的关系，或把大问题拆成同构的小问题。递归要想清楚出口、回溯与重复计算。",
               "note": "https://cuberxl.github.io/Coders-Note/2B-基本算法/",
+              "level": 4,
+              "pre": [
+                "basic"
+              ],
               "problems": [
                 {
                   "pid": "P1028",
@@ -925,6 +947,10 @@ window.AKIOI_DATA = {
               "name": "高精度",
               "desc": "用数组模拟竖式运算。加减乘除各写一遍就够用了，注意进位、前导零与符号；再往上会和高精度 gcd、压位一起出现。",
               "note": "https://cuberxl.github.io/Coders-Note/2B-基本算法/2B.3-高精度算法",
+              "level": 4,
+              "pre": [
+                "basic"
+              ],
               "problems": [
                 {
                   "pid": "P1601",
@@ -1043,6 +1069,10 @@ window.AKIOI_DATA = {
               "name": "位运算",
               "desc": "按位与/或/异或/移位，配合贪心从高位往低位确定答案；线性基是异或空间的「基」，树上线性基则要配合倍增。",
               "note": "https://cuberxl.github.io/Coders-Note/1B-基本语法/1B.10-位运算",
+              "level": 4,
+              "pre": [
+                "basic"
+              ],
               "problems": [
                 {
                   "pid": "P1100",
@@ -1086,6 +1116,11 @@ window.AKIOI_DATA = {
               "name": "分治与倍增",
               "desc": "分治把区间一分为二分别处理；倍增用 2^k 的跳跃把 O(n) 压到 O(log n)，ST 表与倍增求 LCA 都靠它。",
               "note": "https://cuberxl.github.io/Coders-Note/2B-基本算法/",
+              "level": 5,
+              "pre": [
+                "recur",
+                "sort"
+              ],
               "problems": [
                 {
                   "pid": "P2345",
@@ -1165,6 +1200,10 @@ window.AKIOI_DATA = {
               "name": "栈、队列与堆",
               "desc": "单调栈 / 单调队列找「左右第一个更大/更小」，堆维护动态极值。进阶是优先队列的「延迟删除」与对顶堆。",
               "note": "https://cuberxl.github.io/Coders-Note/3B-数据结构/3B.2-单调栈、单调队列",
+              "level": 4,
+              "pre": [
+                "basic"
+              ],
               "problems": [
                 {
                   "pid": "P3156",
@@ -1278,6 +1317,10 @@ window.AKIOI_DATA = {
               "name": "二叉树",
               "desc": "二叉树的遍历、由遍历序列重建、以及堆式编号等性质；是后面树形结构与树形 DP 的地基。",
               "note": "https://cuberxl.github.io/Coders-Note/3B-数据结构/",
+              "level": 5,
+              "pre": [
+                "recur"
+              ],
               "problems": [
                 {
                   "pid": "P4715",
@@ -1331,6 +1374,11 @@ window.AKIOI_DATA = {
               "name": "字符串",
               "desc": "哈希用来快速比较，KMP 求前缀函数与循环节，manacher 求回文，AC 自动机是多模式匹配，后缀数组是字符串问题的高级工具。",
               "note": "https://cuberxl.github.io/Coders-Note/3B-数据结构/3B.3-KMP模式匹配",
+              "level": 6,
+              "pre": [
+                "enum",
+                "binary"
+              ],
               "problems": [
                 {
                   "pid": "P3370",
@@ -1494,6 +1542,10 @@ window.AKIOI_DATA = {
               "name": "Trie",
               "desc": "用公共前缀压缩存储字符串集合，插入、查询、前缀统计都是 O(串长)。",
               "note": "https://cuberxl.github.io/Coders-Note/3B-数据结构/3B.4-Trie树",
+              "level": 6,
+              "pre": [
+                "string"
+              ],
               "problems": [
                 {
                   "pid": "P8306",
@@ -1533,6 +1585,10 @@ window.AKIOI_DATA = {
               "name": "并查集",
               "desc": "合并集合、查询连通性，路径压缩 + 按秩合并近乎 O(1)；带权并查集能处理「相对关系」。",
               "note": "https://cuberxl.github.io/Coders-Note/3P-数据结构进阶/3P.1-并查集",
+              "level": 5,
+              "pre": [
+                "ds-stack"
+              ],
               "problems": [
                 {
                   "pid": "P3367",
@@ -1571,6 +1627,11 @@ window.AKIOI_DATA = {
               "name": "树状数组与线段树",
               "desc": "单点改区间查用树状数组，区间改区间查用线段树加懒标记。进阶是「维护什么信息、怎么合并」，以及树状数组套树状数组。",
               "note": "https://cuberxl.github.io/Coders-Note/3P-数据结构进阶/3P.2-树状数组",
+              "level": 6,
+              "pre": [
+                "prefix",
+                "divide"
+              ],
               "problems": [
                 {
                   "pid": "P1908",
@@ -1659,6 +1720,11 @@ window.AKIOI_DATA = {
               "name": "平衡树",
               "desc": "维护有序集合的插入、删除、第 k 小与前驱后继；Treap 是最好写的实现。",
               "note": "https://cuberxl.github.io/Coders-Note/3P-数据结构进阶/",
+              "level": 7,
+              "pre": [
+                "bintree",
+                "ds-tree"
+              ],
               "problems": [
                 {
                   "pid": "P2234",
@@ -1687,6 +1753,11 @@ window.AKIOI_DATA = {
               "name": "分块与可持久化",
               "desc": "分块、点分治、可持久化、扫描线。它们都是在「普通数据结构不够用」时出现的工具，套路固定但细节多。（参考《算法竞赛进阶指南》0x44–0x48）",
               "note": "https://cuberxl.github.io/Coders-Note/3P-数据结构进阶/",
+              "level": 8,
+              "pre": [
+                "ds-tree",
+                "balanced"
+              ],
               "problems": [
                 {
                   "pid": "P2003",
@@ -1810,6 +1881,10 @@ window.AKIOI_DATA = {
               "name": "高级数据结构",
               "desc": "树链剖分、ST 表、单调结构与并查集扩展——把「路径/区间上的查询」压到 log 级。",
               "note": "https://cuberxl.github.io/Coders-Note/3P-数据结构进阶/",
+              "level": 8,
+              "pre": [
+                "ds-tree"
+              ],
               "problems": [
                 {
                   "pid": "P1197",
@@ -1949,6 +2024,10 @@ window.AKIOI_DATA = {
               "name": "搜索",
               "desc": "DFS 管排列组合与连通块，BFS 管最少步数。先写清楚搜索树，再考虑优化。",
               "note": "https://cuberxl.github.io/Coders-Note/4B-搜索/",
+              "level": 4,
+              "pre": [
+                "recur"
+              ],
               "problems": [
                 {
                   "pid": "P1605",
@@ -2093,6 +2172,10 @@ window.AKIOI_DATA = {
               "name": "剪枝与迭代加深",
               "desc": "搜索能过不能过，全看剪枝：可行性剪枝、最优性剪枝、迭代加深、双向搜索、启发式（IDA*/A*）。",
               "note": "https://cuberxl.github.io/Coders-Note/4P-搜索进阶/",
+              "level": 5,
+              "pre": [
+                "search-basic"
+              ],
               "problems": [
                 {
                   "pid": "P1379",
@@ -2172,6 +2255,10 @@ window.AKIOI_DATA = {
               "name": "最短路",
               "desc": "Dijkstra 管非负权，SPFA / Bellman-Ford 管负权，Floyd 管多源与传递闭包。先判断图的性质再选算法；分层图能省掉很多讨论。",
               "note": "https://cuberxl.github.io/Coders-Note/5B-图论/5B.3-最短路算法/5B.3.1-Dijkstra算法",
+              "level": 6,
+              "pre": [
+                "ds-stack"
+              ],
               "problems": [
                 {
                   "pid": "P3371",
@@ -2395,6 +2482,11 @@ window.AKIOI_DATA = {
               "name": "生成树",
               "desc": "Kruskal 按边权加边、Prim 从点扩张；进阶要会次小生成树与树上倍增。",
               "note": "https://cuberxl.github.io/Coders-Note/5B-图论/5B.4-最小生成树/5B.4.2-Kruskal算法",
+              "level": 6,
+              "pre": [
+                "dsu",
+                "graph-shortest"
+              ],
               "problems": [
                 {
                   "pid": "P3366",
@@ -2473,6 +2565,10 @@ window.AKIOI_DATA = {
               "name": "二分图",
               "desc": "染色判定二分图；最大匹配用匈牙利或网络流，很多「分配」题都归到这里。",
               "note": "https://cuberxl.github.io/Coders-Note/5B-图论/5B.5-二分图",
+              "level": 7,
+              "pre": [
+                "search-basic"
+              ],
               "problems": [
                 {
                   "pid": "P1330",
@@ -2507,6 +2603,10 @@ window.AKIOI_DATA = {
               "name": "拓扑排序与树",
               "desc": "DAG 上按入度推进，天然适合做「先后顺序」和「递推式」的问题；倍增与 LCA 是树上查询的标配，树上差分则是路径修改的利器。",
               "note": "https://cuberxl.github.io/Coders-Note/5B-图论/5B.2-拓扑排序",
+              "level": 6,
+              "pre": [
+                "ds-stack"
+              ],
               "problems": [
                 {
                   "pid": "P4017",
@@ -2630,6 +2730,11 @@ window.AKIOI_DATA = {
               "name": "连通性与网络流",
               "desc": "Tarjan 求强连通分量与割点，最大流 / 费用流把「分配问题」变成网络上的流量问题。",
               "note": "https://cuberxl.github.io/Coders-Note/5P-图论进阶/5P.5-Tarjan算法/5P.5.1-强连通分量（SCC）",
+              "level": 8,
+              "pre": [
+                "graph-shortest",
+                "graph-topo"
+              ],
               "problems": [
                 {
                   "pid": "P10944",
@@ -2788,6 +2893,10 @@ window.AKIOI_DATA = {
               "name": "差分约束",
               "desc": "把 x_v − x_u ≤ w 写成 u→v 的边，跑最短路（或判负环）即可。",
               "note": "https://cuberxl.github.io/Coders-Note/5P-图论进阶/5P.10-差分约束",
+              "level": 7,
+              "pre": [
+                "graph-shortest"
+              ],
               "problems": [
                 {
                   "pid": "P5960",
@@ -2817,6 +2926,10 @@ window.AKIOI_DATA = {
               "name": "背包 DP",
               "desc": "01 背包倒序、完全背包正序，这是唯一的硬性约定。再往上走是单调队列优化、方案计数和「消失一个物品」这类变形。",
               "note": "https://cuberxl.github.io/Coders-Note/6B-动态规划/6B.1-背包DP",
+              "level": 5,
+              "pre": [
+                "dp-linear"
+              ],
               "problems": [
                 {
                   "pid": "P1048",
@@ -3070,6 +3183,10 @@ window.AKIOI_DATA = {
               "name": "线性 DP",
               "desc": "状态沿着序列推进：前 i 个、以 i 结尾、第 i 位放什么。先写朴素转移，再考虑压缩空间、优化转移。",
               "note": "https://cuberxl.github.io/Coders-Note/6B-动态规划/6B.2-线性DP",
+              "level": 5,
+              "pre": [
+                "recur"
+              ],
               "problems": [
                 {
                   "pid": "P1216",
@@ -3243,6 +3360,10 @@ window.AKIOI_DATA = {
               "name": "区间 DP",
               "desc": "以区间长度为阶段，枚举断点合并两个子区间。环上的问题通常断环成链、复制一遍。",
               "note": "https://cuberxl.github.io/Coders-Note/6B-动态规划/6B.3-区间DP",
+              "level": 6,
+              "pre": [
+                "dp-linear"
+              ],
               "problems": [
                 {
                   "pid": "P1435",
@@ -3352,6 +3473,11 @@ window.AKIOI_DATA = {
               "name": "树形 DP",
               "desc": "在树上做 DP，把父亲的状态看成儿子信息的合并：选不选、覆盖没覆盖、留几条链、子树大小怎么分配。",
               "note": "https://cuberxl.github.io/Coders-Note/6B-动态规划/6B.7-树形DP",
+              "level": 6,
+              "pre": [
+                "bintree",
+                "dp-linear"
+              ],
               "problems": [
                 {
                   "pid": "P1352",
@@ -3445,6 +3571,11 @@ window.AKIOI_DATA = {
               "name": "状压与数位 DP",
               "desc": "状压把集合压成二进制整数；数位 DP 按位填数，用「是否顶到上界」控制搜索范围。",
               "note": "https://cuberxl.github.io/Coders-Note/6B-动态规划/6B.6-状态压缩DP",
+              "level": 7,
+              "pre": [
+                "bit",
+                "dp-linear"
+              ],
               "problems": [
                 {
                   "pid": "P2657",
@@ -3594,6 +3725,10 @@ window.AKIOI_DATA = {
               "name": "贪心",
               "desc": "每步都选当前最优。难点不在写代码，而在证明「局部最优能推出全局最优」；证明不出来时，多半要换成 DP。",
               "note": "https://cuberxl.github.io/Coders-Note/7B-贪心/",
+              "level": 4,
+              "pre": [
+                "sort"
+              ],
               "problems": [
                 {
                   "pid": "P1223",
@@ -3848,6 +3983,10 @@ window.AKIOI_DATA = {
               "name": "数论",
               "desc": "质数筛、快速幂、逆元、扩展欧几里得、CRT。数学题的套路是先推式子，再套模板，最后注意取模细节。",
               "note": "https://cuberxl.github.io/Coders-Note/8B-数学/8B.1-初等数论/8B.1.1-质数",
+              "level": 7,
+              "pre": [
+                "bignum"
+              ],
               "problems": [
                 {
                   "pid": "P3383",
@@ -3921,6 +4060,10 @@ window.AKIOI_DATA = {
               "name": "组合、矩阵与概率",
               "desc": "组合数用阶乘与逆元，递推用矩阵加速，概率期望则倒着推：E[i] 由后继状态决定。",
               "note": "https://cuberxl.github.io/Coders-Note/8B-数学/8B.3-离散数学/8B.3.1-组合计数",
+              "level": 7,
+              "pre": [
+                "math-nt"
+              ],
               "problems": [
                 {
                   "pid": "P2822",

@@ -33,7 +33,7 @@ const chapters = source.chapters.map((ch) => {
       }
       // 主题内部按难度从低到高，同难度保持人工编排顺序
       problems.sort((a, b) => a.difficulty - b.difficulty);
-      return { id: t.id, name: t.name, desc: t.desc, note: t.note || '', problems };
+      return { id: t.id, name: t.name, desc: t.desc, note: t.note || '', level: t.level || 0, pre: t.pre || [], problems };
     }).filter((t) => t.problems.length > 0);
     const count = topics.reduce((n, t) => n + t.problems.length, 0);
     return { id: sec.id, name: sec.name, count, topics };
@@ -139,7 +139,7 @@ python -m http.server 8080
 
 ## 功能
 
-- 首页三入口，Part 独立页面，不再是单页折叠
+- 首页三入口，Part 独立页面，不再是单页折叠`n- 专项训练支持「列表 / 图谱」切换：图谱是知识点 DAG（星空背景，可拖拽缩放），节点标注所属 Part 与 NOI 大纲级别
 - 每个 Part 内按小题单折叠，支持题号 / 题名搜索（快捷键 \`/\`）、难度筛选
 - 打卡后进度保存在浏览器 localStorage，可在「实用工具」里导出 / 导入
 - 浅色 / 深色主题，全站共用；移动端适配
@@ -248,9 +248,24 @@ writeFileSync(join(root, 'training', 'index.html'), SHELL({
   main: `  <section class="page-head">
     <nav class="crumbs"><a href="../index.html">首页</a> / <span>专项训练</span></nav>
     <h1>专项训练</h1>
-    <p class="lead">按笔记章节编号划分 Part，共 ${chapters.length} 个 Part、${total} 道题。点进任意 Part 查看该章的题目与进度。</p>
+    <p class="lead">按笔记章节编号划分 Part，共 ${chapters.length} 个 Part、${total} 道题。可以切到「图谱」看知识点之间的依赖关系。</p>
+    <div class="view-switch" id="view-switch">
+      <button type="button" id="view-list" class="active">列表</button>
+      <button type="button" id="view-dag">图谱</button>
+    </div>
   </section>
-  <section class="part-list" id="part-list"></section>`
+  <section class="part-list" id="part-list"></section>
+
+  <section class="dag-wrap" id="dag-wrap" hidden>
+    <canvas id="stars" class="dag-stars"></canvas>
+    <svg id="dag-svg" class="dag-svg" xmlns="http://www.w3.org/2000/svg"><g id="dag-viewport"></g></svg>
+    <div class="dag-hint">拖动平移 · 滚轮缩放 · 点节点跳到对应小题单</div>
+    <div class="dag-controls">
+      <button type="button" id="dag-zoom-in" title="放大">＋</button>
+      <button type="button" id="dag-zoom-out" title="缩小">－</button>
+      <button type="button" id="dag-reset" title="复位">复位</button>
+    </div>
+  </section>`
 }), 'utf8');
 
 /* 每个 Part 一页 */
@@ -318,6 +333,8 @@ function versionize(file) {
   if (next !== html) writeFileSync(p, next, 'utf8');
 }
 ['index.html', 'tools/index.html', 'exam/index.html'].forEach(versionize);
+
+
 
 
 
