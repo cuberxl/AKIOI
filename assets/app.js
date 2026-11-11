@@ -900,7 +900,7 @@
       cnt.textContent = n.problems ? '' : '';
       g.appendChild(cnt);
 
-      g.addEventListener('click', function () { openTopic(n); });
+      g.addEventListener('click', function (e) { e.stopPropagation(); openTopic(n); });
       gNodes.appendChild(g);
     });
 
@@ -968,6 +968,8 @@
 
     var dragging = false, sx = 0, sy = 0;
     svg.addEventListener('pointerdown', function (e) {
+      // 点在节点上时不进入拖拽，否则 pointer capture 会吃掉节点的 click
+      if (e.target.closest && e.target.closest('.dag-node')) return;
       dragging = true; sx = e.clientX - state.x; sy = e.clientY - state.y;
       svg.setPointerCapture(e.pointerId);
       svg.classList.add('dragging');
@@ -978,6 +980,7 @@
       apply();
     });
     svg.addEventListener('pointerup', function (e) {
+      if (!dragging) return;
       dragging = false;
       try { svg.releasePointerCapture(e.pointerId); } catch (err) {}
       svg.classList.remove('dragging');
@@ -1074,6 +1077,7 @@
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
   else init();
 })();
+
 
 
 

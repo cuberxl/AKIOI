@@ -1299,9 +1299,9 @@ body, .topbar, .toolbar, .entry-card, .part-card, .tool-card, .group, .chapter-h
 .dag-s { fill: #94a3b8; font-size: 10.5px; font-family: var(--font); }
 .dag-node { cursor: pointer; }
 .dag-node rect { transition: stroke-opacity .16s ease, fill .16s ease; }
-.dag-node:hover rect { stroke-opacity: 1; fill: rgba(30, 41, 59, .98); }
-.dag-node:hover .dag-t { fill: #ffffff; }
-.dag-node:hover .dag-s { fill: #cbd5e1; }
+.dag-node:hover .dag-box { fill: color-mix(in srgb, var(--accent) 8%, var(--card)); }
+.dag-node:hover .dag-t { fill: var(--text); }
+.dag-node:hover .dag-s { fill: var(--text-2); }
 
 .dag-hint {
   position: absolute;
@@ -1465,3 +1465,4 @@ body.dag-open { overflow: hidden; }
 .dag-bar .dag-legend-item { flex: none; }
 @media (max-width: 1200px) { .dag-bar-sub { display: none; } }
 @media (max-width: 900px) { .dag-bar .dag-legend { display: none; } }
+
