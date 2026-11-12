@@ -1637,3 +1637,9 @@ body.dag-panel-open .dag-legend { opacity: .25; }
 .radar-pct { font-family: var(--mono); text-align: right; color: var(--muted); }
 .radar-block { margin-top: 8px; }
 @media (max-width: 760px) { .radar-wrap { grid-template-columns: 1fr; } }
+
+/* 图谱里的图形不要继承图标的黑色描边 */
+.dag-svg .dag-bar-accent { stroke: none; }
+.dag-svg .dag-box { stroke-width: 1.3; }
+.dag-svg marker path { stroke: none; }
+.dag-svg .dag-ring-bg, .dag-svg .dag-ring-fg { stroke-width: 2.6; }
