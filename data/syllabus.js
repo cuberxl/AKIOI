@@ -1,6 +1,6 @@
 /* 由 tools/build-syllabus.mjs 生成，数据来源：NOI 大纲 + 洛谷题单 */
 window.AKIOI_SYLLABUS = {
-  "updated": "2026-11-11",
+  "updated": "2026-11-12",
   "modules": {
     "M1": "编程基础与模拟",
     "M2": "排序与贪心",
@@ -14,6 +14,7 @@ window.AKIOI_SYLLABUS = {
   "nodes": [
     {
       "id": "M1-1",
+      "label": "归属·B1-NOI1级",
       "mod": "M1",
       "modName": "编程基础与模拟",
       "layer": 0,
@@ -326,6 +327,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M1-2",
+      "label": "归属·B2-NOI1级",
       "mod": "M1",
       "modName": "编程基础与模拟",
       "layer": 0,
@@ -360,6 +362,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M1-3",
+      "label": "归属·B3-NOI1级",
       "mod": "M1",
       "modName": "编程基础与模拟",
       "layer": 0,
@@ -394,6 +397,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M1-4",
+      "label": "归属·B4-NOI3级",
       "mod": "M1",
       "modName": "编程基础与模拟",
       "layer": 1,
@@ -433,6 +437,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M1-5",
+      "label": "归属·B5-NOI3级",
       "mod": "M1",
       "modName": "编程基础与模拟",
       "layer": 1,
@@ -467,6 +472,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M1-6",
+      "label": "归属·B6-NOI3级",
       "mod": "M1",
       "modName": "编程基础与模拟",
       "layer": 1,
@@ -496,6 +502,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M1-7",
+      "label": "归属·B7-NOI3级",
       "mod": "M1",
       "modName": "编程基础与模拟",
       "layer": 1,
@@ -625,6 +632,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M1-8",
+      "label": "归属·B8-NOI5级",
       "mod": "M1",
       "modName": "编程基础与模拟",
       "layer": 2,
@@ -654,6 +662,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M1-9",
+      "label": "归属·B9-NOI5级",
       "mod": "M1",
       "modName": "编程基础与模拟",
       "layer": 2,
@@ -684,6 +693,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M2-1",
+      "label": "归属·B1-NOI2级",
       "mod": "M2",
       "modName": "排序与贪心",
       "layer": 0,
@@ -833,6 +843,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M2-2",
+      "label": "归属·B2-NOI2级",
       "mod": "M2",
       "modName": "排序与贪心",
       "layer": 0,
@@ -1077,6 +1088,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M2-3",
+      "label": "归属·B3-NOI4级",
       "mod": "M2",
       "modName": "排序与贪心",
       "layer": 1,
@@ -1111,6 +1123,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M2-4",
+      "label": "归属·B4-NOI4级",
       "mod": "M2",
       "modName": "排序与贪心",
       "layer": 1,
@@ -1146,6 +1159,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M2-5",
+      "label": "归属·B5-NOI4级",
       "mod": "M2",
       "modName": "排序与贪心",
       "layer": 1,
@@ -1181,6 +1195,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M2-6",
+      "label": "归属·B6-NOI6级",
       "mod": "M2",
       "modName": "排序与贪心",
       "layer": 2,
@@ -1211,6 +1226,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M3-1",
+      "label": "归属·P1-NOI3级",
       "mod": "M3",
       "modName": "数据结构",
       "layer": 0,
@@ -1235,56 +1251,12 @@ window.AKIOI_SYLLABUS = {
           "pid": "P1996",
           "name": "约瑟夫问题",
           "difficulty": 2
-        },
-        {
-          "pid": "P4715",
-          "name": "【深基16.例1】淘汰赛",
-          "difficulty": 2
-        },
-        {
-          "pid": "P4913",
-          "name": "【深基16.例3】二叉树深度",
-          "difficulty": 2
-        },
-        {
-          "pid": "P1827",
-          "name": "[USACO3.4] 美国血统 American Heritage",
-          "difficulty": 2
-        },
-        {
-          "pid": "P1305",
-          "name": "新二叉树",
-          "difficulty": 2
-        },
-        {
-          "pid": "P1364",
-          "name": "医院设置",
-          "difficulty": 3
-        },
-        {
-          "pid": "P1229",
-          "name": "遍历问题",
-          "difficulty": 3
-        },
-        {
-          "pid": "P3884",
-          "name": "[JLOI2009] 二叉树问题",
-          "difficulty": 3
-        },
-        {
-          "pid": "P5076",
-          "name": "【深基16.例7】普通二叉树（简化版）",
-          "difficulty": 4
-        },
-        {
-          "pid": "P1185",
-          "name": "绘制二叉树",
-          "difficulty": 4
         }
       ]
     },
     {
       "id": "M3-2",
+      "label": "归属·P2-NOI3级",
       "mod": "M3",
       "modName": "数据结构",
       "layer": 0,
@@ -1409,6 +1381,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M3-3",
+      "label": "归属·P3-NOI3级",
       "mod": "M3",
       "modName": "数据结构",
       "layer": 0,
@@ -1523,6 +1496,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M3-4",
+      "label": "归属·P4-NOI3级",
       "mod": "M3",
       "modName": "数据结构",
       "layer": 0,
@@ -1732,6 +1706,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M3-5",
+      "label": "归属·P5-NOI5级",
       "mod": "M3",
       "modName": "数据结构",
       "layer": 1,
@@ -1781,6 +1756,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M3-6",
+      "label": "归属·P6-NOI5级",
       "mod": "M3",
       "modName": "数据结构",
       "layer": 1,
@@ -1816,6 +1792,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M3-7",
+      "label": "归属·P7-NOI5级",
       "mod": "M3",
       "modName": "数据结构",
       "layer": 1,
@@ -1849,16 +1826,6 @@ window.AKIOI_SYLLABUS = {
         {
           "pid": "P3368",
           "name": "【模板】树状数组 2",
-          "difficulty": 4
-        },
-        {
-          "pid": "P3372",
-          "name": "【模板】线段树 1",
-          "difficulty": 4
-        },
-        {
-          "pid": "P3373",
-          "name": "【模板】线段树 2",
           "difficulty": 4
         },
         {
@@ -1915,6 +1882,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M3-8",
+      "label": "归属·P8-NOI5级",
       "mod": "M3",
       "modName": "数据结构",
       "layer": 1,
@@ -1949,6 +1917,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M3-9",
+      "label": "归属·P9-NOI5级",
       "mod": "M3",
       "modName": "数据结构",
       "layer": 1,
@@ -1978,6 +1947,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M3-10",
+      "label": "归属·P10-NOI5级",
       "mod": "M3",
       "modName": "数据结构",
       "layer": 1,
@@ -2012,6 +1982,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M3-11",
+      "label": "归属·P11-NOI5级",
       "mod": "M3",
       "modName": "数据结构",
       "layer": 1,
@@ -2096,6 +2067,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M3-12",
+      "label": "归属·P12-NOI7级",
       "mod": "M3",
       "modName": "数据结构",
       "layer": 2,
@@ -2135,6 +2107,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M3-13",
+      "label": "归属·P13-NOI7级",
       "mod": "M3",
       "modName": "数据结构",
       "layer": 2,
@@ -2275,6 +2248,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M3-14",
+      "label": "归属·P14-NOI7级",
       "mod": "M3",
       "modName": "数据结构",
       "layer": 2,
@@ -2416,6 +2390,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M3-15",
+      "label": "归属·P15-NOI7级",
       "mod": "M3",
       "modName": "数据结构",
       "layer": 2,
@@ -2450,6 +2425,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M4-1",
+      "label": "归属·P1-NOI4级",
       "mod": "M4",
       "modName": "搜索与枚举",
       "layer": 0,
@@ -2604,6 +2580,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M4-2",
+      "label": "归属·P2-NOI4级",
       "mod": "M4",
       "modName": "搜索与枚举",
       "layer": 0,
@@ -2638,6 +2615,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M4-3",
+      "label": "归属·P3-NOI4级",
       "mod": "M4",
       "modName": "搜索与枚举",
       "layer": 0,
@@ -2772,6 +2750,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M4-4",
+      "label": "归属·P4-NOI6级",
       "mod": "M4",
       "modName": "搜索与枚举",
       "layer": 1,
@@ -2851,6 +2830,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M4-5",
+      "label": "归属·P5-NOI6级",
       "mod": "M4",
       "modName": "搜索与枚举",
       "layer": 1,
@@ -2885,6 +2865,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M4-6",
+      "label": "归属·P6-NOI6级",
       "mod": "M4",
       "modName": "搜索与枚举",
       "layer": 1,
@@ -2919,6 +2900,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M4-7",
+      "label": "归属·P7-NOI6级",
       "mod": "M4",
       "modName": "搜索与枚举",
       "layer": 1,
@@ -2954,6 +2936,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M4-8",
+      "label": "归属·P8-NOI8级",
       "mod": "M4",
       "modName": "搜索与枚举",
       "layer": 2,
@@ -2983,6 +2966,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M5-1",
+      "label": "归属·P1-NOI5级",
       "mod": "M5",
       "modName": "动态规划",
       "layer": 0,
@@ -3057,6 +3041,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M5-2",
+      "label": "归属·P2-NOI5级",
       "mod": "M5",
       "modName": "动态规划",
       "layer": 0,
@@ -3153,11 +3138,6 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 4
         },
         {
-          "pid": "P1439",
-          "name": "两个排列的最长公共子序列",
-          "difficulty": 4
-        },
-        {
           "pid": "P1541",
           "name": "[NOIP 2010 提高组] 乌龟棋",
           "difficulty": 4
@@ -3246,6 +3226,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M5-3",
+      "label": "归属·P3-NOI5级",
       "mod": "M5",
       "modName": "动态规划",
       "layer": 0,
@@ -3280,6 +3261,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M5-4",
+      "label": "归属·P4-NOI7级",
       "mod": "M5",
       "modName": "动态规划",
       "layer": 1,
@@ -3539,6 +3521,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M5-5",
+      "label": "归属·P5-NOI7级",
       "mod": "M5",
       "modName": "动态规划",
       "layer": 1,
@@ -3638,6 +3621,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M5-6",
+      "label": "归属·P6-NOI7级",
       "mod": "M5",
       "modName": "动态规划",
       "layer": 1,
@@ -3743,6 +3727,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M5-7",
+      "label": "归属·P7-NOI7级",
       "mod": "M5",
       "modName": "动态规划",
       "layer": 1,
@@ -3893,6 +3878,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M5-8",
+      "label": "归属·P8-NOI7级",
       "mod": "M5",
       "modName": "动态规划",
       "layer": 1,
@@ -3932,6 +3918,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M5-9",
+      "label": "归属·P9-NOI9级",
       "mod": "M5",
       "modName": "动态规划",
       "layer": 2,
@@ -3967,6 +3954,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M5-10",
+      "label": "归属·P10-NOI9级",
       "mod": "M5",
       "modName": "动态规划",
       "layer": 2,
@@ -4002,6 +3990,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M5-11",
+      "label": "归属·P11-NOI9级",
       "mod": "M5",
       "modName": "动态规划",
       "layer": 2,
@@ -4036,6 +4025,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M6-1",
+      "label": "归属·X1-NOI6级",
       "mod": "M6",
       "modName": "图论",
       "layer": 0,
@@ -4066,11 +4056,57 @@ window.AKIOI_SYLLABUS = {
           "pid": "P1162",
           "name": "填涂颜色",
           "difficulty": 2
+        },
+        {
+          "pid": "P4715",
+          "name": "【深基16.例1】淘汰赛",
+          "difficulty": 2
+        },
+        {
+          "pid": "P4913",
+          "name": "【深基16.例3】二叉树深度",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1827",
+          "name": "[USACO3.4] 美国血统 American Heritage",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1305",
+          "name": "新二叉树",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1364",
+          "name": "医院设置",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1229",
+          "name": "遍历问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3884",
+          "name": "[JLOI2009] 二叉树问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P5076",
+          "name": "【深基16.例7】普通二叉树（简化版）",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1185",
+          "name": "绘制二叉树",
+          "difficulty": 4
         }
       ]
     },
     {
       "id": "M6-2",
+      "label": "归属·X2-NOI6级",
       "mod": "M6",
       "modName": "图论",
       "layer": 0,
@@ -4205,6 +4241,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M6-3",
+      "label": "归属·X3-NOI8级",
       "mod": "M6",
       "modName": "图论",
       "layer": 1,
@@ -4435,6 +4472,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M6-4",
+      "label": "归属·X4-NOI8级",
       "mod": "M6",
       "modName": "图论",
       "layer": 1,
@@ -4464,6 +4502,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M6-5",
+      "label": "归属·X5-NOI8级",
       "mod": "M6",
       "modName": "图论",
       "layer": 1,
@@ -4559,6 +4598,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M6-6",
+      "label": "归属·X6-NOI8级",
       "mod": "M6",
       "modName": "图论",
       "layer": 1,
@@ -4593,6 +4633,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M6-7",
+      "label": "归属·X7-NOI8级",
       "mod": "M6",
       "modName": "图论",
       "layer": 1,
@@ -4627,6 +4668,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M6-8",
+      "label": "归属·X8-NOI10级",
       "mod": "M6",
       "modName": "图论",
       "layer": 2,
@@ -4662,6 +4704,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M6-9",
+      "label": "归属·X9-NOI10级",
       "mod": "M6",
       "modName": "图论",
       "layer": 2,
@@ -4696,6 +4739,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M6-10",
+      "label": "归属·X10-NOI10级",
       "mod": "M6",
       "modName": "图论",
       "layer": 2,
@@ -4866,6 +4910,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M6-11",
+      "label": "归属·X11-NOI10级",
       "mod": "M6",
       "modName": "图论",
       "layer": 2,
@@ -4901,6 +4946,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M7-1",
+      "label": "归属·X1-NOI7级",
       "mod": "M7",
       "modName": "数学与数论",
       "layer": 0,
@@ -4960,6 +5006,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M7-2",
+      "label": "归属·X2-NOI7级",
       "mod": "M7",
       "modName": "数学与数论",
       "layer": 0,
@@ -4981,18 +5028,8 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 2
         },
         {
-          "pid": "P1226",
-          "name": "【模板】快速幂",
-          "difficulty": 2
-        },
-        {
           "pid": "P1835",
           "name": "素数密度",
-          "difficulty": 3
-        },
-        {
-          "pid": "P3811",
-          "name": "【模板】模意义下的乘法逆元",
           "difficulty": 3
         },
         {
@@ -5011,11 +5048,6 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 4
         },
         {
-          "pid": "P1495",
-          "name": "【模板】中国剩余定理（CRT）/ 曹冲养猪",
-          "difficulty": 5
-        },
-        {
           "pid": "P1516",
           "name": "[ZJOI2002] 青蛙的约会",
           "difficulty": 5
@@ -5028,11 +5060,6 @@ window.AKIOI_SYLLABUS = {
         {
           "pid": "P3868",
           "name": "[TJOI2009] 猜数字",
-          "difficulty": 5
-        },
-        {
-          "pid": "P4777",
-          "name": "【模板】扩展中国剩余定理（EXCRT）",
           "difficulty": 5
         },
         {
@@ -5049,6 +5076,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M7-3",
+      "label": "归属·X3-NOI7级",
       "mod": "M7",
       "modName": "数学与数论",
       "layer": 0,
@@ -5083,6 +5111,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M7-4",
+      "label": "归属·X4-NOI9级",
       "mod": "M7",
       "modName": "数学与数论",
       "layer": 1,
@@ -5118,6 +5147,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M7-5",
+      "label": "归属·X5-NOI9级",
       "mod": "M7",
       "modName": "数学与数论",
       "layer": 1,
@@ -5152,6 +5182,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M7-6",
+      "label": "归属·X6-NOI9级",
       "mod": "M7",
       "modName": "数学与数论",
       "layer": 1,
@@ -5186,6 +5217,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M7-7",
+      "label": "归属·X7-NOI9级",
       "mod": "M7",
       "modName": "数学与数论",
       "layer": 1,
@@ -5221,6 +5253,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M7-8",
+      "label": "归属·X8-NOI9级",
       "mod": "M7",
       "modName": "数学与数论",
       "layer": 1,
@@ -5255,6 +5288,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M7-9",
+      "label": "归属·X9-NOI9级",
       "mod": "M7",
       "modName": "数学与数论",
       "layer": 1,
@@ -5279,11 +5313,6 @@ window.AKIOI_SYLLABUS = {
           "pid": "P3197",
           "name": "[HNOI2008] 越狱",
           "difficulty": 3
-        },
-        {
-          "pid": "P3390",
-          "name": "【模板】矩阵快速幂",
-          "difficulty": 4
         },
         {
           "pid": "P1962",
@@ -5349,6 +5378,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M7-10",
+      "label": "归属·X10-NOI10级",
       "mod": "M7",
       "modName": "数学与数论",
       "layer": 2,
@@ -5383,6 +5413,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M7-11",
+      "label": "归属·X11-NOI10级",
       "mod": "M7",
       "modName": "数学与数论",
       "layer": 2,
@@ -5418,6 +5449,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M7-12",
+      "label": "归属·X12-NOI10级",
       "mod": "M7",
       "modName": "数学与数论",
       "layer": 2,
@@ -5452,6 +5484,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M8-1",
+      "label": "归属·X1-NOI8级",
       "mod": "M8",
       "modName": "字符串与其他",
       "layer": 0,
@@ -5483,11 +5516,6 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 2
         },
         {
-          "pid": "P3370",
-          "name": "【模板】字符串哈希",
-          "difficulty": 2
-        },
-        {
           "pid": "P1481",
           "name": "魔族密码",
           "difficulty": 2
@@ -5496,11 +5524,6 @@ window.AKIOI_SYLLABUS = {
           "pid": "P3879",
           "name": "[TJOI2010] 阅读理解",
           "difficulty": 2
-        },
-        {
-          "pid": "P1210",
-          "name": "[USACO1.3] 最长的回文 Calf Flac",
-          "difficulty": 3
         },
         {
           "pid": "P3375",
@@ -5526,16 +5549,6 @@ window.AKIOI_SYLLABUS = {
           "pid": "P6824",
           "name": "「EZEC-4」可乐",
           "difficulty": 4
-        },
-        {
-          "pid": "P1872",
-          "name": "回文串计数",
-          "difficulty": 4
-        },
-        {
-          "pid": "P3805",
-          "name": "【模板】Manacher",
-          "difficulty": 5
         },
         {
           "pid": "P2375",
@@ -5578,18 +5591,8 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 5
         },
         {
-          "pid": "P12213",
-          "name": "[蓝桥杯 2023 国 Python B] 最长回文前后缀",
-          "difficulty": 5
-        },
-        {
           "pid": "P5410",
           "name": "【模板】扩展 KMP / exKMP（Z 函数）",
-          "difficulty": 6
-        },
-        {
-          "pid": "P3808",
-          "name": "AC 自动机（简单版）",
           "difficulty": 6
         },
         {
@@ -5600,16 +5603,6 @@ window.AKIOI_SYLLABUS = {
         {
           "pid": "P3763",
           "name": "[TJOI2017] DNA",
-          "difficulty": 6
-        },
-        {
-          "pid": "P3809",
-          "name": "【模板】后缀排序（SA）",
-          "difficulty": 6
-        },
-        {
-          "pid": "P6216",
-          "name": "回文匹配",
           "difficulty": 6
         },
         {
@@ -5641,6 +5634,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M8-2",
+      "label": "归属·X2-NOI10级",
       "mod": "M8",
       "modName": "字符串与其他",
       "layer": 1,
@@ -5675,6 +5669,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M8-3",
+      "label": "归属·X3-NOI10级",
       "mod": "M8",
       "modName": "字符串与其他",
       "layer": 1,
@@ -5709,6 +5704,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M8-4",
+      "label": "归属·X4-NOI10级",
       "mod": "M8",
       "modName": "字符串与其他",
       "layer": 1,
@@ -5720,8 +5716,18 @@ window.AKIOI_SYLLABUS = {
       ],
       "problems": [
         {
+          "pid": "P1210",
+          "name": "[USACO1.3] 最长的回文 Calf Flac",
+          "difficulty": 3
+        },
+        {
           "pid": "P4552",
           "name": "[Poetize6] IncDec Sequence",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1872",
+          "name": "回文串计数",
           "difficulty": 4
         },
         {
@@ -5735,6 +5741,11 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 5
         },
         {
+          "pid": "P12213",
+          "name": "[蓝桥杯 2023 国 Python B] 最长回文前后缀",
+          "difficulty": 5
+        },
+        {
           "pid": "P6216",
           "name": "回文匹配",
           "difficulty": 6
@@ -5743,6 +5754,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M8-5",
+      "label": "归属·X5-NOI10级",
       "mod": "M8",
       "modName": "字符串与其他",
       "layer": 1,
@@ -5777,6 +5789,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M8-6",
+      "label": "归属·X6-NOI10级",
       "mod": "M8",
       "modName": "字符串与其他",
       "layer": 2,
@@ -5812,6 +5825,7 @@ window.AKIOI_SYLLABUS = {
     },
     {
       "id": "M8-7",
+      "label": "归属·X7-NOI10级",
       "mod": "M8",
       "modName": "字符串与其他",
       "layer": 2,
@@ -5845,5 +5859,5 @@ window.AKIOI_SYLLABUS = {
       ]
     }
   ],
-  "totalProblems": 941
+  "totalProblems": 928
 };

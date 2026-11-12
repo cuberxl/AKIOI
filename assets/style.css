@@ -1586,8 +1586,7 @@ body.dag-panel-open .dag-legend { opacity: .25; }
   border-color: transparent;
   background: color-mix(in srgb, var(--danger) 82%, #000);
 }
-.row .flag { grid-area: flag; }
-@media (max-width: 700px) { .row .flag { align-self: center; } }
+@media (max-width: 700px) { .row .flag { grid-area: flag; align-self: center; } }
 
 /* ---------- 图谱：完成度圈 / 推荐 ---------- */
 .dag-ring-bg { fill: none; stroke: color-mix(in srgb, var(--muted) 28%, transparent); stroke-width: 3; }
@@ -1620,3 +1619,21 @@ body.dag-panel-open .dag-legend { opacity: .25; }
   cursor: pointer;
 }
 .dag-next:hover { border-style: solid; }
+
+
+/* ---------- 完成度雷达 ---------- */
+.radar-wrap { display: grid; grid-template-columns: 340px minmax(0, 1fr); gap: 28px; align-items: center; }
+.radar { width: 100%; max-width: 340px; height: auto; }
+.radar-ring { fill: none; stroke: var(--line); stroke-width: 1; }
+.radar-axis { stroke: var(--line); stroke-width: 1; }
+.radar-area { fill: color-mix(in srgb, var(--accent) 20%, transparent); stroke: var(--accent); stroke-width: 2; stroke-linejoin: round; }
+.radar-dot { fill: var(--accent); }
+.radar-label { fill: var(--muted); font-size: 11px; font-family: var(--mono); }
+.radar-legend { display: grid; gap: 9px; }
+.radar-row { display: grid; grid-template-columns: 30px minmax(0, 1fr) 96px 44px; gap: 10px; align-items: center; font-size: 12.5px; color: var(--text-2); }
+.radar-key { font-family: var(--mono); font-size: 11px; color: var(--accent); }
+.radar-meter { height: 6px; border-radius: 999px; background: var(--line); overflow: hidden; }
+.radar-meter i { display: block; height: 100%; border-radius: 999px; background: linear-gradient(90deg, var(--accent), var(--accent-2)); }
+.radar-pct { font-family: var(--mono); text-align: right; color: var(--muted); }
+.radar-block { margin-top: 8px; }
+@media (max-width: 760px) { .radar-wrap { grid-template-columns: 1fr; } }

@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+﻿#!/usr/bin/env node
 /**
  * 合成 data/syllabus.js：
  *   1. NOI 大纲 79 条细目（来自 tools/noi-points.json）
@@ -37,7 +37,7 @@ const TOPIC_TO_NODE = {
   divide: 'M3-11',
 
   'ds-stack': 'M3-2',
-  bintree: 'M3-1',
+  bintree: 'M6-1',
   string: 'M8-1',
   trie: 'M8-5',
 
@@ -68,6 +68,19 @@ const TOPIC_TO_NODE = {
   'math-comb': 'M7-9'
 };
 
+// 题名关键词细化：把同主题里明显属于别的条目的题挪过去
+const ROUTE = {
+  string: [[/AC\s*自动机|ACAM/i, 'M8-6'], [/manacher|回文/i, 'M8-4'], [/哈希|hash/i, 'M8-2'], [/后缀/i, 'M8-7']],
+  'ds-tree': [[/树状数组/i, 'M3-7'], [/线段树/i, 'M3-8']],
+  'math-nt': [[/中国剩余|CRT/i, 'M7-6'], [/逆元|组合/i, 'M7-5'], [/欧拉/i, 'M7-4'], [/质数|筛/i, 'M7-2'], [/gcd|快速幂/i, 'M7-3']],
+  'math-comb': [[/矩阵/i, 'M7-7'], [/概率|期望/i, 'M7-8'], [/容斥/i, 'M7-9']],
+  'dp-linear': [[/LIS|LCS|最长(上升|公共)/i, 'M5-3']],
+  'graph-shortest': [[/Floyd/i, 'M6-4']],
+  'search-basic': [[/BFS|广搜/i, 'M4-2']],
+  'dp-state': [[/数位/i, 'M5-9']],
+  greedy: [[/反悔/i, 'M2-3'], [/二分/i, 'M2-5']]
+};
+
 const src = readJson(join(here, 'noi-points.json'));
 const meta = readJson(join(here, 'meta.json'));
 const training = readJson(join(here, 'source.json'));
@@ -80,7 +93,13 @@ training.chapters.forEach((ch) => {
     sec.topics.forEach((t) => {
       const nodeId = TOPIC_TO_NODE[t.id];
       if (!nodeId) { console.warn('未映射主题: ' + t.id + ' ' + t.name); return; }
-      (extra[nodeId] = extra[nodeId] || []).push(...t.problems);
+      const rules = ROUTE[t.id] || [];
+      t.problems.forEach((pid) => {
+        let target = nodeId;
+        const name = (meta[pid] && meta[pid].name) || '';
+        for (const [re, nid] of rules) { if (re.test(name)) { target = nid; break; } }
+        (extra[target] = extra[target] || []).push(pid);
+      });
     });
   });
 });
@@ -98,8 +117,11 @@ const nodes = src.nodes.map((n) => {
     .map((pid) => ({ pid, name: meta[pid].name, difficulty: meta[pid].difficulty }))
     .sort((a, b) => a.difficulty - b.difficulty);
 
+  const phase = ['M1', 'M2'].includes(n.mod) ? 'B' : (['M3', 'M4', 'M5'].includes(n.mod) ? 'P' : 'X');
+  const num = Number(String(n.id).split('-')[1]) || 1;
   return {
     id: n.id,
+    label: '归属·' + phase + num + '-NOI' + level + '级',
     mod: n.mod,
     modName: MODULES[n.mod] || n.mod,
     layer: n.layer,
@@ -120,3 +142,4 @@ Object.entries(MODULES).forEach(([id, name]) => {
   const list = nodes.filter((n) => n.mod === id);
   console.log(`  ${id} ${name}: ${list.length} 条，${list.reduce((a, n) => a + n.problems.length, 0)} 题`);
 });
+

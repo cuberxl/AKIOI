@@ -473,8 +473,8 @@
 
     var shuffle = document.getElementById('shuffle-btn');
     if (shuffle) shuffle.addEventListener('click', function () {
-      ('.group').forEach(function (card) {
-        var rows = ('.row:not([hidden])', card);
+      $$('.group').forEach(function (card) {
+        var rows = $$('.row:not([hidden])', card);
         if (rows.length < 2) return;
         var box = rows[0].parentNode;
         rows.slice().sort(function () { return Math.random() - 0.5; }).forEach(function (r) { box.appendChild(r); });
@@ -542,6 +542,96 @@
       updateProgress();
       toast('进度已清空');
     });
+  }
+
+  /* ---------------- 完成度雷达 ---------------- */
+
+  function renderRadar() {
+    var svg = document.getElementById('radar');
+    var S = window.AKIOI_SYLLABUS;
+    if (!svg || !S || !S.nodes) return;
+    var NS = 'http://www.w3.org/2000/svg';
+    var mods = Object.keys(S.modules || {});
+    if (!mods.length) return;
+
+    var stats = mods.map(function (m) {
+      var total = 0, hit = 0;
+      S.nodes.forEach(function (n) {
+        if (n.mod !== m) return;
+        n.problems.forEach(function (p) { total++; if (done.has(p.pid)) hit++; });
+      });
+      return { m: m, name: S.modules[m], total: total, hit: hit, pct: total ? hit / total : 0 };
+    });
+
+    var c = 170, R = 116;
+    svg.innerHTML = '';
+    function pt(i, r) {
+      var a = -Math.PI / 2 + (Math.PI * 2 * i) / mods.length;
+      return [c + Math.cos(a) * r, c + Math.sin(a) * r];
+    }
+    [0.25, 0.5, 0.75, 1].forEach(function (f) {
+      var d = mods.map(function (_, i) {
+        var p = pt(i, R * f);
+        return (i ? 'L' : 'M') + p[0].toFixed(1) + ',' + p[1].toFixed(1);
+      }).join(' ') + ' Z';
+      var ring = document.createElementNS(NS, 'path');
+      ring.setAttribute('d', d);
+      ring.setAttribute('class', 'radar-ring');
+      svg.appendChild(ring);
+    });
+    mods.forEach(function (_, i) {
+      var p = pt(i, R);
+      var line = document.createElementNS(NS, 'line');
+      line.setAttribute('x1', c); line.setAttribute('y1', c);
+      line.setAttribute('x2', p[0].toFixed(1)); line.setAttribute('y2', p[1].toFixed(1));
+      line.setAttribute('class', 'radar-axis');
+      svg.appendChild(line);
+    });
+    var dvals = stats.map(function (s, i) {
+      var p = pt(i, R * Math.max(s.pct, 0.02));
+      return (i ? 'L' : 'M') + p[0].toFixed(1) + ',' + p[1].toFixed(1);
+    }).join(' ') + ' Z';
+    var poly = document.createElementNS(NS, 'path');
+    poly.setAttribute('d', dvals);
+    poly.setAttribute('class', 'radar-area');
+    svg.appendChild(poly);
+    stats.forEach(function (s, i) {
+      var p = pt(i, R * Math.max(s.pct, 0.02));
+      var dot = document.createElementNS(NS, 'circle');
+      dot.setAttribute('cx', p[0].toFixed(1));
+      dot.setAttribute('cy', p[1].toFixed(1));
+      dot.setAttribute('r', '3.2');
+      dot.setAttribute('class', 'radar-dot');
+      svg.appendChild(dot);
+
+      var lab = pt(i, R + 20);
+      var txt = document.createElementNS(NS, 'text');
+      txt.setAttribute('x', lab[0].toFixed(1));
+      txt.setAttribute('y', lab[1].toFixed(1));
+      txt.setAttribute('class', 'radar-label');
+      txt.setAttribute('text-anchor', Math.abs(lab[0] - c) < 12 ? 'middle' : (lab[0] > c ? 'start' : 'end'));
+      txt.setAttribute('dominant-baseline', 'middle');
+      txt.textContent = s.m;
+      svg.appendChild(txt);
+    });
+
+    var legend = document.getElementById('radar-legend');
+    if (legend) {
+      legend.innerHTML = '';
+      stats.forEach(function (s) {
+        var row = el('div', 'radar-row');
+        row.appendChild(el('span', 'radar-key', s.m));
+        row.appendChild(el('span', 'radar-name', s.name));
+        var meter = el('span', 'radar-meter');
+        var fill = el('i');
+        fill.style.width = Math.round(s.pct * 100) + '%';
+        meter.appendChild(fill);
+        row.appendChild(meter);
+        row.appendChild(el('span', 'radar-pct', Math.round(s.pct * 100) + '%'));
+        row.title = s.m + ' ' + s.name + '：' + s.hit + '/' + s.total;
+        legend.appendChild(row);
+      });
+    }
   }
 
   /* ---------------- 真题模拟 ---------------- */
@@ -823,7 +913,7 @@
     var byId = {};
     S.nodes.forEach(function (n, i) {
       var node = {
-        id: n.id, name: n.t, sub: n.s, level: n.level, mod: n.mod,
+        id: n.id, name: n.t, sub: n.s, level: n.level, label: n.label, mod: n.mod,
         modName: n.modName, pre: n.pre || [], problems: n.problems || [],
         order: i,
         color: DAG_COLORS[(mods.indexOf(n.mod) + 1) % DAG_COLORS.length]
@@ -895,21 +985,23 @@
       g.setAttribute('transform', 'translate(' + n.x + ',' + n.y + ')');
       g.setAttribute('data-id', n.id);
 
-      var statusColor = n.pct === 100 ? '#10b981' : (n.pct > 0 ? n.color : '#94a3b8');
+      var statusColor = n.pct === 100 ? '#10b981' : n.color;
       var rect = document.createElementNS(NS, 'rect');
       rect.setAttribute('width', n.w);
       rect.setAttribute('height', n.h);
       rect.setAttribute('class', 'dag-box' + (n.pct === 100 ? ' is-full' : ''));
       rect.setAttribute('rx', '13');
-      rect.setAttribute('stroke', statusColor);
+      rect.setAttribute('stroke', n.color);
+      rect.setAttribute('stroke-opacity', (0.12 + 0.88 * (n.pct / 100)).toFixed(2));
       g.appendChild(rect);
 
       var bar = document.createElementNS(NS, 'rect');
-      bar.setAttribute('width', '3');
-      bar.setAttribute('height', n.h - 24);
-      bar.setAttribute('x', '12');
-      bar.setAttribute('y', '12');
-      bar.setAttribute('rx', '2');
+      bar.setAttribute('class', 'dag-bar-accent');
+      bar.setAttribute('width', '7');
+      bar.setAttribute('height', n.h - 12);
+      bar.setAttribute('x', '0');
+      bar.setAttribute('y', '6');
+      bar.setAttribute('rx', '4');
       bar.setAttribute('fill', n.color);
       g.appendChild(bar);
 
@@ -938,17 +1030,17 @@
       g.appendChild(tip);
 
       var t1 = document.createElementNS(NS, 'text');
-      t1.setAttribute('x', '23');
+      t1.setAttribute('x', '26');
       t1.setAttribute('y', '27');
       t1.setAttribute('class', 'dag-t');
       t1.textContent = n.name.length > 9 ? n.name.slice(0, 9) + '…' : n.name;
       g.appendChild(t1);
 
       var t2 = document.createElementNS(NS, 'text');
-      t2.setAttribute('x', '23');
+      t2.setAttribute('x', '26');
       t2.setAttribute('y', '46');
       t2.setAttribute('class', 'dag-s');
-      t2.textContent = n.mod + ' ' + n.modName + ' · NOI 大纲 ' + n.level + ' 级';
+      t2.textContent = n.label || (n.mod + ' · NOI ' + n.level + ' 级');
       g.appendChild(t2);
 
       g.addEventListener('click', function (e) { e.stopPropagation(); openNodePanel(n); });
@@ -1001,7 +1093,7 @@
   function openNodePanel(n) {
     var panel = document.getElementById('dag-panel');
     if (!panel) return;
-    setText('dp-mod', n.mod + ' ' + n.modName);
+    setText('dp-mod', (n.label || '') + ' · ' + n.mod + ' ' + n.modName);
     setText('dp-title', n.name);
     setText('dp-sub', n.sub || '');
     var meta = document.getElementById('dp-meta');
@@ -1027,7 +1119,7 @@
         var a = el('button', 'dp-pre-link', other ? other.t : pid);
         a.type = 'button';
         a.addEventListener('click', function () {
-          if (other) openNodePanel({ id: other.id, name: other.t, sub: other.s, level: other.level, mod: other.mod, modName: other.modName, pre: other.pre || [], problems: other.problems || [] });
+          if (other) openNodePanel({ id: other.id, name: other.t, sub: other.s, level: other.level, label: other.label, mod: other.mod, modName: other.modName, pre: other.pre || [], problems: other.problems || [] });
         });
         preBox.appendChild(a);
       });
@@ -1222,7 +1314,7 @@
   function init() {
     initTheme();
     window.__akioiToast = toast;
-    if (PAGE === 'home') renderHome();
+    if (PAGE === 'home') { renderHome(); renderRadar(); }
     else if (PAGE === 'parts') { renderParts(); initViewSwitch(); }
     else if (PAGE === 'part') renderPart();
     else if (PAGE === 'exam') renderExam();
@@ -1232,6 +1324,11 @@
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
   else init();
 })();
+
+
+
+
+
 
 
 
