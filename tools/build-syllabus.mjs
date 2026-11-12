@@ -1,9 +1,10 @@
 ﻿#!/usr/bin/env node
 /**
  * 合成 data/syllabus.js：
- *   1. NOI 大纲 79 条细目（来自 tools/noi-points.json）
- *   2. 每条自带的大纲必做题（req）
- *   3. 把「专项训练」707 道题按知识点并入对应条目
+ *   1. NOI 大纲 79 条细目（tools/noi-points.json）
+ *   2. 每条自带的大纲必做题 + 专项训练并入的题（去重）
+ *   3. 归属标签按「该条目题目的实际难度中位数」定级：
+ *      B 入门（中位难度 ≤ 普及-）/ P 提高（普及 ~ 普及+/提高-）/ X NOI（提高及以上）
  */
 import { readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
@@ -24,51 +25,21 @@ const MODULES = {
   M8: '字符串与其他'
 };
 
-// 专项训练主题 -> 大纲条目
+// 专项训练主题 -> 大纲条目（默认归属）
 const TOPIC_TO_NODE = {
-  basic: 'M1-1',
-  enum: 'M4-3',
-  sort: 'M2-1',
-  binary: 'M3-4',
-  prefix: 'M3-3',
-  recur: 'M5-1',
-  bignum: 'M1-7',
-  bit: 'M7-1',
-  divide: 'M3-11',
-
-  'ds-stack': 'M3-2',
-  bintree: 'M6-1',
-  string: 'M8-1',
-  trie: 'M8-5',
-
-  dsu: 'M3-5',
-  'ds-tree': 'M3-7',
-  balanced: 'M3-12',
-  'ds-adv': 'M3-13',
-  'ds-advanced': 'M3-14',
-
-  'search-basic': 'M4-1',
-  'search-adv': 'M4-4',
-
-  'graph-shortest': 'M6-3',
-  mst: 'M6-5',
-  bipartite: 'M6-6',
-  'graph-topo': 'M6-2',
-  'graph-flow': 'M6-10',
-  'spfa-diff': 'M6-11',
-
-  'dp-linear': 'M5-2',
-  'dp-knapsack': 'M5-4',
-  'dp-interval': 'M5-5',
-  'dp-tree': 'M5-6',
-  'dp-state': 'M5-7',
-
-  greedy: 'M2-2',
-  'math-nt': 'M7-2',
-  'math-comb': 'M7-9'
+  basic: 'M1-1', enum: 'M4-3', sort: 'M2-1', binary: 'M3-4', prefix: 'M3-3',
+  recur: 'M5-1', bignum: 'M1-7', bit: 'M7-1', divide: 'M3-11',
+  'ds-stack': 'M3-2', bintree: 'M6-1', string: 'M8-1', trie: 'M8-5',
+  dsu: 'M3-5', 'ds-tree': 'M3-7', balanced: 'M3-12', 'ds-adv': 'M3-13', 'ds-advanced': 'M3-14',
+  'search-basic': 'M4-1', 'search-adv': 'M4-4',
+  'graph-shortest': 'M6-3', mst: 'M6-5', bipartite: 'M6-6',
+  'graph-topo': 'M6-2', 'graph-flow': 'M6-10', 'spfa-diff': 'M6-11',
+  'dp-linear': 'M5-2', 'dp-knapsack': 'M5-4', 'dp-interval': 'M5-5',
+  'dp-tree': 'M5-6', 'dp-state': 'M5-7',
+  greedy: 'M2-2', 'math-nt': 'M7-2', 'math-comb': 'M7-9'
 };
 
-// 题名关键词细化：把同主题里明显属于别的条目的题挪过去
+// 题名关键词细化
 const ROUTE = {
   string: [[/AC\s*自动机|ACAM/i, 'M8-6'], [/manacher|回文/i, 'M8-4'], [/哈希|hash/i, 'M8-2'], [/后缀/i, 'M8-7']],
   'ds-tree': [[/树状数组/i, 'M3-7'], [/线段树/i, 'M3-8']],
@@ -104,10 +75,13 @@ training.chapters.forEach((ch) => {
   });
 });
 
-const nodes = src.nodes.map((n) => {
-  const modNum = Number(String(n.mod).replace(/\D/g, '')) || 1;
-  const level = clamp(modNum + n.layer * 2, 1, 10);
+const median = (arr) => {
+  if (!arr.length) return 2;
+  const a = arr.slice().sort((x, y) => x - y);
+  return a[Math.floor(a.length / 2)];
+};
 
+const nodes = src.nodes.map((n) => {
   const pids = [];
   const push = (pid) => { if (!pids.includes(pid) && meta[pid]) pids.push(pid); };
   n.req.forEach(push);
@@ -117,29 +91,32 @@ const nodes = src.nodes.map((n) => {
     .map((pid) => ({ pid, name: meta[pid].name, difficulty: meta[pid].difficulty }))
     .sort((a, b) => a.difficulty - b.difficulty);
 
-  const phase = ['M1', 'M2'].includes(n.mod) ? 'B' : (['M3', 'M4', 'M5'].includes(n.mod) ? 'P' : 'X');
-  const num = Number(String(n.id).split('-')[1]) || 1;
+  // 用「该条目大纲自带的题」定级，避免被并入的专项题拉偏
+  const refDiffs = n.req.map((pid) => meta[pid] && meta[pid].difficulty).filter((x) => typeof x === 'number');
+  const md = refDiffs.length ? median(refDiffs) : (problems.length ? median(problems.map((p) => p.difficulty)) : clamp(2 + n.layer * 2, 0, 7));
+  const phase = md <= 2 ? 'B' : (md <= 4 ? 'P' : 'X');
+  const level = clamp(Math.round(md * 1.25) + 1, 1, 10);
+
   return {
-    id: n.id,
-    label: '归属·' + phase + num + '-NOI' + level + '级',
-    mod: n.mod,
-    modName: MODULES[n.mod] || n.mod,
-    layer: n.layer,
-    level,
-    t: n.t,
-    s: n.s,
-    pre: n.pre,
-    problems
+    id: n.id, mod: n.mod, modName: MODULES[n.mod] || n.mod,
+    layer: n.layer, level, phase,
+    t: n.t, s: n.s, pre: n.pre, problems
   };
 });
+
+// 阶段内序号
+const counters = { B: 0, P: 0, X: 0 };
+nodes.slice().sort((a, b) => a.level - b.level || a.id.localeCompare(b.id)).forEach((n) => {
+  n.num = ++counters[n.phase];
+});
+nodes.forEach((n) => { n.label = '归属·' + n.phase + n.num + '-NOI' + n.level + '级'; });
 
 const total = nodes.reduce((a, n) => a + n.problems.length, 0);
 const payload = { updated: new Date().toISOString().slice(0, 10), modules: MODULES, nodes, totalProblems: total };
 writeFileSync(join(root, 'data', 'syllabus.js'), `/* 由 tools/build-syllabus.mjs 生成，数据来源：NOI 大纲 + 洛谷题单 */\nwindow.AKIOI_SYLLABUS = ` + JSON.stringify(payload, null, 2) + ';\n', 'utf8');
 
-console.log(`nodes=${nodes.length} problems=${total}`);
-Object.entries(MODULES).forEach(([id, name]) => {
-  const list = nodes.filter((n) => n.mod === id);
-  console.log(`  ${id} ${name}: ${list.length} 条，${list.reduce((a, n) => a + n.problems.length, 0)} 题`);
-});
+const byPhase = { B: 0, P: 0, X: 0 };
+nodes.forEach((n) => { byPhase[n.phase]++; });
+console.log(`nodes=${nodes.length} problems=${total}  B=${byPhase.B} P=${byPhase.P} X=${byPhase.X}`);
+nodes.slice(0, 6).forEach((n) => console.log(`  ${n.id} ${n.t} -> ${n.label}`));
 

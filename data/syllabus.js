@@ -14,11 +14,11 @@ window.AKIOI_SYLLABUS = {
   "nodes": [
     {
       "id": "M1-1",
-      "label": "归属·B1-NOI1级",
       "mod": "M1",
       "modName": "编程基础与模拟",
       "layer": 0,
-      "level": 1,
+      "level": 2,
+      "phase": "B",
       "t": "语言基础",
       "s": "顺序 / 分支 / 循环",
       "pre": [],
@@ -323,15 +323,17 @@ window.AKIOI_SYLLABUS = {
           "name": "「RiOI-2」change",
           "difficulty": 8
         }
-      ]
+      ],
+      "num": 1,
+      "label": "归属·B1-NOI2级"
     },
     {
       "id": "M1-2",
-      "label": "归属·B2-NOI1级",
       "mod": "M1",
       "modName": "编程基础与模拟",
       "layer": 0,
-      "level": 1,
+      "level": 4,
+      "phase": "B",
       "t": "数组与字符串",
       "s": "模拟实现",
       "pre": [
@@ -358,15 +360,17 @@ window.AKIOI_SYLLABUS = {
           "name": "[NOIP 2006 普及组] 明明的随机数",
           "difficulty": 2
         }
-      ]
+      ],
+      "num": 3,
+      "label": "归属·B3-NOI4级"
     },
     {
       "id": "M1-3",
-      "label": "归属·B3-NOI1级",
       "mod": "M1",
       "modName": "编程基础与模拟",
       "layer": 0,
-      "level": 1,
+      "level": 4,
+      "phase": "B",
       "t": "输入输出与文件读写",
       "s": "OI 规范",
       "pre": [
@@ -393,15 +397,17 @@ window.AKIOI_SYLLABUS = {
           "name": "[NOIP 2004 普及组] FBI 树",
           "difficulty": 2
         }
-      ]
+      ],
+      "num": 4,
+      "label": "归属·B4-NOI4级"
     },
     {
       "id": "M1-4",
-      "label": "归属·B4-NOI3级",
       "mod": "M1",
       "modName": "编程基础与模拟",
       "layer": 1,
-      "level": 3,
+      "level": 4,
+      "phase": "B",
       "t": "函数与递归",
       "s": "问题分解",
       "pre": [
@@ -433,15 +439,17 @@ window.AKIOI_SYLLABUS = {
           "name": "[PacNW 1999] Function",
           "difficulty": 2
         }
-      ]
+      ],
+      "num": 5,
+      "label": "归属·B5-NOI4级"
     },
     {
       "id": "M1-5",
-      "label": "归属·B5-NOI3级",
       "mod": "M1",
       "modName": "编程基础与模拟",
       "layer": 1,
-      "level": 3,
+      "level": 4,
+      "phase": "B",
       "t": "STL 容器与算法库",
       "s": "效率实现",
       "pre": [
@@ -468,15 +476,17 @@ window.AKIOI_SYLLABUS = {
           "name": "宇宙总统",
           "difficulty": 2
         }
-      ]
+      ],
+      "num": 6,
+      "label": "归属·B6-NOI4级"
     },
     {
       "id": "M1-6",
-      "label": "归属·B6-NOI3级",
       "mod": "M1",
       "modName": "编程基础与模拟",
       "layer": 1,
-      "level": 3,
+      "level": 5,
+      "phase": "P",
       "t": "复杂度分析",
       "s": "算法选型",
       "pre": [
@@ -498,15 +508,17 @@ window.AKIOI_SYLLABUS = {
           "name": "[NOIP 2015 普及组] 推销员",
           "difficulty": 5
         }
-      ]
+      ],
+      "num": 1,
+      "label": "归属·P1-NOI5级"
     },
     {
       "id": "M1-7",
-      "label": "归属·B7-NOI3级",
       "mod": "M1",
       "modName": "编程基础与模拟",
       "layer": 1,
-      "level": 3,
+      "level": 4,
+      "phase": "B",
       "t": "高精度算法",
       "s": "大数运算",
       "pre": [
@@ -628,15 +640,17 @@ window.AKIOI_SYLLABUS = {
           "name": "A/B Problem（高精度除法Ⅱ）",
           "difficulty": 8
         }
-      ]
+      ],
+      "num": 7,
+      "label": "归属·B7-NOI4级"
     },
     {
       "id": "M1-8",
-      "label": "归属·B8-NOI5级",
       "mod": "M1",
       "modName": "编程基础与模拟",
       "layer": 2,
-      "level": 5,
+      "level": 6,
+      "phase": "P",
       "t": "IO 优化与卡常",
       "s": "性能工程",
       "pre": [
@@ -658,15 +672,17 @@ window.AKIOI_SYLLABUS = {
           "name": "三元上升子序列",
           "difficulty": 4
         }
-      ]
+      ],
+      "num": 17,
+      "label": "归属·P17-NOI6级"
     },
     {
       "id": "M1-9",
-      "label": "归属·B9-NOI5级",
       "mod": "M1",
       "modName": "编程基础与模拟",
       "layer": 2,
       "level": 5,
+      "phase": "P",
       "t": "手写容器替代 STL",
       "s": "性能工程",
       "pre": [
@@ -689,15 +705,17 @@ window.AKIOI_SYLLABUS = {
           "name": "[NOIP 2004 提高组] 合并果子",
           "difficulty": 3
         }
-      ]
+      ],
+      "num": 2,
+      "label": "归属·P2-NOI5级"
     },
     {
       "id": "M2-1",
-      "label": "归属·B1-NOI2级",
       "mod": "M2",
       "modName": "排序与贪心",
       "layer": 0,
-      "level": 2,
+      "level": 4,
+      "phase": "B",
       "t": "基础排序",
       "s": "排序实现",
       "pre": [
@@ -839,15 +857,17 @@ window.AKIOI_SYLLABUS = {
           "name": "[NOIP 2004 提高组] 合并果子 加强版",
           "difficulty": 4
         }
-      ]
+      ],
+      "num": 8,
+      "label": "归属·B8-NOI4级"
     },
     {
       "id": "M2-2",
-      "label": "归属·B2-NOI2级",
       "mod": "M2",
       "modName": "排序与贪心",
       "layer": 0,
-      "level": 2,
+      "level": 5,
+      "phase": "P",
       "t": "排序贪心",
       "s": "局部最优",
       "pre": [
@@ -1084,15 +1104,17 @@ window.AKIOI_SYLLABUS = {
           "name": "[OII 2025] 双色金字塔 / Piramide bicolore",
           "difficulty": 7
         }
-      ]
+      ],
+      "num": 3,
+      "label": "归属·P3-NOI5级"
     },
     {
       "id": "M2-3",
-      "label": "归属·B3-NOI4级",
       "mod": "M2",
       "modName": "排序与贪心",
       "layer": 1,
-      "level": 4,
+      "level": 7,
+      "phase": "X",
       "t": "反悔贪心",
       "s": "堆",
       "pre": [
@@ -1119,15 +1141,17 @@ window.AKIOI_SYLLABUS = {
           "name": "种树",
           "difficulty": 5
         }
-      ]
+      ],
+      "num": 1,
+      "label": "归属·X1-NOI7级"
     },
     {
       "id": "M2-4",
-      "label": "归属·B4-NOI4级",
       "mod": "M2",
       "modName": "排序与贪心",
       "layer": 1,
-      "level": 4,
+      "level": 5,
+      "phase": "P",
       "t": "并查集贪心",
       "s": "Kruskal",
       "pre": [
@@ -1155,15 +1179,17 @@ window.AKIOI_SYLLABUS = {
           "name": "修复公路",
           "difficulty": 3
         }
-      ]
+      ],
+      "num": 4,
+      "label": "归属·P4-NOI5级"
     },
     {
       "id": "M2-5",
-      "label": "归属·B5-NOI4级",
       "mod": "M2",
       "modName": "排序与贪心",
       "layer": 1,
-      "level": 4,
+      "level": 5,
+      "phase": "P",
       "t": "排序+二分贪心",
       "s": "决策单调",
       "pre": [
@@ -1191,15 +1217,17 @@ window.AKIOI_SYLLABUS = {
           "name": "[NOIP 2015 普及组] 推销员",
           "difficulty": 5
         }
-      ]
+      ],
+      "num": 5,
+      "label": "归属·P5-NOI5级"
     },
     {
       "id": "M2-6",
-      "label": "归属·B6-NOI6级",
       "mod": "M2",
       "modName": "排序与贪心",
       "layer": 2,
       "level": 6,
+      "phase": "P",
       "t": "拟阵与贪心证明",
       "s": "高级贪心",
       "pre": [
@@ -1222,15 +1250,17 @@ window.AKIOI_SYLLABUS = {
           "name": "[CSP-S 2019] 树上的数",
           "difficulty": 8
         }
-      ]
+      ],
+      "num": 18,
+      "label": "归属·P18-NOI6级"
     },
     {
       "id": "M3-1",
-      "label": "归属·P1-NOI3级",
       "mod": "M3",
       "modName": "数据结构",
       "layer": 0,
-      "level": 3,
+      "level": 2,
+      "phase": "B",
       "t": "数组与 vector",
       "s": "线性存储",
       "pre": [
@@ -1252,15 +1282,17 @@ window.AKIOI_SYLLABUS = {
           "name": "约瑟夫问题",
           "difficulty": 2
         }
-      ]
+      ],
+      "num": 2,
+      "label": "归属·B2-NOI2级"
     },
     {
       "id": "M3-2",
-      "label": "归属·P2-NOI3级",
       "mod": "M3",
       "modName": "数据结构",
       "layer": 0,
-      "level": 3,
+      "level": 4,
+      "phase": "B",
       "t": "栈与队列",
       "s": "线性结构",
       "pre": [
@@ -1377,15 +1409,17 @@ window.AKIOI_SYLLABUS = {
           "name": "[NOI2010] 超级钢琴",
           "difficulty": 7
         }
-      ]
+      ],
+      "num": 9,
+      "label": "归属·B9-NOI4级"
     },
     {
       "id": "M3-3",
-      "label": "归属·P3-NOI3级",
       "mod": "M3",
       "modName": "数据结构",
       "layer": 0,
-      "level": 3,
+      "level": 4,
+      "phase": "B",
       "t": "前缀和与差分",
       "s": "静态区间处理",
       "pre": [
@@ -1492,15 +1526,17 @@ window.AKIOI_SYLLABUS = {
           "name": "[CTSC2008] 奥运抽奖",
           "difficulty": 8
         }
-      ]
+      ],
+      "num": 10,
+      "label": "归属·B10-NOI4级"
     },
     {
       "id": "M3-4",
-      "label": "归属·P4-NOI3级",
       "mod": "M3",
       "modName": "数据结构",
       "layer": 0,
-      "level": 3,
+      "level": 4,
+      "phase": "B",
       "t": "二分查找",
       "s": "有序结构",
       "pre": [
@@ -1702,15 +1738,17 @@ window.AKIOI_SYLLABUS = {
           "name": "[NOIP 2017 普及组] 跳房子",
           "difficulty": 5
         }
-      ]
+      ],
+      "num": 11,
+      "label": "归属·B11-NOI4级"
     },
     {
       "id": "M3-5",
-      "label": "归属·P5-NOI5级",
       "mod": "M3",
       "modName": "数据结构",
       "layer": 1,
-      "level": 5,
+      "level": 6,
+      "phase": "P",
       "t": "并查集",
       "s": "集合合并 / 连通",
       "pre": [
@@ -1752,15 +1790,17 @@ window.AKIOI_SYLLABUS = {
           "name": "疯狂 LCM",
           "difficulty": 6
         }
-      ]
+      ],
+      "num": 19,
+      "label": "归属·P19-NOI6级"
     },
     {
       "id": "M3-6",
-      "label": "归属·P6-NOI5级",
       "mod": "M3",
       "modName": "数据结构",
       "layer": 1,
       "level": 5,
+      "phase": "P",
       "t": "堆与优先队列",
       "s": "动态最值",
       "pre": [
@@ -1788,15 +1828,17 @@ window.AKIOI_SYLLABUS = {
           "name": "序列合并",
           "difficulty": 4
         }
-      ]
+      ],
+      "num": 8,
+      "label": "归属·P8-NOI5级"
     },
     {
       "id": "M3-7",
-      "label": "归属·P7-NOI5级",
       "mod": "M3",
       "modName": "数据结构",
       "layer": 1,
-      "level": 5,
+      "level": 6,
+      "phase": "P",
       "t": "树状数组",
       "s": "动态前缀和",
       "pre": [
@@ -1878,15 +1920,17 @@ window.AKIOI_SYLLABUS = {
           "name": "楼房重建",
           "difficulty": 6
         }
-      ]
+      ],
+      "num": 20,
+      "label": "归属·P20-NOI6级"
     },
     {
       "id": "M3-8",
-      "label": "归属·P8-NOI5级",
       "mod": "M3",
       "modName": "数据结构",
       "layer": 1,
-      "level": 5,
+      "level": 6,
+      "phase": "P",
       "t": "线段树",
       "s": "区间维护",
       "pre": [
@@ -1913,15 +1957,17 @@ window.AKIOI_SYLLABUS = {
           "name": "I Hate It",
           "difficulty": 4
         }
-      ]
+      ],
+      "num": 21,
+      "label": "归属·P21-NOI6级"
     },
     {
       "id": "M3-9",
-      "label": "归属·P9-NOI5级",
       "mod": "M3",
       "modName": "数据结构",
       "layer": 1,
       "level": 5,
+      "phase": "P",
       "t": "单调栈 / 单调队列",
       "s": "线性优化",
       "pre": [
@@ -1943,15 +1989,17 @@ window.AKIOI_SYLLABUS = {
           "name": "选择数字",
           "difficulty": 4
         }
-      ]
+      ],
+      "num": 9,
+      "label": "归属·P9-NOI5级"
     },
     {
       "id": "M3-10",
-      "label": "归属·P10-NOI5级",
       "mod": "M3",
       "modName": "数据结构",
       "layer": 1,
       "level": 5,
+      "phase": "P",
       "t": "哈希表与 map/set",
       "s": "快速检索",
       "pre": [
@@ -1978,15 +2026,17 @@ window.AKIOI_SYLLABUS = {
           "name": "[NOI2005] 瑰丽华尔兹",
           "difficulty": 5
         }
-      ]
+      ],
+      "num": 6,
+      "label": "归属·P6-NOI5级"
     },
     {
       "id": "M3-11",
-      "label": "归属·P11-NOI5级",
       "mod": "M3",
       "modName": "数据结构",
       "layer": 1,
       "level": 5,
+      "phase": "P",
       "t": "ST 表",
       "s": "静态 RMQ",
       "pre": [
@@ -2063,15 +2113,17 @@ window.AKIOI_SYLLABUS = {
           "name": "[POI 2011] WYK-Plot",
           "difficulty": 8
         }
-      ]
+      ],
+      "num": 7,
+      "label": "归属·P7-NOI5级"
     },
     {
       "id": "M3-12",
-      "label": "归属·P12-NOI7级",
       "mod": "M3",
       "modName": "数据结构",
       "layer": 2,
-      "level": 7,
+      "level": 9,
+      "phase": "X",
       "t": "平衡树（Treap/Splay/FHQ）",
       "s": "动态有序集",
       "pre": [
@@ -2103,15 +2155,17 @@ window.AKIOI_SYLLABUS = {
           "name": "【模板】文艺平衡树",
           "difficulty": 6
         }
-      ]
+      ],
+      "num": 13,
+      "label": "归属·X13-NOI9级"
     },
     {
       "id": "M3-13",
-      "label": "归属·P13-NOI7级",
       "mod": "M3",
       "modName": "数据结构",
       "layer": 2,
-      "level": 7,
+      "level": 9,
+      "phase": "X",
       "t": "可持久化数据结构",
       "s": "历史版本",
       "pre": [
@@ -2244,15 +2298,17 @@ window.AKIOI_SYLLABUS = {
           "name": "区间 LIS",
           "difficulty": 8
         }
-      ]
+      ],
+      "num": 14,
+      "label": "归属·X14-NOI9级"
     },
     {
       "id": "M3-14",
-      "label": "归属·P14-NOI7级",
       "mod": "M3",
       "modName": "数据结构",
       "layer": 2,
-      "level": 7,
+      "level": 9,
+      "phase": "X",
       "t": "树链剖分",
       "s": "树上路径",
       "pre": [
@@ -2386,15 +2442,17 @@ window.AKIOI_SYLLABUS = {
           "name": "[HAOI2015] 树上操作",
           "difficulty": 6
         }
-      ]
+      ],
+      "num": 15,
+      "label": "归属·X15-NOI9级"
     },
     {
       "id": "M3-15",
-      "label": "归属·P15-NOI7级",
       "mod": "M3",
       "modName": "数据结构",
       "layer": 2,
-      "level": 7,
+      "level": 9,
+      "phase": "X",
       "t": "线段树合并 / 分治",
       "s": "CDQ / 点分治",
       "pre": [
@@ -2421,15 +2479,17 @@ window.AKIOI_SYLLABUS = {
           "name": "[HNOI2010] 公交线路",
           "difficulty": 7
         }
-      ]
+      ],
+      "num": 16,
+      "label": "归属·X16-NOI9级"
     },
     {
       "id": "M4-1",
-      "label": "归属·P1-NOI4级",
       "mod": "M4",
       "modName": "搜索与枚举",
       "layer": 0,
       "level": 4,
+      "phase": "B",
       "t": "DFS",
       "s": "回溯枚举",
       "pre": [
@@ -2576,15 +2636,17 @@ window.AKIOI_SYLLABUS = {
           "name": "[NOI2001] 方程的解数",
           "difficulty": 4
         }
-      ]
+      ],
+      "num": 12,
+      "label": "归属·B12-NOI4级"
     },
     {
       "id": "M4-2",
-      "label": "归属·P2-NOI4级",
       "mod": "M4",
       "modName": "搜索与枚举",
       "layer": 0,
       "level": 4,
+      "phase": "B",
       "t": "BFS",
       "s": "无权最短路",
       "pre": [
@@ -2611,15 +2673,17 @@ window.AKIOI_SYLLABUS = {
           "name": "[ZJOI2007] 时态同步",
           "difficulty": 4
         }
-      ]
+      ],
+      "num": 13,
+      "label": "归属·B13-NOI4级"
     },
     {
       "id": "M4-3",
-      "label": "归属·P3-NOI4级",
       "mod": "M4",
       "modName": "搜索与枚举",
       "layer": 0,
       "level": 4,
+      "phase": "B",
       "t": "枚举与子集枚举",
       "s": "暴力",
       "pre": [
@@ -2746,15 +2810,17 @@ window.AKIOI_SYLLABUS = {
           "name": "[HNOI2005] 数三角形",
           "difficulty": 4
         }
-      ]
+      ],
+      "num": 14,
+      "label": "归属·B14-NOI4级"
     },
     {
       "id": "M4-4",
-      "label": "归属·P4-NOI6级",
       "mod": "M4",
       "modName": "搜索与枚举",
       "layer": 1,
       "level": 6,
+      "phase": "P",
       "t": "剪枝与最优性剪枝",
       "s": "搜索优化",
       "pre": [
@@ -2826,15 +2892,17 @@ window.AKIOI_SYLLABUS = {
           "name": "Prime Gift",
           "difficulty": 7
         }
-      ]
+      ],
+      "num": 22,
+      "label": "归属·P22-NOI6级"
     },
     {
       "id": "M4-5",
-      "label": "归属·P5-NOI6级",
       "mod": "M4",
       "modName": "搜索与枚举",
       "layer": 1,
-      "level": 6,
+      "level": 5,
+      "phase": "P",
       "t": "记忆化搜索",
       "s": "自顶向下",
       "pre": [
@@ -2861,15 +2929,17 @@ window.AKIOI_SYLLABUS = {
           "name": "[USACO06FEB] Backward Digit Sums G/S",
           "difficulty": 3
         }
-      ]
+      ],
+      "num": 10,
+      "label": "归属·P10-NOI5级"
     },
     {
       "id": "M4-6",
-      "label": "归属·P6-NOI6级",
       "mod": "M4",
       "modName": "搜索与枚举",
       "layer": 1,
       "level": 6,
+      "phase": "P",
       "t": "双向 BFS 与迭代加深",
       "s": "搜索策略",
       "pre": [
@@ -2896,15 +2966,17 @@ window.AKIOI_SYLLABUS = {
           "name": "[SCOI2005] 骑士精神",
           "difficulty": 5
         }
-      ]
+      ],
+      "num": 23,
+      "label": "归属·P23-NOI6级"
     },
     {
       "id": "M4-7",
-      "label": "归属·P7-NOI6级",
       "mod": "M4",
       "modName": "搜索与枚举",
       "layer": 1,
       "level": 6,
+      "phase": "P",
       "t": "状态压缩搜索",
       "s": "位运算",
       "pre": [
@@ -2932,15 +3004,17 @@ window.AKIOI_SYLLABUS = {
           "name": "[SCOI2005] 互不侵犯",
           "difficulty": 5
         }
-      ]
+      ],
+      "num": 24,
+      "label": "归属·P24-NOI6级"
     },
     {
       "id": "M4-8",
-      "label": "归属·P8-NOI8级",
       "mod": "M4",
       "modName": "搜索与枚举",
       "layer": 2,
-      "level": 8,
+      "level": 6,
+      "phase": "P",
       "t": "Dancing Links / A*",
       "s": "高级搜索",
       "pre": [
@@ -2962,15 +3036,17 @@ window.AKIOI_SYLLABUS = {
           "name": "数列",
           "difficulty": 4
         }
-      ]
+      ],
+      "num": 25,
+      "label": "归属·P25-NOI6级"
     },
     {
       "id": "M5-1",
-      "label": "归属·P1-NOI5级",
       "mod": "M5",
       "modName": "动态规划",
       "layer": 0,
-      "level": 5,
+      "level": 4,
+      "phase": "B",
       "t": "递推",
       "s": "DP 初识",
       "pre": [
@@ -3037,15 +3113,17 @@ window.AKIOI_SYLLABUS = {
           "name": "地毯填补问题",
           "difficulty": 3
         }
-      ]
+      ],
+      "num": 15,
+      "label": "归属·B15-NOI4级"
     },
     {
       "id": "M5-2",
-      "label": "归属·P2-NOI5级",
       "mod": "M5",
       "modName": "动态规划",
       "layer": 0,
-      "level": 5,
+      "level": 4,
+      "phase": "B",
       "t": "线性DP",
       "s": "序列问题",
       "pre": [
@@ -3222,15 +3300,17 @@ window.AKIOI_SYLLABUS = {
           "name": "[SCOI2014] 方伯伯的玉米田",
           "difficulty": 6
         }
-      ]
+      ],
+      "num": 16,
+      "label": "归属·B16-NOI4级"
     },
     {
       "id": "M5-3",
-      "label": "归属·P3-NOI5级",
       "mod": "M5",
       "modName": "动态规划",
       "layer": 0,
-      "level": 5,
+      "level": 6,
+      "phase": "P",
       "t": "LIS / LCS",
       "s": "基础状态设计",
       "pre": [
@@ -3257,15 +3337,17 @@ window.AKIOI_SYLLABUS = {
           "name": "两个排列的最长公共子序列",
           "difficulty": 4
         }
-      ]
+      ],
+      "num": 26,
+      "label": "归属·P26-NOI6级"
     },
     {
       "id": "M5-4",
-      "label": "归属·P4-NOI7级",
       "mod": "M5",
       "modName": "动态规划",
       "layer": 1,
-      "level": 7,
+      "level": 4,
+      "phase": "B",
       "t": "背包DP",
       "s": "01/完全/多重/分组/依赖",
       "pre": [
@@ -3517,15 +3599,17 @@ window.AKIOI_SYLLABUS = {
           "name": "[USACO06DEC] The Fewest Coins G",
           "difficulty": 5
         }
-      ]
+      ],
+      "num": 17,
+      "label": "归属·B17-NOI4级"
     },
     {
       "id": "M5-5",
-      "label": "归属·P5-NOI7级",
       "mod": "M5",
       "modName": "动态规划",
       "layer": 1,
-      "level": 7,
+      "level": 6,
+      "phase": "P",
       "t": "区间DP",
       "s": "区间合并",
       "pre": [
@@ -3617,15 +3701,17 @@ window.AKIOI_SYLLABUS = {
           "name": "[CSP-S 2021] 括号序列",
           "difficulty": 6
         }
-      ]
+      ],
+      "num": 27,
+      "label": "归属·P27-NOI6级"
     },
     {
       "id": "M5-6",
-      "label": "归属·P6-NOI7级",
       "mod": "M5",
       "modName": "动态规划",
       "layer": 1,
-      "level": 7,
+      "level": 6,
+      "phase": "P",
       "t": "树形DP",
       "s": "树上决策",
       "pre": [
@@ -3723,15 +3809,17 @@ window.AKIOI_SYLLABUS = {
           "name": "[省选联考 2021 A/B 卷] 图函数",
           "difficulty": 7
         }
-      ]
+      ],
+      "num": 28,
+      "label": "归属·P28-NOI6级"
     },
     {
       "id": "M5-7",
-      "label": "归属·P7-NOI7级",
       "mod": "M5",
       "modName": "动态规划",
       "layer": 1,
       "level": 7,
+      "phase": "X",
       "t": "状压DP",
       "s": "位运算状态",
       "pre": [
@@ -3874,15 +3962,17 @@ window.AKIOI_SYLLABUS = {
           "name": "[AGC012E] Camel and Oases",
           "difficulty": 8
         }
-      ]
+      ],
+      "num": 2,
+      "label": "归属·X2-NOI7级"
     },
     {
       "id": "M5-8",
-      "label": "归属·P8-NOI7级",
       "mod": "M5",
       "modName": "动态规划",
       "layer": 1,
-      "level": 7,
+      "level": 5,
+      "phase": "P",
       "t": "计数 / 多维DP",
       "s": "方案统计",
       "pre": [
@@ -3914,15 +4004,17 @@ window.AKIOI_SYLLABUS = {
           "name": "[NOIP 2008 提高组] 传纸条",
           "difficulty": 4
         }
-      ]
+      ],
+      "num": 11,
+      "label": "归属·P11-NOI5级"
     },
     {
       "id": "M5-9",
-      "label": "归属·P9-NOI9级",
       "mod": "M5",
       "modName": "动态规划",
       "layer": 2,
-      "level": 9,
+      "level": 7,
+      "phase": "X",
       "t": "数位DP",
       "s": "数位统计",
       "pre": [
@@ -3950,15 +4042,17 @@ window.AKIOI_SYLLABUS = {
           "name": "SAC#1 - 萌数",
           "difficulty": 6
         }
-      ]
+      ],
+      "num": 3,
+      "label": "归属·X3-NOI7级"
     },
     {
       "id": "M5-10",
-      "label": "归属·P10-NOI9级",
       "mod": "M5",
       "modName": "动态规划",
       "layer": 2,
       "level": 9,
+      "phase": "X",
       "t": "DP优化",
       "s": "单调队列 / 斜率 / 四边形",
       "pre": [
@@ -3986,15 +4080,17 @@ window.AKIOI_SYLLABUS = {
           "name": "[HNOI2008] 玩具装箱",
           "difficulty": 6
         }
-      ]
+      ],
+      "num": 17,
+      "label": "归属·X17-NOI9级"
     },
     {
       "id": "M5-11",
-      "label": "归属·P11-NOI9级",
       "mod": "M5",
       "modName": "动态规划",
       "layer": 2,
-      "level": 9,
+      "level": 10,
+      "phase": "X",
       "t": "插头DP / DP套DP",
       "s": "高阶",
       "pre": [
@@ -4021,15 +4117,17 @@ window.AKIOI_SYLLABUS = {
           "name": "[HNOI2007] 神奇游乐园",
           "difficulty": 8
         }
-      ]
+      ],
+      "num": 20,
+      "label": "归属·X20-NOI10级"
     },
     {
       "id": "M6-1",
-      "label": "归属·X1-NOI6级",
       "mod": "M6",
       "modName": "图论",
       "layer": 0,
-      "level": 6,
+      "level": 4,
+      "phase": "B",
       "t": "图存储与遍历",
       "s": "连通性",
       "pre": [
@@ -4102,15 +4200,17 @@ window.AKIOI_SYLLABUS = {
           "name": "绘制二叉树",
           "difficulty": 4
         }
-      ]
+      ],
+      "num": 18,
+      "label": "归属·B18-NOI4级"
     },
     {
       "id": "M6-2",
-      "label": "归属·X2-NOI6级",
       "mod": "M6",
       "modName": "图论",
       "layer": 0,
-      "level": 6,
+      "level": 5,
+      "phase": "P",
       "t": "拓扑排序",
       "s": "DAG 处理",
       "pre": [
@@ -4237,15 +4337,17 @@ window.AKIOI_SYLLABUS = {
           "name": "[国家集训队] 跳跳棋",
           "difficulty": 7
         }
-      ]
+      ],
+      "num": 12,
+      "label": "归属·P12-NOI5级"
     },
     {
       "id": "M6-3",
-      "label": "归属·X3-NOI8级",
       "mod": "M6",
       "modName": "图论",
       "layer": 1,
-      "level": 8,
+      "level": 5,
+      "phase": "P",
       "t": "最短路",
       "s": "Dijkstra / SPFA",
       "pre": [
@@ -4468,15 +4570,17 @@ window.AKIOI_SYLLABUS = {
           "name": "[APIO2011] 寻路",
           "difficulty": 7
         }
-      ]
+      ],
+      "num": 13,
+      "label": "归属·P13-NOI5级"
     },
     {
       "id": "M6-4",
-      "label": "归属·X4-NOI8级",
       "mod": "M6",
       "modName": "图论",
       "layer": 1,
-      "level": 8,
+      "level": 5,
+      "phase": "P",
       "t": "Floyd 多源最短路",
       "s": "任意两点",
       "pre": [
@@ -4498,15 +4602,17 @@ window.AKIOI_SYLLABUS = {
           "name": "灾后重建",
           "difficulty": 4
         }
-      ]
+      ],
+      "num": 14,
+      "label": "归属·P14-NOI5级"
     },
     {
       "id": "M6-5",
-      "label": "归属·X5-NOI8级",
       "mod": "M6",
       "modName": "图论",
       "layer": 1,
-      "level": 8,
+      "level": 5,
+      "phase": "P",
       "t": "最小生成树",
       "s": "连通代价",
       "pre": [
@@ -4594,15 +4700,17 @@ window.AKIOI_SYLLABUS = {
           "name": "Power Tree",
           "difficulty": 7
         }
-      ]
+      ],
+      "num": 15,
+      "label": "归属·P15-NOI5级"
     },
     {
       "id": "M6-6",
-      "label": "归属·X6-NOI8级",
       "mod": "M6",
       "modName": "图论",
       "layer": 1,
-      "level": 8,
+      "level": 6,
+      "phase": "P",
       "t": "二分图判定与匈牙利",
       "s": "匹配",
       "pre": [
@@ -4629,15 +4737,17 @@ window.AKIOI_SYLLABUS = {
           "name": "[BalticOI 2003] 团伙 (Day 2)",
           "difficulty": 4
         }
-      ]
+      ],
+      "num": 29,
+      "label": "归属·P29-NOI6级"
     },
     {
       "id": "M6-7",
-      "label": "归属·X7-NOI8级",
       "mod": "M6",
       "modName": "图论",
       "layer": 1,
-      "level": 8,
+      "level": 6,
+      "phase": "P",
       "t": "欧拉 / 哈密顿路",
       "s": "一笔画",
       "pre": [
@@ -4664,15 +4774,17 @@ window.AKIOI_SYLLABUS = {
           "name": "[POI 2011] SMI-Garbage",
           "difficulty": 4
         }
-      ]
+      ],
+      "num": 30,
+      "label": "归属·P30-NOI6级"
     },
     {
       "id": "M6-8",
-      "label": "归属·X8-NOI10级",
       "mod": "M6",
       "modName": "图论",
       "layer": 2,
-      "level": 10,
+      "level": 6,
+      "phase": "P",
       "t": "强连通分量与缩点",
       "s": "有向图",
       "pre": [
@@ -4700,15 +4812,17 @@ window.AKIOI_SYLLABUS = {
           "name": "校园网络 / [IOI 1996 / USACO5.3] 校园网 Network of Schools 加强版",
           "difficulty": 5
         }
-      ]
+      ],
+      "num": 31,
+      "label": "归属·P31-NOI6级"
     },
     {
       "id": "M6-9",
-      "label": "归属·X9-NOI10级",
       "mod": "M6",
       "modName": "图论",
       "layer": 2,
-      "level": 10,
+      "level": 6,
+      "phase": "P",
       "t": "割点 / 桥与双连通",
       "s": "连通度",
       "pre": [
@@ -4735,15 +4849,17 @@ window.AKIOI_SYLLABUS = {
           "name": "[POI 2008] BLO-Blockade",
           "difficulty": 5
         }
-      ]
+      ],
+      "num": 32,
+      "label": "归属·P32-NOI6级"
     },
     {
       "id": "M6-10",
-      "label": "归属·X10-NOI10级",
       "mod": "M6",
       "modName": "图论",
       "layer": 2,
       "level": 10,
+      "phase": "X",
       "t": "网络流",
       "s": "最大流 / 费用流",
       "pre": [
@@ -4906,15 +5022,17 @@ window.AKIOI_SYLLABUS = {
           "name": "最小路径覆盖问题",
           "difficulty": 7
         }
-      ]
+      ],
+      "num": 21,
+      "label": "归属·X21-NOI10级"
     },
     {
       "id": "M6-11",
-      "label": "归属·X11-NOI10级",
       "mod": "M6",
       "modName": "图论",
       "layer": 2,
-      "level": 10,
+      "level": 7,
+      "phase": "X",
       "t": "2-SAT 与差分约束",
       "s": "约束建模",
       "pre": [
@@ -4942,15 +5060,17 @@ window.AKIOI_SYLLABUS = {
           "name": "[NOI2017] 游戏",
           "difficulty": 6
         }
-      ]
+      ],
+      "num": 4,
+      "label": "归属·X4-NOI7级"
     },
     {
       "id": "M7-1",
-      "label": "归属·X1-NOI7级",
       "mod": "M7",
       "modName": "数学与数论",
       "layer": 0,
-      "level": 7,
+      "level": 4,
+      "phase": "B",
       "t": "进制转换与位运算",
       "s": "二进制",
       "pre": [
@@ -5002,15 +5122,17 @@ window.AKIOI_SYLLABUS = {
           "name": "[SCOI2016] 幸运数字",
           "difficulty": 7
         }
-      ]
+      ],
+      "num": 19,
+      "label": "归属·B19-NOI4级"
     },
     {
       "id": "M7-2",
-      "label": "归属·X2-NOI7级",
       "mod": "M7",
       "modName": "数学与数论",
       "layer": 0,
-      "level": 7,
+      "level": 5,
+      "phase": "P",
       "t": "质数与筛法",
       "s": "整数性质",
       "pre": [
@@ -5072,15 +5194,17 @@ window.AKIOI_SYLLABUS = {
           "name": "[SHOI2013] 阶乘字符串",
           "difficulty": 7
         }
-      ]
+      ],
+      "num": 16,
+      "label": "归属·P16-NOI5级"
     },
     {
       "id": "M7-3",
-      "label": "归属·X3-NOI7级",
       "mod": "M7",
       "modName": "数学与数论",
       "layer": 0,
-      "level": 7,
+      "level": 4,
+      "phase": "B",
       "t": "gcd/lcm 与快速幂",
       "s": "数论基础",
       "pre": [
@@ -5107,15 +5231,17 @@ window.AKIOI_SYLLABUS = {
           "name": "[NOIP 2012 提高组] 国王游戏",
           "difficulty": 5
         }
-      ]
+      ],
+      "num": 20,
+      "label": "归属·B20-NOI4级"
     },
     {
       "id": "M7-4",
-      "label": "归属·X4-NOI9级",
       "mod": "M7",
       "modName": "数学与数论",
       "layer": 1,
-      "level": 9,
+      "level": 7,
+      "phase": "X",
       "t": "欧拉函数与扩展欧几里得",
       "s": "数论",
       "pre": [
@@ -5143,15 +5269,17 @@ window.AKIOI_SYLLABUS = {
           "name": "[SDOI2008] 沙拉公主的困惑",
           "difficulty": 6
         }
-      ]
+      ],
+      "num": 6,
+      "label": "归属·X6-NOI7级"
     },
     {
       "id": "M7-5",
-      "label": "归属·X5-NOI9级",
       "mod": "M7",
       "modName": "数学与数论",
       "layer": 1,
-      "level": 9,
+      "level": 7,
+      "phase": "X",
       "t": "乘法逆元与组合数",
       "s": "模运算",
       "pre": [
@@ -5178,15 +5306,17 @@ window.AKIOI_SYLLABUS = {
           "name": "环的异或",
           "difficulty": 5
         }
-      ]
+      ],
+      "num": 7,
+      "label": "归属·X7-NOI7级"
     },
     {
       "id": "M7-6",
-      "label": "归属·X6-NOI9级",
       "mod": "M7",
       "modName": "数学与数论",
       "layer": 1,
-      "level": 9,
+      "level": 7,
+      "phase": "X",
       "t": "中国剩余定理",
       "s": "同余方程组",
       "pre": [
@@ -5213,15 +5343,17 @@ window.AKIOI_SYLLABUS = {
           "name": "Counting swaps",
           "difficulty": 7
         }
-      ]
+      ],
+      "num": 8,
+      "label": "归属·X8-NOI7级"
     },
     {
       "id": "M7-7",
-      "label": "归属·X7-NOI9级",
       "mod": "M7",
       "modName": "数学与数论",
       "layer": 1,
-      "level": 9,
+      "level": 6,
+      "phase": "P",
       "t": "矩阵快速幂",
       "s": "递推加速",
       "pre": [
@@ -5249,15 +5381,17 @@ window.AKIOI_SYLLABUS = {
           "name": "爱的供养",
           "difficulty": 5
         }
-      ]
+      ],
+      "num": 33,
+      "label": "归属·P33-NOI6级"
     },
     {
       "id": "M7-8",
-      "label": "归属·X8-NOI9级",
       "mod": "M7",
       "modName": "数学与数论",
       "layer": 1,
-      "level": 9,
+      "level": 7,
+      "phase": "X",
       "t": "概率与期望DP",
       "s": "期望",
       "pre": [
@@ -5284,15 +5418,17 @@ window.AKIOI_SYLLABUS = {
           "name": "OSU!",
           "difficulty": 5
         }
-      ]
+      ],
+      "num": 9,
+      "label": "归属·X9-NOI7级"
     },
     {
       "id": "M7-9",
-      "label": "归属·X9-NOI9级",
       "mod": "M7",
       "modName": "数学与数论",
       "layer": 1,
-      "level": 9,
+      "level": 7,
+      "phase": "X",
       "t": "组合数学与容斥原理",
       "s": "计数",
       "pre": [
@@ -5374,15 +5510,17 @@ window.AKIOI_SYLLABUS = {
           "name": "[SDOI2014] 旅行",
           "difficulty": 6
         }
-      ]
+      ],
+      "num": 10,
+      "label": "归属·X10-NOI7级"
     },
     {
       "id": "M7-10",
-      "label": "归属·X10-NOI10级",
       "mod": "M7",
       "modName": "数学与数论",
       "layer": 2,
-      "level": 10,
+      "level": 9,
+      "phase": "X",
       "t": "莫比乌斯反演与杜教筛",
       "s": "积性函数",
       "pre": [
@@ -5409,15 +5547,17 @@ window.AKIOI_SYLLABUS = {
           "name": "[SDOI2015] 约数个数和",
           "difficulty": 7
         }
-      ]
+      ],
+      "num": 18,
+      "label": "归属·X18-NOI9级"
     },
     {
       "id": "M7-11",
-      "label": "归属·X11-NOI10级",
       "mod": "M7",
       "modName": "数学与数论",
       "layer": 2,
-      "level": 10,
+      "level": 7,
+      "phase": "X",
       "t": "高斯消元与线性基",
       "s": "线性代数",
       "pre": [
@@ -5445,15 +5585,17 @@ window.AKIOI_SYLLABUS = {
           "name": "[JLOI2015] 管道连接",
           "difficulty": 7
         }
-      ]
+      ],
+      "num": 5,
+      "label": "归属·X5-NOI7级"
     },
     {
       "id": "M7-12",
-      "label": "归属·X12-NOI10级",
       "mod": "M7",
       "modName": "数学与数论",
       "layer": 2,
       "level": 10,
+      "phase": "X",
       "t": "Polya / 伯恩赛德",
       "s": "置换群",
       "pre": [
@@ -5480,15 +5622,17 @@ window.AKIOI_SYLLABUS = {
           "name": "[MtOI2018] 魔力环",
           "difficulty": 8
         }
-      ]
+      ],
+      "num": 22,
+      "label": "归属·X22-NOI10级"
     },
     {
       "id": "M8-1",
-      "label": "归属·X1-NOI8级",
       "mod": "M8",
       "modName": "字符串与其他",
       "layer": 0,
-      "level": 8,
+      "level": 4,
+      "phase": "B",
       "t": "字符串基础与字符统计",
       "s": "字符处理",
       "pre": [
@@ -5630,15 +5774,17 @@ window.AKIOI_SYLLABUS = {
           "name": "[POI 2012] PRE-Prefixuffix",
           "difficulty": 7
         }
-      ]
+      ],
+      "num": 21,
+      "label": "归属·B21-NOI4级"
     },
     {
       "id": "M8-2",
-      "label": "归属·X2-NOI10级",
       "mod": "M8",
       "modName": "字符串与其他",
       "layer": 1,
-      "level": 10,
+      "level": 6,
+      "phase": "P",
       "t": "字符串哈希",
       "s": "快速判等",
       "pre": [
@@ -5665,15 +5811,17 @@ window.AKIOI_SYLLABUS = {
           "name": "[POI 2011] MET-Meteors",
           "difficulty": 7
         }
-      ]
+      ],
+      "num": 34,
+      "label": "归属·P34-NOI6级"
     },
     {
       "id": "M8-3",
-      "label": "归属·X3-NOI10级",
       "mod": "M8",
       "modName": "字符串与其他",
       "layer": 1,
-      "level": 10,
+      "level": 7,
+      "phase": "X",
       "t": "KMP 与 Z 函数",
       "s": "模式匹配",
       "pre": [
@@ -5700,15 +5848,17 @@ window.AKIOI_SYLLABUS = {
           "name": "【模板】扩展 KMP / exKMP（Z 函数）",
           "difficulty": 6
         }
-      ]
+      ],
+      "num": 11,
+      "label": "归属·X11-NOI7级"
     },
     {
       "id": "M8-4",
-      "label": "归属·X4-NOI10级",
       "mod": "M8",
       "modName": "字符串与其他",
       "layer": 1,
-      "level": 10,
+      "level": 7,
+      "phase": "X",
       "t": "Manacher",
       "s": "回文串",
       "pre": [
@@ -5750,15 +5900,17 @@ window.AKIOI_SYLLABUS = {
           "name": "回文匹配",
           "difficulty": 6
         }
-      ]
+      ],
+      "num": 12,
+      "label": "归属·X12-NOI7级"
     },
     {
       "id": "M8-5",
-      "label": "归属·X5-NOI10级",
       "mod": "M8",
       "modName": "字符串与其他",
       "layer": 1,
-      "level": 10,
+      "level": 6,
+      "phase": "P",
       "t": "Trie 字典树",
       "s": "前缀检索",
       "pre": [
@@ -5785,15 +5937,17 @@ window.AKIOI_SYLLABUS = {
           "name": "[USACO08DEC] Secret Message G",
           "difficulty": 4
         }
-      ]
+      ],
+      "num": 35,
+      "label": "归属·P35-NOI6级"
     },
     {
       "id": "M8-6",
-      "label": "归属·X6-NOI10级",
       "mod": "M8",
       "modName": "字符串与其他",
       "layer": 2,
-      "level": 10,
+      "level": 9,
+      "phase": "X",
       "t": "AC 自动机",
       "s": "多模式匹配",
       "pre": [
@@ -5821,15 +5975,17 @@ window.AKIOI_SYLLABUS = {
           "name": "[USACO12JAN] Video Game G",
           "difficulty": 6
         }
-      ]
+      ],
+      "num": 19,
+      "label": "归属·X19-NOI9级"
     },
     {
       "id": "M8-7",
-      "label": "归属·X7-NOI10级",
       "mod": "M8",
       "modName": "字符串与其他",
       "layer": 2,
       "level": 10,
+      "phase": "X",
       "t": "后缀数组 / 后缀自动机",
       "s": "后缀结构",
       "pre": [
@@ -5856,7 +6012,9 @@ window.AKIOI_SYLLABUS = {
           "name": "[TJOI2015] 弦论",
           "difficulty": 7
         }
-      ]
+      ],
+      "num": 23,
+      "label": "归属·X23-NOI10级"
     }
   ],
   "totalProblems": 928
