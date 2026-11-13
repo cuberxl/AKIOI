@@ -546,31 +546,34 @@
 
   /* ---------------- 完成度雷达 ---------------- */
 
+  /* ---------------- 完成度雷达（按大纲级别 1-10） ---------------- */
+
   function renderRadar() {
     var svg = document.getElementById('radar');
     var S = window.AKIOI_SYLLABUS;
     if (!svg || !S || !S.nodes) return;
     var NS = 'http://www.w3.org/2000/svg';
-    var mods = Object.keys(S.modules || {});
-    if (!mods.length) return;
 
-    var stats = mods.map(function (m) {
+    var stats = [];
+    for (var lv = 1; lv <= 10; lv++) {
       var total = 0, hit = 0;
       S.nodes.forEach(function (n) {
-        if (n.mod !== m) return;
+        if (n.level !== lv) return;
         n.problems.forEach(function (p) { total++; if (done.has(p.pid)) hit++; });
       });
-      return { m: m, name: S.modules[m], total: total, hit: hit, pct: total ? hit / total : 0 };
-    });
+      stats.push({ key: 'L' + lv, name: lv + ' 级', total: total, hit: hit, pct: total ? hit / total : 0 });
+    }
+    var use = stats.filter(function (s) { return s.total > 0; });
+    if (use.length < 3) use = stats;
 
     var c = 170, R = 116;
     svg.innerHTML = '';
     function pt(i, r) {
-      var a = -Math.PI / 2 + (Math.PI * 2 * i) / mods.length;
+      var a = -Math.PI / 2 + (Math.PI * 2 * i) / use.length;
       return [c + Math.cos(a) * r, c + Math.sin(a) * r];
     }
     [0.25, 0.5, 0.75, 1].forEach(function (f) {
-      var d = mods.map(function (_, i) {
+      var d = use.map(function (_, i) {
         var p = pt(i, R * f);
         return (i ? 'L' : 'M') + p[0].toFixed(1) + ',' + p[1].toFixed(1);
       }).join(' ') + ' Z';
@@ -579,7 +582,7 @@
       ring.setAttribute('class', 'radar-ring');
       svg.appendChild(ring);
     });
-    mods.forEach(function (_, i) {
+    use.forEach(function (_, i) {
       var p = pt(i, R);
       var line = document.createElementNS(NS, 'line');
       line.setAttribute('x1', c); line.setAttribute('y1', c);
@@ -587,7 +590,7 @@
       line.setAttribute('class', 'radar-axis');
       svg.appendChild(line);
     });
-    var dvals = stats.map(function (s, i) {
+    var dvals = use.map(function (s, i) {
       var p = pt(i, R * Math.max(s.pct, 0.02));
       return (i ? 'L' : 'M') + p[0].toFixed(1) + ',' + p[1].toFixed(1);
     }).join(' ') + ' Z';
@@ -595,12 +598,13 @@
     poly.setAttribute('d', dvals);
     poly.setAttribute('class', 'radar-area');
     svg.appendChild(poly);
-    stats.forEach(function (s, i) {
+
+    use.forEach(function (s, i) {
       var p = pt(i, R * Math.max(s.pct, 0.02));
       var dot = document.createElementNS(NS, 'circle');
       dot.setAttribute('cx', p[0].toFixed(1));
       dot.setAttribute('cy', p[1].toFixed(1));
-      dot.setAttribute('r', '3.2');
+      dot.setAttribute('r', '3');
       dot.setAttribute('class', 'radar-dot');
       svg.appendChild(dot);
 
@@ -611,7 +615,7 @@
       txt.setAttribute('class', 'radar-label');
       txt.setAttribute('text-anchor', Math.abs(lab[0] - c) < 12 ? 'middle' : (lab[0] > c ? 'start' : 'end'));
       txt.setAttribute('dominant-baseline', 'middle');
-      txt.textContent = s.m;
+      txt.textContent = s.key;
       svg.appendChild(txt);
     });
 
@@ -620,20 +624,19 @@
       legend.innerHTML = '';
       stats.forEach(function (s) {
         var row = el('div', 'radar-row');
-        row.appendChild(el('span', 'radar-key', s.m));
-        row.appendChild(el('span', 'radar-name', s.name));
+        row.appendChild(el('span', 'radar-key', s.key));
+        row.appendChild(el('span', 'radar-name', 'NOI 大纲 ' + s.name + ' · ' + s.total + ' 题'));
         var meter = el('span', 'radar-meter');
         var fill = el('i');
         fill.style.width = Math.round(s.pct * 100) + '%';
         meter.appendChild(fill);
         row.appendChild(meter);
         row.appendChild(el('span', 'radar-pct', Math.round(s.pct * 100) + '%'));
-        row.title = s.m + ' ' + s.name + '：' + s.hit + '/' + s.total;
+        row.title = s.hit + '/' + s.total;
         legend.appendChild(row);
       });
     }
   }
-
   /* ---------------- 真题模拟 ---------------- */
 
   var EXAM_EXPAND = {};
@@ -902,44 +905,35 @@
     show(saved);
   }
 
+  var PHASE_COLORS = { B: '#60a5fa', P: '#a78bfa', X: '#f472b6' };
+  var PHASE_NAMES = { B: '入门级', P: '提高级', X: 'NOI 级' };
+
   function buildDag() {
     var S = window.AKIOI_SYLLABUS;
     var svg = document.getElementById('dag-svg');
     var vp = document.getElementById('dag-viewport');
     if (!svg || !vp || !S || !S.nodes) return;
 
-    var mods = Object.keys(S.modules || {});
-    var nodes = [];
-    var byId = {};
-    S.nodes.forEach(function (n, i) {
-      var node = {
-        id: n.id, name: n.t, sub: n.s, level: n.level, label: n.label, mod: n.mod,
-        modName: n.modName, pre: n.pre || [], problems: n.problems || [],
-        order: i,
-        color: DAG_COLORS[(mods.indexOf(n.mod) + 1) % DAG_COLORS.length]
+    var nodes = S.nodes.map(function (n) {
+      return {
+        id: n.id, name: n.title, sub: n.sub, sec: n.sec, level: n.level, phase: n.phase,
+        label: n.label, pre: (n.pre || []).slice(), problems: n.problems || [],
+        color: PHASE_COLORS[n.phase] || '#94a3b8'
       };
-      nodes.push(node);
-      byId[n.id] = node;
     });
+    var byId = {};
+    nodes.forEach(function (n) { byId[n.id] = n; });
     nodes.forEach(function (n) {
       n.pre = n.pre.filter(function (p) { return byId[p]; });
-      var hit = n.problems.filter(function (p) { return done.has(p.pid); }).length;
-      n.hit = hit;
-      n.pct = n.problems.length ? Math.round(hit / n.problems.length * 100) : 0;
+      n.hit = n.problems.filter(function (p) { return done.has(p.pid); }).length;
+      n.pct = n.problems.length ? Math.round(n.hit / n.problems.length * 100) : 0;
     });
 
-    var COL = 236, ROW = 82, PAD = 40, NW = 196, NH = 62;
-    var layers = mods.map(function () { return []; });
-    nodes.forEach(function (n) {
-      var mi = mods.indexOf(n.mod);
-      if (mi < 0) mi = 0;
-      layers[mi].push(n);
-    });
+    var COL = 208, ROW = 70, PAD = 36, NW = 172, NH = 54;
+    var levels = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    var layers = levels.map(function (lv) { return nodes.filter(function (n) { return n.level === lv; }); });
     var maxRows = 0;
-    layers.forEach(function (arr) {
-      arr.sort(function (a, b) { return a.level - b.level || a.order - b.order; });
-      maxRows = Math.max(maxRows, arr.length);
-    });
+    layers.forEach(function (arr) { maxRows = Math.max(maxRows, arr.length); });
     layers.forEach(function (arr, m) {
       var offset = (maxRows - arr.length) / 2;
       arr.forEach(function (n, i) {
@@ -950,7 +944,7 @@
       });
     });
 
-    var width = PAD * 2 + Math.max(1, layers.length - 1) * COL + NW;
+    var width = PAD * 2 + (levels.length - 1) * COL + NW;
     var height = PAD * 2 + Math.max(1, maxRows) * ROW;
 
     var NS = 'http://www.w3.org/2000/svg';
@@ -968,6 +962,7 @@
     nodes.forEach(function (n) {
       n.pre.forEach(function (pid) {
         var p = byId[pid];
+        if (!p) return;
         var x1 = p.x + p.w, y1 = p.y + p.h / 2;
         var x2 = n.x, y2 = n.y + n.h / 2;
         var mx = (x1 + x2) / 2;
@@ -985,28 +980,26 @@
       g.setAttribute('transform', 'translate(' + n.x + ',' + n.y + ')');
       g.setAttribute('data-id', n.id);
 
-      var statusColor = n.pct === 100 ? '#10b981' : n.color;
       var rect = document.createElementNS(NS, 'rect');
       rect.setAttribute('width', n.w);
       rect.setAttribute('height', n.h);
       rect.setAttribute('class', 'dag-box' + (n.pct === 100 ? ' is-full' : ''));
-      rect.setAttribute('rx', '13');
+      rect.setAttribute('rx', '11');
       rect.setAttribute('stroke', n.color);
-      rect.setAttribute('stroke-opacity', (0.12 + 0.88 * (n.pct / 100)).toFixed(2));
+      rect.setAttribute('stroke-opacity', (0.14 + 0.86 * (n.pct / 100)).toFixed(2));
       g.appendChild(rect);
 
       var bar = document.createElementNS(NS, 'rect');
       bar.setAttribute('class', 'dag-bar-accent');
-      bar.setAttribute('width', '7');
-      bar.setAttribute('height', n.h - 12);
+      bar.setAttribute('width', '6');
+      bar.setAttribute('height', n.h - 10);
       bar.setAttribute('x', '0');
-      bar.setAttribute('y', '6');
-      bar.setAttribute('rx', '4');
+      bar.setAttribute('y', '5');
+      bar.setAttribute('rx', '3');
       bar.setAttribute('fill', n.color);
       g.appendChild(bar);
 
-      // 右侧完成度圆圈
-      var R = 10, C = 2 * Math.PI * R, cx = n.w - 24, cy = 24;
+      var R = 8, C = 2 * Math.PI * R, cx = n.w - 18, cy = 20;
       var ringBg = document.createElementNS(NS, 'circle');
       ringBg.setAttribute('cx', cx); ringBg.setAttribute('cy', cy); ringBg.setAttribute('r', R);
       ringBg.setAttribute('class', 'dag-ring-bg');
@@ -1014,34 +1007,29 @@
       var ringFg = document.createElementNS(NS, 'circle');
       ringFg.setAttribute('cx', cx); ringFg.setAttribute('cy', cy); ringFg.setAttribute('r', R);
       ringFg.setAttribute('class', 'dag-ring-fg');
-      ringFg.setAttribute('stroke', statusColor);
+      ringFg.setAttribute('stroke', n.pct === 100 ? '#10b981' : n.color);
       ringFg.setAttribute('stroke-dasharray', C.toFixed(2));
       ringFg.setAttribute('stroke-dashoffset', (C * (1 - n.pct / 100)).toFixed(2));
       ringFg.setAttribute('transform', 'rotate(-90 ' + cx + ' ' + cy + ')');
       g.appendChild(ringFg);
-      var pctText = document.createElementNS(NS, 'text');
-      pctText.setAttribute('x', cx); pctText.setAttribute('y', cy + 3);
-      pctText.setAttribute('text-anchor', 'middle');
-      pctText.setAttribute('class', 'dag-pct');
-      pctText.textContent = n.pct + '%';
-      g.appendChild(pctText);
-      var tip = document.createElementNS(NS, 'title');
-      tip.textContent = n.name + ' 已完成 ' + n.hit + '/' + n.problems.length;
-      g.appendChild(tip);
 
       var t1 = document.createElementNS(NS, 'text');
-      t1.setAttribute('x', '26');
-      t1.setAttribute('y', '27');
+      t1.setAttribute('x', '20');
+      t1.setAttribute('y', '23');
       t1.setAttribute('class', 'dag-t');
-      t1.textContent = n.name.length > 9 ? n.name.slice(0, 9) + '…' : n.name;
+      t1.textContent = n.name.length > 10 ? n.name.slice(0, 10) + '…' : n.name;
       g.appendChild(t1);
 
       var t2 = document.createElementNS(NS, 'text');
-      t2.setAttribute('x', '26');
-      t2.setAttribute('y', '46');
+      t2.setAttribute('x', '20');
+      t2.setAttribute('y', '40');
       t2.setAttribute('class', 'dag-s');
-      t2.textContent = n.label || (n.mod + ' · NOI ' + n.level + ' 级');
+      t2.textContent = n.label;
       g.appendChild(t2);
+
+      var tip = document.createElementNS(NS, 'title');
+      tip.textContent = n.name + '\n' + n.label + '\n已完成 ' + n.hit + '/' + n.problems.length;
+      g.appendChild(tip);
 
       g.addEventListener('click', function (e) { e.stopPropagation(); openNodePanel(n); });
       gNodes.appendChild(g);
@@ -1057,21 +1045,21 @@
     var legend = document.getElementById('dag-legend');
     if (legend) {
       legend.innerHTML = '';
-      mods.forEach(function (m, i) {
+      ['B', 'P', 'X'].forEach(function (ph) {
         var item = el('span', 'dag-legend-item');
         var dot = el('i');
-        dot.style.background = DAG_COLORS[(i + 1) % DAG_COLORS.length];
+        dot.style.background = PHASE_COLORS[ph];
         item.appendChild(dot);
-        item.appendChild(el('span', null, m + ' ' + (S.modules[m] || '')));
+        item.appendChild(el('span', null, PHASE_NAMES[ph]));
         legend.appendChild(item);
       });
     }
 
-    // 按拓扑推进：前置全部完成才解锁
+    // 拓扑推荐
     var nextNode = null;
     nodes.forEach(function (n) {
-      var unlocked = n.pre.every(function (pid) { return byId[pid].pct === 100; });
-      if (!unlocked || n.pct === 100) return;
+      var unlocked = n.pre.every(function (pid) { var p = byId[pid]; return p ? p.pct === 100 : true; });
+      if (!unlocked || n.pct === 100 || !n.problems.length) return;
       if (!nextNode) { nextNode = n; return; }
       if (n.pct > 0 && nextNode.pct === 0) { nextNode = n; return; }
       if ((n.pct > 0) === (nextNode.pct > 0) && n.level < nextNode.level) nextNode = n;
@@ -1082,7 +1070,7 @@
       var pill = document.getElementById('dag-next');
       if (pill) {
         pill.hidden = false;
-        pill.textContent = '下一步 · ' + nextNode.mod + ' ' + nextNode.name;
+        pill.textContent = '下一步 · ' + nextNode.name;
         pill.addEventListener('click', function () { openNodePanel(nextNode); });
       }
     }
@@ -1093,9 +1081,9 @@
   function openNodePanel(n) {
     var panel = document.getElementById('dag-panel');
     if (!panel) return;
-    setText('dp-mod', (n.label || '') + ' · ' + n.mod + ' ' + n.modName);
-    setText('dp-title', n.name);
-    setText('dp-sub', n.sub || '');
+    setText('dp-mod', (n.sec || '') + ' · ' + (n.sub || ''));
+    setText('dp-title', n.name || '');
+    setText('dp-sub', n.label || '');
     var meta = document.getElementById('dp-meta');
     if (meta) {
       meta.innerHTML = '';
@@ -1112,24 +1100,22 @@
     if (n.pre.length) {
       var preBox = el('div', 'dp-pre');
       preBox.appendChild(el('span', 'dp-label', '前置：'));
-      n.pre.forEach(function (pid, i) {
-        var other = null;
-        (window.AKIOI_SYLLABUS.nodes || []).forEach(function (x) { if (x.id === pid) other = x; });
-        if (i) preBox.appendChild(document.createTextNode(' '));
-        var a = el('button', 'dp-pre-link', other ? other.t : pid);
-        a.type = 'button';
-        a.addEventListener('click', function () {
-          if (other) openNodePanel({ id: other.id, name: other.t, sub: other.s, level: other.level, label: other.label, mod: other.mod, modName: other.modName, pre: other.pre || [], problems: other.problems || [] });
+      n.pre.forEach(function (pid) {
+        (window.AKIOI_SYLLABUS.nodes || []).forEach(function (x) {
+          if (x.id !== pid) return;
+          var a = el('button', 'dp-pre-link', x.title);
+          a.type = 'button';
+          a.addEventListener('click', function () {
+            openNodePanel({ id: x.id, name: x.title, sub: x.sub, sec: x.sec, level: x.level, label: x.label, pre: x.pre || [], problems: x.problems || [] });
+          });
+          preBox.appendChild(a);
         });
-        preBox.appendChild(a);
       });
       body.appendChild(preBox);
     }
 
     var list = el('div', 'dp-list');
-    if (!n.problems.length) {
-      list.appendChild(el('p', 'dp-empty', '这一条暂时没有收录题目。'));
-    }
+    if (!n.problems.length) list.appendChild(el('p', 'dp-empty', '大纲里有这一条，但题单暂时没有对应题目。'));
     n.problems.forEach(function (p) {
       var row = el('div', 'dp-row');
       row.dataset.pid = p.pid;
@@ -1145,10 +1131,6 @@
         saveSet(PROGRESS_KEY, done);
         row.classList.toggle('done', done.has(p.pid));
         check.setAttribute('aria-checked', done.has(p.pid) ? 'true' : 'false');
-        if (meta) {
-          var hit = n.problems.filter(function (x) { return done.has(x.pid); }).length;
-          meta.lastChild.textContent = '已完成 ' + hit + '/' + n.problems.length;
-        }
       });
       row.appendChild(check);
       row.appendChild(el('span', 'pid', p.pid));
@@ -1169,7 +1151,7 @@
     document.body.classList.add('dag-panel-open');
   }
 
-  function closeNodePanel() {
+    function closeNodePanel() {
     var panel = document.getElementById('dag-panel');
     if (panel) panel.hidden = true;
     document.body.classList.remove('dag-panel-open');
@@ -1188,7 +1170,7 @@
     apply();
 
     var host = document.getElementById('dag-overlay');
-    var MIN_K = 0.62;
+    var MIN_K = 0.22;
     function fit() {
       var cw = host.clientWidth, chh = host.clientHeight;
       var k = Math.min(1, (cw - 24) / width, (chh - 24) / height);
@@ -1324,6 +1306,8 @@
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
   else init();
 })();
+
+
 
 
 
