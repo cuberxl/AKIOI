@@ -1,6 +1,6 @@
-/* 由 tools/build-syllabus.mjs 生成，数据来源：NOI 大纲 + 洛谷题单 */
+/* 由 tools/build-syllabus.mjs 生成，数据来源：NOI 大纲 + 洛谷 */
 window.AKIOI_SYLLABUS = {
-  "updated": "2026-11-12",
+  "updated": "2026-11-13",
   "modules": {
     "M1": "编程基础与模拟",
     "M2": "排序与贪心",
@@ -64,29 +64,9 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 1
         },
         {
-          "pid": "P2670",
-          "name": "[NOIP 2015 普及组] 扫雷游戏",
-          "difficulty": 1
-        },
-        {
-          "pid": "P1980",
-          "name": "[NOIP 2013 普及组] 计数问题",
-          "difficulty": 1
-        },
-        {
-          "pid": "P1307",
-          "name": "[NOIP 2011 普及组] 数字反转",
-          "difficulty": 1
-        },
-        {
           "pid": "P1179",
           "name": "[NOIP 2010 普及组] 数字统计",
           "difficulty": 1
-        },
-        {
-          "pid": "P1067",
-          "name": "[NOIP 2009 普及组] 多项式输出",
-          "difficulty": 2
         },
         {
           "pid": "P1563",
@@ -99,38 +79,8 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 2
         },
         {
-          "pid": "P1098",
-          "name": "[NOIP 2007 提高组] 字符串的展开",
-          "difficulty": 2
-        },
-        {
-          "pid": "P4924",
-          "name": "[1007] 魔法少女小Scarlet",
-          "difficulty": 2
-        },
-        {
-          "pid": "P7072",
-          "name": "[CSP-J 2020] 直播获奖",
-          "difficulty": 2
-        },
-        {
-          "pid": "P2141",
-          "name": "[NOIP 2014 普及组] 珠心算测验",
-          "difficulty": 2
-        },
-        {
-          "pid": "P5661",
-          "name": "[CSP-J 2019] 公交换乘",
-          "difficulty": 2
-        },
-        {
           "pid": "P11228",
           "name": "[CSP-J 2024] 地图探险",
-          "difficulty": 2
-        },
-        {
-          "pid": "P14358",
-          "name": "[CSP-J 2025] 座位",
           "difficulty": 2
         },
         {
@@ -139,38 +89,8 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 2
         },
         {
-          "pid": "P2010",
-          "name": "[NOIP 2016 普及组] 回文日期",
-          "difficulty": 2
-        },
-        {
-          "pid": "P5016",
-          "name": "[NOIP 2018 普及组] 龙虎斗",
-          "difficulty": 2
-        },
-        {
-          "pid": "P1003",
-          "name": "[NOIP 2011 提高组] 铺地毯",
-          "difficulty": 2
-        },
-        {
-          "pid": "P2615",
-          "name": "[NOIP 2015 提高组] 神奇的幻方",
-          "difficulty": 2
-        },
-        {
-          "pid": "P1022",
-          "name": "[NOIP 2000 普及组] 计算器的改良",
-          "difficulty": 3
-        },
-        {
           "pid": "P1518",
           "name": "[USACO2.4] 两只塔姆沃斯牛 The Tamworth Two",
-          "difficulty": 3
-        },
-        {
-          "pid": "P7911",
-          "name": "[CSP-J 2021] 网络连接",
           "difficulty": 3
         },
         {
@@ -179,113 +99,23 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 3
         },
         {
-          "pid": "P2239",
-          "name": "[NOIP 2014 普及组] 螺旋矩阵",
-          "difficulty": 3
-        },
-        {
           "pid": "P9750",
           "name": "[CSP-J 2023] 一元二次方程",
           "difficulty": 3
         },
         {
-          "pid": "P1058",
-          "name": "[NOIP 2008 普及组] 立体图",
-          "difficulty": 3
-        },
-        {
-          "pid": "P1061",
-          "name": "[NOIP 2006 普及组] Jam 的计数法",
-          "difficulty": 3
-        },
-        {
-          "pid": "P1158",
-          "name": "[NOIP 2010 普及组] 导弹拦截",
-          "difficulty": 3
-        },
-        {
-          "pid": "P1016",
-          "name": "[NOIP 1999 普及组/提高组] 旅行家的预算",
-          "difficulty": 3
-        },
-        {
-          "pid": "P3952",
-          "name": "[NOIP 2017 提高组] 时间复杂度",
+          "pid": "P1185",
+          "name": "绘制二叉树",
           "difficulty": 4
         },
         {
-          "pid": "P7912",
-          "name": "[CSP-J 2021] 小熊的果篮",
+          "pid": "P1433",
+          "name": "吃奶酪",
           "difficulty": 4
-        },
-        {
-          "pid": "P5763",
-          "name": "[NOI1999] 内存分配",
-          "difficulty": 4
-        },
-        {
-          "pid": "P7073",
-          "name": "[CSP-J 2020] 表达式",
-          "difficulty": 4
-        },
-        {
-          "pid": "P7075",
-          "name": "[CSP-S 2020] 儒略日",
-          "difficulty": 4
-        },
-        {
-          "pid": "P7913",
-          "name": "[CSP-S 2021] 廊桥分配",
-          "difficulty": 4
-        },
-        {
-          "pid": "P8815",
-          "name": "[CSP-J 2022] 逻辑表达式",
-          "difficulty": 4
-        },
-        {
-          "pid": "P11232",
-          "name": "[CSP-S 2024] 超速检测",
-          "difficulty": 4
-        },
-        {
-          "pid": "P1315",
-          "name": "[NOIP 2011 提高组] 观光公交",
-          "difficulty": 5
-        },
-        {
-          "pid": "P1039",
-          "name": "[NOIP 2003 提高组] 侦探推理",
-          "difficulty": 5
-        },
-        {
-          "pid": "P2668",
-          "name": "[NOIP 2015 提高组] 斗地主",
-          "difficulty": 5
-        },
-        {
-          "pid": "P1050",
-          "name": "[NOIP 2005 普及组] 循环",
-          "difficulty": 5
-        },
-        {
-          "pid": "P1054",
-          "name": "[NOIP 2005 提高组] 等价表达式",
-          "difficulty": 5
         },
         {
           "pid": "P1448",
           "name": "[NOI1998] 围巾裁剪",
-          "difficulty": 5
-        },
-        {
-          "pid": "P5698",
-          "name": "[CTSC1998] 算法复杂度",
-          "difficulty": 5
-        },
-        {
-          "pid": "P7366",
-          "name": "[CTSC2002] 月亮森林",
           "difficulty": 5
         },
         {
@@ -299,29 +129,9 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 7
         },
         {
-          "pid": "P4997",
-          "name": "不围棋",
+          "pid": "P3959",
+          "name": "[NOIP 2017 提高组] 宝藏",
           "difficulty": 7
-        },
-        {
-          "pid": "P3695",
-          "name": "CYaRon!语",
-          "difficulty": 7
-        },
-        {
-          "pid": "P17091",
-          "name": "『lnOI-R1』三十四万一千七百九十九",
-          "difficulty": 7
-        },
-        {
-          "pid": "P2482",
-          "name": "[SDOI2010] 猪国杀",
-          "difficulty": 7
-        },
-        {
-          "pid": "P9499",
-          "name": "「RiOI-2」change",
-          "difficulty": 8
         }
       ],
       "num": 1,
@@ -438,6 +248,66 @@ window.AKIOI_SYLLABUS = {
           "pid": "P1464",
           "name": "[PacNW 1999] Function",
           "difficulty": 2
+        },
+        {
+          "pid": "P4924",
+          "name": "[1007] 魔法少女小Scarlet",
+          "difficulty": 2
+        },
+        {
+          "pid": "P2089",
+          "name": "烤鸡",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1923",
+          "name": "【深基9.例4】求第 k 小的数",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1024",
+          "name": "[NOIP 2001 提高组] 一元三次方程求解",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1827",
+          "name": "[USACO3.4] 美国血统 American Heritage",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1305",
+          "name": "新二叉树",
+          "difficulty": 2
+        },
+        {
+          "pid": "P2239",
+          "name": "[NOIP 2014 普及组] 螺旋矩阵",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1309",
+          "name": "[NOIP 2011 普及组] 瑞士轮",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1259",
+          "name": "黑白棋子的移动",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1228",
+          "name": "地毯填补问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1541",
+          "name": "[NOIP 2010 提高组] 乌龟棋",
+          "difficulty": 4
+        },
+        {
+          "pid": "P3806",
+          "name": "【模板】点分治",
+          "difficulty": 6
         }
       ],
       "num": 5,
@@ -541,6 +411,16 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 2
         },
         {
+          "pid": "P1781",
+          "name": "宇宙总统",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1255",
+          "name": "数楼梯",
+          "difficulty": 2
+        },
+        {
           "pid": "P1009",
           "name": "[NOIP 1998 普及组] 阶乘之和",
           "difficulty": 2
@@ -556,14 +436,9 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 2
         },
         {
-          "pid": "P4282",
-          "name": "[AHOI2008] 计算器",
-          "difficulty": 2
-        },
-        {
-          "pid": "P1015",
-          "name": "[NOIP 1999 普及组] 回文数",
-          "difficulty": 2
+          "pid": "P2005",
+          "name": "A/B Problem II",
+          "difficulty": 3
         },
         {
           "pid": "P1249",
@@ -583,16 +458,6 @@ window.AKIOI_SYLLABUS = {
         {
           "pid": "P1096",
           "name": "[NOIP 2007 普及组] Hanoi 双塔问题",
-          "difficulty": 3
-        },
-        {
-          "pid": "P7113",
-          "name": "[NOIP2020] 排水系统",
-          "difficulty": 3
-        },
-        {
-          "pid": "P1037",
-          "name": "[NOIP 2002 普及组] 产生数",
           "difficulty": 3
         },
         {
@@ -616,13 +481,8 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 4
         },
         {
-          "pid": "P2312",
-          "name": "[NOIP 2014 提高组] 解方程",
-          "difficulty": 4
-        },
-        {
-          "pid": "P2152",
-          "name": "[SDOI2009] SuperGCD",
+          "pid": "P1050",
+          "name": "[NOIP 2005 普及组] 循环",
           "difficulty": 5
         },
         {
@@ -631,14 +491,14 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 5
         },
         {
+          "pid": "P1080",
+          "name": "[NOIP 2012 提高组] 国王游戏",
+          "difficulty": 5
+        },
+        {
           "pid": "P2293",
           "name": "[HNOI2004] 高精度开根",
           "difficulty": 7
-        },
-        {
-          "pid": "P5432",
-          "name": "A/B Problem（高精度除法Ⅱ）",
-          "difficulty": 8
         }
       ],
       "num": 7,
@@ -748,18 +608,23 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 2
         },
         {
+          "pid": "P7072",
+          "name": "[CSP-J 2020] 直播获奖",
+          "difficulty": 2
+        },
+        {
+          "pid": "P14358",
+          "name": "[CSP-J 2025] 座位",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1088",
+          "name": "[NOIP 2004 普及组] 火星人",
+          "difficulty": 2
+        },
+        {
           "pid": "P1068",
           "name": "[NOIP 2009 普及组] 分数线划定",
-          "difficulty": 2
-        },
-        {
-          "pid": "P1104",
-          "name": "生日",
-          "difficulty": 2
-        },
-        {
-          "pid": "P1923",
-          "name": "【深基9.例4】求第 k 小的数",
           "difficulty": 2
         },
         {
@@ -783,18 +648,43 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 2
         },
         {
-          "pid": "P1309",
-          "name": "[NOIP 2011 普及组] 瑞士轮",
-          "difficulty": 3
+          "pid": "P1678",
+          "name": "烦恼的高考志愿",
+          "difficulty": 2
         },
         {
-          "pid": "P1774",
-          "name": "最接近神的人",
-          "difficulty": 3
+          "pid": "P2234",
+          "name": "[HNOI2002] 营业额统计",
+          "difficulty": 2
         },
         {
-          "pid": "P5149",
-          "name": "会议座位",
+          "pid": "P1223",
+          "name": "排队接水",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1803",
+          "name": "凌乱的yyy / 线段覆盖",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1094",
+          "name": "[NOIP 2007 普及组] 纪念品分组",
+          "difficulty": 2
+        },
+        {
+          "pid": "P4995",
+          "name": "跳跳！",
+          "difficulty": 2
+        },
+        {
+          "pid": "P2695",
+          "name": "骑士的工作",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1158",
+          "name": "[NOIP 2010 普及组] 导弹拦截",
           "difficulty": 3
         },
         {
@@ -808,18 +698,8 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 3
         },
         {
-          "pid": "P1627",
-          "name": "[CQOI2009] 中位数",
-          "difficulty": 3
-        },
-        {
           "pid": "P2434",
           "name": "[SDOI2005] 区间",
-          "difficulty": 3
-        },
-        {
-          "pid": "P3871",
-          "name": "[TJOI2010] 中位数",
           "difficulty": 3
         },
         {
@@ -833,18 +713,18 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 3
         },
         {
-          "pid": "P1012",
-          "name": "[NOIP 1998 提高组] 拼数",
-          "difficulty": 4
+          "pid": "P2920",
+          "name": "[USACO08NOV] Time Management S",
+          "difficulty": 3
         },
         {
-          "pid": "P2671",
-          "name": "[NOIP 2015 普及组] 求和",
-          "difficulty": 4
+          "pid": "P1650",
+          "name": "[ICPC 2004 Shanghai R] 田忌赛马",
+          "difficulty": 3
         },
         {
-          "pid": "P3243",
-          "name": "[HNOI2015] 菜肴制作",
+          "pid": "P11232",
+          "name": "[CSP-S 2024] 超速检测",
           "difficulty": 4
         },
         {
@@ -853,9 +733,14 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 4
         },
         {
-          "pid": "P6033",
-          "name": "[NOIP 2004 提高组] 合并果子 加强版",
-          "difficulty": 4
+          "pid": "P2123",
+          "name": "皇后游戏",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3619",
+          "name": "魔法",
+          "difficulty": 5
         }
       ],
       "num": 8,
@@ -890,33 +775,8 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 2
         },
         {
-          "pid": "P1223",
-          "name": "排队接水",
-          "difficulty": 2
-        },
-        {
-          "pid": "P1803",
-          "name": "凌乱的yyy / 线段覆盖",
-          "difficulty": 2
-        },
-        {
-          "pid": "P1094",
-          "name": "[NOIP 2007 普及组] 纪念品分组",
-          "difficulty": 2
-        },
-        {
           "pid": "P2240",
           "name": "【深基12.例1】部分背包问题",
-          "difficulty": 2
-        },
-        {
-          "pid": "P4995",
-          "name": "跳跳！",
-          "difficulty": 2
-        },
-        {
-          "pid": "P2695",
-          "name": "骑士的工作",
           "difficulty": 2
         },
         {
@@ -927,11 +787,6 @@ window.AKIOI_SYLLABUS = {
         {
           "pid": "P5514",
           "name": "[MtOI2019] 永夜的报应",
-          "difficulty": 2
-        },
-        {
-          "pid": "P9749",
-          "name": "[CSP-J 2023] 公路",
           "difficulty": 2
         },
         {
@@ -950,8 +805,13 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 3
         },
         {
-          "pid": "P1650",
-          "name": "[ICPC 2004 Shanghai R] 田忌赛马",
+          "pid": "P6771",
+          "name": "[USACO05MAR] Space Elevator 太空电梯",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1095",
+          "name": "[NOIP 2007 普及组] 守望者的逃离",
           "difficulty": 3
         },
         {
@@ -970,21 +830,6 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 3
         },
         {
-          "pid": "P3915",
-          "name": "树的分解",
-          "difficulty": 3
-        },
-        {
-          "pid": "P2431",
-          "name": "正妹吃月饼",
-          "difficulty": 3
-        },
-        {
-          "pid": "P2949",
-          "name": "[USACO09OPEN] Work Scheduling G",
-          "difficulty": 3
-        },
-        {
           "pid": "P11229",
           "name": "[CSP-J 2024] 小木棍",
           "difficulty": 3
@@ -995,93 +840,18 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 3
         },
         {
-          "pid": "P1766",
-          "name": "液体滴落",
-          "difficulty": 4
-        },
-        {
-          "pid": "P6155",
-          "name": "修改",
-          "difficulty": 4
-        },
-        {
           "pid": "P1686",
           "name": "挑战",
           "difficulty": 4
         },
         {
-          "pid": "P2107",
-          "name": "小 Z 的 AK 计划",
-          "difficulty": 4
-        },
-        {
-          "pid": "P1080",
-          "name": "[NOIP 2012 提高组] 国王游戏",
+          "pid": "P7366",
+          "name": "[CTSC2002] 月亮森林",
           "difficulty": 5
         },
         {
-          "pid": "P2123",
-          "name": "皇后游戏",
-          "difficulty": 5
-        },
-        {
-          "pid": "P3619",
-          "name": "魔法",
-          "difficulty": 5
-        },
-        {
-          "pid": "P4053",
-          "name": "[JSOI2007] 建筑抢修",
-          "difficulty": 5
-        },
-        {
-          "pid": "P1269",
-          "name": "信号放大器",
-          "difficulty": 5
-        },
-        {
-          "pid": "P1528",
-          "name": "切蛋糕【疑似错题】",
-          "difficulty": 5
-        },
-        {
-          "pid": "P2127",
-          "name": "序列排序",
-          "difficulty": 5
-        },
-        {
-          "pid": "P2675",
-          "name": "《瞿葩的数字游戏》T3-三角圣地",
-          "difficulty": 5
-        },
-        {
-          "pid": "P1792",
-          "name": "[国家集训队] 种树",
-          "difficulty": 5
-        },
-        {
-          "pid": "P2672",
-          "name": "[NOIP 2015 普及组] 推销员",
-          "difficulty": 5
-        },
-        {
-          "pid": "P10453",
-          "name": "七夕祭",
-          "difficulty": 5
-        },
-        {
-          "pid": "P1484",
-          "name": "种树",
-          "difficulty": 5
-        },
-        {
-          "pid": "CF865D",
-          "name": "Buy Low Sell High",
-          "difficulty": 5
-        },
-        {
-          "pid": "P1514",
-          "name": "[NOIP 2010 提高组] 引水入城",
+          "pid": "P10971",
+          "name": "Cookies",
           "difficulty": 5
         },
         {
@@ -1090,19 +860,9 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 6
         },
         {
-          "pid": "P3620",
-          "name": "[APIO/CTSC2007] 数据备份",
-          "difficulty": 6
-        },
-        {
-          "pid": "CF436E",
-          "name": "Cardboard Box",
-          "difficulty": 7
-        },
-        {
-          "pid": "P14537",
-          "name": "[OII 2025] 双色金字塔 / Piramide bicolore",
-          "difficulty": 7
+          "pid": "P9499",
+          "name": "「RiOI-2」change",
+          "difficulty": 8
         }
       ],
       "num": 3,
@@ -1127,6 +887,16 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 3
         },
         {
+          "pid": "P1016",
+          "name": "[NOIP 1999 普及组/提高组] 旅行家的预算",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2107",
+          "name": "小 Z 的 AK 计划",
+          "difficulty": 4
+        },
+        {
           "pid": "P4053",
           "name": "[JSOI2007] 建筑抢修",
           "difficulty": 5
@@ -1140,6 +910,16 @@ window.AKIOI_SYLLABUS = {
           "pid": "P1484",
           "name": "种树",
           "difficulty": 5
+        },
+        {
+          "pid": "P2893",
+          "name": "[USACO08FEB] Making the Grade G",
+          "difficulty": 5
+        },
+        {
+          "pid": "CF436E",
+          "name": "Cardboard Box",
+          "difficulty": 7
         }
       ],
       "num": 1,
@@ -1281,6 +1061,41 @@ window.AKIOI_SYLLABUS = {
           "pid": "P1996",
           "name": "约瑟夫问题",
           "difficulty": 2
+        },
+        {
+          "pid": "P1059",
+          "name": "[NOIP 2006 普及组] 明明的随机数",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1102",
+          "name": "A-B 数对",
+          "difficulty": 2
+        },
+        {
+          "pid": "P3613",
+          "name": "【深基15.例2】寄包柜",
+          "difficulty": 2
+        },
+        {
+          "pid": "P3879",
+          "name": "[TJOI2010] 阅读理解",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1190",
+          "name": "[NOIP 2010 普及组] 接水问题",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1168",
+          "name": "中位数",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2580",
+          "name": "于是他错误的点名开始了",
+          "difficulty": 3
         }
       ],
       "num": 2,
@@ -1325,8 +1140,8 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 2
         },
         {
-          "pid": "P3613",
-          "name": "【深基15.例2】寄包柜",
+          "pid": "P5661",
+          "name": "[CSP-J 2019] 公交换乘",
           "difficulty": 2
         },
         {
@@ -1335,53 +1150,23 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 2
         },
         {
-          "pid": "P3378",
-          "name": "【模板】堆",
-          "difficulty": 3
+          "pid": "P4715",
+          "name": "【深基16.例1】淘汰赛",
+          "difficulty": 2
         },
         {
-          "pid": "P1886",
-          "name": "【模板】单调队列 / 滑动窗口",
-          "difficulty": 3
+          "pid": "P1443",
+          "name": "马的遍历",
+          "difficulty": 2
         },
         {
-          "pid": "P1440",
-          "name": "求m区间内的最小值",
-          "difficulty": 3
-        },
-        {
-          "pid": "P5788",
-          "name": "【模板】单调栈",
-          "difficulty": 3
-        },
-        {
-          "pid": "P1901",
-          "name": "发射站",
-          "difficulty": 3
+          "pid": "P1162",
+          "name": "填涂颜色",
+          "difficulty": 2
         },
         {
           "pid": "P1160",
           "name": "队列安排",
-          "difficulty": 3
-        },
-        {
-          "pid": "P2058",
-          "name": "[NOIP 2016 普及组] 海港",
-          "difficulty": 3
-        },
-        {
-          "pid": "P1168",
-          "name": "中位数",
-          "difficulty": 3
-        },
-        {
-          "pid": "P2278",
-          "name": "[HNOI2003] 操作系统",
-          "difficulty": 3
-        },
-        {
-          "pid": "P1714",
-          "name": "切蛋糕",
           "difficulty": 3
         },
         {
@@ -1390,24 +1175,74 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 3
         },
         {
-          "pid": "P1631",
-          "name": "序列合并",
+          "pid": "P1106",
+          "name": "删数问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3952",
+          "name": "[NOIP 2017 提高组] 时间复杂度",
           "difficulty": 4
         },
         {
-          "pid": "P2168",
-          "name": "[NOI2015] 荷马史诗",
+          "pid": "P7912",
+          "name": "[CSP-J 2021] 小熊的果篮",
+          "difficulty": 4
+        },
+        {
+          "pid": "P7073",
+          "name": "[CSP-J 2020] 表达式",
+          "difficulty": 4
+        },
+        {
+          "pid": "P8815",
+          "name": "[CSP-J 2022] 逻辑表达式",
+          "difficulty": 4
+        },
+        {
+          "pid": "P2671",
+          "name": "[NOIP 2015 普及组] 求和",
+          "difficulty": 4
+        },
+        {
+          "pid": "P6033",
+          "name": "[NOIP 2004 提高组] 合并果子 加强版",
+          "difficulty": 4
+        },
+        {
+          "pid": "P2804",
+          "name": "神秘数字",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1169",
+          "name": "[ZJOI2007] 棋盘制作",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1868",
+          "name": "饥饿的奶牛",
+          "difficulty": 4
+        },
+        {
+          "pid": "P6155",
+          "name": "修改",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1054",
+          "name": "[NOIP 2005 提高组] 等价表达式",
+          "difficulty": 5
+        },
+        {
+          "pid": "P5698",
+          "name": "[CTSC1998] 算法复杂度",
           "difficulty": 5
         },
         {
           "pid": "P2827",
           "name": "[NOIP 2016 提高组] 蚯蚓",
           "difficulty": 5
-        },
-        {
-          "pid": "P2048",
-          "name": "[NOI2010] 超级钢琴",
-          "difficulty": 7
         }
       ],
       "num": 9,
@@ -1462,6 +1297,51 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 2
         },
         {
+          "pid": "P1077",
+          "name": "[NOIP 2012 普及组] 摆花",
+          "difficulty": 2
+        },
+        {
+          "pid": "P9749",
+          "name": "[CSP-J 2023] 公路",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1774",
+          "name": "最接近神的人",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1627",
+          "name": "[CQOI2009] 中位数",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1182",
+          "name": "数列分段 Section II",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1083",
+          "name": "[NOIP 2012 提高组] 借教室",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1314",
+          "name": "[NOIP 2011 提高组] 聪明的质监员",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2390",
+          "name": "地标访问",
+          "difficulty": 3
+        },
+        {
+          "pid": "P6473",
+          "name": "[NOI Online #2 入门组] 未了",
+          "difficulty": 3
+        },
+        {
           "pid": "P3406",
           "name": "海底高铁",
           "difficulty": 3
@@ -1487,13 +1367,33 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 3
         },
         {
+          "pid": "P2904",
+          "name": "[USACO08MAR] River Crossing S",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2513",
+          "name": "[HAOI2009] 逆序对数列",
+          "difficulty": 3
+        },
+        {
+          "pid": "P5019",
+          "name": "[NOIP 2018 提高组] 铺设道路",
+          "difficulty": 3
+        },
+        {
           "pid": "P3408",
           "name": "恋爱",
           "difficulty": 4
         },
         {
-          "pid": "P1955",
-          "name": "[NOI2015] 程序自动分析",
+          "pid": "P2119",
+          "name": "[NOIP 2016 普及组] 魔法阵",
+          "difficulty": 4
+        },
+        {
+          "pid": "P6069",
+          "name": "『MdOI R1』Group",
           "difficulty": 4
         },
         {
@@ -1512,6 +1412,31 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 4
         },
         {
+          "pid": "P3368",
+          "name": "【模板】树状数组 2",
+          "difficulty": 4
+        },
+        {
+          "pid": "P4552",
+          "name": "[Poetize6] IncDec Sequence",
+          "difficulty": 4
+        },
+        {
+          "pid": "P13825",
+          "name": "【模板】线段树 1.5",
+          "difficulty": 4
+        },
+        {
+          "pid": "P2679",
+          "name": "[NOIP 2015 提高组] 子串",
+          "difficulty": 4
+        },
+        {
+          "pid": "P10865",
+          "name": "[HBCPC2024] Genshin Impact Startup Forbidden III",
+          "difficulty": 4
+        },
+        {
           "pid": "P3017",
           "name": "[USACO11MAR] Brownie Slicing G",
           "difficulty": 5
@@ -1520,6 +1445,36 @@ window.AKIOI_SYLLABUS = {
           "pid": "P4375",
           "name": "[USACO18OPEN] Out of Sorts G",
           "difficulty": 5
+        },
+        {
+          "pid": "P1966",
+          "name": "[NOIP 2013 提高组] 火柴排队",
+          "difficulty": 5
+        },
+        {
+          "pid": "P5490",
+          "name": "【模板】扫描线 & 矩形面积并",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1502",
+          "name": "窗口的星星",
+          "difficulty": 5
+        },
+        {
+          "pid": "P10453",
+          "name": "七夕祭",
+          "difficulty": 5
+        },
+        {
+          "pid": "P7562",
+          "name": "[JOISC 2021] イベント巡り 2 (Event Hopping 2) (Day4)",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4168",
+          "name": "[Violet] 蒲公英",
+          "difficulty": 7
         },
         {
           "pid": "P4527",
@@ -1564,11 +1519,6 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 2
         },
         {
-          "pid": "P1678",
-          "name": "烦恼的高考志愿",
-          "difficulty": 2
-        },
-        {
           "pid": "P1258",
           "name": "小车问题",
           "difficulty": 2
@@ -1589,28 +1539,8 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 3
         },
         {
-          "pid": "P1182",
-          "name": "数列分段 Section II",
-          "difficulty": 3
-        },
-        {
           "pid": "P2440",
           "name": "木材加工",
-          "difficulty": 3
-        },
-        {
-          "pid": "P1083",
-          "name": "[NOIP 2012 提高组] 借教室",
-          "difficulty": 3
-        },
-        {
-          "pid": "P1902",
-          "name": "刺杀大使",
-          "difficulty": 3
-        },
-        {
-          "pid": "P1314",
-          "name": "[NOIP 2011 提高组] 聪明的质监员",
           "difficulty": 3
         },
         {
@@ -1624,11 +1554,6 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 3
         },
         {
-          "pid": "P1396",
-          "name": "营救",
-          "difficulty": 3
-        },
-        {
           "pid": "P1570",
           "name": "KC 喝咖啡",
           "difficulty": 3
@@ -1636,16 +1561,6 @@ window.AKIOI_SYLLABUS = {
         {
           "pid": "P1577",
           "name": "切绳子",
-          "difficulty": 3
-        },
-        {
-          "pid": "P1638",
-          "name": "逛画展",
-          "difficulty": 3
-        },
-        {
-          "pid": "P1661",
-          "name": "扩散",
           "difficulty": 3
         },
         {
@@ -1659,33 +1574,8 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 3
         },
         {
-          "pid": "P2005",
-          "name": "A/B Problem II",
-          "difficulty": 3
-        },
-        {
-          "pid": "P2370",
-          "name": "yyy2015c01 的 U 盘",
-          "difficulty": 3
-        },
-        {
-          "pid": "P2390",
-          "name": "地标访问",
-          "difficulty": 3
-        },
-        {
           "pid": "P2855",
           "name": "[USACO06DEC] River Hopscotch S",
-          "difficulty": 3
-        },
-        {
-          "pid": "P2920",
-          "name": "[USACO08NOV] Time Management S",
-          "difficulty": 3
-        },
-        {
-          "pid": "P4058",
-          "name": "[Code+#1] 木材",
           "difficulty": 3
         },
         {
@@ -1694,33 +1584,8 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 3
         },
         {
-          "pid": "P6473",
-          "name": "[NOI Online #2 入门组] 未了",
-          "difficulty": 3
-        },
-        {
-          "pid": "P2804",
-          "name": "神秘数字",
-          "difficulty": 4
-        },
-        {
-          "pid": "P3611",
-          "name": "[USACO17JAN] Cow Dance Show S",
-          "difficulty": 4
-        },
-        {
-          "pid": "P6069",
-          "name": "『MdOI R1』Group",
-          "difficulty": 4
-        },
-        {
-          "pid": "P2323",
-          "name": "[HNOI2006] 公路修建问题",
-          "difficulty": 4
-        },
-        {
-          "pid": "P2498",
-          "name": "[SDOI2012] 拯救小云公主",
+          "pid": "P7075",
+          "name": "[CSP-S 2020] 儒略日",
           "difficulty": 4
         },
         {
@@ -1732,11 +1597,6 @@ window.AKIOI_SYLLABUS = {
           "pid": "P5815",
           "name": "[CQOI2010] 扑克牌",
           "difficulty": 4
-        },
-        {
-          "pid": "P3957",
-          "name": "[NOIP 2017 普及组] 跳房子",
-          "difficulty": 5
         }
       ],
       "num": 11,
@@ -1766,8 +1626,8 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 3
         },
         {
-          "pid": "P1111",
-          "name": "修复公路",
+          "pid": "P1455",
+          "name": "搭配购买",
           "difficulty": 3
         },
         {
@@ -1781,14 +1641,29 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 4
         },
         {
-          "pid": "P1892",
-          "name": "[BalticOI 2003] 团伙 (Day 2)",
+          "pid": "P1197",
+          "name": "[JSOI2008] 星球大战",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1196",
+          "name": "[NOI2002] 银河英雄传说",
+          "difficulty": 4
+        },
+        {
+          "pid": "P5092",
+          "name": "[USACO04OPEN] Cube Stacking",
           "difficulty": 4
         },
         {
           "pid": "P1891",
           "name": "疯狂 LCM",
           "difficulty": 6
+        },
+        {
+          "pid": "P4997",
+          "name": "不围棋",
+          "difficulty": 7
         }
       ],
       "num": 19,
@@ -1824,9 +1699,74 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 3
         },
         {
+          "pid": "P3871",
+          "name": "[TJOI2010] 中位数",
+          "difficulty": 3
+        },
+        {
+          "pid": "P4058",
+          "name": "[Code+#1] 木材",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2058",
+          "name": "[NOIP 2016 普及组] 海港",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2278",
+          "name": "[HNOI2003] 操作系统",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1714",
+          "name": "切蛋糕",
+          "difficulty": 3
+        },
+        {
+          "pid": "P4779",
+          "name": "【模板】单源最短路径（标准版）",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1629",
+          "name": "邮递员送信",
+          "difficulty": 3
+        },
+        {
+          "pid": "P4554",
+          "name": "小明的游戏",
+          "difficulty": 3
+        },
+        {
           "pid": "P1631",
           "name": "序列合并",
           "difficulty": 4
+        },
+        {
+          "pid": "P7913",
+          "name": "[CSP-S 2021] 廊桥分配",
+          "difficulty": 4
+        },
+        {
+          "pid": "P3611",
+          "name": "[USACO17JAN] Cow Dance Show S",
+          "difficulty": 4
+        },
+        {
+          "pid": "P2168",
+          "name": "[NOI2015] 荷马史诗",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2672",
+          "name": "[NOIP 2015 普及组] 推销员",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2075",
+          "name": "区间 LIS",
+          "difficulty": 8
         }
       ],
       "num": 8,
@@ -1856,11 +1796,6 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 3
         },
         {
-          "pid": "P2880",
-          "name": "[USACO07JAN] Balanced Lineup G",
-          "difficulty": 3
-        },
-        {
           "pid": "P3374",
           "name": "【模板】树状数组 1",
           "difficulty": 4
@@ -1871,54 +1806,24 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 4
         },
         {
-          "pid": "P1198",
-          "name": "[JSOI2008] 最大数",
+          "pid": "P1439",
+          "name": "两个排列的最长公共子序列",
           "difficulty": 4
         },
         {
-          "pid": "P4552",
-          "name": "[Poetize6] IncDec Sequence",
-          "difficulty": 4
-        },
-        {
-          "pid": "P2023",
-          "name": "[AHOI2009] 维护序列",
-          "difficulty": 4
-        },
-        {
-          "pid": "P1438",
-          "name": "无聊的数列",
-          "difficulty": 4
-        },
-        {
-          "pid": "P1966",
-          "name": "[NOIP 2013 提高组] 火柴排队",
+          "pid": "P6186",
+          "name": "[NOI Online #1 提高组] 冒泡排序",
           "difficulty": 5
         },
         {
-          "pid": "P4145",
-          "name": "上帝造题的七分钟 2 / 花神游历各国",
+          "pid": "P4113",
+          "name": "[HEOI2012] 采花",
           "difficulty": 5
         },
         {
-          "pid": "P2572",
-          "name": "[SCOI2010] 序列操作",
+          "pid": "P5816",
+          "name": "[CQOI2010] 内部白点",
           "difficulty": 5
-        },
-        {
-          "pid": "P1471",
-          "name": "方差",
-          "difficulty": 5
-        },
-        {
-          "pid": "P4513",
-          "name": "小白逛公园",
-          "difficulty": 5
-        },
-        {
-          "pid": "P4198",
-          "name": "楼房重建",
-          "difficulty": 6
         }
       ],
       "num": 20,
@@ -1956,6 +1861,36 @@ window.AKIOI_SYLLABUS = {
           "pid": "P1531",
           "name": "I Hate It",
           "difficulty": 4
+        },
+        {
+          "pid": "P2023",
+          "name": "[AHOI2009] 维护序列",
+          "difficulty": 4
+        },
+        {
+          "pid": "P2574",
+          "name": "XOR 的艺术",
+          "difficulty": 4
+        },
+        {
+          "pid": "P2572",
+          "name": "[SCOI2010] 序列操作",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2894",
+          "name": "[USACO08FEB] Hotel G",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1856",
+          "name": "[IOI 1998 / USACO5.5] 矩形周长 Picture",
+          "difficulty": 5
+        },
+        {
+          "pid": "P4592",
+          "name": "[TJOI2018] 异或",
+          "difficulty": 7
         }
       ],
       "num": 21,
@@ -1985,9 +1920,69 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 3
         },
         {
+          "pid": "P1638",
+          "name": "逛画展",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1440",
+          "name": "求m区间内的最小值",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1901",
+          "name": "发射站",
+          "difficulty": 3
+        },
+        {
           "pid": "P2034",
           "name": "选择数字",
           "difficulty": 4
+        },
+        {
+          "pid": "P7167",
+          "name": "[eJOI 2020] Fountain (Day1)",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1198",
+          "name": "[JSOI2008] 最大数",
+          "difficulty": 4
+        },
+        {
+          "pid": "P2216",
+          "name": "[HAOI2007] 理想的正方形",
+          "difficulty": 4
+        },
+        {
+          "pid": "P2564",
+          "name": "[SCOI2009] 生日礼物",
+          "difficulty": 4
+        },
+        {
+          "pid": "P4147",
+          "name": "玉蟾宫",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1776",
+          "name": "宝物筛选",
+          "difficulty": 4
+        },
+        {
+          "pid": "P3957",
+          "name": "[NOIP 2017 普及组] 跳房子",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3509",
+          "name": "[POI 2010] ZAB-Frog",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1782",
+          "name": "旅行商的背包",
+          "difficulty": 5
         }
       ],
       "num": 9,
@@ -2022,9 +2017,89 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 3
         },
         {
+          "pid": "P13976",
+          "name": "数列分块入门 1",
+          "difficulty": 3
+        },
+        {
+          "pid": "P13979",
+          "name": "数列分块入门 4",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1840",
+          "name": "Color the Axis",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1438",
+          "name": "无聊的数列",
+          "difficulty": 4
+        },
+        {
+          "pid": "P13982",
+          "name": "数列分块入门 7",
+          "difficulty": 4
+        },
+        {
+          "pid": "P13983",
+          "name": "数列分块入门 8",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1531",
+          "name": "I Hate It",
+          "difficulty": 4
+        },
+        {
+          "pid": "P2357",
+          "name": "守墓人",
+          "difficulty": 4
+        },
+        {
           "pid": "P2254",
           "name": "[NOI2005] 瑰丽华尔兹",
           "difficulty": 5
+        },
+        {
+          "pid": "P4145",
+          "name": "上帝造题的七分钟 2 / 花神游历各国",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1471",
+          "name": "方差",
+          "difficulty": 5
+        },
+        {
+          "pid": "P13977",
+          "name": "数列分块入门 2",
+          "difficulty": 5
+        },
+        {
+          "pid": "P13978",
+          "name": "数列分块入门 3",
+          "difficulty": 5
+        },
+        {
+          "pid": "P13980",
+          "name": "数列分块入门 5",
+          "difficulty": 5
+        },
+        {
+          "pid": "P4198",
+          "name": "楼房重建",
+          "difficulty": 6
+        },
+        {
+          "pid": "P13984",
+          "name": "数列分块入门 9",
+          "difficulty": 7
+        },
+        {
+          "pid": "P10590",
+          "name": "磁力块",
+          "difficulty": 7
         }
       ],
       "num": 6,
@@ -2044,26 +2119,6 @@ window.AKIOI_SYLLABUS = {
       ],
       "problems": [
         {
-          "pid": "P2345",
-          "name": "[USACO04OPEN] MooFest G",
-          "difficulty": 1
-        },
-        {
-          "pid": "P1115",
-          "name": "最大子段和",
-          "difficulty": 2
-        },
-        {
-          "pid": "P2415",
-          "name": "集合求和",
-          "difficulty": 2
-        },
-        {
-          "pid": "P1257",
-          "name": "平面上的最接近点对",
-          "difficulty": 2
-        },
-        {
           "pid": "P3865",
           "name": "【模板】ST 表 & RMQ 问题",
           "difficulty": 3
@@ -2079,14 +2134,9 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 3
         },
         {
-          "pid": "P7167",
-          "name": "[eJOI 2020] Fountain (Day1)",
-          "difficulty": 4
-        },
-        {
-          "pid": "P3509",
-          "name": "[POI 2010] ZAB-Frog",
-          "difficulty": 5
+          "pid": "P2442",
+          "name": "分数统计",
+          "difficulty": 3
         },
         {
           "pid": "P4155",
@@ -2099,13 +2149,18 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 5
         },
         {
+          "pid": "P3147",
+          "name": "[USACO16OPEN] 262144 P",
+          "difficulty": 5
+        },
+        {
           "pid": "P2048",
           "name": "[NOI2010] 超级钢琴",
           "difficulty": 7
         },
         {
-          "pid": "P7562",
-          "name": "[JOISC 2021] イベント巡り 2 (Event Hopping 2) (Day4)",
+          "pid": "P14537",
+          "name": "[OII 2025] 双色金字塔 / Piramide bicolore",
           "difficulty": 7
         },
         {
@@ -2141,6 +2196,21 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 4
         },
         {
+          "pid": "P5763",
+          "name": "[NOI1999] 内存分配",
+          "difficulty": 4
+        },
+        {
+          "pid": "P5076",
+          "name": "【深基16.例7】普通二叉树（简化版）",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1503",
+          "name": "鬼子进村",
+          "difficulty": 4
+        },
+        {
           "pid": "P1486",
           "name": "[NOI2004] 郁闷的出纳员",
           "difficulty": 5
@@ -2153,6 +2223,11 @@ window.AKIOI_SYLLABUS = {
         {
           "pid": "P3391",
           "name": "【模板】文艺平衡树",
+          "difficulty": 6
+        },
+        {
+          "pid": "P13981",
+          "name": "数列分块入门 6",
           "difficulty": 6
         }
       ],
@@ -2174,78 +2249,8 @@ window.AKIOI_SYLLABUS = {
       ],
       "problems": [
         {
-          "pid": "P2003",
-          "name": "[CRCI2007-2008] PLATFORME 平板",
-          "difficulty": 2
-        },
-        {
-          "pid": "P13976",
-          "name": "数列分块入门 1",
-          "difficulty": 3
-        },
-        {
-          "pid": "P13979",
-          "name": "数列分块入门 4",
-          "difficulty": 3
-        },
-        {
-          "pid": "P1840",
-          "name": "Color the Axis",
-          "difficulty": 3
-        },
-        {
-          "pid": "P1890",
-          "name": "gcd 区间",
-          "difficulty": 3
-        },
-        {
-          "pid": "P2442",
-          "name": "分数统计",
-          "difficulty": 3
-        },
-        {
-          "pid": "P13982",
-          "name": "数列分块入门 7",
-          "difficulty": 4
-        },
-        {
-          "pid": "P13983",
-          "name": "数列分块入门 8",
-          "difficulty": 4
-        },
-        {
-          "pid": "P1503",
-          "name": "鬼子进村",
-          "difficulty": 4
-        },
-        {
-          "pid": "P1531",
-          "name": "I Hate It",
-          "difficulty": 4
-        },
-        {
-          "pid": "P2357",
-          "name": "守墓人",
-          "difficulty": 4
-        },
-        {
-          "pid": "P5490",
-          "name": "【模板】扫描线 & 矩形面积并",
-          "difficulty": 5
-        },
-        {
-          "pid": "P13977",
-          "name": "数列分块入门 2",
-          "difficulty": 5
-        },
-        {
-          "pid": "P13978",
-          "name": "数列分块入门 3",
-          "difficulty": 5
-        },
-        {
-          "pid": "P13980",
-          "name": "数列分块入门 5",
+          "pid": "P1972",
+          "name": "[SDOI2009] HH 的项链",
           "difficulty": 5
         },
         {
@@ -2269,34 +2274,19 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 6
         },
         {
-          "pid": "P3806",
-          "name": "【模板】点分治",
-          "difficulty": 6
-        },
-        {
-          "pid": "P13981",
-          "name": "数列分块入门 6",
-          "difficulty": 6
-        },
-        {
-          "pid": "P4168",
-          "name": "[Violet] 蒲公英",
+          "pid": "P2048",
+          "name": "[NOI2010] 超级钢琴",
           "difficulty": 7
         },
         {
-          "pid": "P13984",
-          "name": "数列分块入门 9",
+          "pid": "P5283",
+          "name": "[十二省联考 2019] 异或粽子",
           "difficulty": 7
         },
         {
-          "pid": "P10590",
-          "name": "磁力块",
+          "pid": "P4735",
+          "name": "最大异或和",
           "difficulty": 7
-        },
-        {
-          "pid": "P2075",
-          "name": "区间 LIS",
-          "difficulty": 8
         }
       ],
       "num": 14,
@@ -2318,103 +2308,28 @@ window.AKIOI_SYLLABUS = {
       ],
       "problems": [
         {
-          "pid": "P1197",
-          "name": "[JSOI2008] 星球大战",
+          "pid": "P3128",
+          "name": "[USACO15DEC] Max Flow P",
           "difficulty": 4
         },
         {
-          "pid": "P1196",
-          "name": "[NOI2002] 银河英雄传说",
+          "pid": "P3258",
+          "name": "[JLOI2014] 松鼠的新家",
           "difficulty": 4
         },
         {
-          "pid": "P5092",
-          "name": "[USACO04OPEN] Cube Stacking",
+          "pid": "P4281",
+          "name": "[AHOI2008] 紧急集合 / 聚会",
           "difficulty": 4
         },
         {
-          "pid": "P2574",
-          "name": "XOR 的艺术",
+          "pid": "P4427",
+          "name": "[BJOI2018] 求和",
           "difficulty": 4
         },
         {
-          "pid": "P2216",
-          "name": "[HAOI2007] 理想的正方形",
-          "difficulty": 4
-        },
-        {
-          "pid": "P2564",
-          "name": "[SCOI2009] 生日礼物",
-          "difficulty": 4
-        },
-        {
-          "pid": "P1169",
-          "name": "[ZJOI2007] 棋盘制作",
-          "difficulty": 4
-        },
-        {
-          "pid": "P4147",
-          "name": "玉蟾宫",
-          "difficulty": 4
-        },
-        {
-          "pid": "P13825",
-          "name": "【模板】线段树 1.5",
-          "difficulty": 4
-        },
-        {
-          "pid": "P1783",
-          "name": "海滩防御",
-          "difficulty": 5
-        },
-        {
-          "pid": "P2894",
-          "name": "[USACO08FEB] Hotel G",
-          "difficulty": 5
-        },
-        {
-          "pid": "P5889",
-          "name": "跳树",
-          "difficulty": 5
-        },
-        {
-          "pid": "P6186",
-          "name": "[NOI Online #1 提高组] 冒泡排序",
-          "difficulty": 5
-        },
-        {
-          "pid": "P1972",
-          "name": "[SDOI2009] HH 的项链",
-          "difficulty": 5
-        },
-        {
-          "pid": "P4113",
-          "name": "[HEOI2012] 采花",
-          "difficulty": 5
-        },
-        {
-          "pid": "P1856",
-          "name": "[IOI 1998 / USACO5.5] 矩形周长 Picture",
-          "difficulty": 5
-        },
-        {
-          "pid": "P1502",
-          "name": "窗口的星星",
-          "difficulty": 5
-        },
-        {
-          "pid": "P5816",
-          "name": "[CQOI2010] 内部白点",
-          "difficulty": 5
-        },
-        {
-          "pid": "P3431",
-          "name": "[POI 2005] AUT-The Bus",
-          "difficulty": 5
-        },
-        {
-          "pid": "P2680",
-          "name": "[NOIP 2015 提高组] 运输计划",
+          "pid": "P8025",
+          "name": "[ONTAK2015] Związek Harcerstwa Bajtockiego",
           "difficulty": 5
         },
         {
@@ -2441,6 +2356,11 @@ window.AKIOI_SYLLABUS = {
           "pid": "P3178",
           "name": "[HAOI2015] 树上操作",
           "difficulty": 6
+        },
+        {
+          "pid": "P4180",
+          "name": "[BJWC2010] 严格次小生成树",
+          "difficulty": 6
         }
       ],
       "num": 15,
@@ -2460,6 +2380,16 @@ window.AKIOI_SYLLABUS = {
       ],
       "problems": [
         {
+          "pid": "P3431",
+          "name": "[POI 2005] AUT-The Bus",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2680",
+          "name": "[NOIP 2015 提高组] 运输计划",
+          "difficulty": 5
+        },
+        {
           "pid": "P3810",
           "name": "【模板】三维偏序 / 陌上花开",
           "difficulty": 6
@@ -2472,6 +2402,16 @@ window.AKIOI_SYLLABUS = {
         {
           "pid": "P4556",
           "name": "【模板】线段树合并 / [Vani 有约会] 雨天的尾巴",
+          "difficulty": 6
+        },
+        {
+          "pid": "P3834",
+          "name": "【模板】可持久化线段树 2（静态区间第 k 小）",
+          "difficulty": 6
+        },
+        {
+          "pid": "P3287",
+          "name": "[SCOI2014] 方伯伯的玉米田",
           "difficulty": 6
         },
         {
@@ -2512,28 +2452,18 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 2
         },
         {
-          "pid": "P1605",
-          "name": "迷宫",
+          "pid": "P1149",
+          "name": "[NOIP 2008 提高组] 火柴棒等式",
           "difficulty": 2
         },
         {
-          "pid": "P1443",
-          "name": "马的遍历",
+          "pid": "P2036",
+          "name": "[COCI 2008/2009 #2] PERKET",
           "difficulty": 2
         },
         {
-          "pid": "P1596",
-          "name": "[USACO10OCT] Lake Counting S",
-          "difficulty": 2
-        },
-        {
-          "pid": "P2392",
-          "name": "kkksc03 考前临时抱佛脚",
-          "difficulty": 2
-        },
-        {
-          "pid": "P1101",
-          "name": "单词方阵",
+          "pid": "P1030",
+          "name": "[NOIP 2001 普及组] 求先序排列",
           "difficulty": 2
         },
         {
@@ -2542,8 +2472,13 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 2
         },
         {
-          "pid": "P1162",
-          "name": "填涂颜色",
+          "pid": "P2347",
+          "name": "[NOIP 1996 提高组] 砝码称重",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1049",
+          "name": "[NOIP 2001 普及组] 装箱问题",
           "difficulty": 2
         },
         {
@@ -2557,23 +2492,8 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 3
         },
         {
-          "pid": "P1019",
-          "name": "[NOIP 2000 提高组] 单词接龙（疑似错题）",
-          "difficulty": 3
-        },
-        {
-          "pid": "P1135",
-          "name": "奇怪的电梯",
-          "difficulty": 3
-        },
-        {
-          "pid": "P2895",
-          "name": "[USACO08FEB] Meteor Shower S",
-          "difficulty": 3
-        },
-        {
-          "pid": "P1434",
-          "name": "[SHOI2002] 滑雪",
+          "pid": "P1061",
+          "name": "[NOIP 2006 普及组] Jam 的计数法",
           "difficulty": 3
         },
         {
@@ -2582,18 +2502,8 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 3
         },
         {
-          "pid": "P1825",
-          "name": "[USACO11OPEN] Corn Maze S",
-          "difficulty": 3
-        },
-        {
           "pid": "P2960",
           "name": "[USACO09OCT] Invasion of the Milkweed G",
-          "difficulty": 3
-        },
-        {
-          "pid": "P1189",
-          "name": "[COI 2001] SEARCH",
           "difficulty": 3
         },
         {
@@ -2602,29 +2512,14 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 3
         },
         {
-          "pid": "P3956",
-          "name": "[NOIP 2017 普及组] 棋盘",
-          "difficulty": 4
+          "pid": "P1874",
+          "name": "快速求和",
+          "difficulty": 3
         },
         {
-          "pid": "P1433",
-          "name": "吃奶酪",
-          "difficulty": 4
-        },
-        {
-          "pid": "P1032",
-          "name": "[NOIP 2002 提高组] 字串变换（疑似错题）",
-          "difficulty": 4
-        },
-        {
-          "pid": "P4799",
-          "name": "[CEOI 2015] 世界冰球锦标赛 (Day2)",
-          "difficulty": 4
-        },
-        {
-          "pid": "P1078",
-          "name": "[NOIP 2012 普及组] 文化之旅（疑似错题）",
-          "difficulty": 4
+          "pid": "P3915",
+          "name": "树的分解",
+          "difficulty": 3
         },
         {
           "pid": "SP7579",
@@ -2632,9 +2527,19 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 4
         },
         {
-          "pid": "P5691",
-          "name": "[NOI2001] 方程的解数",
-          "difficulty": 4
+          "pid": "P2668",
+          "name": "[NOIP 2015 提高组] 斗地主",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1120",
+          "name": "[CERC 1995] 小木棍",
+          "difficulty": 5
+        },
+        {
+          "pid": "P5507",
+          "name": "机关",
+          "difficulty": 5
         }
       ],
       "num": 12,
@@ -2669,9 +2574,59 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 2
         },
         {
+          "pid": "P4913",
+          "name": "【深基16.例3】二叉树深度",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1596",
+          "name": "[USACO10OCT] Lake Counting S",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1135",
+          "name": "奇怪的电梯",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2895",
+          "name": "[USACO08FEB] Meteor Shower S",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1825",
+          "name": "[USACO11OPEN] Corn Maze S",
+          "difficulty": 3
+        },
+        {
+          "pid": "P5651",
+          "name": "基础最短路练习题",
+          "difficulty": 3
+        },
+        {
           "pid": "P1131",
           "name": "[ZJOI2007] 时态同步",
           "difficulty": 4
+        },
+        {
+          "pid": "P2498",
+          "name": "[SDOI2012] 拯救小云公主",
+          "difficulty": 4
+        },
+        {
+          "pid": "P3393",
+          "name": "逃离僵尸岛",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1948",
+          "name": "[USACO08JAN] Telephone Lines S",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1514",
+          "name": "[NOIP 2010 提高组] 引水入城",
+          "difficulty": 5
         }
       ],
       "num": 13,
@@ -2690,6 +2645,11 @@ window.AKIOI_SYLLABUS = {
         "M1-2"
       ],
       "problems": [
+        {
+          "pid": "P2345",
+          "name": "[USACO04OPEN] MooFest G",
+          "difficulty": 1
+        },
         {
           "pid": "P1217",
           "name": "[USACO1.5] 回文质数 Prime Palindromes",
@@ -2711,23 +2671,33 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 2
         },
         {
+          "pid": "P2141",
+          "name": "[NOIP 2014 普及组] 珠心算测验",
+          "difficulty": 2
+        },
+        {
+          "pid": "P2010",
+          "name": "[NOIP 2016 普及组] 回文日期",
+          "difficulty": 2
+        },
+        {
+          "pid": "P5016",
+          "name": "[NOIP 2018 普及组] 龙虎斗",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1003",
+          "name": "[NOIP 2011 提高组] 铺地毯",
+          "difficulty": 2
+        },
+        {
+          "pid": "P2615",
+          "name": "[NOIP 2015 提高组] 神奇的幻方",
+          "difficulty": 2
+        },
+        {
           "pid": "P1008",
           "name": "[NOIP 1998 普及组] 三连击",
-          "difficulty": 2
-        },
-        {
-          "pid": "P1706",
-          "name": "全排列问题",
-          "difficulty": 2
-        },
-        {
-          "pid": "P2089",
-          "name": "烤鸡",
-          "difficulty": 2
-        },
-        {
-          "pid": "P1149",
-          "name": "[NOIP 2008 提高组] 火柴棒等式",
           "difficulty": 2
         },
         {
@@ -2736,18 +2706,8 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 2
         },
         {
-          "pid": "P1157",
-          "name": "组合的输出",
-          "difficulty": 2
-        },
-        {
           "pid": "P1618",
           "name": "三连击（升级版）",
-          "difficulty": 2
-        },
-        {
-          "pid": "P1088",
-          "name": "[NOIP 2004 普及组] 火星人",
           "difficulty": 2
         },
         {
@@ -2756,34 +2716,14 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 2
         },
         {
-          "pid": "P2036",
-          "name": "[COCI 2008/2009 #2] PERKET",
-          "difficulty": 2
-        },
-        {
           "pid": "P1014",
           "name": "[NOIP 1999 普及组] Cantor 表",
           "difficulty": 2
         },
         {
-          "pid": "P1029",
-          "name": "[NOIP 2001 普及组] 最大公约数和最小公倍数问题",
+          "pid": "P1257",
+          "name": "平面上的最接近点对",
           "difficulty": 2
-        },
-        {
-          "pid": "P1072",
-          "name": "[NOIP 2009 提高组] Hankson 的趣味题",
-          "difficulty": 2
-        },
-        {
-          "pid": "P3799",
-          "name": "小 Y 拼木棒",
-          "difficulty": 3
-        },
-        {
-          "pid": "P1311",
-          "name": "[NOIP 2011 提高组] 选择客栈",
-          "difficulty": 3
         },
         {
           "pid": "P1023",
@@ -2791,24 +2731,24 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 3
         },
         {
-          "pid": "P2119",
-          "name": "[NOIP 2016 普及组] 魔法阵",
-          "difficulty": 4
-        },
-        {
-          "pid": "P1013",
-          "name": "[NOIP 1998 提高组] 进制位",
-          "difficulty": 4
-        },
-        {
-          "pid": "P1026",
-          "name": "[NOIP 2001 提高组] 统计单词个数",
-          "difficulty": 4
-        },
-        {
           "pid": "P2315",
           "name": "[HNOI2005] 数三角形",
           "difficulty": 4
+        },
+        {
+          "pid": "P4933",
+          "name": "大师",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1766",
+          "name": "液体滴落",
+          "difficulty": 4
+        },
+        {
+          "pid": "AT_agc012_e",
+          "name": "[AGC012E] Camel and Oases",
+          "difficulty": 8
         }
       ],
       "num": 14,
@@ -2828,6 +2768,11 @@ window.AKIOI_SYLLABUS = {
       ],
       "problems": [
         {
+          "pid": "P2003",
+          "name": "[CRCI2007-2008] PLATFORME 平板",
+          "difficulty": 2
+        },
+        {
           "pid": "P1461",
           "name": "[USACO2.1] 海明码 Hamming Codes",
           "difficulty": 3
@@ -2838,13 +2783,28 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 3
         },
         {
+          "pid": "P1025",
+          "name": "[NOIP 2001 提高组] 数的划分",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2340",
+          "name": "[USACO03FALL] Cow Exhibition G",
+          "difficulty": 3
+        },
+        {
           "pid": "P1731",
           "name": "[NOI1999] 生日蛋糕",
           "difficulty": 4
         },
         {
-          "pid": "P1379",
-          "name": "八数码难题",
+          "pid": "P3956",
+          "name": "[NOIP 2017 普及组] 棋盘",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1004",
+          "name": "[NOIP 2000 提高组] 方格取数",
           "difficulty": 4
         },
         {
@@ -2853,44 +2813,14 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 5
         },
         {
-          "pid": "P2324",
-          "name": "[SCOI2005] 骑士精神",
-          "difficulty": 5
-        },
-        {
-          "pid": "P1074",
-          "name": "[NOIP 2009 提高组] 靶形数独",
-          "difficulty": 5
-        },
-        {
-          "pid": "CF525E",
-          "name": "Anya and Cubes",
-          "difficulty": 5
-        },
-        {
-          "pid": "P5507",
-          "name": "机关",
-          "difficulty": 5
-        },
-        {
           "pid": "P1312",
           "name": "[NOIP 2011 提高组] Mayan 游戏",
           "difficulty": 5
         },
         {
-          "pid": "P1763",
-          "name": "埃及分数",
-          "difficulty": 6
-        },
-        {
-          "pid": "P3959",
-          "name": "[NOIP 2017 提高组] 宝藏",
-          "difficulty": 7
-        },
-        {
-          "pid": "CF912E",
-          "name": "Prime Gift",
-          "difficulty": 7
+          "pid": "P1528",
+          "name": "切蛋糕【疑似错题】",
+          "difficulty": 5
         }
       ],
       "num": 22,
@@ -2920,6 +2850,21 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 2
         },
         {
+          "pid": "P1464",
+          "name": "[PacNW 1999] Function",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1164",
+          "name": "小 A 点菜",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1002",
+          "name": "[NOIP 2002 普及组] 过河卒",
+          "difficulty": 2
+        },
+        {
           "pid": "P1434",
           "name": "[SHOI2002] 滑雪",
           "difficulty": 3
@@ -2928,6 +2873,26 @@ window.AKIOI_SYLLABUS = {
           "pid": "P1118",
           "name": "[USACO06FEB] Backward Digit Sums G/S",
           "difficulty": 3
+        },
+        {
+          "pid": "P1189",
+          "name": "[COI 2001] SEARCH",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1544",
+          "name": "三倍经验",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1854",
+          "name": "[IOI 1999] 花店橱窗布置",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1156",
+          "name": "[USACO01OPEN] 垃圾陷阱",
+          "difficulty": 4
         }
       ],
       "num": 10,
@@ -2947,6 +2912,11 @@ window.AKIOI_SYLLABUS = {
       ],
       "problems": [
         {
+          "pid": "P1466",
+          "name": "[USACO2.2] 集合 Subset Sums",
+          "difficulty": 3
+        },
+        {
           "pid": "P1379",
           "name": "八数码难题",
           "difficulty": 4
@@ -2962,9 +2932,39 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 4
         },
         {
+          "pid": "P1032",
+          "name": "[NOIP 2002 提高组] 字串变换（疑似错题）",
+          "difficulty": 4
+        },
+        {
+          "pid": "P4799",
+          "name": "[CEOI 2015] 世界冰球锦标赛 (Day2)",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1078",
+          "name": "[NOIP 2012 普及组] 文化之旅（疑似错题）",
+          "difficulty": 4
+        },
+        {
+          "pid": "P5691",
+          "name": "[NOI2001] 方程的解数",
+          "difficulty": 4
+        },
+        {
           "pid": "P2324",
           "name": "[SCOI2005] 骑士精神",
           "difficulty": 5
+        },
+        {
+          "pid": "CF525E",
+          "name": "Anya and Cubes",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1763",
+          "name": "埃及分数",
+          "difficulty": 6
         }
       ],
       "num": 23,
@@ -3069,28 +3069,13 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 2
         },
         {
-          "pid": "P1464",
-          "name": "[PacNW 1999] Function",
+          "pid": "P1605",
+          "name": "迷宫",
           "difficulty": 2
         },
         {
-          "pid": "P1044",
-          "name": "[NOIP 2003 普及组] 栈",
-          "difficulty": 2
-        },
-        {
-          "pid": "P1192",
-          "name": "台阶问题",
-          "difficulty": 2
-        },
-        {
-          "pid": "P1030",
-          "name": "[NOIP 2001 普及组] 求先序排列",
-          "difficulty": 2
-        },
-        {
-          "pid": "P1010",
-          "name": "[NOIP 1998 普及组] 幂次方",
+          "pid": "P1216",
+          "name": "[IOI 1994 / USACO1.5] 数字三角形 Number Triangles",
           "difficulty": 2
         },
         {
@@ -3099,19 +3084,24 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 3
         },
         {
-          "pid": "P1025",
-          "name": "[NOIP 2001 提高组] 数的划分",
+          "pid": "P1311",
+          "name": "[NOIP 2011 提高组] 选择客栈",
           "difficulty": 3
         },
         {
-          "pid": "P1259",
-          "name": "黑白棋子的移动",
+          "pid": "P1108",
+          "name": "[USACO99FALL] 低价购买",
           "difficulty": 3
         },
         {
-          "pid": "P1228",
-          "name": "地毯填补问题",
-          "difficulty": 3
+          "pid": "P4059",
+          "name": "[Code+#1] 找爸爸",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1315",
+          "name": "[NOIP 2011 提高组] 观光公交",
+          "difficulty": 5
         }
       ],
       "num": 15,
@@ -3146,16 +3136,6 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 2
         },
         {
-          "pid": "P1002",
-          "name": "[NOIP 2002 普及组] 过河卒",
-          "difficulty": 2
-        },
-        {
-          "pid": "P1077",
-          "name": "[NOIP 2012 普及组] 摆花",
-          "difficulty": 2
-        },
-        {
           "pid": "P2285",
           "name": "[HNOI2004] 打鼹鼠",
           "difficulty": 3
@@ -3163,46 +3143,6 @@ window.AKIOI_SYLLABUS = {
         {
           "pid": "P1280",
           "name": "[CHCI 2002 National Competition #2 Juniors] 尼克的任务",
-          "difficulty": 3
-        },
-        {
-          "pid": "P2758",
-          "name": "编辑距离",
-          "difficulty": 3
-        },
-        {
-          "pid": "P1095",
-          "name": "[NOIP 2007 普及组] 守望者的逃离",
-          "difficulty": 3
-        },
-        {
-          "pid": "P1108",
-          "name": "[USACO99FALL] 低价购买",
-          "difficulty": 3
-        },
-        {
-          "pid": "P2513",
-          "name": "[HAOI2009] 逆序对数列",
-          "difficulty": 3
-        },
-        {
-          "pid": "P1874",
-          "name": "快速求和",
-          "difficulty": 3
-        },
-        {
-          "pid": "P1544",
-          "name": "三倍经验",
-          "difficulty": 3
-        },
-        {
-          "pid": "P1854",
-          "name": "[IOI 1999] 花店橱窗布置",
-          "difficulty": 3
-        },
-        {
-          "pid": "P2340",
-          "name": "[USACO03FALL] Cow Exhibition G",
           "difficulty": 3
         },
         {
@@ -3216,48 +3156,8 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 4
         },
         {
-          "pid": "P1541",
-          "name": "[NOIP 2010 提高组] 乌龟棋",
-          "difficulty": 4
-        },
-        {
-          "pid": "P1052",
-          "name": "[NOIP 2005 提高组] 过河",
-          "difficulty": 4
-        },
-        {
-          "pid": "P1282",
-          "name": "[CEOI 1997] 多米诺骨牌",
-          "difficulty": 4
-        },
-        {
-          "pid": "P1868",
-          "name": "饥饿的奶牛",
-          "difficulty": 4
-        },
-        {
           "pid": "P2365",
           "name": "[IOI 2002] 任务安排",
-          "difficulty": 4
-        },
-        {
-          "pid": "P1725",
-          "name": "琪露诺",
-          "difficulty": 4
-        },
-        {
-          "pid": "P4933",
-          "name": "大师",
-          "difficulty": 4
-        },
-        {
-          "pid": "P2679",
-          "name": "[NOIP 2015 提高组] 子串",
-          "difficulty": 4
-        },
-        {
-          "pid": "P1004",
-          "name": "[NOIP 2000 提高组] 方格取数",
           "difficulty": 4
         },
         {
@@ -3266,39 +3166,9 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 4
         },
         {
-          "pid": "P1006",
-          "name": "[NOIP 2008 提高组] 传纸条",
-          "difficulty": 4
-        },
-        {
-          "pid": "P4059",
-          "name": "[Code+#1] 找爸爸",
-          "difficulty": 4
-        },
-        {
-          "pid": "P3147",
-          "name": "[USACO16OPEN] 262144 P",
-          "difficulty": 5
-        },
-        {
-          "pid": "P2893",
-          "name": "[USACO08FEB] Making the Grade G",
-          "difficulty": 5
-        },
-        {
           "pid": "P10972",
           "name": "I-Country",
           "difficulty": 5
-        },
-        {
-          "pid": "P10971",
-          "name": "Cookies",
-          "difficulty": 5
-        },
-        {
-          "pid": "P3287",
-          "name": "[SCOI2014] 方伯伯的玉米田",
-          "difficulty": 6
         }
       ],
       "num": 16,
@@ -3380,18 +3250,13 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 2
         },
         {
-          "pid": "P1164",
-          "name": "小 A 点菜",
+          "pid": "P2392",
+          "name": "kkksc03 考前临时抱佛脚",
           "difficulty": 2
         },
         {
           "pid": "P2722",
           "name": "[USACO3.1] 总分 Score Inflation",
-          "difficulty": 2
-        },
-        {
-          "pid": "P2347",
-          "name": "[NOIP 1996 提高组] 砝码称重",
           "difficulty": 2
         },
         {
@@ -3407,11 +3272,6 @@ window.AKIOI_SYLLABUS = {
         {
           "pid": "P1510",
           "name": "精卫填海",
-          "difficulty": 2
-        },
-        {
-          "pid": "P8742",
-          "name": "[蓝桥杯 2021 省 AB] 砝码称重",
           "difficulty": 2
         },
         {
@@ -3460,9 +3320,9 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 2
         },
         {
-          "pid": "P1832",
-          "name": "A+B Problem（再升级）",
-          "difficulty": 2
+          "pid": "P2370",
+          "name": "yyy2015c01 的 U 盘",
+          "difficulty": 3
         },
         {
           "pid": "P1853",
@@ -3475,33 +3335,13 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 3
         },
         {
-          "pid": "P1466",
-          "name": "[USACO2.2] 集合 Subset Sums",
-          "difficulty": 3
-        },
-        {
           "pid": "P1509",
           "name": "找啊找啊找朋友",
           "difficulty": 3
         },
         {
-          "pid": "P1455",
-          "name": "搭配购买",
-          "difficulty": 3
-        },
-        {
           "pid": "P2918",
           "name": "[USACO08NOV] Buying Hay S",
-          "difficulty": 3
-        },
-        {
-          "pid": "P2904",
-          "name": "[USACO08MAR] River Crossing S",
-          "difficulty": 3
-        },
-        {
-          "pid": "P6771",
-          "name": "[USACO05MAR] Space Elevator 太空电梯",
           "difficulty": 3
         },
         {
@@ -3517,11 +3357,6 @@ window.AKIOI_SYLLABUS = {
         {
           "pid": "P1833",
           "name": "樱花",
-          "difficulty": 3
-        },
-        {
-          "pid": "P2170",
-          "name": "选学霸",
           "difficulty": 3
         },
         {
@@ -3545,11 +3380,6 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 4
         },
         {
-          "pid": "P1776",
-          "name": "宝物筛选",
-          "difficulty": 4
-        },
-        {
           "pid": "P1941",
           "name": "[NOIP 2014 提高组] 飞扬的小鸟",
           "difficulty": 4
@@ -3557,11 +3387,6 @@ window.AKIOI_SYLLABUS = {
         {
           "pid": "P5662",
           "name": "[CSP-J 2019] 纪念品",
-          "difficulty": 4
-        },
-        {
-          "pid": "P3985",
-          "name": "不开心的金明",
           "difficulty": 4
         },
         {
@@ -3580,23 +3405,13 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 4
         },
         {
-          "pid": "P1156",
-          "name": "[USACO01OPEN] 垃圾陷阱",
+          "pid": "P1282",
+          "name": "[CEOI 1997] 多米诺骨牌",
           "difficulty": 4
-        },
-        {
-          "pid": "P1782",
-          "name": "旅行商的背包",
-          "difficulty": 5
         },
         {
           "pid": "P1858",
           "name": "多人背包",
-          "difficulty": 5
-        },
-        {
-          "pid": "P2851",
-          "name": "[USACO06DEC] The Fewest Coins G",
           "difficulty": 5
         }
       ],
@@ -3647,6 +3462,11 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 4
         },
         {
+          "pid": "P1026",
+          "name": "[NOIP 2001 提高组] 统计单词个数",
+          "difficulty": 4
+        },
+        {
           "pid": "P1220",
           "name": "关路灯",
           "difficulty": 4
@@ -3682,13 +3502,13 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 4
         },
         {
-          "pid": "CF607B",
-          "name": "Zuma",
-          "difficulty": 5
+          "pid": "P1040",
+          "name": "[NOIP 2003 提高组] 加分二叉树",
+          "difficulty": 4
         },
         {
-          "pid": "P1070",
-          "name": "[NOIP 2009 普及组] 道路游戏",
+          "pid": "CF607B",
+          "name": "Zuma",
           "difficulty": 5
         },
         {
@@ -3730,6 +3550,11 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 3
         },
         {
+          "pid": "P1364",
+          "name": "医院设置",
+          "difficulty": 3
+        },
+        {
           "pid": "P1122",
           "name": "最大子树和",
           "difficulty": 3
@@ -3740,6 +3565,16 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 4
         },
         {
+          "pid": "P2700",
+          "name": "逐个击破",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1064",
+          "name": "[NOIP 2006 提高组] 金明的预算方案",
+          "difficulty": 4
+        },
+        {
           "pid": "P2015",
           "name": "二叉苹果树",
           "difficulty": 4
@@ -3747,21 +3582,6 @@ window.AKIOI_SYLLABUS = {
         {
           "pid": "P2899",
           "name": "[USACO08JAN] Cell Phone Network G",
-          "difficulty": 4
-        },
-        {
-          "pid": "P3174",
-          "name": "[HAOI2009] 毛毛虫",
-          "difficulty": 4
-        },
-        {
-          "pid": "P1613",
-          "name": "跑路",
-          "difficulty": 4
-        },
-        {
-          "pid": "P1040",
-          "name": "[NOIP 2003 提高组] 加分二叉树",
           "difficulty": 4
         },
         {
@@ -3790,24 +3610,9 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 5
         },
         {
-          "pid": "P6772",
-          "name": "[NOI2020] 美食家",
-          "difficulty": 6
-        },
-        {
-          "pid": "P3953",
-          "name": "[NOIP 2017 提高组] 逛公园",
-          "difficulty": 6
-        },
-        {
-          "pid": "P7077",
-          "name": "[CSP-S 2020] 函数调用",
-          "difficulty": 6
-        },
-        {
-          "pid": "P7516",
-          "name": "[省选联考 2021 A/B 卷] 图函数",
-          "difficulty": 7
+          "pid": "P1269",
+          "name": "信号放大器",
+          "difficulty": 5
         }
       ],
       "num": 28,
@@ -3828,8 +3633,8 @@ window.AKIOI_SYLLABUS = {
       ],
       "problems": [
         {
-          "pid": "P2657",
-          "name": "[SCOI2009] windy 数",
+          "pid": "P1019",
+          "name": "[NOIP 2000 提高组] 单词接龙（疑似错题）",
           "difficulty": 3
         },
         {
@@ -3848,16 +3653,6 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 4
         },
         {
-          "pid": "P2602",
-          "name": "[ZJOI2010] 数字计数",
-          "difficulty": 4
-        },
-        {
-          "pid": "P4999",
-          "name": "烦人的数学作业",
-          "difficulty": 4
-        },
-        {
           "pid": "P1441",
           "name": "砝码称重",
           "difficulty": 4
@@ -3865,11 +3660,6 @@ window.AKIOI_SYLLABUS = {
         {
           "pid": "P2761",
           "name": "软件补丁问题",
-          "difficulty": 4
-        },
-        {
-          "pid": "P10865",
-          "name": "[HBCPC2024] Genshin Impact Startup Forbidden III",
           "difficulty": 4
         },
         {
@@ -3883,28 +3673,8 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 5
         },
         {
-          "pid": "P4124",
-          "name": "[CQOI2016] 手机号码",
-          "difficulty": 5
-        },
-        {
-          "pid": "P4127",
-          "name": "[AHOI2009] 同类分布",
-          "difficulty": 5
-        },
-        {
           "pid": "CF11D",
           "name": "A Simple Task",
-          "difficulty": 5
-        },
-        {
-          "pid": "P1357",
-          "name": "花园",
-          "difficulty": 5
-        },
-        {
-          "pid": "P1450",
-          "name": "[HAOI2008] 硬币购物",
           "difficulty": 5
         },
         {
@@ -3913,28 +3683,8 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 5
         },
         {
-          "pid": "P2704",
-          "name": "[NOI2001] 炮兵阵地",
-          "difficulty": 5
-        },
-        {
-          "pid": "P2473",
-          "name": "[SCOI2008] 奖励关",
-          "difficulty": 5
-        },
-        {
-          "pid": "P2167",
-          "name": "[SDOI2009] Bill的挑战",
-          "difficulty": 5
-        },
-        {
           "pid": "P4484",
           "name": "[BJWC2018] 最长上升子序列",
-          "difficulty": 6
-        },
-        {
-          "pid": "P4363",
-          "name": "[九省联考 2018] 一双木棋 chess",
           "difficulty": 6
         },
         {
@@ -3948,19 +3698,9 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 7
         },
         {
-          "pid": "P4045",
-          "name": "[JSOI2009] 密码",
-          "difficulty": 7
-        },
-        {
           "pid": "P5369",
           "name": "[PKUSC2018] 最大前缀和",
           "difficulty": 7
-        },
-        {
-          "pid": "AT_agc012_e",
-          "name": "[AGC012E] Camel and Oases",
-          "difficulty": 8
         }
       ],
       "num": 2,
@@ -4033,8 +3773,18 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 4
         },
         {
+          "pid": "P4999",
+          "name": "烦人的数学作业",
+          "difficulty": 4
+        },
+        {
           "pid": "P4124",
           "name": "[CQOI2016] 手机号码",
+          "difficulty": 5
+        },
+        {
+          "pid": "P4127",
+          "name": "[AHOI2009] 同类分布",
           "difficulty": 5
         },
         {
@@ -4066,8 +3816,33 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 4
         },
         {
+          "pid": "P3623",
+          "name": "[APIO2008] 免费道路",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1052",
+          "name": "[NOIP 2005 提高组] 过河",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1880",
+          "name": "[NOI1995] 石子合并",
+          "difficulty": 4
+        },
+        {
           "pid": "P5017",
           "name": "[NOIP 2018 普及组] 摆渡车",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1070",
+          "name": "[NOIP 2009 普及组] 道路游戏",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1792",
+          "name": "[国家集训队] 种树",
           "difficulty": 5
         },
         {
@@ -4078,6 +3853,16 @@ window.AKIOI_SYLLABUS = {
         {
           "pid": "P3195",
           "name": "[HNOI2008] 玩具装箱",
+          "difficulty": 6
+        },
+        {
+          "pid": "P6772",
+          "name": "[NOI2020] 美食家",
+          "difficulty": 6
+        },
+        {
+          "pid": "P3620",
+          "name": "[APIO/CTSC2007] 数据备份",
           "difficulty": 6
         }
       ],
@@ -4097,6 +3882,26 @@ window.AKIOI_SYLLABUS = {
         "M5-7"
       ],
       "problems": [
+        {
+          "pid": "P1879",
+          "name": "[USACO06NOV] Corn Fields G",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1896",
+          "name": "[SCOI2005] 互不侵犯",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2704",
+          "name": "[NOI2001] 炮兵阵地",
+          "difficulty": 5
+        },
+        {
+          "pid": "P4363",
+          "name": "[九省联考 2018] 一双木棋 chess",
+          "difficulty": 6
+        },
         {
           "pid": "P5074",
           "name": "Eat the Trees",
@@ -4156,28 +3961,8 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 2
         },
         {
-          "pid": "P4715",
-          "name": "【深基16.例1】淘汰赛",
-          "difficulty": 2
-        },
-        {
-          "pid": "P4913",
-          "name": "【深基16.例3】二叉树深度",
-          "difficulty": 2
-        },
-        {
-          "pid": "P1827",
-          "name": "[USACO3.4] 美国血统 American Heritage",
-          "difficulty": 2
-        },
-        {
-          "pid": "P1305",
-          "name": "新二叉树",
-          "difficulty": 2
-        },
-        {
-          "pid": "P1364",
-          "name": "医院设置",
+          "pid": "P1037",
+          "name": "[NOIP 2002 普及组] 产生数",
           "difficulty": 3
         },
         {
@@ -4191,14 +3976,119 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 3
         },
         {
-          "pid": "P5076",
-          "name": "【深基16.例7】普通二叉树（简化版）",
+          "pid": "P3385",
+          "name": "【模板】负环",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3379",
+          "name": "【模板】最近公共祖先（LCA）",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3916",
+          "name": "图的遍历",
+          "difficulty": 3
+        },
+        {
+          "pid": "P5836",
+          "name": "[USACO19DEC] Milk Visits S",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1351",
+          "name": "[NOIP 2014 提高组] 联合权值",
+          "difficulty": 3
+        },
+        {
+          "pid": "P10113",
+          "name": "[GESP202312 八级] 大量的工作沟通",
+          "difficulty": 3
+        },
+        {
+          "pid": "P5002",
+          "name": "专心OI - 找祖先",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1892",
+          "name": "[BalticOI 2003] 团伙 (Day 2)",
           "difficulty": 4
         },
         {
-          "pid": "P1185",
-          "name": "绘制二叉树",
+          "pid": "P4568",
+          "name": "[JLOI2011] 飞行路线",
           "difficulty": 4
+        },
+        {
+          "pid": "P2136",
+          "name": "拉近距离",
+          "difficulty": 4
+        },
+        {
+          "pid": "P9751",
+          "name": "[CSP-J 2023] 旅游巴士",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1983",
+          "name": "[NOIP 2013 普及组] 车站分级",
+          "difficulty": 4
+        },
+        {
+          "pid": "P6869",
+          "name": "[COCI 2019/2020 #5] Putovanje",
+          "difficulty": 4
+        },
+        {
+          "pid": "P8972",
+          "name": "『GROI-R1』 一切都已过去",
+          "difficulty": 4
+        },
+        {
+          "pid": "P2341",
+          "name": "[USACO03FALL / HAOI2006] 受欢迎的牛 G",
+          "difficulty": 4
+        },
+        {
+          "pid": "P3174",
+          "name": "[HAOI2009] 毛毛虫",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1783",
+          "name": "海滩防御",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3403",
+          "name": "跳楼机",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1099",
+          "name": "[NOIP 2007 提高组] 树网的核",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3629",
+          "name": "[APIO2010] 巡逻",
+          "difficulty": 5
+        },
+        {
+          "pid": "P9433",
+          "name": "[NAPC-#1] Stage5 - Conveyors",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3632",
+          "name": "[APIO2011] 寻路",
+          "difficulty": 7
+        },
+        {
+          "pid": "P1852",
+          "name": "[国家集训队] 跳跳棋",
+          "difficulty": 7
         }
       ],
       "num": 18,
@@ -4228,43 +4118,13 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 3
         },
         {
+          "pid": "P7113",
+          "name": "[NOIP2020] 排水系统",
+          "difficulty": 3
+        },
+        {
           "pid": "P1807",
           "name": "最长路",
-          "difficulty": 3
-        },
-        {
-          "pid": "P3379",
-          "name": "【模板】最近公共祖先（LCA）",
-          "difficulty": 3
-        },
-        {
-          "pid": "P3865",
-          "name": "【模板】ST 表 & RMQ 问题",
-          "difficulty": 3
-        },
-        {
-          "pid": "P3916",
-          "name": "图的遍历",
-          "difficulty": 3
-        },
-        {
-          "pid": "P5836",
-          "name": "[USACO19DEC] Milk Visits S",
-          "difficulty": 3
-        },
-        {
-          "pid": "P1351",
-          "name": "[NOIP 2014 提高组] 联合权值",
-          "difficulty": 3
-        },
-        {
-          "pid": "P10113",
-          "name": "[GESP202312 八级] 大量的工作沟通",
-          "difficulty": 3
-        },
-        {
-          "pid": "P5002",
-          "name": "专心OI - 找祖先",
           "difficulty": 3
         },
         {
@@ -4273,69 +4133,29 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 4
         },
         {
-          "pid": "P1983",
-          "name": "[NOIP 2013 普及组] 车站分级",
+          "pid": "P3243",
+          "name": "[HNOI2015] 菜肴制作",
           "difficulty": 4
         },
         {
-          "pid": "P3128",
-          "name": "[USACO15DEC] Max Flow P",
+          "pid": "P1144",
+          "name": "最短路计数",
           "difficulty": 4
         },
         {
-          "pid": "P3258",
-          "name": "[JLOI2014] 松鼠的新家",
-          "difficulty": 4
-        },
-        {
-          "pid": "P4281",
-          "name": "[AHOI2008] 紧急集合 / 聚会",
-          "difficulty": 4
-        },
-        {
-          "pid": "P4427",
-          "name": "[BJOI2018] 求和",
-          "difficulty": 4
-        },
-        {
-          "pid": "P8805",
-          "name": "[蓝桥杯 2022 国 B] 机房",
-          "difficulty": 4
-        },
-        {
-          "pid": "P6869",
-          "name": "[COCI 2019/2020 #5] Putovanje",
-          "difficulty": 4
-        },
-        {
-          "pid": "P8972",
-          "name": "『GROI-R1』 一切都已过去",
-          "difficulty": 4
-        },
-        {
-          "pid": "P1099",
-          "name": "[NOIP 2007 提高组] 树网的核",
+          "pid": "P3008",
+          "name": "[USACO11JAN] Roads and Planes G",
           "difficulty": 5
         },
         {
-          "pid": "P3629",
-          "name": "[APIO2010] 巡逻",
-          "difficulty": 5
+          "pid": "P3953",
+          "name": "[NOIP 2017 提高组] 逛公园",
+          "difficulty": 6
         },
         {
-          "pid": "P8025",
-          "name": "[ONTAK2015] Związek Harcerstwa Bajtockiego",
-          "difficulty": 5
-        },
-        {
-          "pid": "P9433",
-          "name": "[NAPC-#1] Stage5 - Conveyors",
-          "difficulty": 5
-        },
-        {
-          "pid": "P1852",
-          "name": "[国家集训队] 跳跳棋",
-          "difficulty": 7
+          "pid": "P7077",
+          "name": "[CSP-S 2020] 函数调用",
+          "difficulty": 6
         }
       ],
       "num": 12,
@@ -4371,58 +4191,13 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 3
         },
         {
-          "pid": "P3385",
-          "name": "【模板】负环",
-          "difficulty": 3
-        },
-        {
-          "pid": "P2910",
-          "name": "[USACO08OPEN] Clear And Present Danger S",
-          "difficulty": 3
-        },
-        {
-          "pid": "P3905",
-          "name": "道路重建",
-          "difficulty": 3
-        },
-        {
           "pid": "P2648",
           "name": "赚钱",
           "difficulty": 3
         },
         {
-          "pid": "P1744",
-          "name": "采购特价商品",
-          "difficulty": 3
-        },
-        {
-          "pid": "P4554",
-          "name": "小明的游戏",
-          "difficulty": 3
-        },
-        {
-          "pid": "P2888",
-          "name": "[USACO07NOV] Cow Hurdles S",
-          "difficulty": 3
-        },
-        {
-          "pid": "P6175",
-          "name": "无向图的最小环问题",
-          "difficulty": 3
-        },
-        {
-          "pid": "P5651",
-          "name": "基础最短路练习题",
-          "difficulty": 3
-        },
-        {
-          "pid": "B3611",
-          "name": "【模板】传递闭包",
-          "difficulty": 3
-        },
-        {
-          "pid": "P2419",
-          "name": "[USACO08JAN] Cow Contest S",
+          "pid": "P2285",
+          "name": "[HNOI2004] 打鼹鼠",
           "difficulty": 3
         },
         {
@@ -4436,33 +4211,8 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 4
         },
         {
-          "pid": "P1119",
-          "name": "灾后重建",
-          "difficulty": 4
-        },
-        {
           "pid": "P1608",
           "name": "路径统计",
-          "difficulty": 4
-        },
-        {
-          "pid": "P4568",
-          "name": "[JLOI2011] 飞行路线",
-          "difficulty": 4
-        },
-        {
-          "pid": "P1073",
-          "name": "[NOIP 2009 提高组] 最优贸易",
-          "difficulty": 4
-        },
-        {
-          "pid": "P2136",
-          "name": "拉近距离",
-          "difficulty": 4
-        },
-        {
-          "pid": "P2656",
-          "name": "采蘑菇",
           "difficulty": 4
         },
         {
@@ -4471,49 +4221,9 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 4
         },
         {
-          "pid": "P2047",
-          "name": "[NOI2007] 社交网络",
-          "difficulty": 4
-        },
-        {
-          "pid": "P3393",
-          "name": "逃离僵尸岛",
-          "difficulty": 4
-        },
-        {
           "pid": "P1875",
           "name": "佳佳的魔法药水【数据有误】",
           "difficulty": 4
-        },
-        {
-          "pid": "P1993",
-          "name": "小 K 的农场",
-          "difficulty": 4
-        },
-        {
-          "pid": "P6464",
-          "name": "[传智杯 #2 决赛] 传送门",
-          "difficulty": 4
-        },
-        {
-          "pid": "P1948",
-          "name": "[USACO08JAN] Telephone Lines S",
-          "difficulty": 4
-        },
-        {
-          "pid": "P2886",
-          "name": "[USACO07NOV] Cow Relays G",
-          "difficulty": 4
-        },
-        {
-          "pid": "P9751",
-          "name": "[CSP-J 2023] 旅游巴士",
-          "difficulty": 4
-        },
-        {
-          "pid": "P5304",
-          "name": "[GXOI/GZOI2019] 旅行者",
-          "difficulty": 5
         },
         {
           "pid": "P2446",
@@ -4526,11 +4236,6 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 5
         },
         {
-          "pid": "P2966",
-          "name": "[USACO09DEC] Cow Toll Paths G",
-          "difficulty": 5
-        },
-        {
           "pid": "P6096",
           "name": "[JSOI2015] 地铁线路",
           "difficulty": 5
@@ -4539,36 +4244,6 @@ window.AKIOI_SYLLABUS = {
           "pid": "P2865",
           "name": "[USACO06NOV] Roadblocks G",
           "difficulty": 5
-        },
-        {
-          "pid": "P3275",
-          "name": "[SCOI2011] 糖果",
-          "difficulty": 5
-        },
-        {
-          "pid": "P3403",
-          "name": "跳楼机",
-          "difficulty": 5
-        },
-        {
-          "pid": "P3008",
-          "name": "[USACO11JAN] Roads and Planes G",
-          "difficulty": 5
-        },
-        {
-          "pid": "P10927",
-          "name": "[CEOI 1999] Sightseeing trip",
-          "difficulty": 5
-        },
-        {
-          "pid": "P4768",
-          "name": "[NOI2018] 归程",
-          "difficulty": 6
-        },
-        {
-          "pid": "P3632",
-          "name": "[APIO2011] 寻路",
-          "difficulty": 7
         }
       ],
       "num": 13,
@@ -4598,9 +4273,69 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 3
         },
         {
+          "pid": "P3905",
+          "name": "道路重建",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1744",
+          "name": "采购特价商品",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2888",
+          "name": "[USACO07NOV] Cow Hurdles S",
+          "difficulty": 3
+        },
+        {
+          "pid": "P6175",
+          "name": "无向图的最小环问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "B3611",
+          "name": "【模板】传递闭包",
+          "difficulty": 3
+        },
+        {
+          "pid": "P10944",
+          "name": "Going from u to v or from v to u?",
+          "difficulty": 3
+        },
+        {
           "pid": "P1119",
           "name": "灾后重建",
           "difficulty": 4
+        },
+        {
+          "pid": "P2047",
+          "name": "[NOI2007] 社交网络",
+          "difficulty": 4
+        },
+        {
+          "pid": "P6464",
+          "name": "[传智杯 #2 决赛] 传送门",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1613",
+          "name": "跑路",
+          "difficulty": 4
+        },
+        {
+          "pid": "P2966",
+          "name": "[USACO09DEC] Cow Toll Paths G",
+          "difficulty": 5
+        },
+        {
+          "pid": "P10927",
+          "name": "[CEOI 1999] Sightseeing trip",
+          "difficulty": 5
+        },
+        {
+          "pid": "P7516",
+          "name": "[省选联考 2021 A/B 卷] 图函数",
+          "difficulty": 7
         }
       ],
       "num": 14,
@@ -4641,6 +4376,21 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 3
         },
         {
+          "pid": "P1902",
+          "name": "刺杀大使",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1661",
+          "name": "扩散",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1111",
+          "name": "修复公路",
+          "difficulty": 3
+        },
+        {
           "pid": "P1547",
           "name": "[USACO05MAR] Out of Hay S",
           "difficulty": 3
@@ -4661,23 +4411,18 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 3
         },
         {
+          "pid": "P2323",
+          "name": "[HNOI2006] 公路修建问题",
+          "difficulty": 4
+        },
+        {
           "pid": "P4047",
           "name": "[JSOI2010] 部落划分",
           "difficulty": 4
         },
         {
-          "pid": "P2700",
-          "name": "逐个击破",
-          "difficulty": 4
-        },
-        {
           "pid": "CF1245D",
           "name": "Shichikuji and Power Grid",
-          "difficulty": 4
-        },
-        {
-          "pid": "P3623",
-          "name": "[APIO2008] 免费道路",
           "difficulty": 4
         },
         {
@@ -4691,8 +4436,8 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 5
         },
         {
-          "pid": "P4180",
-          "name": "[BJWC2010] 严格次小生成树",
+          "pid": "P4768",
+          "name": "[NOI2018] 归程",
           "difficulty": 6
         },
         {
@@ -4736,6 +4481,21 @@ window.AKIOI_SYLLABUS = {
           "pid": "P1892",
           "name": "[BalticOI 2003] 团伙 (Day 2)",
           "difficulty": 4
+        },
+        {
+          "pid": "P2756",
+          "name": "飞行员配对方案问题",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1407",
+          "name": "[国家集训队] 稳定婚姻",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1402",
+          "name": "酒店之王",
+          "difficulty": 7
         }
       ],
       "num": 29,
@@ -4808,88 +4568,13 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 4
         },
         {
-          "pid": "P2812",
-          "name": "校园网络 / [IOI 1996 / USACO5.3] 校园网 Network of Schools 加强版",
-          "difficulty": 5
-        }
-      ],
-      "num": 31,
-      "label": "归属·P31-NOI6级"
-    },
-    {
-      "id": "M6-9",
-      "mod": "M6",
-      "modName": "图论",
-      "layer": 2,
-      "level": 6,
-      "phase": "P",
-      "t": "割点 / 桥与双连通",
-      "s": "连通度",
-      "pre": [
-        "M6-1"
-      ],
-      "problems": [
-        {
-          "pid": "P1656",
-          "name": "炸铁路",
-          "difficulty": 3
-        },
-        {
-          "pid": "P3388",
-          "name": "【模板】割点",
+          "pid": "P1073",
+          "name": "[NOIP 2009 提高组] 最优贸易",
           "difficulty": 4
         },
         {
-          "pid": "P8436",
-          "name": "【模板】边双连通分量",
-          "difficulty": 4
-        },
-        {
-          "pid": "P3469",
-          "name": "[POI 2008] BLO-Blockade",
-          "difficulty": 5
-        }
-      ],
-      "num": 32,
-      "label": "归属·P32-NOI6级"
-    },
-    {
-      "id": "M6-10",
-      "mod": "M6",
-      "modName": "图论",
-      "layer": 2,
-      "level": 10,
-      "phase": "X",
-      "t": "网络流",
-      "s": "最大流 / 费用流",
-      "pre": [
-        "M6-1",
-        "M6-3"
-      ],
-      "problems": [
-        {
-          "pid": "P10944",
-          "name": "Going from u to v or from v to u?",
-          "difficulty": 3
-        },
-        {
-          "pid": "P3387",
-          "name": "【模板】缩点 / 强连通分量",
-          "difficulty": 4
-        },
-        {
-          "pid": "P3388",
-          "name": "【模板】割点",
-          "difficulty": 4
-        },
-        {
-          "pid": "P2756",
-          "name": "飞行员配对方案问题",
-          "difficulty": 4
-        },
-        {
-          "pid": "P5058",
-          "name": "[ZJOI2004] 嗅探器",
+          "pid": "P2656",
+          "name": "采蘑菇",
           "difficulty": 4
         },
         {
@@ -4918,11 +4603,6 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 4
         },
         {
-          "pid": "P2341",
-          "name": "[USACO03FALL / HAOI2006] 受欢迎的牛 G",
-          "difficulty": 4
-        },
-        {
           "pid": "SP14887",
           "name": "GOODA - Good Travels",
           "difficulty": 4
@@ -4931,36 +4611,6 @@ window.AKIOI_SYLLABUS = {
           "pid": "P3627",
           "name": "[APIO2009] 抢掠计划",
           "difficulty": 4
-        },
-        {
-          "pid": "UVA315",
-          "name": "Network",
-          "difficulty": 4
-        },
-        {
-          "pid": "P8436",
-          "name": "【模板】边双连通分量",
-          "difficulty": 4
-        },
-        {
-          "pid": "P8435",
-          "name": "【模板】点双连通分量",
-          "difficulty": 4
-        },
-        {
-          "pid": "B3610",
-          "name": "[图论与代数结构 801] 无向图的块",
-          "difficulty": 4
-        },
-        {
-          "pid": "P3225",
-          "name": "[ICPC 2011 WF / HNOI2012] 矿场搭建",
-          "difficulty": 5
-        },
-        {
-          "pid": "P1407",
-          "name": "[国家集训队] 稳定婚姻",
-          "difficulty": 5
         },
         {
           "pid": "P2812",
@@ -4976,10 +4626,82 @@ window.AKIOI_SYLLABUS = {
           "pid": "P2515",
           "name": "[HAOI2010] 软件安装",
           "difficulty": 5
+        }
+      ],
+      "num": 31,
+      "label": "归属·P31-NOI6级"
+    },
+    {
+      "id": "M6-9",
+      "mod": "M6",
+      "modName": "图论",
+      "layer": 2,
+      "level": 6,
+      "phase": "P",
+      "t": "割点 / 桥与双连通",
+      "s": "连通度",
+      "pre": [
+        "M6-1"
+      ],
+      "problems": [
+        {
+          "pid": "P8742",
+          "name": "[蓝桥杯 2021 省 AB] 砝码称重",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1656",
+          "name": "炸铁路",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3388",
+          "name": "【模板】割点",
+          "difficulty": 4
+        },
+        {
+          "pid": "P8436",
+          "name": "【模板】边双连通分量",
+          "difficulty": 4
+        },
+        {
+          "pid": "P8805",
+          "name": "[蓝桥杯 2022 国 B] 机房",
+          "difficulty": 4
+        },
+        {
+          "pid": "P5058",
+          "name": "[ZJOI2004] 嗅探器",
+          "difficulty": 4
+        },
+        {
+          "pid": "UVA315",
+          "name": "Network",
+          "difficulty": 4
+        },
+        {
+          "pid": "P8435",
+          "name": "【模板】点双连通分量",
+          "difficulty": 4
+        },
+        {
+          "pid": "B3610",
+          "name": "[图论与代数结构 801] 无向图的块",
+          "difficulty": 4
         },
         {
           "pid": "P3469",
           "name": "[POI 2008] BLO-Blockade",
+          "difficulty": 5
+        },
+        {
+          "pid": "P12213",
+          "name": "[蓝桥杯 2023 国 Python B] 最长回文前后缀",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3225",
+          "name": "[ICPC 2011 WF / HNOI2012] 矿场搭建",
           "difficulty": 5
         },
         {
@@ -4995,6 +4717,39 @@ window.AKIOI_SYLLABUS = {
         {
           "pid": "P7924",
           "name": "「EVOI-RD2」旅行家",
+          "difficulty": 5
+        }
+      ],
+      "num": 32,
+      "label": "归属·P32-NOI6级"
+    },
+    {
+      "id": "M6-10",
+      "mod": "M6",
+      "modName": "图论",
+      "layer": 2,
+      "level": 10,
+      "phase": "X",
+      "t": "网络流",
+      "s": "最大流 / 费用流",
+      "pre": [
+        "M6-1",
+        "M6-3"
+      ],
+      "problems": [
+        {
+          "pid": "P1006",
+          "name": "[NOIP 2008 提高组] 传纸条",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1484",
+          "name": "种树",
+          "difficulty": 5
+        },
+        {
+          "pid": "CF865D",
+          "name": "Buy Low Sell High",
           "difficulty": 5
         },
         {
@@ -5046,6 +4801,11 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 4
         },
         {
+          "pid": "P1993",
+          "name": "小 K 的农场",
+          "difficulty": 4
+        },
+        {
           "pid": "P4782",
           "name": "【模板】2-SAT",
           "difficulty": 5
@@ -5053,6 +4813,11 @@ window.AKIOI_SYLLABUS = {
         {
           "pid": "P5656",
           "name": "【模板】二元一次不定方程 (exgcd)",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3275",
+          "name": "[SCOI2011] 糖果",
           "difficulty": 5
         },
         {
@@ -5093,8 +4858,38 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 2
         },
         {
+          "pid": "P4282",
+          "name": "[AHOI2008] 计算器",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1015",
+          "name": "[NOIP 1999 普及组] 回文数",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1226",
+          "name": "【模板】快速幂",
+          "difficulty": 2
+        },
+        {
+          "pid": "P2170",
+          "name": "选学霸",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2431",
+          "name": "正妹吃月饼",
+          "difficulty": 3
+        },
+        {
           "pid": "P2114",
           "name": "[NOI2014] 起床困难综合症",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1013",
+          "name": "[NOIP 1998 提高组] 进制位",
           "difficulty": 4
         },
         {
@@ -5103,23 +4898,23 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 4
         },
         {
-          "pid": "P3812",
-          "name": "【模板】线性基",
+          "pid": "P3985",
+          "name": "不开心的金明",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1074",
+          "name": "[NOIP 2009 提高组] 靶形数独",
           "difficulty": 5
         },
         {
-          "pid": "P4301",
-          "name": "[CQOI2013] 新Nim游戏",
-          "difficulty": 6
+          "pid": "P5304",
+          "name": "[GXOI/GZOI2019] 旅行者",
+          "difficulty": 5
         },
         {
-          "pid": "P4570",
-          "name": "[BJWC2011] 元素",
-          "difficulty": 6
-        },
-        {
-          "pid": "P3292",
-          "name": "[SCOI2016] 幸运数字",
+          "pid": "P17091",
+          "name": "『lnOI-R1』三十四万一千七百九十九",
           "difficulty": 7
         }
       ],
@@ -5150,39 +4945,29 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 2
         },
         {
-          "pid": "P1835",
-          "name": "素数密度",
-          "difficulty": 3
+          "pid": "P1036",
+          "name": "[NOIP 2002 普及组] 选数",
+          "difficulty": 2
         },
         {
-          "pid": "P4549",
-          "name": "【模板】裴蜀定理",
+          "pid": "P1217",
+          "name": "[USACO1.5] 回文质数 Prime Palindromes",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1832",
+          "name": "A+B Problem（再升级）",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1835",
+          "name": "素数密度",
           "difficulty": 3
         },
         {
           "pid": "P1865",
           "name": "A % B Problem",
           "difficulty": 3
-        },
-        {
-          "pid": "P1082",
-          "name": "[NOIP 2012 提高组] 同余方程",
-          "difficulty": 4
-        },
-        {
-          "pid": "P1516",
-          "name": "[ZJOI2002] 青蛙的约会",
-          "difficulty": 5
-        },
-        {
-          "pid": "P2158",
-          "name": "[SDOI2008] 仪仗队",
-          "difficulty": 5
-        },
-        {
-          "pid": "P3868",
-          "name": "[TJOI2009] 猜数字",
-          "difficulty": 5
         },
         {
           "pid": "P1463",
@@ -5193,6 +4978,16 @@ window.AKIOI_SYLLABUS = {
           "pid": "P3989",
           "name": "[SHOI2013] 阶乘字符串",
           "difficulty": 7
+        },
+        {
+          "pid": "CF912E",
+          "name": "Prime Gift",
+          "difficulty": 7
+        },
+        {
+          "pid": "P5432",
+          "name": "A/B Problem（高精度除法Ⅱ）",
+          "difficulty": 8
         }
       ],
       "num": 16,
@@ -5227,8 +5022,18 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 2
         },
         {
+          "pid": "P1890",
+          "name": "gcd 区间",
+          "difficulty": 3
+        },
+        {
           "pid": "P1080",
           "name": "[NOIP 2012 提高组] 国王游戏",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2152",
+          "name": "[SDOI2009] SuperGCD",
           "difficulty": 5
         }
       ],
@@ -5253,6 +5058,11 @@ window.AKIOI_SYLLABUS = {
           "pid": "P1170",
           "name": "兔八哥与猎人",
           "difficulty": 2
+        },
+        {
+          "pid": "P4549",
+          "name": "【模板】裴蜀定理",
+          "difficulty": 3
         },
         {
           "pid": "P1082",
@@ -5297,6 +5107,11 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 3
         },
         {
+          "pid": "P1082",
+          "name": "[NOIP 2012 提高组] 同余方程",
+          "difficulty": 4
+        },
+        {
           "pid": "P3807",
           "name": "【模板】卢卡斯定理 / Lucas 定理",
           "difficulty": 5
@@ -5339,6 +5154,16 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 5
         },
         {
+          "pid": "P1516",
+          "name": "[ZJOI2002] 青蛙的约会",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3868",
+          "name": "[TJOI2009] 猜数字",
+          "difficulty": 5
+        },
+        {
           "pid": "P4778",
           "name": "Counting swaps",
           "difficulty": 7
@@ -5362,6 +5187,11 @@ window.AKIOI_SYLLABUS = {
       ],
       "problems": [
         {
+          "pid": "P1192",
+          "name": "台阶问题",
+          "difficulty": 2
+        },
+        {
           "pid": "P1962",
           "name": "斐波那契数列",
           "difficulty": 4
@@ -5377,9 +5207,34 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 4
         },
         {
+          "pid": "P2886",
+          "name": "[USACO07NOV] Cow Relays G",
+          "difficulty": 4
+        },
+        {
+          "pid": "P4071",
+          "name": "[SDOI2016] 排列计数",
+          "difficulty": 4
+        },
+        {
           "pid": "P2266",
           "name": "爱的供养",
           "difficulty": 5
+        },
+        {
+          "pid": "P4513",
+          "name": "小白逛公园",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1357",
+          "name": "花园",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3546",
+          "name": "[POI 2012] PRE-Prefixuffix",
+          "difficulty": 7
         }
       ],
       "num": 33,
@@ -5417,6 +5272,11 @@ window.AKIOI_SYLLABUS = {
           "pid": "P1654",
           "name": "OSU!",
           "difficulty": 5
+        },
+        {
+          "pid": "P2473",
+          "name": "[SCOI2008] 奖励关",
+          "difficulty": 5
         }
       ],
       "num": 9,
@@ -5436,6 +5296,26 @@ window.AKIOI_SYLLABUS = {
       ],
       "problems": [
         {
+          "pid": "P1157",
+          "name": "组合的输出",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1044",
+          "name": "[NOIP 2003 普及组] 栈",
+          "difficulty": 2
+        },
+        {
+          "pid": "P2415",
+          "name": "集合求和",
+          "difficulty": 2
+        },
+        {
+          "pid": "P3799",
+          "name": "小 Y 拼木棒",
+          "difficulty": 3
+        },
+        {
           "pid": "P2822",
           "name": "[NOIP 2016 提高组] 组合数问题",
           "difficulty": 3
@@ -5451,23 +5331,8 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 3
         },
         {
-          "pid": "P1962",
-          "name": "斐波那契数列",
-          "difficulty": 4
-        },
-        {
           "pid": "P2197",
           "name": "【模板】Nim 游戏",
-          "difficulty": 4
-        },
-        {
-          "pid": "P4316",
-          "name": "绿豆蛙的归宿",
-          "difficulty": 4
-        },
-        {
-          "pid": "P4071",
-          "name": "[SDOI2016] 排列计数",
           "difficulty": 4
         },
         {
@@ -5486,23 +5351,23 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 5
         },
         {
+          "pid": "P2851",
+          "name": "[USACO06DEC] The Fewest Coins G",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2167",
+          "name": "[SDOI2009] Bill的挑战",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2675",
+          "name": "《瞿葩的数字游戏》T3-三角圣地",
+          "difficulty": 5
+        },
+        {
           "pid": "P3807",
           "name": "【模板】卢卡斯定理 / Lucas 定理",
-          "difficulty": 5
-        },
-        {
-          "pid": "P3389",
-          "name": "【模板】高斯消元法",
-          "difficulty": 5
-        },
-        {
-          "pid": "P1654",
-          "name": "OSU!",
-          "difficulty": 5
-        },
-        {
-          "pid": "P1850",
-          "name": "[NOIP 2016 提高组] 换教室",
           "difficulty": 5
         },
         {
@@ -5581,8 +5446,23 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 5
         },
         {
+          "pid": "P4301",
+          "name": "[CQOI2013] 新Nim游戏",
+          "difficulty": 6
+        },
+        {
+          "pid": "P4570",
+          "name": "[BJWC2011] 元素",
+          "difficulty": 6
+        },
+        {
           "pid": "P3264",
           "name": "[JLOI2015] 管道连接",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3292",
+          "name": "[SCOI2016] 幸运数字",
           "difficulty": 7
         }
       ],
@@ -5602,6 +5482,11 @@ window.AKIOI_SYLLABUS = {
         "M7-9"
       ],
       "problems": [
+        {
+          "pid": "P2127",
+          "name": "序列排序",
+          "difficulty": 5
+        },
         {
           "pid": "P4980",
           "name": "【模板】Pólya（Polya）定理",
@@ -5645,6 +5530,21 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 1
         },
         {
+          "pid": "P2670",
+          "name": "[NOIP 2015 普及组] 扫雷游戏",
+          "difficulty": 1
+        },
+        {
+          "pid": "P1980",
+          "name": "[NOIP 2013 普及组] 计数问题",
+          "difficulty": 1
+        },
+        {
+          "pid": "P1307",
+          "name": "[NOIP 2011 普及组] 数字反转",
+          "difficulty": 1
+        },
+        {
           "pid": "P1308",
           "name": "[NOIP 2011 普及组] 统计单词数",
           "difficulty": 2
@@ -5660,118 +5560,63 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 2
         },
         {
-          "pid": "P1481",
-          "name": "魔族密码",
+          "pid": "P1067",
+          "name": "[NOIP 2009 普及组] 多项式输出",
           "difficulty": 2
         },
         {
-          "pid": "P3879",
-          "name": "[TJOI2010] 阅读理解",
+          "pid": "P1098",
+          "name": "[NOIP 2007 提高组] 字符串的展开",
           "difficulty": 2
         },
         {
-          "pid": "P3375",
-          "name": "【模板】KMP",
+          "pid": "P1104",
+          "name": "生日",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1101",
+          "name": "单词方阵",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1022",
+          "name": "[NOIP 2000 普及组] 计算器的改良",
+          "difficulty": 3
+        },
+        {
+          "pid": "P7911",
+          "name": "[CSP-J 2021] 网络连接",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1058",
+          "name": "[NOIP 2008 普及组] 立体图",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2758",
+          "name": "编辑距离",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1012",
+          "name": "[NOIP 1998 提高组] 拼数",
           "difficulty": 4
         },
         {
-          "pid": "P4391",
-          "name": "[BalticOI 2009] Radio Transmission 无线传输",
-          "difficulty": 4
-        },
-        {
-          "pid": "P1470",
-          "name": "[IOI 1996 / USACO2.3] 最长前缀 Longest Prefix",
-          "difficulty": 4
-        },
-        {
-          "pid": "P2922",
-          "name": "[USACO08DEC] Secret Message G",
-          "difficulty": 4
-        },
-        {
-          "pid": "P6824",
-          "name": "「EZEC-4」可乐",
-          "difficulty": 4
-        },
-        {
-          "pid": "P2375",
-          "name": "[NOI2014] 动物园",
+          "pid": "P1039",
+          "name": "[NOIP 2003 提高组] 侦探推理",
           "difficulty": 5
         },
         {
-          "pid": "P3435",
-          "name": "[POI 2006] OKR-Periods of Words",
-          "difficulty": 5
-        },
-        {
-          "pid": "CF25E",
-          "name": "Test",
-          "difficulty": 5
-        },
-        {
-          "pid": "P1659",
-          "name": "[国家集训队] 拉拉队排练",
-          "difficulty": 5
-        },
-        {
-          "pid": "P1723",
-          "name": "高手过愚人节",
-          "difficulty": 5
-        },
-        {
-          "pid": "P2601",
-          "name": "[ZJOI2009] 对称的正方形",
-          "difficulty": 5
-        },
-        {
-          "pid": "P3501",
-          "name": "[POI 2010] ANT-Antisymmetry",
-          "difficulty": 5
-        },
-        {
-          "pid": "P8131",
-          "name": "[ICPC 2020 WF] Gene Folding",
-          "difficulty": 5
-        },
-        {
-          "pid": "P5410",
-          "name": "【模板】扩展 KMP / exKMP（Z 函数）",
-          "difficulty": 6
-        },
-        {
-          "pid": "P2444",
-          "name": "[POI 2000 R1] 病毒",
-          "difficulty": 6
-        },
-        {
-          "pid": "P3763",
-          "name": "[TJOI2017] DNA",
-          "difficulty": 6
-        },
-        {
-          "pid": "P5283",
-          "name": "[十二省联考 2019] 异或粽子",
+          "pid": "P3695",
+          "name": "CYaRon!语",
           "difficulty": 7
         },
         {
-          "pid": "P4735",
-          "name": "最大异或和",
-          "difficulty": 7
-        },
-        {
-          "pid": "P4592",
-          "name": "[TJOI2018] 异或",
-          "difficulty": 7
-        },
-        {
-          "pid": "P3279",
-          "name": "[SCOI2013] 密码",
-          "difficulty": 7
-        },
-        {
-          "pid": "P3546",
-          "name": "[POI 2012] PRE-Prefixuffix",
+          "pid": "P2482",
+          "name": "[SDOI2010] 猪国杀",
           "difficulty": 7
         }
       ],
@@ -5807,6 +5652,21 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 4
         },
         {
+          "pid": "P1955",
+          "name": "[NOI2015] 程序自动分析",
+          "difficulty": 4
+        },
+        {
+          "pid": "P2312",
+          "name": "[NOIP 2014 提高组] 解方程",
+          "difficulty": 4
+        },
+        {
+          "pid": "P5889",
+          "name": "跳树",
+          "difficulty": 5
+        },
+        {
           "pid": "P3527",
           "name": "[POI 2011] MET-Meteors",
           "difficulty": 7
@@ -5834,6 +5694,11 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 4
         },
         {
+          "pid": "P4391",
+          "name": "[BalticOI 2009] Radio Transmission 无线传输",
+          "difficulty": 4
+        },
+        {
           "pid": "P4884",
           "name": "多少个 1？",
           "difficulty": 5
@@ -5844,8 +5709,23 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 5
         },
         {
+          "pid": "P2375",
+          "name": "[NOI2014] 动物园",
+          "difficulty": 5
+        },
+        {
+          "pid": "CF25E",
+          "name": "Test",
+          "difficulty": 5
+        },
+        {
           "pid": "P5410",
           "name": "【模板】扩展 KMP / exKMP（Z 函数）",
+          "difficulty": 6
+        },
+        {
+          "pid": "P6216",
+          "name": "回文匹配",
           "difficulty": 6
         }
       ],
@@ -5891,14 +5771,34 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 5
         },
         {
-          "pid": "P12213",
-          "name": "[蓝桥杯 2023 国 Python B] 最长回文前后缀",
+          "pid": "P1723",
+          "name": "高手过愚人节",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2601",
+          "name": "[ZJOI2009] 对称的正方形",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3501",
+          "name": "[POI 2010] ANT-Antisymmetry",
+          "difficulty": 5
+        },
+        {
+          "pid": "P8131",
+          "name": "[ICPC 2020 WF] Gene Folding",
           "difficulty": 5
         },
         {
           "pid": "P6216",
           "name": "回文匹配",
           "difficulty": 6
+        },
+        {
+          "pid": "P3279",
+          "name": "[SCOI2013] 密码",
+          "difficulty": 7
         }
       ],
       "num": 12,
@@ -5918,6 +5818,11 @@ window.AKIOI_SYLLABUS = {
       ],
       "problems": [
         {
+          "pid": "P1481",
+          "name": "魔族密码",
+          "difficulty": 2
+        },
+        {
           "pid": "P8306",
           "name": "【模板】字典树 / Trie",
           "difficulty": 3
@@ -5928,6 +5833,16 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 3
         },
         {
+          "pid": "P5149",
+          "name": "会议座位",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1908",
+          "name": "逆序对",
+          "difficulty": 3
+        },
+        {
           "pid": "P4551",
           "name": "最长异或路径",
           "difficulty": 4
@@ -5935,6 +5850,11 @@ window.AKIOI_SYLLABUS = {
         {
           "pid": "P2922",
           "name": "[USACO08DEC] Secret Message G",
+          "difficulty": 4
+        },
+        {
+          "pid": "P6824",
+          "name": "「EZEC-4」可乐",
           "difficulty": 4
         }
       ],
@@ -5956,6 +5876,11 @@ window.AKIOI_SYLLABUS = {
       ],
       "problems": [
         {
+          "pid": "P1470",
+          "name": "[IOI 1996 / USACO2.3] 最长前缀 Longest Prefix",
+          "difficulty": 4
+        },
+        {
           "pid": "P3808",
           "name": "AC 自动机（简单版）",
           "difficulty": 6
@@ -5974,6 +5899,16 @@ window.AKIOI_SYLLABUS = {
           "pid": "P3041",
           "name": "[USACO12JAN] Video Game G",
           "difficulty": 6
+        },
+        {
+          "pid": "P2444",
+          "name": "[POI 2000 R1] 病毒",
+          "difficulty": 6
+        },
+        {
+          "pid": "P4045",
+          "name": "[JSOI2009] 密码",
+          "difficulty": 7
         }
       ],
       "num": 19,
@@ -5998,6 +5933,11 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 6
         },
         {
+          "pid": "P3763",
+          "name": "[TJOI2017] DNA",
+          "difficulty": 6
+        },
+        {
           "pid": "P3804",
           "name": "【模板】后缀自动机（SAM）",
           "difficulty": 7
@@ -6017,5 +5957,5 @@ window.AKIOI_SYLLABUS = {
       "label": "归属·X23-NOI10级"
     }
   ],
-  "totalProblems": 928
+  "totalProblems": 916
 };

@@ -2,7 +2,7 @@
 window.AKIOI_DATA = {
   "site": "AKIOI",
   "title": "AKIOI · 洛谷题单",
-  "updated": "2026-11-12",
+  "updated": "2026-11-13",
   "total": 707,
   "chapters": [
     {
