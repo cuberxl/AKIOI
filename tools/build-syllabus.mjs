@@ -15,6 +15,11 @@ const outline = readJson(join(here, 'noi-outline.json')).items;
 const meta = readJson(join(here, 'meta.json'));
 const training = readJson(join(here, 'source.json'));
 const tagDict = readJson(join(here, 'tags.json'));
+const nodeProblems = readJson(join(here, 'node-problems.json'));
+const tagPool = readJson(join(here, 'tag-pool.json'));
+const poolMeta = {};
+Object.values(tagPool).forEach((list) => list.forEach((p) => { poolMeta[p.pid] = p; }));
+const lookup = (pid) => meta[pid] || poolMeta[pid];
 const probTags = readJson(join(here, 'problem-tags.json'));
 
 const PHASE = (lv) => (lv <= 4 ? 'B' : lv <= 7 ? 'P' : 'X');
@@ -120,8 +125,11 @@ training.chapters.forEach((ch) => ch.sections.forEach((sec) => sec.topics.forEac
 
 // ---------- 组装节点 ----------
 const nodes = outline.map((it, idx) => {
-  const problems = (buckets[it.id] || [])
-    .map((pid) => ({ pid, name: meta[pid].name, difficulty: meta[pid].difficulty }))
+  const pids = [];
+  (buckets[it.id] || []).forEach((pid) => { if (lookup(pid) && !pids.includes(pid)) pids.push(pid); });
+  (nodeProblems[it.id] || []).forEach((pid) => { if (lookup(pid) && !pids.includes(pid)) pids.push(pid); });
+  const problems = pids
+    .map((pid) => ({ pid, name: lookup(pid).name, difficulty: lookup(pid).difficulty }))
     .sort((a, b) => a.difficulty - b.difficulty);
   const prev = outline[idx - 1];
   const pre = prev && prev.sub === it.sub ? prev.id : [];
@@ -152,4 +160,5 @@ console.log('B/P/X = ' + byPhase.B + '/' + byPhase.P + '/' + byPhase.X);
   const n = nodes.find((x) => x.title === t);
   if (n) console.log(`  ${n.label} ${t} (${n.problems.length} 题)`);
 });
+
 

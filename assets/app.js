@@ -907,6 +907,7 @@
 
   var PHASE_COLORS = { B: '#60a5fa', P: '#a78bfa', X: '#f472b6' };
   var PHASE_NAMES = { B: '入门级', P: '提高级', X: 'NOI 级' };
+  var SEC_ORDER = ['入门', '提高', 'NOI'];
 
   function buildDag() {
     var S = window.AKIOI_SYLLABUS;
@@ -917,8 +918,7 @@
     var nodes = S.nodes.map(function (n) {
       return {
         id: n.id, name: n.title, sub: n.sub, sec: n.sec, level: n.level, phase: n.phase,
-        label: n.label, pre: (n.pre || []).slice(), problems: n.problems || [],
-        color: PHASE_COLORS[n.phase] || '#94a3b8'
+        label: n.label, pre: (n.pre || []).slice(), problems: n.problems || []
       };
     });
     var byId = {};
@@ -929,23 +929,41 @@
       n.pct = n.problems.length ? Math.round(n.hit / n.problems.length * 100) : 0;
     });
 
-    var COL = 208, ROW = 70, PAD = 36, NW = 172, NH = 54;
-    var levels = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-    var layers = levels.map(function (lv) { return nodes.filter(function (n) { return n.level === lv; }); });
+    // 按「章节 + 小结」分组
+    var groups = [];
+    nodes.forEach(function (n) {
+      var key = n.sec + '|' + n.sub;
+      var g = null;
+      for (var i = 0; i < groups.length; i++) if (groups[i].key === key) { g = groups[i]; break; }
+      if (!g) { g = { key: key, sec: n.sec, sub: n.sub, items: [] }; groups.push(g); }
+      g.items.push(n);
+    });
+    groups.sort(function (a, b) { return SEC_ORDER.indexOf(a.sec) - SEC_ORDER.indexOf(b.sec); });
+
+    var COL = 214, ROW = 62, PAD = 30, NW = 178, NH = 52, TOP = 34;
     var maxRows = 0;
-    layers.forEach(function (arr) { maxRows = Math.max(maxRows, arr.length); });
-    layers.forEach(function (arr, m) {
-      var offset = (maxRows - arr.length) / 2;
-      arr.forEach(function (n, i) {
-        n.x = PAD + m * COL;
-        n.y = PAD + (i + offset) * ROW;
+    groups.forEach(function (g) {
+      g.items.sort(function (a, b) { return a.level - b.level || a.id.localeCompare(b.id); });
+      maxRows = Math.max(maxRows, g.items.length);
+    });
+
+    groups.forEach(function (g, gi) {
+      // 每组一个色相，区分度更高
+      g.hue = Math.round((gi * 360) / groups.length);
+      g.color = 'hsl(' + g.hue + ', 68%, 55%)';
+      g.soft = 'hsl(' + g.hue + ', 68%, 55%, .07)';
+      var offset = (maxRows - g.items.length) / 2;
+      g.items.forEach(function (n, i) {
+        n.color = g.color;
+        n.x = PAD + gi * COL;
+        n.y = PAD + TOP + (i + offset) * ROW;
         n.w = NW;
         n.h = NH;
       });
     });
 
-    var width = PAD * 2 + (levels.length - 1) * COL + NW;
-    var height = PAD * 2 + Math.max(1, maxRows) * ROW;
+    var width = PAD * 2 + Math.max(1, groups.length - 1) * COL + NW;
+    var height = PAD * 2 + TOP + Math.max(1, maxRows) * ROW;
 
     var NS = 'http://www.w3.org/2000/svg';
     vp.innerHTML = '';
@@ -953,6 +971,66 @@
     var defs = document.createElementNS(NS, 'defs');
     defs.innerHTML = '<marker id="dag-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="currentColor"/></marker>';
     vp.appendChild(defs);
+
+    // 章节底色带
+    var gBands = document.createElementNS(NS, 'g');
+    gBands.setAttribute('class', 'dag-bands');
+    var secs = {};
+    groups.forEach(function (g, gi) {
+      if (!secs[g.sec]) secs[g.sec] = { from: gi, to: gi };
+      secs[g.sec].to = gi;
+    });
+    Object.keys(secs).forEach(function (sec, si) {
+      var r = secs[sec];
+      var x = PAD + r.from * COL - 14;
+      var w = (r.to - r.from) * COL + NW + 28;
+      var rect = document.createElementNS(NS, 'rect');
+      rect.setAttribute('x', x);
+      rect.setAttribute('y', PAD - 10);
+      rect.setAttribute('width', w);
+      rect.setAttribute('height', height - PAD * 2 + 20);
+      rect.setAttribute('rx', '16');
+      rect.setAttribute('class', 'dag-band');
+      rect.setAttribute('fill', si % 2 ? 'transparent' : 'color-mix(in srgb, var(--accent) 4%, transparent)');
+      gBands.appendChild(rect);
+
+      var lab = document.createElementNS(NS, 'text');
+      lab.setAttribute('x', x + 12);
+      lab.setAttribute('y', PAD + 10);
+      lab.setAttribute('class', 'dag-sec-label');
+      lab.textContent = sec;
+      gBands.appendChild(lab);
+    });
+    vp.appendChild(gBands);
+
+    // 列标题
+    var gHeads = document.createElementNS(NS, 'g');
+    gHeads.setAttribute('class', 'dag-heads');
+    groups.forEach(function (g) {
+      var rect = document.createElementNS(NS, 'rect');
+      rect.setAttribute('x', g.items[0].x);
+      rect.setAttribute('y', PAD - 4);
+      rect.setAttribute('width', NW);
+      rect.setAttribute('height', 24);
+      rect.setAttribute('rx', '7');
+      rect.setAttribute('fill', g.soft);
+      gHeads.appendChild(rect);
+
+      var dot = document.createElementNS(NS, 'circle');
+      dot.setAttribute('cx', g.items[0].x + 10);
+      dot.setAttribute('cy', PAD + 8);
+      dot.setAttribute('r', '3.5');
+      dot.setAttribute('fill', g.color);
+      gHeads.appendChild(dot);
+
+      var t = document.createElementNS(NS, 'text');
+      t.setAttribute('x', g.items[0].x + 20);
+      t.setAttribute('y', PAD + 12);
+      t.setAttribute('class', 'dag-head-t');
+      t.textContent = g.sub;
+      gHeads.appendChild(t);
+    });
+    vp.appendChild(gHeads);
 
     var gEdges = document.createElementNS(NS, 'g');
     gEdges.setAttribute('class', 'dag-edges');
@@ -984,9 +1062,9 @@
       rect.setAttribute('width', n.w);
       rect.setAttribute('height', n.h);
       rect.setAttribute('class', 'dag-box' + (n.pct === 100 ? ' is-full' : ''));
-      rect.setAttribute('rx', '11');
+      rect.setAttribute('rx', '10');
       rect.setAttribute('stroke', n.color);
-      rect.setAttribute('stroke-opacity', (0.14 + 0.86 * (n.pct / 100)).toFixed(2));
+      rect.setAttribute('stroke-opacity', (0.18 + 0.82 * (n.pct / 100)).toFixed(2));
       g.appendChild(rect);
 
       var bar = document.createElementNS(NS, 'rect');
@@ -999,11 +1077,13 @@
       bar.setAttribute('fill', n.color);
       g.appendChild(bar);
 
-      var R = 8, C = 2 * Math.PI * R, cx = n.w - 18, cy = 20;
+      // 完成度圈
+      var R = 9, C = 2 * Math.PI * R, cx = n.w - 20, cy = 18;
       var ringBg = document.createElementNS(NS, 'circle');
       ringBg.setAttribute('cx', cx); ringBg.setAttribute('cy', cy); ringBg.setAttribute('r', R);
       ringBg.setAttribute('class', 'dag-ring-bg');
       g.appendChild(ringBg);
+
       var ringFg = document.createElementNS(NS, 'circle');
       ringFg.setAttribute('cx', cx); ringFg.setAttribute('cy', cy); ringFg.setAttribute('r', R);
       ringFg.setAttribute('class', 'dag-ring-fg');
@@ -1013,22 +1093,30 @@
       ringFg.setAttribute('transform', 'rotate(-90 ' + cx + ' ' + cy + ')');
       g.appendChild(ringFg);
 
+      var pctText = document.createElementNS(NS, 'text');
+      pctText.setAttribute('x', cx);
+      pctText.setAttribute('y', cy + 3);
+      pctText.setAttribute('text-anchor', 'middle');
+      pctText.setAttribute('class', 'dag-pct');
+      pctText.textContent = n.pct + '%';
+      g.appendChild(pctText);
+
       var t1 = document.createElementNS(NS, 'text');
-      t1.setAttribute('x', '20');
-      t1.setAttribute('y', '23');
+      t1.setAttribute('x', '18');
+      t1.setAttribute('y', '22');
       t1.setAttribute('class', 'dag-t');
       t1.textContent = n.name.length > 10 ? n.name.slice(0, 10) + '…' : n.name;
       g.appendChild(t1);
 
       var t2 = document.createElementNS(NS, 'text');
-      t2.setAttribute('x', '20');
-      t2.setAttribute('y', '40');
+      t2.setAttribute('x', '18');
+      t2.setAttribute('y', '38');
       t2.setAttribute('class', 'dag-s');
-      t2.textContent = n.label;
+      t2.textContent = n.label + ' · ' + n.problems.length + ' 题';
       g.appendChild(t2);
 
       var tip = document.createElementNS(NS, 'title');
-      tip.textContent = n.name + '\n' + n.label + '\n已完成 ' + n.hit + '/' + n.problems.length;
+      tip.textContent = n.name + '（' + n.sec + ' · ' + n.sub + '）\n' + n.label + '\n已完成 ' + n.hit + '/' + n.problems.length;
       g.appendChild(tip);
 
       g.addEventListener('click', function (e) { e.stopPropagation(); openNodePanel(n); });
@@ -1042,20 +1130,20 @@
     svg.setAttribute('width', width);
     svg.setAttribute('height', height);
 
+    // 图例：章节
     var legend = document.getElementById('dag-legend');
     if (legend) {
       legend.innerHTML = '';
-      ['B', 'P', 'X'].forEach(function (ph) {
+      groups.forEach(function (g) {
         var item = el('span', 'dag-legend-item');
         var dot = el('i');
-        dot.style.background = PHASE_COLORS[ph];
+        dot.style.background = g.color;
         item.appendChild(dot);
-        item.appendChild(el('span', null, PHASE_NAMES[ph]));
+        item.appendChild(el('span', null, g.sec + '·' + g.sub));
         legend.appendChild(item);
       });
     }
 
-    // 拓扑推荐
     var nextNode = null;
     nodes.forEach(function (n) {
       var unlocked = n.pre.every(function (pid) { var p = byId[pid]; return p ? p.pct === 100 : true; });
@@ -1078,7 +1166,7 @@
     initPanZoom(svg, vp, width, height);
   }
 
-  function openNodePanel(n) {
+    function openNodePanel(n) {
     var panel = document.getElementById('dag-panel');
     if (!panel) return;
     setText('dp-mod', (n.sec || '') + ' · ' + (n.sub || ''));

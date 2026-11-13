@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+﻿#!/usr/bin/env node
 /**
  * 生成 tools/noi-outline.json：官方 NOI 大纲知识点（含难度系数 1-10）。
  * 每行：级别|章节|难度|知识点
@@ -266,12 +266,15 @@ NOI|数学与其他|10|熵、互信息与相对熵
 NOI|数学与其他|10|信息复杂度与通讯复杂度
 `;
 
+// 语法/环境类章节不纳入（用户要求）
+const SKIP = /编程环境|C\+\+ 程序设计/;
 const items = [];
 let seq = 0;
 RAW.trim().split('\n').forEach((line) => {
   line = line.trim();
   if (!line) return;
   const [sec, sub, lv, title] = line.split('|');
+  if (SKIP.test(sub)) return;
   items.push({ id: 'K' + (++seq), sec, sub, level: Number(lv), title });
 });
 
@@ -279,3 +282,4 @@ writeFileSync(join(here, 'noi-outline.json'), JSON.stringify({ items }, null, 2)
 const bySec = {};
 items.forEach((i) => { bySec[i.sec] = (bySec[i.sec] || 0) + 1; });
 console.log('items=' + items.length + ' ' + Object.entries(bySec).map(([k, v]) => k + ':' + v).join(' '));
+

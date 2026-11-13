@@ -1,924 +1,10 @@
 /* 由 tools/build-syllabus.mjs 生成：NOI 大纲 2025 + 洛谷标签归类 */
 window.AKIOI_SYLLABUS = {
   "updated": "2026-11-13",
-  "totalProblems": 692,
+  "totalProblems": 2411,
   "nodes": [
     {
       "id": "K1",
-      "sec": "入门",
-      "sub": "计算机基础与编程环境",
-      "title": "计算机的基本构成",
-      "level": 1,
-      "phase": "B",
-      "pre": [],
-      "problems": [],
-      "num": 1,
-      "label": "归属·B1-NOI1级"
-    },
-    {
-      "id": "K2",
-      "sec": "入门",
-      "sub": "计算机基础与编程环境",
-      "title": "操作系统基本概念与常见操作",
-      "level": 1,
-      "phase": "B",
-      "pre": [
-        "K1"
-      ],
-      "problems": [],
-      "num": 9,
-      "label": "归属·B9-NOI1级"
-    },
-    {
-      "id": "K3",
-      "sec": "入门",
-      "sub": "计算机基础与编程环境",
-      "title": "计算机网络与 Internet 基本概念",
-      "level": 1,
-      "phase": "B",
-      "pre": [
-        "K2"
-      ],
-      "problems": [],
-      "num": 13,
-      "label": "归属·B13-NOI1级"
-    },
-    {
-      "id": "K4",
-      "sec": "入门",
-      "sub": "计算机基础与编程环境",
-      "title": "计算机历史与常见用途",
-      "level": 1,
-      "phase": "B",
-      "pre": [
-        "K3"
-      ],
-      "problems": [],
-      "num": 16,
-      "label": "归属·B16-NOI1级"
-    },
-    {
-      "id": "K5",
-      "sec": "入门",
-      "sub": "计算机基础与编程环境",
-      "title": "NOI 及相关活动的历史与规则",
-      "level": 1,
-      "phase": "B",
-      "pre": [
-        "K4"
-      ],
-      "problems": [
-        {
-          "pid": "P1955",
-          "name": "[NOI2015] 程序自动分析",
-          "difficulty": 4
-        },
-        {
-          "pid": "P2024",
-          "name": "[NOI2001] 食物链",
-          "difficulty": 4
-        },
-        {
-          "pid": "P1196",
-          "name": "[NOI2002] 银河英雄传说",
-          "difficulty": 4
-        },
-        {
-          "pid": "P5691",
-          "name": "[NOI2001] 方程的解数",
-          "difficulty": 4
-        },
-        {
-          "pid": "P1731",
-          "name": "[NOI1999] 生日蛋糕",
-          "difficulty": 4
-        },
-        {
-          "pid": "P2047",
-          "name": "[NOI2007] 社交网络",
-          "difficulty": 4
-        },
-        {
-          "pid": "P1880",
-          "name": "[NOI1995] 石子合并",
-          "difficulty": 4
-        },
-        {
-          "pid": "P1448",
-          "name": "[NOI1998] 围巾裁剪",
-          "difficulty": 5
-        },
-        {
-          "pid": "P2168",
-          "name": "[NOI2015] 荷马史诗",
-          "difficulty": 5
-        },
-        {
-          "pid": "P2704",
-          "name": "[NOI2001] 炮兵阵地",
-          "difficulty": 5
-        }
-      ],
-      "num": 17,
-      "label": "归属·B17-NOI1级"
-    },
-    {
-      "id": "K6",
-      "sec": "入门",
-      "sub": "计算机基础与编程环境",
-      "title": "位、字节与字",
-      "level": 1,
-      "phase": "B",
-      "pre": [
-        "K5"
-      ],
-      "problems": [],
-      "num": 18,
-      "label": "归属·B18-NOI1级"
-    },
-    {
-      "id": "K7",
-      "sec": "入门",
-      "sub": "计算机基础与编程环境",
-      "title": "程序设计语言与编译运行概念",
-      "level": 1,
-      "phase": "B",
-      "pre": [
-        "K6"
-      ],
-      "problems": [],
-      "num": 22,
-      "label": "归属·B22-NOI1级"
-    },
-    {
-      "id": "K8",
-      "sec": "入门",
-      "sub": "计算机基础与编程环境",
-      "title": "图形界面文件与目录操作",
-      "level": 1,
-      "phase": "B",
-      "pre": [
-        "K7"
-      ],
-      "problems": [],
-      "num": 23,
-      "label": "归属·B23-NOI1级"
-    },
-    {
-      "id": "K9",
-      "sec": "入门",
-      "sub": "计算机基础与编程环境",
-      "title": "Windows 集成开发环境",
-      "level": 1,
-      "phase": "B",
-      "pre": [
-        "K8"
-      ],
-      "problems": [],
-      "num": 27,
-      "label": "归属·B27-NOI1级"
-    },
-    {
-      "id": "K10",
-      "sec": "入门",
-      "sub": "计算机基础与编程环境",
-      "title": "Linux 集成开发环境",
-      "level": 1,
-      "phase": "B",
-      "pre": [
-        "K9"
-      ],
-      "problems": [],
-      "num": 2,
-      "label": "归属·B2-NOI1级"
-    },
-    {
-      "id": "K11",
-      "sec": "入门",
-      "sub": "计算机基础与编程环境",
-      "title": "常用编译命令 g++",
-      "level": 1,
-      "phase": "B",
-      "pre": [
-        "K10"
-      ],
-      "problems": [],
-      "num": 3,
-      "label": "归属·B3-NOI1级"
-    },
-    {
-      "id": "K12",
-      "sec": "入门",
-      "sub": "C++ 程序设计",
-      "title": "标识符、关键字、常量与变量",
-      "level": 1,
-      "phase": "B",
-      "pre": [],
-      "problems": [],
-      "num": 4,
-      "label": "归属·B4-NOI1级"
-    },
-    {
-      "id": "K13",
-      "sec": "入门",
-      "sub": "C++ 程序设计",
-      "title": "常量与变量的命名、定义及作用",
-      "level": 1,
-      "phase": "B",
-      "pre": [
-        "K12"
-      ],
-      "problems": [],
-      "num": 5,
-      "label": "归属·B5-NOI1级"
-    },
-    {
-      "id": "K14",
-      "sec": "入门",
-      "sub": "C++ 程序设计",
-      "title": "头文件与名字空间",
-      "level": 2,
-      "phase": "B",
-      "pre": [
-        "K13"
-      ],
-      "problems": [],
-      "num": 28,
-      "label": "归属·B28-NOI2级"
-    },
-    {
-      "id": "K15",
-      "sec": "入门",
-      "sub": "C++ 程序设计",
-      "title": "编辑、编译、解释、调试的概念",
-      "level": 2,
-      "phase": "B",
-      "pre": [
-        "K14"
-      ],
-      "problems": [],
-      "num": 29,
-      "label": "归属·B29-NOI2级"
-    },
-    {
-      "id": "K16",
-      "sec": "入门",
-      "sub": "C++ 程序设计",
-      "title": "整数型 int 与 long long",
-      "level": 1,
-      "phase": "B",
-      "pre": [
-        "K15"
-      ],
-      "problems": [],
-      "num": 6,
-      "label": "归属·B6-NOI1级"
-    },
-    {
-      "id": "K17",
-      "sec": "入门",
-      "sub": "C++ 程序设计",
-      "title": "实数型 float 与 double",
-      "level": 1,
-      "phase": "B",
-      "pre": [
-        "K16"
-      ],
-      "problems": [],
-      "num": 7,
-      "label": "归属·B7-NOI1级"
-    },
-    {
-      "id": "K18",
-      "sec": "入门",
-      "sub": "C++ 程序设计",
-      "title": "字符型与布尔型",
-      "level": 1,
-      "phase": "B",
-      "pre": [
-        "K17"
-      ],
-      "problems": [],
-      "num": 8,
-      "label": "归属·B8-NOI1级"
-    },
-    {
-      "id": "K19",
-      "sec": "入门",
-      "sub": "C++ 程序设计",
-      "title": "输入输出语句 cin/scanf/cout/printf",
-      "level": 2,
-      "phase": "B",
-      "pre": [
-        "K18"
-      ],
-      "problems": [],
-      "num": 30,
-      "label": "归属·B30-NOI2级"
-    },
-    {
-      "id": "K20",
-      "sec": "入门",
-      "sub": "C++ 程序设计",
-      "title": "条件语句 if/switch",
-      "level": 2,
-      "phase": "B",
-      "pre": [
-        "K19"
-      ],
-      "problems": [],
-      "num": 31,
-      "label": "归属·B31-NOI2级"
-    },
-    {
-      "id": "K21",
-      "sec": "入门",
-      "sub": "C++ 程序设计",
-      "title": "循环语句 for/while/do-while",
-      "level": 2,
-      "phase": "B",
-      "pre": [
-        "K20"
-      ],
-      "problems": [],
-      "num": 32,
-      "label": "归属·B32-NOI2级"
-    },
-    {
-      "id": "K22",
-      "sec": "入门",
-      "sub": "C++ 程序设计",
-      "title": "多层循环语句",
-      "level": 3,
-      "phase": "B",
-      "pre": [
-        "K21"
-      ],
-      "problems": [],
-      "num": 47,
-      "label": "归属·B47-NOI3级"
-    },
-    {
-      "id": "K23",
-      "sec": "入门",
-      "sub": "C++ 程序设计",
-      "title": "算术运算与关系运算",
-      "level": 1,
-      "phase": "B",
-      "pre": [
-        "K22"
-      ],
-      "problems": [],
-      "num": 10,
-      "label": "归属·B10-NOI1级"
-    },
-    {
-      "id": "K24",
-      "sec": "入门",
-      "sub": "C++ 程序设计",
-      "title": "逻辑运算与三目运算",
-      "level": 1,
-      "phase": "B",
-      "pre": [
-        "K23"
-      ],
-      "problems": [],
-      "num": 11,
-      "label": "归属·B11-NOI1级"
-    },
-    {
-      "id": "K25",
-      "sec": "入门",
-      "sub": "C++ 程序设计",
-      "title": "位运算",
-      "level": 2,
-      "phase": "B",
-      "pre": [
-        "K24"
-      ],
-      "problems": [
-        {
-          "pid": "P1100",
-          "name": "高低位交换",
-          "difficulty": 2
-        },
-        {
-          "pid": "P1226",
-          "name": "【模板】快速幂",
-          "difficulty": 2
-        },
-        {
-          "pid": "P2114",
-          "name": "[NOI2014] 起床困难综合症",
-          "difficulty": 4
-        },
-        {
-          "pid": "P4310",
-          "name": "绝世好题",
-          "difficulty": 4
-        },
-        {
-          "pid": "P1074",
-          "name": "[NOIP 2009 提高组] 靶形数独",
-          "difficulty": 5
-        },
-        {
-          "pid": "P17091",
-          "name": "『lnOI-R1』三十四万一千七百九十九",
-          "difficulty": 7
-        }
-      ],
-      "num": 33,
-      "label": "归属·B33-NOI2级"
-    },
-    {
-      "id": "K26",
-      "sec": "入门",
-      "sub": "C++ 程序设计",
-      "title": "数学库常用函数",
-      "level": 3,
-      "phase": "B",
-      "pre": [
-        "K25"
-      ],
-      "problems": [
-        {
-          "pid": "P9748",
-          "name": "[CSP-J 2023] 小苹果",
-          "difficulty": 2
-        },
-        {
-          "pid": "P5514",
-          "name": "[MtOI2019] 永夜的报应",
-          "difficulty": 2
-        },
-        {
-          "pid": "P3383",
-          "name": "【模板】线性筛素数",
-          "difficulty": 2
-        },
-        {
-          "pid": "P1075",
-          "name": "[NOIP 2012 普及组] 质因数分解",
-          "difficulty": 2
-        },
-        {
-          "pid": "P9750",
-          "name": "[CSP-J 2023] 一元二次方程",
-          "difficulty": 3
-        },
-        {
-          "pid": "P4549",
-          "name": "【模板】裴蜀定理",
-          "difficulty": 3
-        },
-        {
-          "pid": "P2675",
-          "name": "《瞿葩的数字游戏》T3-三角圣地",
-          "difficulty": 5
-        }
-      ],
-      "num": 48,
-      "label": "归属·B48-NOI3级"
-    },
-    {
-      "id": "K27",
-      "sec": "入门",
-      "sub": "C++ 程序设计",
-      "title": "顺序、分支与循环结构",
-      "level": 1,
-      "phase": "B",
-      "pre": [
-        "K26"
-      ],
-      "problems": [],
-      "num": 12,
-      "label": "归属·B12-NOI1级"
-    },
-    {
-      "id": "K28",
-      "sec": "入门",
-      "sub": "C++ 程序设计",
-      "title": "模块化程序设计",
-      "level": 2,
-      "phase": "B",
-      "pre": [
-        "K27"
-      ],
-      "problems": [],
-      "num": 34,
-      "label": "归属·B34-NOI2级"
-    },
-    {
-      "id": "K29",
-      "sec": "入门",
-      "sub": "C++ 程序设计",
-      "title": "流程图描述",
-      "level": 2,
-      "phase": "B",
-      "pre": [
-        "K28"
-      ],
-      "problems": [],
-      "num": 35,
-      "label": "归属·B35-NOI2级"
-    },
-    {
-      "id": "K30",
-      "sec": "入门",
-      "sub": "C++ 程序设计",
-      "title": "数组与数组下标",
-      "level": 1,
-      "phase": "B",
-      "pre": [
-        "K29"
-      ],
-      "problems": [],
-      "num": 14,
-      "label": "归属·B14-NOI1级"
-    },
-    {
-      "id": "K31",
-      "sec": "入门",
-      "sub": "C++ 程序设计",
-      "title": "数组的读入与输出",
-      "level": 1,
-      "phase": "B",
-      "pre": [
-        "K30"
-      ],
-      "problems": [],
-      "num": 15,
-      "label": "归属·B15-NOI1级"
-    },
-    {
-      "id": "K32",
-      "sec": "入门",
-      "sub": "C++ 程序设计",
-      "title": "二维数组与多维数组",
-      "level": 3,
-      "phase": "B",
-      "pre": [
-        "K31"
-      ],
-      "problems": [],
-      "num": 49,
-      "label": "归属·B49-NOI3级"
-    },
-    {
-      "id": "K33",
-      "sec": "入门",
-      "sub": "C++ 程序设计",
-      "title": "字符数组与相关函数",
-      "level": 2,
-      "phase": "B",
-      "pre": [
-        "K32"
-      ],
-      "problems": [],
-      "num": 36,
-      "label": "归属·B36-NOI2级"
-    },
-    {
-      "id": "K34",
-      "sec": "入门",
-      "sub": "C++ 程序设计",
-      "title": "string 类与相关函数",
-      "level": 2,
-      "phase": "B",
-      "pre": [
-        "K33"
-      ],
-      "problems": [],
-      "num": 37,
-      "label": "归属·B37-NOI2级"
-    },
-    {
-      "id": "K35",
-      "sec": "入门",
-      "sub": "C++ 程序设计",
-      "title": "函数定义与调用、形参与实参",
-      "level": 2,
-      "phase": "B",
-      "pre": [
-        "K34"
-      ],
-      "problems": [],
-      "num": 38,
-      "label": "归属·B38-NOI2级"
-    },
-    {
-      "id": "K36",
-      "sec": "入门",
-      "sub": "C++ 程序设计",
-      "title": "传值参数与传引用参数",
-      "level": 3,
-      "phase": "B",
-      "pre": [
-        "K35"
-      ],
-      "problems": [],
-      "num": 50,
-      "label": "归属·B50-NOI3级"
-    },
-    {
-      "id": "K37",
-      "sec": "入门",
-      "sub": "C++ 程序设计",
-      "title": "常量与变量的作用范围",
-      "level": 2,
-      "phase": "B",
-      "pre": [
-        "K36"
-      ],
-      "problems": [],
-      "num": 39,
-      "label": "归属·B39-NOI2级"
-    },
-    {
-      "id": "K38",
-      "sec": "入门",
-      "sub": "C++ 程序设计",
-      "title": "递归函数",
-      "level": 2,
-      "phase": "B",
-      "pre": [
-        "K37"
-      ],
-      "problems": [
-        {
-          "pid": "P4924",
-          "name": "[1007] 魔法少女小Scarlet",
-          "difficulty": 2
-        },
-        {
-          "pid": "P2089",
-          "name": "烤鸡",
-          "difficulty": 2
-        },
-        {
-          "pid": "P1305",
-          "name": "新二叉树",
-          "difficulty": 2
-        },
-        {
-          "pid": "P2239",
-          "name": "[NOIP 2014 普及组] 螺旋矩阵",
-          "difficulty": 3
-        },
-        {
-          "pid": "P1016",
-          "name": "[NOIP 1999 普及组/提高组] 旅行家的预算",
-          "difficulty": 3
-        },
-        {
-          "pid": "P1309",
-          "name": "[NOIP 2011 普及组] 瑞士轮",
-          "difficulty": 3
-        },
-        {
-          "pid": "P1259",
-          "name": "黑白棋子的移动",
-          "difficulty": 3
-        },
-        {
-          "pid": "P1541",
-          "name": "[NOIP 2010 提高组] 乌龟棋",
-          "difficulty": 4
-        }
-      ],
-      "num": 40,
-      "label": "归属·B40-NOI2级"
-    },
-    {
-      "id": "K39",
-      "sec": "入门",
-      "sub": "C++ 程序设计",
-      "title": "结构体",
-      "level": 3,
-      "phase": "B",
-      "pre": [
-        "K38"
-      ],
-      "problems": [],
-      "num": 51,
-      "label": "归属·B51-NOI3级"
-    },
-    {
-      "id": "K40",
-      "sec": "入门",
-      "sub": "C++ 程序设计",
-      "title": "联合体",
-      "level": 3,
-      "phase": "B",
-      "pre": [
-        "K39"
-      ],
-      "problems": [],
-      "num": 52,
-      "label": "归属·B52-NOI3级"
-    },
-    {
-      "id": "K41",
-      "sec": "入门",
-      "sub": "C++ 程序设计",
-      "title": "指针与基于指针的数组访问",
-      "level": 4,
-      "phase": "B",
-      "pre": [
-        "K40"
-      ],
-      "problems": [],
-      "num": 69,
-      "label": "归属·B69-NOI4级"
-    },
-    {
-      "id": "K42",
-      "sec": "入门",
-      "sub": "C++ 程序设计",
-      "title": "字符指针与结构体指针",
-      "level": 4,
-      "phase": "B",
-      "pre": [
-        "K41"
-      ],
-      "problems": [],
-      "num": 70,
-      "label": "归属·B70-NOI4级"
-    },
-    {
-      "id": "K43",
-      "sec": "入门",
-      "sub": "C++ 程序设计",
-      "title": "引用",
-      "level": 5,
-      "phase": "P",
-      "pre": [
-        "K42"
-      ],
-      "problems": [],
-      "num": 16,
-      "label": "归属·P16-NOI5级"
-    },
-    {
-      "id": "K44",
-      "sec": "入门",
-      "sub": "C++ 程序设计",
-      "title": "文件的基本概念与文本文件操作",
-      "level": 2,
-      "phase": "B",
-      "pre": [
-        "K43"
-      ],
-      "problems": [],
-      "num": 41,
-      "label": "归属·B41-NOI2级"
-    },
-    {
-      "id": "K45",
-      "sec": "入门",
-      "sub": "C++ 程序设计",
-      "title": "文本文件与二进制文件",
-      "level": 2,
-      "phase": "B",
-      "pre": [
-        "K44"
-      ],
-      "problems": [
-        {
-          "pid": "P4282",
-          "name": "[AHOI2008] 计算器",
-          "difficulty": 2
-        },
-        {
-          "pid": "P1015",
-          "name": "[NOIP 1999 普及组] 回文数",
-          "difficulty": 2
-        },
-        {
-          "pid": "P2431",
-          "name": "正妹吃月饼",
-          "difficulty": 3
-        },
-        {
-          "pid": "P1013",
-          "name": "[NOIP 1998 提高组] 进制位",
-          "difficulty": 4
-        },
-        {
-          "pid": "P3985",
-          "name": "不开心的金明",
-          "difficulty": 4
-        },
-        {
-          "pid": "P5304",
-          "name": "[GXOI/GZOI2019] 旅行者",
-          "difficulty": 5
-        },
-        {
-          "pid": "P2851",
-          "name": "[USACO06DEC] The Fewest Coins G",
-          "difficulty": 5
-        },
-        {
-          "pid": "P3807",
-          "name": "【模板】卢卡斯定理 / Lucas 定理",
-          "difficulty": 5
-        }
-      ],
-      "num": 42,
-      "label": "归属·B42-NOI2级"
-    },
-    {
-      "id": "K46",
-      "sec": "入门",
-      "sub": "C++ 程序设计",
-      "title": "文件重定向与读写",
-      "level": 2,
-      "phase": "B",
-      "pre": [
-        "K45"
-      ],
-      "problems": [],
-      "num": 43,
-      "label": "归属·B43-NOI2级"
-    },
-    {
-      "id": "K47",
-      "sec": "入门",
-      "sub": "C++ 程序设计",
-      "title": "STL 常用函数 min/max/swap/sort",
-      "level": 3,
-      "phase": "B",
-      "pre": [
-        "K46"
-      ],
-      "problems": [
-        {
-          "pid": "P1059",
-          "name": "[NOIP 2006 普及组] 明明的随机数",
-          "difficulty": 2
-        },
-        {
-          "pid": "P1102",
-          "name": "A-B 数对",
-          "difficulty": 2
-        },
-        {
-          "pid": "P3613",
-          "name": "【深基15.例2】寄包柜",
-          "difficulty": 2
-        },
-        {
-          "pid": "P3879",
-          "name": "[TJOI2010] 阅读理解",
-          "difficulty": 2
-        },
-        {
-          "pid": "P1190",
-          "name": "[NOIP 2010 普及组] 接水问题",
-          "difficulty": 2
-        },
-        {
-          "pid": "P1168",
-          "name": "中位数",
-          "difficulty": 3
-        },
-        {
-          "pid": "P2580",
-          "name": "于是他错误的点名开始了",
-          "difficulty": 3
-        },
-        {
-          "pid": "P2949",
-          "name": "[USACO09OPEN] Work Scheduling G",
-          "difficulty": 3
-        },
-        {
-          "pid": "P1725",
-          "name": "琪露诺",
-          "difficulty": 4
-        }
-      ],
-      "num": 53,
-      "label": "归属·B53-NOI3级"
-    },
-    {
-      "id": "K48",
-      "sec": "入门",
-      "sub": "C++ 程序设计",
-      "title": "STL 容器 stack/queue/list/vector",
-      "level": 4,
-      "phase": "B",
-      "pre": [
-        "K47"
-      ],
-      "problems": [],
-      "num": 71,
-      "label": "归属·B71-NOI4级"
-    },
-    {
-      "id": "K49",
       "sec": "入门",
       "sub": "数据结构",
       "title": "链表：单链表、双向链表、循环链表",
@@ -932,8 +18,48 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 2
         },
         {
+          "pid": "B3630",
+          "name": "排队顺序",
+          "difficulty": 2
+        },
+        {
+          "pid": "B3631",
+          "name": "单向链表",
+          "difficulty": 2
+        },
+        {
           "pid": "P1106",
           "name": "删数问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1160",
+          "name": "队列安排",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1878",
+          "name": "舞蹈课",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2201",
+          "name": "数列编辑器",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2776",
+          "name": "[SDOI2007] 小组队列",
+          "difficulty": 3
+        },
+        {
+          "pid": "B4324",
+          "name": "【模板】双向链表",
+          "difficulty": 3
+        },
+        {
+          "pid": "B4533",
+          "name": "[信息与未来 2026] 旅行计划",
           "difficulty": 3
         },
         {
@@ -947,32 +73,83 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 5
         }
       ],
-      "num": 54,
-      "label": "归属·B54-NOI3级"
+      "num": 10,
+      "label": "归属·B10-NOI3级"
     },
     {
-      "id": "K50",
+      "id": "K2",
       "sec": "入门",
       "sub": "数据结构",
       "title": "栈",
       "level": 3,
       "phase": "B",
       "pre": [
-        "K49"
+        "K1"
       ],
-      "problems": [],
-      "num": 55,
-      "label": "归属·B55-NOI3级"
+      "problems": [
+        {
+          "pid": "P1106",
+          "name": "删数问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1901",
+          "name": "发射站",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2659",
+          "name": "美丽的序列",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2701",
+          "name": "[USACO5.3] 巨大的牛棚 Big Barn",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2866",
+          "name": "[USACO06NOV] Bad Hair Day S",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2947",
+          "name": "[USACO09MAR] Look Up S",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3467",
+          "name": "[POI 2008] PLA-Postering",
+          "difficulty": 3
+        },
+        {
+          "pid": "B3666",
+          "name": "求数列所有后缀最大值的位置",
+          "difficulty": 3
+        },
+        {
+          "pid": "P4085",
+          "name": "[USACO17DEC] Haybale Feast G",
+          "difficulty": 3
+        },
+        {
+          "pid": "P5788",
+          "name": "【模板】单调栈",
+          "difficulty": 3
+        }
+      ],
+      "num": 13,
+      "label": "归属·B13-NOI3级"
     },
     {
-      "id": "K51",
+      "id": "K3",
       "sec": "入门",
       "sub": "数据结构",
       "title": "队列",
       "level": 3,
       "phase": "B",
       "pre": [
-        "K50"
+        "K2"
       ],
       "problems": [
         {
@@ -998,6 +175,41 @@ window.AKIOI_SYLLABUS = {
         {
           "pid": "P1162",
           "name": "填涂颜色",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1203",
+          "name": "[IOI 1993 / USACO1.1] 坏掉的项链 Broken Necklace",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1165",
+          "name": "日志分析",
+          "difficulty": 2
+        },
+        {
+          "pid": "P3887",
+          "name": "[GDOI2014] 世界杯",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1296",
+          "name": "奶牛的耳语",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1588",
+          "name": "[USACO07OPEN] Catch That Cow S",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1746",
+          "name": "离开中山路",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1996",
+          "name": "约瑟夫问题",
           "difficulty": 2
         },
         {
@@ -1031,6 +243,11 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 3
         },
         {
+          "pid": "P1168",
+          "name": "中位数",
+          "difficulty": 3
+        },
+        {
           "pid": "P2278",
           "name": "[HNOI2003] 操作系统",
           "difficulty": 3
@@ -1058,6 +275,11 @@ window.AKIOI_SYLLABUS = {
         {
           "pid": "P1090",
           "name": "[NOIP 2004 提高组] 合并果子",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2949",
+          "name": "[USACO09OPEN] Work Scheduling G",
           "difficulty": 3
         },
         {
@@ -1091,6 +313,11 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 4
         },
         {
+          "pid": "P1725",
+          "name": "琪露诺",
+          "difficulty": 4
+        },
+        {
           "pid": "P2107",
           "name": "小 Z 的 AK 计划",
           "difficulty": 4
@@ -1103,6 +330,11 @@ window.AKIOI_SYLLABUS = {
         {
           "pid": "P3509",
           "name": "[POI 2010] ZAB-Frog",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2168",
+          "name": "[NOI2015] 荷马史诗",
           "difficulty": 5
         },
         {
@@ -1146,116 +378,473 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 7
         }
       ],
-      "num": 56,
-      "label": "归属·B56-NOI3级"
+      "num": 18,
+      "label": "归属·B18-NOI3级"
     },
     {
-      "id": "K52",
+      "id": "K4",
       "sec": "入门",
       "sub": "数据结构",
       "title": "树的定义与相关概念",
       "level": 3,
       "phase": "B",
       "pre": [
-        "K51"
+        "K3"
       ],
-      "problems": [],
-      "num": 57,
-      "label": "归属·B57-NOI3级"
+      "problems": [
+        {
+          "pid": "P1996",
+          "name": "约瑟夫问题",
+          "difficulty": 2
+        },
+        {
+          "pid": "B3630",
+          "name": "排队顺序",
+          "difficulty": 2
+        },
+        {
+          "pid": "B3631",
+          "name": "单向链表",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1106",
+          "name": "删数问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1160",
+          "name": "队列安排",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1878",
+          "name": "舞蹈课",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2201",
+          "name": "数列编辑器",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2776",
+          "name": "[SDOI2007] 小组队列",
+          "difficulty": 3
+        },
+        {
+          "pid": "B4324",
+          "name": "【模板】双向链表",
+          "difficulty": 3
+        },
+        {
+          "pid": "B4533",
+          "name": "[信息与未来 2026] 旅行计划",
+          "difficulty": 3
+        }
+      ],
+      "num": 19,
+      "label": "归属·B19-NOI3级"
     },
     {
-      "id": "K53",
+      "id": "K5",
       "sec": "入门",
       "sub": "数据结构",
       "title": "树的表示与存储",
       "level": 4,
       "phase": "B",
       "pre": [
-        "K52"
+        "K4"
       ],
-      "problems": [],
-      "num": 72,
-      "label": "归属·B72-NOI4级"
+      "problems": [
+        {
+          "pid": "P1996",
+          "name": "约瑟夫问题",
+          "difficulty": 2
+        },
+        {
+          "pid": "B3630",
+          "name": "排队顺序",
+          "difficulty": 2
+        },
+        {
+          "pid": "B3631",
+          "name": "单向链表",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1106",
+          "name": "删数问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1160",
+          "name": "队列安排",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1878",
+          "name": "舞蹈课",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2201",
+          "name": "数列编辑器",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2776",
+          "name": "[SDOI2007] 小组队列",
+          "difficulty": 3
+        },
+        {
+          "pid": "B4324",
+          "name": "【模板】双向链表",
+          "difficulty": 3
+        },
+        {
+          "pid": "B4533",
+          "name": "[信息与未来 2026] 旅行计划",
+          "difficulty": 3
+        }
+      ],
+      "num": 39,
+      "label": "归属·B39-NOI4级"
     },
     {
-      "id": "K54",
+      "id": "K6",
       "sec": "入门",
       "sub": "数据结构",
       "title": "二叉树的定义与基本性质",
       "level": 3,
       "phase": "B",
       "pre": [
-        "K53"
+        "K5"
       ],
-      "problems": [],
-      "num": 58,
-      "label": "归属·B58-NOI3级"
+      "problems": [
+        {
+          "pid": "P1996",
+          "name": "约瑟夫问题",
+          "difficulty": 2
+        },
+        {
+          "pid": "B3630",
+          "name": "排队顺序",
+          "difficulty": 2
+        },
+        {
+          "pid": "B3631",
+          "name": "单向链表",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1106",
+          "name": "删数问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1160",
+          "name": "队列安排",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1878",
+          "name": "舞蹈课",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2201",
+          "name": "数列编辑器",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2776",
+          "name": "[SDOI2007] 小组队列",
+          "difficulty": 3
+        },
+        {
+          "pid": "B4324",
+          "name": "【模板】双向链表",
+          "difficulty": 3
+        },
+        {
+          "pid": "B4533",
+          "name": "[信息与未来 2026] 旅行计划",
+          "difficulty": 3
+        }
+      ],
+      "num": 24,
+      "label": "归属·B24-NOI3级"
     },
     {
-      "id": "K55",
+      "id": "K7",
       "sec": "入门",
       "sub": "数据结构",
       "title": "二叉树的表示与存储",
       "level": 4,
       "phase": "B",
       "pre": [
-        "K54"
+        "K6"
       ],
-      "problems": [],
-      "num": 73,
-      "label": "归属·B73-NOI4级"
+      "problems": [
+        {
+          "pid": "P1996",
+          "name": "约瑟夫问题",
+          "difficulty": 2
+        },
+        {
+          "pid": "B3630",
+          "name": "排队顺序",
+          "difficulty": 2
+        },
+        {
+          "pid": "B3631",
+          "name": "单向链表",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1106",
+          "name": "删数问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1160",
+          "name": "队列安排",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1878",
+          "name": "舞蹈课",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2201",
+          "name": "数列编辑器",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2776",
+          "name": "[SDOI2007] 小组队列",
+          "difficulty": 3
+        },
+        {
+          "pid": "B4324",
+          "name": "【模板】双向链表",
+          "difficulty": 3
+        },
+        {
+          "pid": "B4533",
+          "name": "[信息与未来 2026] 旅行计划",
+          "difficulty": 3
+        }
+      ],
+      "num": 40,
+      "label": "归属·B40-NOI4级"
     },
     {
-      "id": "K56",
+      "id": "K8",
       "sec": "入门",
       "sub": "数据结构",
       "title": "二叉树的前序、中序、后序遍历",
       "level": 4,
       "phase": "B",
       "pre": [
-        "K55"
+        "K7"
       ],
-      "problems": [],
-      "num": 74,
-      "label": "归属·B74-NOI4级"
+      "problems": [
+        {
+          "pid": "P1996",
+          "name": "约瑟夫问题",
+          "difficulty": 2
+        },
+        {
+          "pid": "B3630",
+          "name": "排队顺序",
+          "difficulty": 2
+        },
+        {
+          "pid": "B3631",
+          "name": "单向链表",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1106",
+          "name": "删数问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1160",
+          "name": "队列安排",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1878",
+          "name": "舞蹈课",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2201",
+          "name": "数列编辑器",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2776",
+          "name": "[SDOI2007] 小组队列",
+          "difficulty": 3
+        },
+        {
+          "pid": "B4324",
+          "name": "【模板】双向链表",
+          "difficulty": 3
+        },
+        {
+          "pid": "B4533",
+          "name": "[信息与未来 2026] 旅行计划",
+          "difficulty": 3
+        }
+      ],
+      "num": 41,
+      "label": "归属·B41-NOI4级"
     },
     {
-      "id": "K57",
+      "id": "K9",
       "sec": "入门",
       "sub": "数据结构",
       "title": "完全二叉树的定义与数组表示",
       "level": 4,
       "phase": "B",
       "pre": [
-        "K56"
+        "K8"
       ],
-      "problems": [],
-      "num": 75,
-      "label": "归属·B75-NOI4级"
+      "problems": [
+        {
+          "pid": "B2105",
+          "name": "矩阵乘法",
+          "difficulty": 2
+        },
+        {
+          "pid": "B3662",
+          "name": "[语言月赛202209] 山峰",
+          "difficulty": 2
+        },
+        {
+          "pid": "B3672",
+          "name": "[语言月赛202210] 图书新编",
+          "difficulty": 2
+        },
+        {
+          "pid": "B3702",
+          "name": "[语言月赛202301] 华小科的旅行开始了",
+          "difficulty": 2
+        },
+        {
+          "pid": "B3708",
+          "name": "[语言月赛 202302] 神树大人挥动魔杖",
+          "difficulty": 2
+        },
+        {
+          "pid": "B3711",
+          "name": "[语言月赛202302] 惊蛰",
+          "difficulty": 2
+        },
+        {
+          "pid": "B3768",
+          "name": "[语言月赛202305] 独行",
+          "difficulty": 2
+        },
+        {
+          "pid": "B3798",
+          "name": "[NICA #1] 梦熊培养计划",
+          "difficulty": 2
+        },
+        {
+          "pid": "B3712",
+          "name": "[语言月赛202302] 大碗宽面",
+          "difficulty": 3
+        },
+        {
+          "pid": "B3747",
+          "name": "[语言月赛202304] 扶苏与 1",
+          "difficulty": 3
+        }
+      ],
+      "num": 42,
+      "label": "归属·B42-NOI4级"
     },
     {
-      "id": "K58",
+      "id": "K10",
       "sec": "入门",
       "sub": "数据结构",
       "title": "哈夫曼树与哈夫曼编码",
       "level": 4,
       "phase": "B",
       "pre": [
-        "K57"
+        "K9"
       ],
-      "problems": [],
-      "num": 76,
-      "label": "归属·B76-NOI4级"
+      "problems": [
+        {
+          "pid": "P1996",
+          "name": "约瑟夫问题",
+          "difficulty": 2
+        },
+        {
+          "pid": "B3630",
+          "name": "排队顺序",
+          "difficulty": 2
+        },
+        {
+          "pid": "B3631",
+          "name": "单向链表",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1106",
+          "name": "删数问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1160",
+          "name": "队列安排",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1878",
+          "name": "舞蹈课",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2201",
+          "name": "数列编辑器",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2776",
+          "name": "[SDOI2007] 小组队列",
+          "difficulty": 3
+        },
+        {
+          "pid": "B4324",
+          "name": "【模板】双向链表",
+          "difficulty": 3
+        },
+        {
+          "pid": "B4533",
+          "name": "[信息与未来 2026] 旅行计划",
+          "difficulty": 3
+        }
+      ],
+      "num": 25,
+      "label": "归属·B25-NOI4级"
     },
     {
-      "id": "K59",
+      "id": "K11",
       "sec": "入门",
       "sub": "数据结构",
       "title": "二叉搜索树的定义与构造",
       "level": 4,
       "phase": "B",
       "pre": [
-        "K58"
+        "K10"
       ],
       "problems": [
         {
@@ -1271,6 +860,11 @@ window.AKIOI_SYLLABUS = {
         {
           "pid": "P1827",
           "name": "[USACO3.4] 美国血统 American Heritage",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1190",
+          "name": "[NOIP 2010 普及组] 接水问题",
           "difficulty": 2
         },
         {
@@ -1309,6 +903,51 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 3
         },
         {
+          "pid": "P1112",
+          "name": "波浪数",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1416",
+          "name": "攻击火星",
+          "difficulty": 3
+        },
+        {
+          "pid": "B3675",
+          "name": "[语言月赛202210] 军训",
+          "difficulty": 3
+        },
+        {
+          "pid": "B3747",
+          "name": "[语言月赛202304] 扶苏与 1",
+          "difficulty": 3
+        },
+        {
+          "pid": "B3753",
+          "name": "[信息与未来 2019] 堆栈计算机",
+          "difficulty": 3
+        },
+        {
+          "pid": "B3755",
+          "name": "[信息与未来 2019] 方格覆盖",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3951",
+          "name": "[NOIP 2017 提高组] 小凯的疑惑",
+          "difficulty": 3
+        },
+        {
+          "pid": "B4162",
+          "name": "[BCSP-X 2024 12 月初中组] 稳定原子",
+          "difficulty": 3
+        },
+        {
+          "pid": "B4164",
+          "name": "[BCSP-X 2024 12 月初中组] 末日塔后传",
+          "difficulty": 3
+        },
+        {
           "pid": "P4799",
           "name": "[CEOI 2015] 世界冰球锦标赛 (Day2)",
           "difficulty": 4
@@ -1324,86 +963,341 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 5
         }
       ],
-      "num": 77,
-      "label": "归属·B77-NOI4级"
+      "num": 26,
+      "label": "归属·B26-NOI4级"
     },
     {
-      "id": "K60",
+      "id": "K12",
       "sec": "入门",
       "sub": "数据结构",
       "title": "图的定义与相关概念",
       "level": 3,
       "phase": "B",
       "pre": [
-        "K59"
+        "K11"
       ],
-      "problems": [],
-      "num": 59,
-      "label": "归属·B59-NOI3级"
+      "problems": [
+        {
+          "pid": "P1996",
+          "name": "约瑟夫问题",
+          "difficulty": 2
+        },
+        {
+          "pid": "B3630",
+          "name": "排队顺序",
+          "difficulty": 2
+        },
+        {
+          "pid": "B3631",
+          "name": "单向链表",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1106",
+          "name": "删数问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1160",
+          "name": "队列安排",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1878",
+          "name": "舞蹈课",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2201",
+          "name": "数列编辑器",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2776",
+          "name": "[SDOI2007] 小组队列",
+          "difficulty": 3
+        },
+        {
+          "pid": "B4324",
+          "name": "【模板】双向链表",
+          "difficulty": 3
+        },
+        {
+          "pid": "B4533",
+          "name": "[信息与未来 2026] 旅行计划",
+          "difficulty": 3
+        }
+      ],
+      "num": 11,
+      "label": "归属·B11-NOI3级"
     },
     {
-      "id": "K61",
+      "id": "K13",
       "sec": "入门",
       "sub": "数据结构",
       "title": "邻接矩阵",
       "level": 4,
       "phase": "B",
       "pre": [
-        "K60"
+        "K12"
       ],
-      "problems": [],
-      "num": 78,
-      "label": "归属·B78-NOI4级"
+      "problems": [
+        {
+          "pid": "P1996",
+          "name": "约瑟夫问题",
+          "difficulty": 2
+        },
+        {
+          "pid": "B3630",
+          "name": "排队顺序",
+          "difficulty": 2
+        },
+        {
+          "pid": "B3631",
+          "name": "单向链表",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1106",
+          "name": "删数问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1160",
+          "name": "队列安排",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1878",
+          "name": "舞蹈课",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2201",
+          "name": "数列编辑器",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2776",
+          "name": "[SDOI2007] 小组队列",
+          "difficulty": 3
+        },
+        {
+          "pid": "B4324",
+          "name": "【模板】双向链表",
+          "difficulty": 3
+        },
+        {
+          "pid": "B4533",
+          "name": "[信息与未来 2026] 旅行计划",
+          "difficulty": 3
+        }
+      ],
+      "num": 27,
+      "label": "归属·B27-NOI4级"
     },
     {
-      "id": "K62",
+      "id": "K14",
       "sec": "入门",
       "sub": "数据结构",
       "title": "邻接表",
       "level": 4,
       "phase": "B",
       "pre": [
-        "K61"
+        "K13"
       ],
-      "problems": [],
-      "num": 79,
-      "label": "归属·B79-NOI4级"
+      "problems": [
+        {
+          "pid": "P1996",
+          "name": "约瑟夫问题",
+          "difficulty": 2
+        },
+        {
+          "pid": "B3630",
+          "name": "排队顺序",
+          "difficulty": 2
+        },
+        {
+          "pid": "B3631",
+          "name": "单向链表",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1106",
+          "name": "删数问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1160",
+          "name": "队列安排",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1878",
+          "name": "舞蹈课",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2201",
+          "name": "数列编辑器",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2776",
+          "name": "[SDOI2007] 小组队列",
+          "difficulty": 3
+        },
+        {
+          "pid": "B4324",
+          "name": "【模板】双向链表",
+          "difficulty": 3
+        },
+        {
+          "pid": "B4533",
+          "name": "[信息与未来 2026] 旅行计划",
+          "difficulty": 3
+        }
+      ],
+      "num": 28,
+      "label": "归属·B28-NOI4级"
     },
     {
-      "id": "K63",
+      "id": "K15",
       "sec": "入门",
       "sub": "算法",
       "title": "算法概念",
       "level": 1,
       "phase": "B",
       "pre": [],
-      "problems": [],
-      "num": 19,
-      "label": "归属·B19-NOI1级"
+      "problems": [
+        {
+          "pid": "P1396",
+          "name": "营救",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1612",
+          "name": "[yLOI2018] 树上的链",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1816",
+          "name": "忠诚",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3083",
+          "name": "[USACO13OPEN] Luxury River Cruise S",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3252",
+          "name": "[JLOI2012] 树",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3865",
+          "name": "【模板】ST 表 & RMQ 问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P4403",
+          "name": "[BJWC2008] 秦腾与教学评估",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1198",
+          "name": "[JSOI2008] 最大数",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1613",
+          "name": "跑路",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1962",
+          "name": "斐波那契数列",
+          "difficulty": 4
+        }
+      ],
+      "num": 1,
+      "label": "归属·B1-NOI1级"
     },
     {
-      "id": "K64",
+      "id": "K16",
       "sec": "入门",
       "sub": "算法",
       "title": "算法的自然语言、流程图与伪代码描述",
       "level": 2,
       "phase": "B",
       "pre": [
-        "K63"
+        "K15"
       ],
-      "problems": [],
-      "num": 44,
-      "label": "归属·B44-NOI2级"
+      "problems": [
+        {
+          "pid": "P1396",
+          "name": "营救",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1612",
+          "name": "[yLOI2018] 树上的链",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1816",
+          "name": "忠诚",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3083",
+          "name": "[USACO13OPEN] Luxury River Cruise S",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3252",
+          "name": "[JLOI2012] 树",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3865",
+          "name": "【模板】ST 表 & RMQ 问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P4403",
+          "name": "[BJWC2008] 秦腾与教学评估",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1198",
+          "name": "[JSOI2008] 最大数",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1613",
+          "name": "跑路",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1962",
+          "name": "斐波那契数列",
+          "difficulty": 4
+        }
+      ],
+      "num": 7,
+      "label": "归属·B7-NOI2级"
     },
     {
-      "id": "K65",
+      "id": "K17",
       "sec": "入门",
       "sub": "算法",
       "title": "枚举法",
       "level": 1,
       "phase": "B",
       "pre": [
-        "K64"
+        "K16"
       ],
       "problems": [
         {
@@ -1497,6 +1391,41 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 3
         },
         {
+          "pid": "P1396",
+          "name": "营救",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1612",
+          "name": "[yLOI2018] 树上的链",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1816",
+          "name": "忠诚",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3083",
+          "name": "[USACO13OPEN] Luxury River Cruise S",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3252",
+          "name": "[JLOI2012] 树",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3865",
+          "name": "【模板】ST 表 & RMQ 问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P4403",
+          "name": "[BJWC2008] 秦腾与教学评估",
+          "difficulty": 3
+        },
+        {
           "pid": "P2315",
           "name": "[HNOI2005] 数三角形",
           "difficulty": 4
@@ -1517,23 +1446,38 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 4
         },
         {
+          "pid": "P1198",
+          "name": "[JSOI2008] 最大数",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1613",
+          "name": "跑路",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1962",
+          "name": "斐波那契数列",
+          "difficulty": 4
+        },
+        {
           "pid": "AT_agc012_e",
           "name": "[AGC012E] Camel and Oases",
           "difficulty": 8
         }
       ],
-      "num": 20,
-      "label": "归属·B20-NOI1级"
+      "num": 2,
+      "label": "归属·B2-NOI1级"
     },
     {
-      "id": "K66",
+      "id": "K18",
       "sec": "入门",
       "sub": "算法",
       "title": "模拟法",
       "level": 1,
       "phase": "B",
       "pre": [
-        "K65"
+        "K17"
       ],
       "problems": [
         {
@@ -1572,6 +1516,11 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 2
         },
         {
+          "pid": "P9748",
+          "name": "[CSP-J 2023] 小苹果",
+          "difficulty": 2
+        },
+        {
           "pid": "P1518",
           "name": "[USACO2.4] 两只塔姆沃斯牛 The Tamworth Two",
           "difficulty": 3
@@ -1582,14 +1531,74 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 3
         },
         {
+          "pid": "P9750",
+          "name": "[CSP-J 2023] 一元二次方程",
+          "difficulty": 3
+        },
+        {
           "pid": "P4387",
           "name": "【深基15.习9】验证栈序列",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1396",
+          "name": "营救",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1612",
+          "name": "[yLOI2018] 树上的链",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1816",
+          "name": "忠诚",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3083",
+          "name": "[USACO13OPEN] Luxury River Cruise S",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3252",
+          "name": "[JLOI2012] 树",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3865",
+          "name": "【模板】ST 表 & RMQ 问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P4403",
+          "name": "[BJWC2008] 秦腾与教学评估",
           "difficulty": 3
         },
         {
           "pid": "P1185",
           "name": "绘制二叉树",
           "difficulty": 4
+        },
+        {
+          "pid": "P1198",
+          "name": "[JSOI2008] 最大数",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1613",
+          "name": "跑路",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1962",
+          "name": "斐波那契数列",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1448",
+          "name": "[NOI1998] 围巾裁剪",
+          "difficulty": 5
         },
         {
           "pid": "P9754",
@@ -1602,18 +1611,18 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 7
         }
       ],
-      "num": 21,
-      "label": "归属·B21-NOI1级"
+      "num": 3,
+      "label": "归属·B3-NOI1级"
     },
     {
-      "id": "K67",
+      "id": "K19",
       "sec": "入门",
       "sub": "算法",
       "title": "贪心法",
       "level": 3,
       "phase": "B",
       "pre": [
-        "K66"
+        "K18"
       ],
       "problems": [
         {
@@ -1634,6 +1643,11 @@ window.AKIOI_SYLLABUS = {
         {
           "pid": "P5639",
           "name": "【CSGRound2】守序者的尊严",
+          "difficulty": 2
+        },
+        {
+          "pid": "P5514",
+          "name": "[MtOI2019] 永夜的报应",
           "difficulty": 2
         },
         {
@@ -1667,8 +1681,63 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 3
         },
         {
+          "pid": "P1396",
+          "name": "营救",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1612",
+          "name": "[yLOI2018] 树上的链",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1816",
+          "name": "忠诚",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3083",
+          "name": "[USACO13OPEN] Luxury River Cruise S",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3252",
+          "name": "[JLOI2012] 树",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3865",
+          "name": "【模板】ST 表 & RMQ 问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P4403",
+          "name": "[BJWC2008] 秦腾与教学评估",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2114",
+          "name": "[NOI2014] 起床困难综合症",
+          "difficulty": 4
+        },
+        {
           "pid": "P1686",
           "name": "挑战",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1198",
+          "name": "[JSOI2008] 最大数",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1613",
+          "name": "跑路",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1962",
+          "name": "斐波那契数列",
           "difficulty": 4
         },
         {
@@ -1682,9 +1751,19 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 5
         },
         {
+          "pid": "P2675",
+          "name": "《瞿葩的数字游戏》T3-三角圣地",
+          "difficulty": 5
+        },
+        {
           "pid": "P3615",
           "name": "[JOISC 2016] 如厕计划 / Toilets",
           "difficulty": 6
+        },
+        {
+          "pid": "P17091",
+          "name": "『lnOI-R1』三十四万一千七百九十九",
+          "difficulty": 7
         },
         {
           "pid": "P9499",
@@ -1692,18 +1771,18 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 8
         }
       ],
-      "num": 60,
-      "label": "归属·B60-NOI3级"
+      "num": 12,
+      "label": "归属·B12-NOI3级"
     },
     {
-      "id": "K68",
+      "id": "K20",
       "sec": "入门",
       "sub": "算法",
       "title": "递推法",
       "level": 3,
       "phase": "B",
       "pre": [
-        "K67"
+        "K19"
       ],
       "problems": [
         {
@@ -1742,8 +1821,58 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 3
         },
         {
+          "pid": "P1396",
+          "name": "营救",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1612",
+          "name": "[yLOI2018] 树上的链",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1816",
+          "name": "忠诚",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3083",
+          "name": "[USACO13OPEN] Luxury River Cruise S",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3252",
+          "name": "[JLOI2012] 树",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3865",
+          "name": "【模板】ST 表 & RMQ 问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P4403",
+          "name": "[BJWC2008] 秦腾与教学评估",
+          "difficulty": 3
+        },
+        {
           "pid": "P4059",
           "name": "[Code+#1] 找爸爸",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1198",
+          "name": "[JSOI2008] 最大数",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1613",
+          "name": "跑路",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1962",
+          "name": "斐波那契数列",
           "difficulty": 4
         },
         {
@@ -1757,32 +1886,123 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 5
         }
       ],
-      "num": 61,
-      "label": "归属·B61-NOI3级"
+      "num": 14,
+      "label": "归属·B14-NOI3级"
     },
     {
-      "id": "K69",
+      "id": "K21",
       "sec": "入门",
       "sub": "算法",
       "title": "递归法",
       "level": 4,
       "phase": "B",
       "pre": [
-        "K68"
+        "K20"
       ],
-      "problems": [],
-      "num": 80,
-      "label": "归属·B80-NOI4级"
+      "problems": [
+        {
+          "pid": "P4924",
+          "name": "[1007] 魔法少女小Scarlet",
+          "difficulty": 2
+        },
+        {
+          "pid": "P2089",
+          "name": "烤鸡",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1305",
+          "name": "新二叉树",
+          "difficulty": 2
+        },
+        {
+          "pid": "P2239",
+          "name": "[NOIP 2014 普及组] 螺旋矩阵",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1016",
+          "name": "[NOIP 1999 普及组/提高组] 旅行家的预算",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1309",
+          "name": "[NOIP 2011 普及组] 瑞士轮",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1259",
+          "name": "黑白棋子的移动",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1396",
+          "name": "营救",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1612",
+          "name": "[yLOI2018] 树上的链",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1816",
+          "name": "忠诚",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3083",
+          "name": "[USACO13OPEN] Luxury River Cruise S",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3252",
+          "name": "[JLOI2012] 树",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3865",
+          "name": "【模板】ST 表 & RMQ 问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P4403",
+          "name": "[BJWC2008] 秦腾与教学评估",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1541",
+          "name": "[NOIP 2010 提高组] 乌龟棋",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1198",
+          "name": "[JSOI2008] 最大数",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1613",
+          "name": "跑路",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1962",
+          "name": "斐波那契数列",
+          "difficulty": 4
+        }
+      ],
+      "num": 29,
+      "label": "归属·B29-NOI4级"
     },
     {
-      "id": "K70",
+      "id": "K22",
       "sec": "入门",
       "sub": "算法",
       "title": "二分法",
       "level": 4,
       "phase": "B",
       "pre": [
-        "K69"
+        "K21"
       ],
       "problems": [
         {
@@ -1861,6 +2081,41 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 3
         },
         {
+          "pid": "P1396",
+          "name": "营救",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1612",
+          "name": "[yLOI2018] 树上的链",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1816",
+          "name": "忠诚",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3083",
+          "name": "[USACO13OPEN] Luxury River Cruise S",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3252",
+          "name": "[JLOI2012] 树",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3865",
+          "name": "【模板】ST 表 & RMQ 问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P4403",
+          "name": "[BJWC2008] 秦腾与教学评估",
+          "difficulty": 3
+        },
+        {
           "pid": "P7075",
           "name": "[CSP-S 2020] 儒略日",
           "difficulty": 4
@@ -1876,25 +2131,90 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 4
         },
         {
+          "pid": "P1198",
+          "name": "[JSOI2008] 最大数",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1613",
+          "name": "跑路",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1962",
+          "name": "斐波那契数列",
+          "difficulty": 4
+        },
+        {
           "pid": "CF912E",
           "name": "Prime Gift",
           "difficulty": 7
         }
       ],
-      "num": 81,
-      "label": "归属·B81-NOI4级"
+      "num": 30,
+      "label": "归属·B30-NOI4级"
     },
     {
-      "id": "K71",
+      "id": "K23",
       "sec": "入门",
       "sub": "算法",
       "title": "倍增法",
       "level": 4,
       "phase": "B",
       "pre": [
-        "K70"
+        "K22"
       ],
       "problems": [
+        {
+          "pid": "P1396",
+          "name": "营救",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1612",
+          "name": "[yLOI2018] 树上的链",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1816",
+          "name": "忠诚",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3083",
+          "name": "[USACO13OPEN] Luxury River Cruise S",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3252",
+          "name": "[JLOI2012] 树",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3865",
+          "name": "【模板】ST 表 & RMQ 问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P4403",
+          "name": "[BJWC2008] 秦腾与教学评估",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1198",
+          "name": "[JSOI2008] 最大数",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1613",
+          "name": "跑路",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1962",
+          "name": "斐波那契数列",
+          "difficulty": 4
+        },
         {
           "pid": "P4155",
           "name": "[SCOI2015] 国旗计划",
@@ -1911,18 +2231,18 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 8
         }
       ],
-      "num": 82,
-      "label": "归属·B82-NOI4级"
+      "num": 31,
+      "label": "归属·B31-NOI4级"
     },
     {
-      "id": "K72",
+      "id": "K24",
       "sec": "入门",
       "sub": "算法",
       "title": "前缀和",
       "level": 3,
       "phase": "B",
       "pre": [
-        "K71"
+        "K23"
       ],
       "problems": [
         {
@@ -1948,6 +2268,21 @@ window.AKIOI_SYLLABUS = {
         {
           "pid": "P9749",
           "name": "[CSP-J 2023] 公路",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1147",
+          "name": "连续正整数和",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1387",
+          "name": "最大正方形",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1569",
+          "name": "[USACO11FEB] Generic Cow Protests",
           "difficulty": 2
         },
         {
@@ -2006,6 +2341,21 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 3
         },
         {
+          "pid": "P1083",
+          "name": "[NOIP 2012 提高组] 借教室",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1114",
+          "name": "“非常男女”计划",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1191",
+          "name": "矩形",
+          "difficulty": 3
+        },
+        {
           "pid": "P2119",
           "name": "[NOIP 2016 普及组] 魔法阵",
           "difficulty": 4
@@ -2036,18 +2386,18 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 5
         }
       ],
-      "num": 62,
-      "label": "归属·B62-NOI3级"
+      "num": 15,
+      "label": "归属·B15-NOI3级"
     },
     {
-      "id": "K73",
+      "id": "K25",
       "sec": "入门",
       "sub": "算法",
       "title": "差分",
       "level": 4,
       "phase": "B",
       "pre": [
-        "K72"
+        "K24"
       ],
       "problems": [
         {
@@ -2081,6 +2431,51 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 3
         },
         {
+          "pid": "P1250",
+          "name": "种树",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1645",
+          "name": "序列",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1960",
+          "name": "[JOI 2007 Final] 郁闷的记者",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1986",
+          "name": "元旦晚会",
+          "difficulty": 3
+        },
+        {
+          "pid": "P6145",
+          "name": "[USACO20FEB] Timeline G",
+          "difficulty": 3
+        },
+        {
+          "pid": "P10934",
+          "name": "西瓜种植",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1672",
+          "name": "[USACO05FEB] Feed Accounting S",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1969",
+          "name": "[NOIP 2013 提高组] 积木大赛",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2420",
+          "name": "让我们异或吧",
+          "difficulty": 3
+        },
+        {
           "pid": "P2882",
           "name": "[USACO07MAR] Face The Right Way G",
           "difficulty": 4
@@ -2111,18 +2506,18 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 5
         }
       ],
-      "num": 83,
-      "label": "归属·B83-NOI4级"
+      "num": 32,
+      "label": "归属·B32-NOI4级"
     },
     {
-      "id": "K74",
+      "id": "K26",
       "sec": "入门",
       "sub": "算法",
       "title": "高精度加法与减法",
       "level": 4,
       "phase": "B",
       "pre": [
-        "K73"
+        "K25"
       ],
       "problems": [
         {
@@ -2191,6 +2586,31 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 3
         },
         {
+          "pid": "P1037",
+          "name": "[NOIP 2002 普及组] 产生数",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1517",
+          "name": "[ECNA 1988] 高精求小数幂",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1602",
+          "name": "Sramoc 问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1609",
+          "name": "最小回文数",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2030",
+          "name": "遥控车",
+          "difficulty": 3
+        },
+        {
           "pid": "P2529",
           "name": "[SHOI2001] 击鼓传花",
           "difficulty": 4
@@ -2203,6 +2623,11 @@ window.AKIOI_SYLLABUS = {
         {
           "pid": "P1982",
           "name": "[NOIP 2013 普及组] 小朋友的数字",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1005",
+          "name": "[NOIP 2007 提高组] 矩阵取数游戏",
           "difficulty": 4
         },
         {
@@ -2231,32 +2656,83 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 7
         }
       ],
-      "num": 84,
-      "label": "归属·B84-NOI4级"
+      "num": 33,
+      "label": "归属·B33-NOI4级"
     },
     {
-      "id": "K75",
+      "id": "K27",
       "sec": "入门",
       "sub": "算法",
       "title": "高精度乘法与除法",
       "level": 4,
       "phase": "B",
       "pre": [
-        "K74"
+        "K26"
       ],
-      "problems": [],
-      "num": 85,
-      "label": "归属·B85-NOI4级"
+      "problems": [
+        {
+          "pid": "P1037",
+          "name": "[NOIP 2002 普及组] 产生数",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1045",
+          "name": "[NOIP 2003 普及组] 麦森数",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1096",
+          "name": "[NOIP 2007 普及组] Hanoi 双塔问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1249",
+          "name": "最大乘积",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1517",
+          "name": "[ECNA 1988] 高精求小数幂",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1602",
+          "name": "Sramoc 问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1609",
+          "name": "最小回文数",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2005",
+          "name": "A/B Problem II",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2030",
+          "name": "遥控车",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1005",
+          "name": "[NOIP 2007 提高组] 矩阵取数游戏",
+          "difficulty": 4
+        }
+      ],
+      "num": 34,
+      "label": "归属·B34-NOI4级"
     },
     {
-      "id": "K76",
+      "id": "K28",
       "sec": "入门",
       "sub": "算法",
       "title": "排序的基本概念与冒泡、选择、插入排序",
       "level": 3,
       "phase": "B",
       "pre": [
-        "K75"
+        "K27"
       ],
       "problems": [
         {
@@ -2282,6 +2758,11 @@ window.AKIOI_SYLLABUS = {
         {
           "pid": "P1177",
           "name": "【模板】排序",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1059",
+          "name": "[NOIP 2006 普及组] 明明的随机数",
           "difficulty": 2
         },
         {
@@ -2395,6 +2876,41 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 3
         },
         {
+          "pid": "P1396",
+          "name": "营救",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1612",
+          "name": "[yLOI2018] 树上的链",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1816",
+          "name": "忠诚",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3083",
+          "name": "[USACO13OPEN] Luxury River Cruise S",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3252",
+          "name": "[JLOI2012] 树",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3865",
+          "name": "【模板】ST 表 & RMQ 问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P4403",
+          "name": "[BJWC2008] 秦腾与教学评估",
+          "difficulty": 3
+        },
+        {
           "pid": "P11232",
           "name": "[CSP-S 2024] 超速检测",
           "difficulty": 4
@@ -2410,6 +2926,21 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 4
         },
         {
+          "pid": "P1198",
+          "name": "[JSOI2008] 最大数",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1613",
+          "name": "跑路",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1962",
+          "name": "斐波那契数列",
+          "difficulty": 4
+        },
+        {
           "pid": "P2123",
           "name": "皇后游戏",
           "difficulty": 5
@@ -2420,32 +2951,83 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 5
         }
       ],
-      "num": 63,
-      "label": "归属·B63-NOI3级"
+      "num": 16,
+      "label": "归属·B16-NOI3级"
     },
     {
-      "id": "K77",
+      "id": "K29",
       "sec": "入门",
       "sub": "算法",
       "title": "计数排序",
       "level": 3,
       "phase": "B",
       "pre": [
-        "K76"
+        "K28"
       ],
-      "problems": [],
-      "num": 64,
-      "label": "归属·B64-NOI3级"
+      "problems": [
+        {
+          "pid": "P1396",
+          "name": "营救",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1612",
+          "name": "[yLOI2018] 树上的链",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1816",
+          "name": "忠诚",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3083",
+          "name": "[USACO13OPEN] Luxury River Cruise S",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3252",
+          "name": "[JLOI2012] 树",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3865",
+          "name": "【模板】ST 表 & RMQ 问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P4403",
+          "name": "[BJWC2008] 秦腾与教学评估",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1198",
+          "name": "[JSOI2008] 最大数",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1613",
+          "name": "跑路",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1962",
+          "name": "斐波那契数列",
+          "difficulty": 4
+        }
+      ],
+      "num": 17,
+      "label": "归属·B17-NOI3级"
     },
     {
-      "id": "K78",
+      "id": "K30",
       "sec": "入门",
       "sub": "算法",
       "title": "深度优先搜索",
       "level": 5,
       "phase": "P",
       "pre": [
-        "K77"
+        "K29"
       ],
       "problems": [
         {
@@ -2464,6 +3046,11 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 2
         },
         {
+          "pid": "P2347",
+          "name": "[NOIP 1996 提高组] 砝码称重",
+          "difficulty": 2
+        },
+        {
           "pid": "P1049",
           "name": "[NOIP 2001 普及组] 装箱问题",
           "difficulty": 2
@@ -2479,8 +3066,58 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 3
         },
         {
+          "pid": "P1037",
+          "name": "[NOIP 2002 普及组] 产生数",
+          "difficulty": 3
+        },
+        {
           "pid": "P2602",
           "name": "[ZJOI2010] 数字计数",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1004",
+          "name": "[NOIP 2000 提高组] 方格取数",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1018",
+          "name": "[NOIP 2000 提高组] 乘积最大",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1043",
+          "name": "[NOIP 2003 普及组] 数字游戏",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1239",
+          "name": "计数器",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1341",
+          "name": "无序字母对",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1363",
+          "name": "幻象迷宫",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1378",
+          "name": "油滴扩展",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1433",
+          "name": "吃奶酪",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1470",
+          "name": "[IOI 1996 / USACO2.3] 最长前缀 Longest Prefix",
           "difficulty": 4
         },
         {
@@ -2494,18 +3131,18 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 6
         }
       ],
-      "num": 17,
-      "label": "归属·P17-NOI5级"
+      "num": 3,
+      "label": "归属·P3-NOI5级"
     },
     {
-      "id": "K79",
+      "id": "K31",
       "sec": "入门",
       "sub": "算法",
       "title": "广度优先搜索",
       "level": 5,
       "phase": "P",
       "pre": [
-        "K78"
+        "K30"
       ],
       "problems": [
         {
@@ -2559,65 +3196,263 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 4
         },
         {
+          "pid": "P1032",
+          "name": "[NOIP 2002 提高组] 字串变换（疑似错题）",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1126",
+          "name": "[CERC1996] 机器人搬重物",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1144",
+          "name": "最短路计数",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1225",
+          "name": "[CEOI 1999] 黑白棋游戏",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1363",
+          "name": "幻象迷宫",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1379",
+          "name": "八数码难题",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1606",
+          "name": "[USACO07FEB] Lilypad Pond G",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1613",
+          "name": "跑路",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1849",
+          "name": "[USACO12MAR] Tractor S",
+          "difficulty": 4
+        },
+        {
           "pid": "P1514",
           "name": "[NOIP 2010 提高组] 引水入城",
           "difficulty": 5
         }
       ],
-      "num": 18,
-      "label": "归属·P18-NOI5级"
+      "num": 4,
+      "label": "归属·P4-NOI5级"
     },
     {
-      "id": "K80",
+      "id": "K32",
       "sec": "入门",
       "sub": "算法",
       "title": "图的深度优先遍历与广度优先遍历",
       "level": 4,
       "phase": "B",
       "pre": [
-        "K79"
+        "K31"
       ],
-      "problems": [],
-      "num": 86,
-      "label": "归属·B86-NOI4级"
+      "problems": [
+        {
+          "pid": "P1396",
+          "name": "营救",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1612",
+          "name": "[yLOI2018] 树上的链",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1816",
+          "name": "忠诚",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3083",
+          "name": "[USACO13OPEN] Luxury River Cruise S",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3252",
+          "name": "[JLOI2012] 树",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3865",
+          "name": "【模板】ST 表 & RMQ 问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P4403",
+          "name": "[BJWC2008] 秦腾与教学评估",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1198",
+          "name": "[JSOI2008] 最大数",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1613",
+          "name": "跑路",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1962",
+          "name": "斐波那契数列",
+          "difficulty": 4
+        }
+      ],
+      "num": 35,
+      "label": "归属·B35-NOI4级"
     },
     {
-      "id": "K81",
+      "id": "K33",
       "sec": "入门",
       "sub": "算法",
       "title": "泛洪算法 Flood Fill",
       "level": 5,
       "phase": "P",
       "pre": [
-        "K80"
+        "K32"
       ],
-      "problems": [],
-      "num": 19,
-      "label": "归属·P19-NOI5级"
+      "problems": [
+        {
+          "pid": "P1396",
+          "name": "营救",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1612",
+          "name": "[yLOI2018] 树上的链",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1816",
+          "name": "忠诚",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3083",
+          "name": "[USACO13OPEN] Luxury River Cruise S",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3252",
+          "name": "[JLOI2012] 树",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3865",
+          "name": "【模板】ST 表 & RMQ 问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P4403",
+          "name": "[BJWC2008] 秦腾与教学评估",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1198",
+          "name": "[JSOI2008] 最大数",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1613",
+          "name": "跑路",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1962",
+          "name": "斐波那契数列",
+          "difficulty": 4
+        }
+      ],
+      "num": 5,
+      "label": "归属·P5-NOI5级"
     },
     {
-      "id": "K82",
+      "id": "K34",
       "sec": "入门",
       "sub": "算法",
       "title": "动态规划的基本思路与简单一维 DP",
       "level": 4,
       "phase": "B",
       "pre": [
-        "K81"
+        "K33"
       ],
-      "problems": [],
-      "num": 87,
-      "label": "归属·B87-NOI4级"
+      "problems": [
+        {
+          "pid": "P1019",
+          "name": "[NOIP 2000 提高组] 单词接龙（疑似错题）",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1025",
+          "name": "[NOIP 2001 提高组] 数的划分",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1057",
+          "name": "[NOIP 2008 普及组] 传球游戏",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1095",
+          "name": "[NOIP 2007 普及组] 守望者的逃离",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1103",
+          "name": "书本整理",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1107",
+          "name": "[BJWC2008] 雷涛的小猫",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1108",
+          "name": "[USACO99FALL] 低价购买",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1113",
+          "name": "[USACO02FEB] 杂务",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1122",
+          "name": "最大子树和",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1137",
+          "name": "旅行计划",
+          "difficulty": 3
+        }
+      ],
+      "num": 36,
+      "label": "归属·B36-NOI4级"
     },
     {
-      "id": "K83",
+      "id": "K35",
       "sec": "入门",
       "sub": "算法",
       "title": "简单背包类型动态规划",
       "level": 5,
       "phase": "P",
       "pre": [
-        "K82"
+        "K34"
       ],
       "problems": [
         {
@@ -2801,23 +3636,63 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 4
         },
         {
+          "pid": "P1021",
+          "name": "[NOIP 1999 提高组] 邮票面值设计（疑似错题）",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1064",
+          "name": "[NOIP 2006 提高组] 金明的预算方案",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1156",
+          "name": "[USACO01OPEN] 垃圾陷阱",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1273",
+          "name": "[CHCI 2002 Final Exam #2] 有线电视网",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1284",
+          "name": "[USACO02FEB] 三角形牧场",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1537",
+          "name": "[MCERC 1999] 弹珠",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1717",
+          "name": "钓鱼",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1759",
+          "name": "通天之潜水",
+          "difficulty": 4
+        },
+        {
           "pid": "P1858",
           "name": "多人背包",
           "difficulty": 5
         }
       ],
-      "num": 20,
-      "label": "归属·P20-NOI5级"
+      "num": 6,
+      "label": "归属·P6-NOI5级"
     },
     {
-      "id": "K84",
+      "id": "K36",
       "sec": "入门",
       "sub": "算法",
       "title": "简单区间类型动态规划",
       "level": 5,
       "phase": "P",
       "pre": [
-        "K83"
+        "K35"
       ],
       "problems": [
         {
@@ -2838,6 +3713,11 @@ window.AKIOI_SYLLABUS = {
         {
           "pid": "P1026",
           "name": "[NOIP 2001 提高组] 统计单词个数",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1880",
+          "name": "[NOI1995] 石子合并",
           "difficulty": 4
         },
         {
@@ -2891,6 +3771,31 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 4
         },
         {
+          "pid": "P1005",
+          "name": "[NOIP 2007 提高组] 矩阵取数游戏",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1043",
+          "name": "[NOIP 2003 普及组] 数字游戏",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1388",
+          "name": "算式",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1622",
+          "name": "释放囚犯",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1872",
+          "name": "回文串计数",
+          "difficulty": 4
+        },
+        {
           "pid": "CF607B",
           "name": "Zuma",
           "difficulty": 5
@@ -2906,142 +3811,646 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 6
         }
       ],
-      "num": 21,
-      "label": "归属·P21-NOI5级"
+      "num": 7,
+      "label": "归属·P7-NOI5级"
     },
     {
-      "id": "K85",
+      "id": "K37",
       "sec": "入门",
       "sub": "数学与其他",
       "title": "数与算术运算",
       "level": 1,
       "phase": "B",
       "pre": [],
-      "problems": [],
-      "num": 24,
-      "label": "归属·B24-NOI1级"
+      "problems": [
+        {
+          "pid": "P1161",
+          "name": "开灯",
+          "difficulty": 1
+        },
+        {
+          "pid": "P1615",
+          "name": "西游记公司",
+          "difficulty": 1
+        },
+        {
+          "pid": "P1015",
+          "name": "[NOIP 1999 普及组] 回文数",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1017",
+          "name": "[NOIP 2000 提高组] 进制转换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1062",
+          "name": "[NOIP 2006 普及组] 数列",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1100",
+          "name": "高低位交换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1143",
+          "name": "进制转换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1206",
+          "name": "[USACO1.2] 回文平方数 Palindromic Squares",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1207",
+          "name": "[USACO1.2] 双重回文数 Dual Palindromes",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1604",
+          "name": "B进制星球",
+          "difficulty": 2
+        }
+      ],
+      "num": 4,
+      "label": "归属·B4-NOI1级"
     },
     {
-      "id": "K86",
+      "id": "K38",
       "sec": "入门",
       "sub": "数学与其他",
       "title": "进制与进制转换",
       "level": 1,
       "phase": "B",
       "pre": [
-        "K85"
+        "K37"
       ],
-      "problems": [],
-      "num": 25,
-      "label": "归属·B25-NOI1级"
+      "problems": [
+        {
+          "pid": "P1161",
+          "name": "开灯",
+          "difficulty": 1
+        },
+        {
+          "pid": "P1615",
+          "name": "西游记公司",
+          "difficulty": 1
+        },
+        {
+          "pid": "P4282",
+          "name": "[AHOI2008] 计算器",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1015",
+          "name": "[NOIP 1999 普及组] 回文数",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1100",
+          "name": "高低位交换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1017",
+          "name": "[NOIP 2000 提高组] 进制转换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1062",
+          "name": "[NOIP 2006 普及组] 数列",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1143",
+          "name": "进制转换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1206",
+          "name": "[USACO1.2] 回文平方数 Palindromic Squares",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1207",
+          "name": "[USACO1.2] 双重回文数 Dual Palindromes",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1604",
+          "name": "B进制星球",
+          "difficulty": 2
+        },
+        {
+          "pid": "P2170",
+          "name": "选学霸",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2431",
+          "name": "正妹吃月饼",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1013",
+          "name": "[NOIP 1998 提高组] 进制位",
+          "difficulty": 4
+        },
+        {
+          "pid": "P4310",
+          "name": "绝世好题",
+          "difficulty": 4
+        },
+        {
+          "pid": "P3985",
+          "name": "不开心的金明",
+          "difficulty": 4
+        },
+        {
+          "pid": "P5304",
+          "name": "[GXOI/GZOI2019] 旅行者",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2851",
+          "name": "[USACO06DEC] The Fewest Coins G",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3807",
+          "name": "【模板】卢卡斯定理 / Lucas 定理",
+          "difficulty": 5
+        }
+      ],
+      "num": 5,
+      "label": "归属·B5-NOI1级"
     },
     {
-      "id": "K87",
+      "id": "K39",
       "sec": "入门",
       "sub": "数学与其他",
       "title": "初等代数与几何",
       "level": 1,
       "phase": "B",
       "pre": [
-        "K86"
+        "K38"
       ],
-      "problems": [],
-      "num": 26,
-      "label": "归属·B26-NOI1级"
+      "problems": [
+        {
+          "pid": "P1161",
+          "name": "开灯",
+          "difficulty": 1
+        },
+        {
+          "pid": "P1615",
+          "name": "西游记公司",
+          "difficulty": 1
+        },
+        {
+          "pid": "P1015",
+          "name": "[NOIP 1999 普及组] 回文数",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1017",
+          "name": "[NOIP 2000 提高组] 进制转换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1062",
+          "name": "[NOIP 2006 普及组] 数列",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1100",
+          "name": "高低位交换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1143",
+          "name": "进制转换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1206",
+          "name": "[USACO1.2] 回文平方数 Palindromic Squares",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1207",
+          "name": "[USACO1.2] 双重回文数 Dual Palindromes",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1604",
+          "name": "B进制星球",
+          "difficulty": 2
+        }
+      ],
+      "num": 6,
+      "label": "归属·B6-NOI1级"
     },
     {
-      "id": "K88",
+      "id": "K40",
       "sec": "入门",
       "sub": "数学与其他",
       "title": "整除、因数、质数与合数",
       "level": 3,
       "phase": "B",
       "pre": [
-        "K87"
+        "K39"
       ],
-      "problems": [],
-      "num": 65,
-      "label": "归属·B65-NOI3级"
+      "problems": [
+        {
+          "pid": "P1403",
+          "name": "[AHOI2005] 约数研究",
+          "difficulty": 2
+        },
+        {
+          "pid": "P13212",
+          "name": "[GCJ 2015 Qualification] Infinite House of Pancakes",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2261",
+          "name": "[CQOI2007] 余数求和",
+          "difficulty": 4
+        },
+        {
+          "pid": "P2424",
+          "name": "约数和",
+          "difficulty": 4
+        },
+        {
+          "pid": "P9611",
+          "name": "[CERC2019] Zeldain Garden",
+          "difficulty": 4
+        },
+        {
+          "pid": "P12021",
+          "name": "面包题",
+          "difficulty": 4
+        },
+        {
+          "pid": "P13009",
+          "name": "【MX-X13-T4】「KDOI-12」好胜是人的本能，功利是社会的本性。",
+          "difficulty": 4
+        },
+        {
+          "pid": "P13357",
+          "name": "[GDCPC 2024] Menji 和 gcd",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1390",
+          "name": "公约数的和",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1447",
+          "name": "[NOI2010] 能量采集",
+          "difficulty": 5
+        }
+      ],
+      "num": 20,
+      "label": "归属·B20-NOI3级"
     },
     {
-      "id": "K89",
+      "id": "K41",
       "sec": "入门",
       "sub": "数学与其他",
       "title": "取整与模运算",
       "level": 3,
       "phase": "B",
       "pre": [
-        "K88"
+        "K40"
       ],
-      "problems": [],
-      "num": 66,
-      "label": "归属·B66-NOI3级"
+      "problems": [
+        {
+          "pid": "P1161",
+          "name": "开灯",
+          "difficulty": 1
+        },
+        {
+          "pid": "P1615",
+          "name": "西游记公司",
+          "difficulty": 1
+        },
+        {
+          "pid": "P1015",
+          "name": "[NOIP 1999 普及组] 回文数",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1017",
+          "name": "[NOIP 2000 提高组] 进制转换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1062",
+          "name": "[NOIP 2006 普及组] 数列",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1100",
+          "name": "高低位交换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1143",
+          "name": "进制转换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1206",
+          "name": "[USACO1.2] 回文平方数 Palindromic Squares",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1207",
+          "name": "[USACO1.2] 双重回文数 Dual Palindromes",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1604",
+          "name": "B进制星球",
+          "difficulty": 2
+        }
+      ],
+      "num": 21,
+      "label": "归属·B21-NOI3级"
     },
     {
-      "id": "K90",
+      "id": "K42",
       "sec": "入门",
       "sub": "数学与其他",
       "title": "整数唯一分解定理",
       "level": 3,
       "phase": "B",
       "pre": [
-        "K89"
+        "K41"
       ],
-      "problems": [],
-      "num": 67,
-      "label": "归属·B67-NOI3级"
+      "problems": [
+        {
+          "pid": "P1161",
+          "name": "开灯",
+          "difficulty": 1
+        },
+        {
+          "pid": "P1615",
+          "name": "西游记公司",
+          "difficulty": 1
+        },
+        {
+          "pid": "P1015",
+          "name": "[NOIP 1999 普及组] 回文数",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1017",
+          "name": "[NOIP 2000 提高组] 进制转换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1062",
+          "name": "[NOIP 2006 普及组] 数列",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1100",
+          "name": "高低位交换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1143",
+          "name": "进制转换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1206",
+          "name": "[USACO1.2] 回文平方数 Palindromic Squares",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1207",
+          "name": "[USACO1.2] 双重回文数 Dual Palindromes",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1604",
+          "name": "B进制星球",
+          "difficulty": 2
+        }
+      ],
+      "num": 22,
+      "label": "归属·B22-NOI3级"
     },
     {
-      "id": "K91",
+      "id": "K43",
       "sec": "入门",
       "sub": "数学与其他",
       "title": "辗转相除法（欧几里得算法）",
       "level": 3,
       "phase": "B",
       "pre": [
-        "K90"
+        "K42"
       ],
-      "problems": [],
-      "num": 68,
-      "label": "归属·B68-NOI3级"
+      "problems": [
+        {
+          "pid": "P5179",
+          "name": "Fraction",
+          "difficulty": 6
+        },
+        {
+          "pid": "P5170",
+          "name": "【模板】类欧几里德算法",
+          "difficulty": 7
+        },
+        {
+          "pid": "P5171",
+          "name": "Earthquake",
+          "difficulty": 7
+        },
+        {
+          "pid": "P10667",
+          "name": "BZOJ2712 [Violet 2] 棒球",
+          "difficulty": 7
+        },
+        {
+          "pid": "P16098",
+          "name": "[ICPC 2019 NAIPC] It' s a Mod, Mod, Mod, Mod World",
+          "difficulty": 7
+        },
+        {
+          "pid": "P17239",
+          "name": "『STA - R10』雨落玫瑰",
+          "difficulty": 7
+        },
+        {
+          "pid": "P17616",
+          "name": "[Math+Girl×1] The Plain / Rectangle on Torus",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4433",
+          "name": "[COCI 2009/2010 #1] ALADIN",
+          "difficulty": 8
+        },
+        {
+          "pid": "P5172",
+          "name": "[清华集训 2014] Sum",
+          "difficulty": 8
+        },
+        {
+          "pid": "P7819",
+          "name": "[RC-05] Xor Matrix",
+          "difficulty": 8
+        }
+      ],
+      "num": 23,
+      "label": "归属·B23-NOI3级"
     },
     {
-      "id": "K92",
+      "id": "K44",
       "sec": "入门",
       "sub": "数学与其他",
       "title": "素数筛法：埃氏筛与线性筛",
       "level": 4,
       "phase": "B",
       "pre": [
-        "K91"
+        "K43"
       ],
-      "problems": [],
-      "num": 88,
-      "label": "归属·B88-NOI4级"
+      "problems": [
+        {
+          "pid": "P1161",
+          "name": "开灯",
+          "difficulty": 1
+        },
+        {
+          "pid": "P1615",
+          "name": "西游记公司",
+          "difficulty": 1
+        },
+        {
+          "pid": "P1015",
+          "name": "[NOIP 1999 普及组] 回文数",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1017",
+          "name": "[NOIP 2000 提高组] 进制转换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1062",
+          "name": "[NOIP 2006 普及组] 数列",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1100",
+          "name": "高低位交换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1143",
+          "name": "进制转换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1206",
+          "name": "[USACO1.2] 回文平方数 Palindromic Squares",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1207",
+          "name": "[USACO1.2] 双重回文数 Dual Palindromes",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1604",
+          "name": "B进制星球",
+          "difficulty": 2
+        }
+      ],
+      "num": 37,
+      "label": "归属·B37-NOI4级"
     },
     {
-      "id": "K93",
+      "id": "K45",
       "sec": "入门",
       "sub": "数学与其他",
       "title": "集合与加法、乘法原理",
       "level": 2,
       "phase": "B",
       "pre": [
-        "K92"
+        "K44"
       ],
-      "problems": [],
-      "num": 45,
-      "label": "归属·B45-NOI2级"
+      "problems": [
+        {
+          "pid": "P1161",
+          "name": "开灯",
+          "difficulty": 1
+        },
+        {
+          "pid": "P1615",
+          "name": "西游记公司",
+          "difficulty": 1
+        },
+        {
+          "pid": "P1015",
+          "name": "[NOIP 1999 普及组] 回文数",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1017",
+          "name": "[NOIP 2000 提高组] 进制转换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1062",
+          "name": "[NOIP 2006 普及组] 数列",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1100",
+          "name": "高低位交换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1143",
+          "name": "进制转换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1206",
+          "name": "[USACO1.2] 回文平方数 Palindromic Squares",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1207",
+          "name": "[USACO1.2] 双重回文数 Dual Palindromes",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1604",
+          "name": "B进制星球",
+          "difficulty": 2
+        }
+      ],
+      "num": 8,
+      "label": "归属·B8-NOI2级"
     },
     {
-      "id": "K94",
+      "id": "K46",
       "sec": "入门",
       "sub": "数学与其他",
       "title": "排列、组合与杨辉三角",
       "level": 4,
       "phase": "B",
       "pre": [
-        "K93"
+        "K45"
       ],
       "problems": [
         {
@@ -3053,279 +4462,318 @@ window.AKIOI_SYLLABUS = {
           "pid": "P2415",
           "name": "集合求和",
           "difficulty": 2
+        },
+        {
+          "pid": "P1313",
+          "name": "[NOIP 2011 提高组] 计算系数",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1350",
+          "name": "车的放置",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1680",
+          "name": "奇怪的分组",
+          "difficulty": 3
+        },
+        {
+          "pid": "B3901",
+          "name": "[NICA #3] 星空（Easy Version）",
+          "difficulty": 3
+        },
+        {
+          "pid": "P5239",
+          "name": "回忆京都",
+          "difficulty": 3
+        },
+        {
+          "pid": "P5520",
+          "name": "[yLOI2019] 青原樱",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1999",
+          "name": "高维正方体",
+          "difficulty": 4
+        },
+        {
+          "pid": "P2638",
+          "name": "安全系统",
+          "difficulty": 4
         }
       ],
-      "num": 89,
-      "label": "归属·B89-NOI4级"
+      "num": 38,
+      "label": "归属·B38-NOI4级"
     },
     {
-      "id": "K95",
+      "id": "K47",
       "sec": "入门",
       "sub": "数学与其他",
       "title": "ASCII 码",
       "level": 2,
       "phase": "B",
       "pre": [
-        "K94"
-      ],
-      "problems": [],
-      "num": 46,
-      "label": "归属·B46-NOI2级"
-    },
-    {
-      "id": "K96",
-      "sec": "提高",
-      "sub": "基础知识与编程环境",
-      "title": "Linux 文件与目录操作命令",
-      "level": 5,
-      "phase": "P",
-      "pre": [],
-      "problems": [],
-      "num": 22,
-      "label": "归属·P22-NOI5级"
-    },
-    {
-      "id": "K97",
-      "sec": "提高",
-      "sub": "基础知识与编程环境",
-      "title": "Linux 文本编辑工具",
-      "level": 5,
-      "phase": "P",
-      "pre": [
-        "K96"
-      ],
-      "problems": [],
-      "num": 23,
-      "label": "归属·P23-NOI5级"
-    },
-    {
-      "id": "K98",
-      "sec": "提高",
-      "sub": "基础知识与编程环境",
-      "title": "g++ 编译选项",
-      "level": 5,
-      "phase": "P",
-      "pre": [
-        "K97"
-      ],
-      "problems": [],
-      "num": 24,
-      "label": "归属·P24-NOI5级"
-    },
-    {
-      "id": "K99",
-      "sec": "提高",
-      "sub": "基础知识与编程环境",
-      "title": "time 命令与 GDB 调试",
-      "level": 5,
-      "phase": "P",
-      "pre": [
-        "K98"
-      ],
-      "problems": [],
-      "num": 25,
-      "label": "归属·P25-NOI5级"
-    },
-    {
-      "id": "K100",
-      "sec": "提高",
-      "sub": "C++ 程序设计",
-      "title": "类与成员函数、运算符重载",
-      "level": 6,
-      "phase": "P",
-      "pre": [],
-      "problems": [],
-      "num": 26,
-      "label": "归属·P26-NOI6级"
-    },
-    {
-      "id": "K101",
-      "sec": "提高",
-      "sub": "C++ 程序设计",
-      "title": "容器与迭代器",
-      "level": 5,
-      "phase": "P",
-      "pre": [
-        "K100"
-      ],
-      "problems": [],
-      "num": 1,
-      "label": "归属·P1-NOI5级"
-    },
-    {
-      "id": "K102",
-      "sec": "提高",
-      "sub": "C++ 程序设计",
-      "title": "pair 与 tuple",
-      "level": 5,
-      "phase": "P",
-      "pre": [
-        "K101"
-      ],
-      "problems": [],
-      "num": 2,
-      "label": "归属·P2-NOI5级"
-    },
-    {
-      "id": "K103",
-      "sec": "提高",
-      "sub": "C++ 程序设计",
-      "title": "set 与 multiset",
-      "level": 5,
-      "phase": "P",
-      "pre": [
-        "K102"
-      ],
-      "problems": [],
-      "num": 3,
-      "label": "归属·P3-NOI5级"
-    },
-    {
-      "id": "K104",
-      "sec": "提高",
-      "sub": "C++ 程序设计",
-      "title": "deque 与 priority_queue",
-      "level": 5,
-      "phase": "P",
-      "pre": [
-        "K103"
-      ],
-      "problems": [],
-      "num": 4,
-      "label": "归属·P4-NOI5级"
-    },
-    {
-      "id": "K105",
-      "sec": "提高",
-      "sub": "C++ 程序设计",
-      "title": "map 与 multimap",
-      "level": 5,
-      "phase": "P",
-      "pre": [
-        "K104"
-      ],
-      "problems": [],
-      "num": 5,
-      "label": "归属·P5-NOI5级"
-    },
-    {
-      "id": "K106",
-      "sec": "提高",
-      "sub": "C++ 程序设计",
-      "title": "bitset",
-      "level": 5,
-      "phase": "P",
-      "pre": [
-        "K105"
+        "K46"
       ],
       "problems": [
         {
-          "pid": "P2347",
-          "name": "[NOIP 1996 提高组] 砝码称重",
+          "pid": "P1161",
+          "name": "开灯",
+          "difficulty": 1
+        },
+        {
+          "pid": "P1615",
+          "name": "西游记公司",
+          "difficulty": 1
+        },
+        {
+          "pid": "P1015",
+          "name": "[NOIP 1999 普及组] 回文数",
           "difficulty": 2
         },
         {
-          "pid": "B3611",
-          "name": "【模板】传递闭包",
-          "difficulty": 3
+          "pid": "P1017",
+          "name": "[NOIP 2000 提高组] 进制转换",
+          "difficulty": 2
         },
         {
-          "pid": "P10944",
-          "name": "Going from u to v or from v to u?",
-          "difficulty": 3
+          "pid": "P1062",
+          "name": "[NOIP 2006 普及组] 数列",
+          "difficulty": 2
         },
         {
-          "pid": "P2170",
-          "name": "选学霸",
-          "difficulty": 3
+          "pid": "P1100",
+          "name": "高低位交换",
+          "difficulty": 2
         },
         {
-          "pid": "P2574",
-          "name": "XOR 的艺术",
-          "difficulty": 4
+          "pid": "P1143",
+          "name": "进制转换",
+          "difficulty": 2
         },
         {
-          "pid": "P1441",
-          "name": "砝码称重",
-          "difficulty": 4
+          "pid": "P1206",
+          "name": "[USACO1.2] 回文平方数 Palindromic Squares",
+          "difficulty": 2
         },
         {
-          "pid": "P7516",
-          "name": "[省选联考 2021 A/B 卷] 图函数",
-          "difficulty": 7
+          "pid": "P1207",
+          "name": "[USACO1.2] 双重回文数 Dual Palindromes",
+          "difficulty": 2
         },
         {
-          "pid": "P14537",
-          "name": "[OII 2025] 双色金字塔 / Piramide bicolore",
-          "difficulty": 7
+          "pid": "P1604",
+          "name": "B进制星球",
+          "difficulty": 2
         }
       ],
-      "num": 6,
-      "label": "归属·P6-NOI5级"
+      "num": 9,
+      "label": "归属·B9-NOI2级"
     },
     {
-      "id": "K107",
-      "sec": "提高",
-      "sub": "C++ 程序设计",
-      "title": "算法模板库常用函数",
-      "level": 5,
-      "phase": "P",
-      "pre": [
-        "K106"
-      ],
-      "problems": [],
-      "num": 7,
-      "label": "归属·P7-NOI5级"
-    },
-    {
-      "id": "K108",
+      "id": "K48",
       "sec": "提高",
       "sub": "数据结构",
       "title": "双端栈与双端队列",
       "level": 5,
       "phase": "P",
       "pre": [],
-      "problems": [],
+      "problems": [
+        {
+          "pid": "P1141",
+          "name": "01迷宫",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1323",
+          "name": "删数问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1346",
+          "name": "[CHCI 2002 Regional Competition Juniors] 电车",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1126",
+          "name": "[CERC1996] 机器人搬重物",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1849",
+          "name": "[USACO12MAR] Tractor S",
+          "difficulty": 4
+        },
+        {
+          "pid": "P2216",
+          "name": "[HAOI2007] 理想的正方形",
+          "difficulty": 4
+        },
+        {
+          "pid": "P2564",
+          "name": "[SCOI2009] 生日礼物",
+          "difficulty": 4
+        },
+        {
+          "pid": "P2870",
+          "name": "[USACO07DEC] Best Cow Line G",
+          "difficulty": 4
+        },
+        {
+          "pid": "P3069",
+          "name": "[USACO13JAN] Cow Lineup G",
+          "difficulty": 4
+        },
+        {
+          "pid": "P3088",
+          "name": "[USACO13NOV] Crowded Cows S",
+          "difficulty": 4
+        }
+      ],
       "num": 8,
       "label": "归属·P8-NOI5级"
     },
     {
-      "id": "K109",
+      "id": "K49",
       "sec": "提高",
       "sub": "数据结构",
       "title": "单调队列",
       "level": 5,
       "phase": "P",
       "pre": [
-        "K108"
+        "K48"
       ],
-      "problems": [],
+      "problems": [
+        {
+          "pid": "P1419",
+          "name": "寻找段落",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1725",
+          "name": "琪露诺",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1776",
+          "name": "宝物筛选",
+          "difficulty": 4
+        },
+        {
+          "pid": "P2034",
+          "name": "选择数字",
+          "difficulty": 4
+        },
+        {
+          "pid": "P2216",
+          "name": "[HAOI2007] 理想的正方形",
+          "difficulty": 4
+        },
+        {
+          "pid": "P2564",
+          "name": "[SCOI2009] 生日礼物",
+          "difficulty": 4
+        },
+        {
+          "pid": "P2627",
+          "name": "[USACO11OPEN] Mowing the Lawn G",
+          "difficulty": 4
+        },
+        {
+          "pid": "P2698",
+          "name": "[USACO12MAR] Flowerpot S",
+          "difficulty": 4
+        },
+        {
+          "pid": "P2852",
+          "name": "[USACO06DEC] Milk Patterns G",
+          "difficulty": 4
+        },
+        {
+          "pid": "P2954",
+          "name": "[USACO09OPEN] Grazing2 S",
+          "difficulty": 4
+        }
+      ],
       "num": 9,
       "label": "归属·P9-NOI5级"
     },
     {
-      "id": "K110",
+      "id": "K50",
       "sec": "提高",
       "sub": "数据结构",
       "title": "优先队列",
       "level": 6,
       "phase": "P",
       "pre": [
-        "K109"
+        "K49"
       ],
-      "problems": [],
-      "num": 27,
-      "label": "归属·P27-NOI6级"
+      "problems": [
+        {
+          "pid": "P1382",
+          "name": "楼房",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1484",
+          "name": "种树",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1491",
+          "name": "集合位置",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1954",
+          "name": "[NOI2010] 航空管制",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2168",
+          "name": "[NOI2015] 荷马史诗",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2209",
+          "name": "[USACO13OPEN] Fuel Economy S",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2667",
+          "name": "[TJOI2012] 防御",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2672",
+          "name": "[NOIP 2015 普及组] 推销员",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2738",
+          "name": "[USACO4.1] 篱笆回路 Fence Loops",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2748",
+          "name": "[USACO16OPEN] Landscaping P",
+          "difficulty": 5
+        }
+      ],
+      "num": 23,
+      "label": "归属·P23-NOI6级"
     },
     {
-      "id": "K111",
+      "id": "K51",
       "sec": "提高",
       "sub": "数据结构",
       "title": "ST 表",
       "level": 6,
       "phase": "P",
       "pre": [
-        "K110"
+        "K50"
       ],
       "problems": [
         {
@@ -3364,23 +4812,73 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 4
         },
         {
+          "pid": "P1668",
+          "name": "[USACO04DEC] Cleaning Shifts S",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1725",
+          "name": "琪露诺",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1997",
+          "name": "faebdc 的烦恼",
+          "difficulty": 4
+        },
+        {
           "pid": "P6648",
           "name": "[CCC 2019] Triangle: The Data Structure",
           "difficulty": 5
+        },
+        {
+          "pid": "P2219",
+          "name": "[HAOI2007] 修筑绿化带",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2471",
+          "name": "[SCOI2007] 降雨量",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3124",
+          "name": "[USACO15OPEN] Trapped in the Haybales S",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3127",
+          "name": "[USACO15OPEN] Trapped in the Haybales G",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3794",
+          "name": "签到题IV",
+          "difficulty": 5
+        },
+        {
+          "pid": "P5012",
+          "name": "水の数列",
+          "difficulty": 5
+        },
+        {
+          "pid": "P14537",
+          "name": "[OII 2025] 双色金字塔 / Piramide bicolore",
+          "difficulty": 7
         }
       ],
-      "num": 28,
-      "label": "归属·P28-NOI6级"
+      "num": 24,
+      "label": "归属·P24-NOI6级"
     },
     {
-      "id": "K112",
+      "id": "K52",
       "sec": "提高",
       "sub": "数据结构",
       "title": "并查集",
       "level": 6,
       "phase": "P",
       "pre": [
-        "K111"
+        "K51"
       ],
       "problems": [
         {
@@ -3404,8 +4902,18 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 4
         },
         {
+          "pid": "P2024",
+          "name": "[NOI2001] 食物链",
+          "difficulty": 4
+        },
+        {
           "pid": "P1892",
           "name": "[BalticOI 2003] 团伙 (Day 2)",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1196",
+          "name": "[NOI2002] 银河英雄传说",
           "difficulty": 4
         },
         {
@@ -3419,51 +4927,198 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 4
         },
         {
+          "pid": "P1127",
+          "name": "词链",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1197",
+          "name": "[JSOI2008] 星球大战",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1198",
+          "name": "[JSOI2008] 最大数",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1333",
+          "name": "瑞瑞的木棍",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1524",
+          "name": "十字绣",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1783",
+          "name": "海滩防御",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1967",
+          "name": "[NOIP 2013 提高组] 货车运输",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2127",
+          "name": "序列排序",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2266",
+          "name": "爱的供养",
+          "difficulty": 5
+        },
+        {
           "pid": "P4997",
           "name": "不围棋",
           "difficulty": 7
         }
       ],
-      "num": 29,
-      "label": "归属·P29-NOI6级"
+      "num": 25,
+      "label": "归属·P25-NOI6级"
     },
     {
-      "id": "K113",
+      "id": "K53",
       "sec": "提高",
       "sub": "数据结构",
       "title": "树的孩子兄弟表示法",
       "level": 6,
       "phase": "P",
       "pre": [
-        "K112"
+        "K52"
       ],
-      "problems": [],
-      "num": 30,
-      "label": "归属·P30-NOI6级"
+      "problems": [
+        {
+          "pid": "P1996",
+          "name": "约瑟夫问题",
+          "difficulty": 2
+        },
+        {
+          "pid": "B3630",
+          "name": "排队顺序",
+          "difficulty": 2
+        },
+        {
+          "pid": "B3631",
+          "name": "单向链表",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1106",
+          "name": "删数问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1160",
+          "name": "队列安排",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1878",
+          "name": "舞蹈课",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2201",
+          "name": "数列编辑器",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2776",
+          "name": "[SDOI2007] 小组队列",
+          "difficulty": 3
+        },
+        {
+          "pid": "B4324",
+          "name": "【模板】双向链表",
+          "difficulty": 3
+        },
+        {
+          "pid": "B4533",
+          "name": "[信息与未来 2026] 旅行计划",
+          "difficulty": 3
+        }
+      ],
+      "num": 26,
+      "label": "归属·P26-NOI6级"
     },
     {
-      "id": "K114",
+      "id": "K54",
       "sec": "提高",
       "sub": "数据结构",
       "title": "二叉堆",
       "level": 6,
       "phase": "P",
       "pre": [
-        "K113"
+        "K53"
       ],
-      "problems": [],
-      "num": 31,
-      "label": "归属·P31-NOI6级"
+      "problems": [
+        {
+          "pid": "P1996",
+          "name": "约瑟夫问题",
+          "difficulty": 2
+        },
+        {
+          "pid": "B3630",
+          "name": "排队顺序",
+          "difficulty": 2
+        },
+        {
+          "pid": "B3631",
+          "name": "单向链表",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1106",
+          "name": "删数问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1160",
+          "name": "队列安排",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1878",
+          "name": "舞蹈课",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2201",
+          "name": "数列编辑器",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2776",
+          "name": "[SDOI2007] 小组队列",
+          "difficulty": 3
+        },
+        {
+          "pid": "B4324",
+          "name": "【模板】双向链表",
+          "difficulty": 3
+        },
+        {
+          "pid": "B4533",
+          "name": "[信息与未来 2026] 旅行计划",
+          "difficulty": 3
+        }
+      ],
+      "num": 27,
+      "label": "归属·P27-NOI6级"
     },
     {
-      "id": "K115",
+      "id": "K55",
       "sec": "提高",
       "sub": "数据结构",
       "title": "树状数组",
       "level": 6,
       "phase": "P",
       "pre": [
-        "K114"
+        "K54"
       ],
       "problems": [
         {
@@ -3487,23 +5142,73 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 5
         },
         {
+          "pid": "P1486",
+          "name": "[NOI2004] 郁闷的出纳员",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1533",
+          "name": "可怜的狗狗",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1728",
+          "name": "[PA 2014] Parking",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1966",
+          "name": "[NOIP 2013 提高组] 火柴排队",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1972",
+          "name": "[SDOI2009] HH 的项链",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2122",
+          "name": "还教室",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2263",
+          "name": "命运的彼方",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2448",
+          "name": "无尽的生命",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2667",
+          "name": "[TJOI2012] 防御",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2672",
+          "name": "[NOIP 2015 普及组] 推销员",
+          "difficulty": 5
+        },
+        {
           "pid": "P3287",
           "name": "[SCOI2014] 方伯伯的玉米田",
           "difficulty": 6
         }
       ],
-      "num": 32,
-      "label": "归属·P32-NOI6级"
+      "num": 28,
+      "label": "归属·P28-NOI6级"
     },
     {
-      "id": "K116",
+      "id": "K56",
       "sec": "提高",
       "sub": "数据结构",
       "title": "线段树",
       "level": 6,
       "phase": "P",
       "pre": [
-        "K115"
+        "K55"
       ],
       "problems": [
         {
@@ -3522,6 +5227,11 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 4
         },
         {
+          "pid": "P2574",
+          "name": "XOR 的艺术",
+          "difficulty": 4
+        },
+        {
           "pid": "P2572",
           "name": "[SCOI2010] 序列操作",
           "difficulty": 5
@@ -3535,25 +5245,80 @@ window.AKIOI_SYLLABUS = {
           "pid": "P2680",
           "name": "[NOIP 2015 提高组] 运输计划",
           "difficulty": 5
+        },
+        {
+          "pid": "P2061",
+          "name": "[USACO07OPEN] City Horizon S",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1533",
+          "name": "可怜的狗狗",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1972",
+          "name": "[SDOI2009] HH 的项链",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3605",
+          "name": "[USACO17JAN] Promotion Counting P",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3963",
+          "name": "[TJOI2013] 奖学金",
+          "difficulty": 5
+        },
+        {
+          "pid": "P5648",
+          "name": "Mivik的神力",
+          "difficulty": 5
+        },
+        {
+          "pid": "P5677",
+          "name": "[GZOI2017] 配对统计",
+          "difficulty": 5
+        },
+        {
+          "pid": "P6041",
+          "name": "「ACOI2020」布丁暗杀计划",
+          "difficulty": 5
+        },
+        {
+          "pid": "P13963",
+          "name": "[ICPC 2023 Nanjing R] 接雨水",
+          "difficulty": 6
+        },
+        {
+          "pid": "P17625",
+          "name": " [qaswed12 OI R1] Xor Xor Mex",
+          "difficulty": 6
         }
       ],
-      "num": 33,
-      "label": "归属·P33-NOI6级"
+      "num": 29,
+      "label": "归属·P29-NOI6级"
     },
     {
-      "id": "K117",
+      "id": "K57",
       "sec": "提高",
       "sub": "数据结构",
       "title": "字典树 Trie",
       "level": 6,
       "phase": "P",
       "pre": [
-        "K116"
+        "K56"
       ],
       "problems": [
         {
           "pid": "P1481",
           "name": "魔族密码",
+          "difficulty": 2
+        },
+        {
+          "pid": "P3879",
+          "name": "[TJOI2010] 阅读理解",
           "difficulty": 2
         },
         {
@@ -3564,6 +5329,11 @@ window.AKIOI_SYLLABUS = {
         {
           "pid": "P8306",
           "name": "【模板】字典树 / Trie",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2580",
+          "name": "于是他错误的点名开始了",
           "difficulty": 3
         },
         {
@@ -3580,40 +5350,140 @@ window.AKIOI_SYLLABUS = {
           "pid": "P4551",
           "name": "最长异或路径",
           "difficulty": 4
+        },
+        {
+          "pid": "P1333",
+          "name": "瑞瑞的木棍",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1666",
+          "name": "前缀单词",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3065",
+          "name": "[USACO12DEC] First! G",
+          "difficulty": 5
+        },
+        {
+          "pid": "P4407",
+          "name": "[JSOI2009] 电子字典",
+          "difficulty": 5
+        },
+        {
+          "pid": "P4471",
+          "name": "[BJWC2018] 词韵",
+          "difficulty": 5
+        },
+        {
+          "pid": "P4683",
+          "name": "[IOI 2008] Type Printer",
+          "difficulty": 5
+        },
+        {
+          "pid": "P5629",
+          "name": "【AFOI-19】区间与除法",
+          "difficulty": 5
+        },
+        {
+          "pid": "P6088",
+          "name": "[JSOI2015] 字符串树",
+          "difficulty": 5
+        },
+        {
+          "pid": "P6286",
+          "name": "[COCI 2016/2017 #1] Cezar",
+          "difficulty": 5
+        },
+        {
+          "pid": "P6587",
+          "name": "超超的序列 加强",
+          "difficulty": 5
         }
       ],
-      "num": 34,
-      "label": "归属·P34-NOI6级"
+      "num": 30,
+      "label": "归属·P30-NOI6级"
     },
     {
-      "id": "K118",
+      "id": "K58",
       "sec": "提高",
       "sub": "数据结构",
       "title": "笛卡尔树",
       "level": 7,
       "phase": "P",
       "pre": [
-        "K117"
+        "K57"
       ],
       "problems": [
         {
           "pid": "P4147",
           "name": "玉蟾宫",
           "difficulty": 4
+        },
+        {
+          "pid": "P1377",
+          "name": "[TJOI2011] 树的序",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3793",
+          "name": "由乃救爷爷",
+          "difficulty": 6
+        },
+        {
+          "pid": "P4755",
+          "name": "Beautiful Pair",
+          "difficulty": 6
+        },
+        {
+          "pid": "P9352",
+          "name": "[JOI 2023 Final] 训猫 / Cat Exercise",
+          "difficulty": 6
+        },
+        {
+          "pid": "P11261",
+          "name": "[COTS 2018] 直方图 Histogram",
+          "difficulty": 6
+        },
+        {
+          "pid": "P11801",
+          "name": "【MX-X9-T5】『GROI-R3』Star Trip",
+          "difficulty": 6
+        },
+        {
+          "pid": "P15482",
+          "name": "[CERC2012] Jewel heist",
+          "difficulty": 6
+        },
+        {
+          "pid": "P16902",
+          "name": "[CCO 2026] Melborp",
+          "difficulty": 6
+        },
+        {
+          "pid": "P6453",
+          "name": "[COCI 2008/2009 #4] PERIODNI",
+          "difficulty": 7
+        },
+        {
+          "pid": "P6604",
+          "name": "[HNOI2016] 序列 加强版",
+          "difficulty": 7
         }
       ],
-      "num": 68,
-      "label": "归属·P68-NOI7级"
+      "num": 65,
+      "label": "归属·P65-NOI7级"
     },
     {
-      "id": "K119",
+      "id": "K59",
       "sec": "提高",
       "sub": "数据结构",
       "title": "平衡树 AVL、Treap、Splay",
       "level": 8,
       "phase": "X",
       "pre": [
-        "K118"
+        "K58"
       ],
       "problems": [
         {
@@ -3650,34 +5520,135 @@ window.AKIOI_SYLLABUS = {
           "pid": "P13981",
           "name": "数列分块入门 6",
           "difficulty": 6
+        },
+        {
+          "pid": "P1848",
+          "name": "[USACO12OPEN] Bookshelf G",
+          "difficulty": 7
+        },
+        {
+          "pid": "P2042",
+          "name": "[NOI2005] 维护数列",
+          "difficulty": 7
+        },
+        {
+          "pid": "P2087",
+          "name": "GTY的人类基因组计划2",
+          "difficulty": 7
+        },
+        {
+          "pid": "P2147",
+          "name": "[SDOI2008] 洞穴勘测",
+          "difficulty": 7
+        },
+        {
+          "pid": "P2166",
+          "name": "Gty的超级妹子树【数据疑似有误】",
+          "difficulty": 7
+        },
+        {
+          "pid": "P2173",
+          "name": "[ZJOI2012] 网络",
+          "difficulty": 7
+        },
+        {
+          "pid": "P2521",
+          "name": "[HAOI2011] 防线修建",
+          "difficulty": 7
+        },
+        {
+          "pid": "P2611",
+          "name": "[ZJOI2012] 小蓝的好友",
+          "difficulty": 7
+        },
+        {
+          "pid": "P2710",
+          "name": "数列",
+          "difficulty": 7
+        },
+        {
+          "pid": "P2906",
+          "name": "[USACO08OPEN] Cow Neighborhoods G",
+          "difficulty": 7
         }
       ],
-      "num": 1,
-      "label": "归属·X1-NOI8级"
+      "num": 23,
+      "label": "归属·X23-NOI8级"
     },
     {
-      "id": "K120",
+      "id": "K60",
       "sec": "提高",
       "sub": "数据结构",
       "title": "稀疏图",
       "level": 5,
       "phase": "P",
       "pre": [
-        "K119"
+        "K59"
       ],
-      "problems": [],
+      "problems": [
+        {
+          "pid": "P1996",
+          "name": "约瑟夫问题",
+          "difficulty": 2
+        },
+        {
+          "pid": "B3630",
+          "name": "排队顺序",
+          "difficulty": 2
+        },
+        {
+          "pid": "B3631",
+          "name": "单向链表",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1106",
+          "name": "删数问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1160",
+          "name": "队列安排",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1878",
+          "name": "舞蹈课",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2201",
+          "name": "数列编辑器",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2776",
+          "name": "[SDOI2007] 小组队列",
+          "difficulty": 3
+        },
+        {
+          "pid": "B4324",
+          "name": "【模板】双向链表",
+          "difficulty": 3
+        },
+        {
+          "pid": "B4533",
+          "name": "[信息与未来 2026] 旅行计划",
+          "difficulty": 3
+        }
+      ],
       "num": 10,
       "label": "归属·P10-NOI5级"
     },
     {
-      "id": "K121",
+      "id": "K61",
       "sec": "提高",
       "sub": "数据结构",
       "title": "二分图",
       "level": 6,
       "phase": "P",
       "pre": [
-        "K120"
+        "K60"
       ],
       "problems": [
         {
@@ -3701,93 +5672,393 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 5
         },
         {
+          "pid": "P1559",
+          "name": "运动员最佳匹配问题",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2055",
+          "name": "[ZJOI2009] 假期的宿舍",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2417",
+          "name": "[SEERC 2000] 课程",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2457",
+          "name": "[SDOI2006] 仓库管理员的烦恼",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2526",
+          "name": "[SHOI2001] 小狗散步",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2825",
+          "name": "[HEOI2016/TJOI2016] 游戏",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3033",
+          "name": "[USACO11NOV] Cow Steeplechase G",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1129",
+          "name": "[ZJOI2007] 矩阵游戏",
+          "difficulty": 6
+        },
+        {
+          "pid": "P1155",
+          "name": "[NOIP 2008 提高组] 双栈排序",
+          "difficulty": 6
+        },
+        {
           "pid": "P1402",
           "name": "酒店之王",
           "difficulty": 7
         }
       ],
-      "num": 35,
-      "label": "归属·P35-NOI6级"
+      "num": 31,
+      "label": "归属·P31-NOI6级"
     },
     {
-      "id": "K122",
+      "id": "K62",
       "sec": "提高",
       "sub": "数据结构",
       "title": "欧拉图",
       "level": 6,
       "phase": "P",
       "pre": [
-        "K121"
+        "K61"
       ],
-      "problems": [],
-      "num": 36,
-      "label": "归属·P36-NOI6级"
+      "problems": [
+        {
+          "pid": "P1996",
+          "name": "约瑟夫问题",
+          "difficulty": 2
+        },
+        {
+          "pid": "B3630",
+          "name": "排队顺序",
+          "difficulty": 2
+        },
+        {
+          "pid": "B3631",
+          "name": "单向链表",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1106",
+          "name": "删数问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1160",
+          "name": "队列安排",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1878",
+          "name": "舞蹈课",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2201",
+          "name": "数列编辑器",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2776",
+          "name": "[SDOI2007] 小组队列",
+          "difficulty": 3
+        },
+        {
+          "pid": "B4324",
+          "name": "【模板】双向链表",
+          "difficulty": 3
+        },
+        {
+          "pid": "B4533",
+          "name": "[信息与未来 2026] 旅行计划",
+          "difficulty": 3
+        }
+      ],
+      "num": 32,
+      "label": "归属·P32-NOI6级"
     },
     {
-      "id": "K123",
+      "id": "K63",
       "sec": "提高",
       "sub": "数据结构",
       "title": "有向无环图",
       "level": 6,
       "phase": "P",
       "pre": [
-        "K122"
+        "K62"
       ],
-      "problems": [],
-      "num": 37,
-      "label": "归属·P37-NOI6级"
+      "problems": [
+        {
+          "pid": "P1996",
+          "name": "约瑟夫问题",
+          "difficulty": 2
+        },
+        {
+          "pid": "B3630",
+          "name": "排队顺序",
+          "difficulty": 2
+        },
+        {
+          "pid": "B3631",
+          "name": "单向链表",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1106",
+          "name": "删数问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1160",
+          "name": "队列安排",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1878",
+          "name": "舞蹈课",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2201",
+          "name": "数列编辑器",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2776",
+          "name": "[SDOI2007] 小组队列",
+          "difficulty": 3
+        },
+        {
+          "pid": "B4324",
+          "name": "【模板】双向链表",
+          "difficulty": 3
+        },
+        {
+          "pid": "B4533",
+          "name": "[信息与未来 2026] 旅行计划",
+          "difficulty": 3
+        }
+      ],
+      "num": 33,
+      "label": "归属·P33-NOI6级"
     },
     {
-      "id": "K124",
+      "id": "K64",
       "sec": "提高",
       "sub": "数据结构",
       "title": "连通图与强连通图",
       "level": 7,
       "phase": "P",
       "pre": [
-        "K123"
+        "K63"
       ],
-      "problems": [],
-      "num": 69,
-      "label": "归属·P69-NOI7级"
+      "problems": [
+        {
+          "pid": "P1996",
+          "name": "约瑟夫问题",
+          "difficulty": 2
+        },
+        {
+          "pid": "B3630",
+          "name": "排队顺序",
+          "difficulty": 2
+        },
+        {
+          "pid": "B3631",
+          "name": "单向链表",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1106",
+          "name": "删数问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1160",
+          "name": "队列安排",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1878",
+          "name": "舞蹈课",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2201",
+          "name": "数列编辑器",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2776",
+          "name": "[SDOI2007] 小组队列",
+          "difficulty": 3
+        },
+        {
+          "pid": "B4324",
+          "name": "【模板】双向链表",
+          "difficulty": 3
+        },
+        {
+          "pid": "B4533",
+          "name": "[信息与未来 2026] 旅行计划",
+          "difficulty": 3
+        }
+      ],
+      "num": 66,
+      "label": "归属·P66-NOI7级"
     },
     {
-      "id": "K125",
+      "id": "K65",
       "sec": "提高",
       "sub": "数据结构",
       "title": "双连通图",
       "level": 7,
       "phase": "P",
       "pre": [
-        "K124"
+        "K64"
       ],
-      "problems": [],
-      "num": 70,
-      "label": "归属·P70-NOI7级"
+      "problems": [
+        {
+          "pid": "P1996",
+          "name": "约瑟夫问题",
+          "difficulty": 2
+        },
+        {
+          "pid": "B3630",
+          "name": "排队顺序",
+          "difficulty": 2
+        },
+        {
+          "pid": "B3631",
+          "name": "单向链表",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1106",
+          "name": "删数问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1160",
+          "name": "队列安排",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1878",
+          "name": "舞蹈课",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2201",
+          "name": "数列编辑器",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2776",
+          "name": "[SDOI2007] 小组队列",
+          "difficulty": 3
+        },
+        {
+          "pid": "B4324",
+          "name": "【模板】双向链表",
+          "difficulty": 3
+        },
+        {
+          "pid": "B4533",
+          "name": "[信息与未来 2026] 旅行计划",
+          "difficulty": 3
+        }
+      ],
+      "num": 67,
+      "label": "归属·P67-NOI7级"
     },
     {
-      "id": "K126",
+      "id": "K66",
       "sec": "提高",
       "sub": "数据结构",
       "title": "数值哈希函数构造",
       "level": 5,
       "phase": "P",
       "pre": [
-        "K125"
+        "K65"
       ],
-      "problems": [],
+      "problems": [
+        {
+          "pid": "P1112",
+          "name": "波浪数",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1160",
+          "name": "队列安排",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1416",
+          "name": "攻击火星",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1268",
+          "name": "[ICPC 2002 Kaohsiung R] 树的重量",
+          "difficulty": 4
+        },
+        {
+          "pid": "P3524",
+          "name": "[POI 2011] IMP-Party",
+          "difficulty": 4
+        },
+        {
+          "pid": "P3557",
+          "name": "[POI 2013] GRA-Tower Defense Game",
+          "difficulty": 4
+        },
+        {
+          "pid": "B4225",
+          "name": "[常州市赛 2024] 黑板",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1431",
+          "name": "找出伪币",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2325",
+          "name": "[SCOI2005] 王室联邦",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2579",
+          "name": "[ZJOI2005] 沼泽鳄鱼",
+          "difficulty": 5
+        }
+      ],
       "num": 11,
       "label": "归属·P11-NOI5级"
     },
     {
-      "id": "K127",
+      "id": "K67",
       "sec": "提高",
       "sub": "数据结构",
       "title": "字符串哈希函数构造",
       "level": 6,
       "phase": "P",
       "pre": [
-        "K126"
+        "K66"
       ],
       "problems": [
         {
@@ -3818,6 +6089,11 @@ window.AKIOI_SYLLABUS = {
         {
           "pid": "P1104",
           "name": "生日",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1102",
+          "name": "A-B 数对",
           "difficulty": 2
         },
         {
@@ -3866,6 +6142,11 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 4
         },
         {
+          "pid": "P1955",
+          "name": "[NOI2015] 程序自动分析",
+          "difficulty": 4
+        },
+        {
           "pid": "P2312",
           "name": "[NOIP 2014 提高组] 解方程",
           "difficulty": 4
@@ -3891,6 +6172,56 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 5
         },
         {
+          "pid": "P2177",
+          "name": "内存杀手",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2353",
+          "name": "背单词",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2375",
+          "name": "[NOI2014] 动物园",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2593",
+          "name": "[ZJOI2006] 超级麻将",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2601",
+          "name": "[ZJOI2009] 对称的正方形",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3082",
+          "name": "[USACO13MAR] Necklace G",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3105",
+          "name": "[USACO14OPEN] Fair Photography S",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3167",
+          "name": "[CQOI2014] 通配符匹配",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3230",
+          "name": "[HNOI2013] 比赛",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1431",
+          "name": "找出伪币",
+          "difficulty": 5
+        },
+        {
           "pid": "P5410",
           "name": "【模板】扩展 KMP / exKMP（Z 函数）",
           "difficulty": 6
@@ -3906,58 +6237,211 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 7
         }
       ],
-      "num": 38,
-      "label": "归属·P38-NOI6级"
+      "num": 34,
+      "label": "归属·P34-NOI6级"
     },
     {
-      "id": "K128",
+      "id": "K68",
       "sec": "提高",
       "sub": "数据结构",
       "title": "哈希冲突的处理方法",
       "level": 6,
       "phase": "P",
       "pre": [
-        "K127"
+        "K67"
       ],
-      "problems": [],
-      "num": 39,
-      "label": "归属·P39-NOI6级"
+      "problems": [
+        {
+          "pid": "P1996",
+          "name": "约瑟夫问题",
+          "difficulty": 2
+        },
+        {
+          "pid": "B3630",
+          "name": "排队顺序",
+          "difficulty": 2
+        },
+        {
+          "pid": "B3631",
+          "name": "单向链表",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1106",
+          "name": "删数问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1160",
+          "name": "队列安排",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1878",
+          "name": "舞蹈课",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2201",
+          "name": "数列编辑器",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2776",
+          "name": "[SDOI2007] 小组队列",
+          "difficulty": 3
+        },
+        {
+          "pid": "B4324",
+          "name": "【模板】双向链表",
+          "difficulty": 3
+        },
+        {
+          "pid": "B4533",
+          "name": "[信息与未来 2026] 旅行计划",
+          "difficulty": 3
+        }
+      ],
+      "num": 35,
+      "label": "归属·P35-NOI6级"
     },
     {
-      "id": "K129",
+      "id": "K69",
       "sec": "提高",
       "sub": "算法",
       "title": "时间复杂度分析",
       "level": 6,
       "phase": "P",
       "pre": [],
-      "problems": [],
-      "num": 40,
-      "label": "归属·P40-NOI6级"
+      "problems": [
+        {
+          "pid": "P1396",
+          "name": "营救",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1612",
+          "name": "[yLOI2018] 树上的链",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1816",
+          "name": "忠诚",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3083",
+          "name": "[USACO13OPEN] Luxury River Cruise S",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3252",
+          "name": "[JLOI2012] 树",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3865",
+          "name": "【模板】ST 表 & RMQ 问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P4403",
+          "name": "[BJWC2008] 秦腾与教学评估",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1198",
+          "name": "[JSOI2008] 最大数",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1613",
+          "name": "跑路",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1962",
+          "name": "斐波那契数列",
+          "difficulty": 4
+        }
+      ],
+      "num": 36,
+      "label": "归属·P36-NOI6级"
     },
     {
-      "id": "K130",
+      "id": "K70",
       "sec": "提高",
       "sub": "算法",
       "title": "空间复杂度分析",
       "level": 6,
       "phase": "P",
       "pre": [
-        "K129"
+        "K69"
       ],
-      "problems": [],
-      "num": 41,
-      "label": "归属·P41-NOI6级"
+      "problems": [
+        {
+          "pid": "P1396",
+          "name": "营救",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1612",
+          "name": "[yLOI2018] 树上的链",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1816",
+          "name": "忠诚",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3083",
+          "name": "[USACO13OPEN] Luxury River Cruise S",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3252",
+          "name": "[JLOI2012] 树",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3865",
+          "name": "【模板】ST 表 & RMQ 问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P4403",
+          "name": "[BJWC2008] 秦腾与教学评估",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1198",
+          "name": "[JSOI2008] 最大数",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1613",
+          "name": "跑路",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1962",
+          "name": "斐波那契数列",
+          "difficulty": 4
+        }
+      ],
+      "num": 37,
+      "label": "归属·P37-NOI6级"
     },
     {
-      "id": "K131",
+      "id": "K71",
       "sec": "提高",
       "sub": "算法",
       "title": "离散化",
       "level": 6,
       "phase": "P",
       "pre": [
-        "K130"
+        "K70"
       ],
       "problems": [
         {
@@ -4016,6 +6500,51 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 5
         },
         {
+          "pid": "P1442",
+          "name": "铁球落地",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1502",
+          "name": "窗口的星星",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1533",
+          "name": "可怜的狗狗",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1667",
+          "name": "数列",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1712",
+          "name": "[NOI2016] 区间",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2061",
+          "name": "[USACO07OPEN] City Horizon S",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2127",
+          "name": "序列排序",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2448",
+          "name": "无尽的生命",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2471",
+          "name": "[SCOI2007] 降雨量",
+          "difficulty": 5
+        },
+        {
           "pid": "P7562",
           "name": "[JOISC 2021] イベント巡り 2 (Event Hopping 2) (Day4)",
           "difficulty": 7
@@ -4031,18 +6560,18 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 7
         }
       ],
-      "num": 42,
-      "label": "归属·P42-NOI6级"
+      "num": 38,
+      "label": "归属·P38-NOI6级"
     },
     {
-      "id": "K132",
+      "id": "K72",
       "sec": "提高",
       "sub": "算法",
       "title": "扫描线",
       "level": 7,
       "phase": "P",
       "pre": [
-        "K131"
+        "K71"
       ],
       "problems": [
         {
@@ -4079,20 +6608,60 @@ window.AKIOI_SYLLABUS = {
           "pid": "P3431",
           "name": "[POI 2005] AUT-The Bus",
           "difficulty": 5
+        },
+        {
+          "pid": "P1382",
+          "name": "楼房",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1972",
+          "name": "[SDOI2009] HH 的项链",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2061",
+          "name": "[USACO07OPEN] City Horizon S",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2202",
+          "name": "[USACO13JAN] Square Overlap S",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3079",
+          "name": "[USACO13MAR] Farm Painting S",
+          "difficulty": 5
+        },
+        {
+          "pid": "P4137",
+          "name": "Rmq Problem / mex",
+          "difficulty": 6
+        },
+        {
+          "pid": "P5987",
+          "name": "[PA 2019] Terytoria",
+          "difficulty": 6
+        },
+        {
+          "pid": "P1691",
+          "name": "[ICPC 2016 WF] Oil",
+          "difficulty": 7
         }
       ],
-      "num": 71,
-      "label": "归属·P71-NOI7级"
+      "num": 68,
+      "label": "归属·P68-NOI7级"
     },
     {
-      "id": "K133",
+      "id": "K73",
       "sec": "提高",
       "sub": "算法",
       "title": "分治算法",
       "level": 6,
       "phase": "P",
       "pre": [
-        "K132"
+        "K72"
       ],
       "problems": [
         {
@@ -4111,51 +6680,208 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 2
         },
         {
+          "pid": "P1226",
+          "name": "【模板】快速幂",
+          "difficulty": 2
+        },
+        {
           "pid": "P1228",
           "name": "地毯填补问题",
           "difficulty": 3
+        },
+        {
+          "pid": "P1396",
+          "name": "营救",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1612",
+          "name": "[yLOI2018] 树上的链",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1816",
+          "name": "忠诚",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3083",
+          "name": "[USACO13OPEN] Luxury River Cruise S",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3252",
+          "name": "[JLOI2012] 树",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3865",
+          "name": "【模板】ST 表 & RMQ 问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P4403",
+          "name": "[BJWC2008] 秦腾与教学评估",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1198",
+          "name": "[JSOI2008] 最大数",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1613",
+          "name": "跑路",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1962",
+          "name": "斐波那契数列",
+          "difficulty": 4
         }
       ],
-      "num": 43,
-      "label": "归属·P43-NOI6级"
+      "num": 39,
+      "label": "归属·P39-NOI6级"
     },
     {
-      "id": "K134",
+      "id": "K74",
       "sec": "提高",
       "sub": "算法",
       "title": "归并排序与快速排序、桶排序",
       "level": 5,
       "phase": "P",
       "pre": [
-        "K133"
+        "K73"
       ],
-      "problems": [],
+      "problems": [
+        {
+          "pid": "P1396",
+          "name": "营救",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1612",
+          "name": "[yLOI2018] 树上的链",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1816",
+          "name": "忠诚",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3083",
+          "name": "[USACO13OPEN] Luxury River Cruise S",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3252",
+          "name": "[JLOI2012] 树",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3865",
+          "name": "【模板】ST 表 & RMQ 问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P4403",
+          "name": "[BJWC2008] 秦腾与教学评估",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1198",
+          "name": "[JSOI2008] 最大数",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1613",
+          "name": "跑路",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1962",
+          "name": "斐波那契数列",
+          "difficulty": 4
+        }
+      ],
       "num": 12,
       "label": "归属·P12-NOI5级"
     },
     {
-      "id": "K135",
+      "id": "K75",
       "sec": "提高",
       "sub": "算法",
       "title": "堆排序与基数排序",
       "level": 6,
       "phase": "P",
       "pre": [
-        "K134"
+        "K74"
       ],
-      "problems": [],
-      "num": 44,
-      "label": "归属·P44-NOI6级"
+      "problems": [
+        {
+          "pid": "P1396",
+          "name": "营救",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1612",
+          "name": "[yLOI2018] 树上的链",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1816",
+          "name": "忠诚",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3083",
+          "name": "[USACO13OPEN] Luxury River Cruise S",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3252",
+          "name": "[JLOI2012] 树",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3865",
+          "name": "【模板】ST 表 & RMQ 问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P4403",
+          "name": "[BJWC2008] 秦腾与教学评估",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1198",
+          "name": "[JSOI2008] 最大数",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1613",
+          "name": "跑路",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1962",
+          "name": "斐波那契数列",
+          "difficulty": 4
+        }
+      ],
+      "num": 40,
+      "label": "归属·P40-NOI6级"
     },
     {
-      "id": "K136",
+      "id": "K76",
       "sec": "提高",
       "sub": "算法",
       "title": "字符串匹配：KMP 算法",
       "level": 6,
       "phase": "P",
       "pre": [
-        "K135"
+        "K75"
       ],
       "problems": [
         {
@@ -4184,6 +6910,46 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 5
         },
         {
+          "pid": "P2353",
+          "name": "背单词",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3082",
+          "name": "[USACO13MAR] Necklace G",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3502",
+          "name": "[POI 2010] CHO-Hamsters",
+          "difficulty": 5
+        },
+        {
+          "pid": "P4824",
+          "name": "[USACO15FEB] Censoring S",
+          "difficulty": 5
+        },
+        {
+          "pid": "P5256",
+          "name": "[JSOI2013] 编程作业",
+          "difficulty": 5
+        },
+        {
+          "pid": "P5829",
+          "name": "【模板】失配树",
+          "difficulty": 5
+        },
+        {
+          "pid": "P8112",
+          "name": "[Cnoi2021] 符文破译",
+          "difficulty": 5
+        },
+        {
+          "pid": "P8142",
+          "name": "[ICPC 2020 WF] Which Planet is This?!",
+          "difficulty": 5
+        },
+        {
           "pid": "P6216",
           "name": "回文匹配",
           "difficulty": 6
@@ -4194,18 +6960,18 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 7
         }
       ],
-      "num": 45,
-      "label": "归属·P45-NOI6级"
+      "num": 41,
+      "label": "归属·P41-NOI6级"
     },
     {
-      "id": "K137",
+      "id": "K77",
       "sec": "提高",
       "sub": "算法",
       "title": "Manacher 算法",
       "level": 7,
       "phase": "P",
       "pre": [
-        "K136"
+        "K76"
       ],
       "problems": [
         {
@@ -4249,23 +7015,43 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 5
         },
         {
+          "pid": "P6216",
+          "name": "回文匹配",
+          "difficulty": 6
+        },
+        {
+          "pid": "P17330",
+          "name": "[ICPC 2018 Nanjing R] Mediocre String Problem",
+          "difficulty": 6
+        },
+        {
           "pid": "P3279",
           "name": "[SCOI2013] 密码",
           "difficulty": 7
+        },
+        {
+          "pid": "P3546",
+          "name": "[POI 2012] PRE-Prefixuffix",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4199",
+          "name": "万径人踪灭",
+          "difficulty": 7
         }
       ],
-      "num": 72,
-      "label": "归属·P72-NOI7级"
+      "num": 69,
+      "label": "归属·P69-NOI7级"
     },
     {
-      "id": "K138",
+      "id": "K78",
       "sec": "提高",
       "sub": "算法",
       "title": "搜索的剪枝优化",
       "level": 6,
       "phase": "P",
       "pre": [
-        "K137"
+        "K77"
       ],
       "problems": [
         {
@@ -4309,9 +7095,19 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 4
         },
         {
+          "pid": "P1731",
+          "name": "[NOI1999] 生日蛋糕",
+          "difficulty": 4
+        },
+        {
           "pid": "P1004",
           "name": "[NOIP 2000 提高组] 方格取数",
           "difficulty": 4
+        },
+        {
+          "pid": "P1074",
+          "name": "[NOIP 2009 提高组] 靶形数独",
+          "difficulty": 5
         },
         {
           "pid": "CF525E",
@@ -4334,23 +7130,53 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 5
         },
         {
+          "pid": "P1092",
+          "name": "[NOIP 2004 提高组] 虫食算",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1120",
+          "name": "[CERC 1995] 小木棍",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1283",
+          "name": "[ICPC 1999 Tehran R] 平板涂色",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1491",
+          "name": "集合位置",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1559",
+          "name": "运动员最佳匹配问题",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1585",
+          "name": "魔法阵",
+          "difficulty": 5
+        },
+        {
           "pid": "P3959",
           "name": "[NOIP 2017 提高组] 宝藏",
           "difficulty": 7
         }
       ],
-      "num": 46,
-      "label": "归属·P46-NOI6级"
+      "num": 42,
+      "label": "归属·P42-NOI6级"
     },
     {
-      "id": "K139",
+      "id": "K79",
       "sec": "提高",
       "sub": "算法",
       "title": "记忆化搜索",
       "level": 6,
       "phase": "P",
       "pre": [
-        "K138"
+        "K78"
       ],
       "problems": [
         {
@@ -4402,22 +7228,77 @@ window.AKIOI_SYLLABUS = {
           "pid": "P1156",
           "name": "[USACO01OPEN] 垃圾陷阱",
           "difficulty": 4
+        },
+        {
+          "pid": "P1004",
+          "name": "[NOIP 2000 提高组] 方格取数",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1278",
+          "name": "[COI 2001] 单词游戏",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1470",
+          "name": "[IOI 1996 / USACO2.3] 最长前缀 Longest Prefix",
+          "difficulty": 4
+        },
+        {
+          "pid": "P2217",
+          "name": "[HAOI2007] 分割矩阵",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2254",
+          "name": "[NOI2005] 瑰丽华尔兹",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2272",
+          "name": "[ZJOI2007] 最大半连通子图",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2704",
+          "name": "[NOI2001] 炮兵阵地",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2991",
+          "name": "[USACO10OPEN] Water Slides G",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3230",
+          "name": "[HNOI2013] 比赛",
+          "difficulty": 5
         }
       ],
-      "num": 47,
-      "label": "归属·P47-NOI6级"
+      "num": 43,
+      "label": "归属·P43-NOI6级"
     },
     {
-      "id": "K140",
+      "id": "K80",
       "sec": "提高",
       "sub": "算法",
       "title": "启发式搜索",
       "level": 7,
       "phase": "P",
       "pre": [
-        "K139"
+        "K79"
       ],
       "problems": [
+        {
+          "pid": "P3030",
+          "name": "[USACO11NOV] Tile Exchanging S",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2346",
+          "name": "四子连棋",
+          "difficulty": 4
+        },
         {
           "pid": "P1120",
           "name": "[CERC 1995] 小木棍",
@@ -4427,34 +7308,110 @@ window.AKIOI_SYLLABUS = {
           "pid": "P5507",
           "name": "机关",
           "difficulty": 5
+        },
+        {
+          "pid": "P1266",
+          "name": "[BalticOI 2002] 速度限制",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1491",
+          "name": "集合位置",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2324",
+          "name": "[SCOI2005] 骑士精神",
+          "difficulty": 5
+        },
+        {
+          "pid": "P7271",
+          "name": "[BalticOI 2002] Speed Limits (Day1)",
+          "difficulty": 5
+        },
+        {
+          "pid": "P7558",
+          "name": "[JOISC 2021] 曲芸飛行 (Day1)",
+          "difficulty": 8
         }
       ],
-      "num": 73,
-      "label": "归属·P73-NOI7级"
+      "num": 70,
+      "label": "归属·P70-NOI7级"
     },
     {
-      "id": "K141",
+      "id": "K81",
       "sec": "提高",
       "sub": "算法",
       "title": "双向广度优先搜索",
       "level": 7,
       "phase": "P",
       "pre": [
-        "K140"
+        "K80"
       ],
-      "problems": [],
-      "num": 74,
-      "label": "归属·P74-NOI7级"
+      "problems": [
+        {
+          "pid": "P1396",
+          "name": "营救",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1612",
+          "name": "[yLOI2018] 树上的链",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1816",
+          "name": "忠诚",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3083",
+          "name": "[USACO13OPEN] Luxury River Cruise S",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3252",
+          "name": "[JLOI2012] 树",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3865",
+          "name": "【模板】ST 表 & RMQ 问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P4403",
+          "name": "[BJWC2008] 秦腾与教学评估",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1198",
+          "name": "[JSOI2008] 最大数",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1613",
+          "name": "跑路",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1962",
+          "name": "斐波那契数列",
+          "difficulty": 4
+        }
+      ],
+      "num": 71,
+      "label": "归属·P71-NOI7级"
     },
     {
-      "id": "K142",
+      "id": "K82",
       "sec": "提高",
       "sub": "算法",
       "title": "迭代加深搜索",
       "level": 7,
       "phase": "P",
       "pre": [
-        "K141"
+        "K81"
       ],
       "problems": [
         {
@@ -4463,28 +7420,63 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 4
         },
         {
+          "pid": "P2346",
+          "name": "四子连棋",
+          "difficulty": 4
+        },
+        {
           "pid": "P2324",
           "name": "[SCOI2005] 骑士精神",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1139",
+          "name": "单向双轨道",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2534",
+          "name": "[AHOI2012] 铁盘整理",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3032",
+          "name": "[USACO11NOV] Binary Sudoku G",
+          "difficulty": 5
+        },
+        {
+          "pid": "P10494",
+          "name": "[USACO02FEB] Power Hungry Cows",
+          "difficulty": 5
+        },
+        {
+          "pid": "P12431",
+          "name": "[BalticOI 2025] Gingerbread",
           "difficulty": 5
         },
         {
           "pid": "P1763",
           "name": "埃及分数",
           "difficulty": 6
+        },
+        {
+          "pid": "P2540",
+          "name": "[NOIP 2015 提高组] 斗地主 加强版",
+          "difficulty": 7
         }
       ],
-      "num": 75,
-      "label": "归属·P75-NOI7级"
+      "num": 72,
+      "label": "归属·P72-NOI7级"
     },
     {
-      "id": "K143",
+      "id": "K83",
       "sec": "提高",
       "sub": "算法",
       "title": "最小生成树 Prim 与 Kruskal",
       "level": 6,
       "phase": "P",
       "pre": [
-        "K142"
+        "K82"
       ],
       "problems": [
         {
@@ -4558,6 +7550,16 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 4
         },
         {
+          "pid": "P1265",
+          "name": "公路修建",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1340",
+          "name": "[IOI 2003] 兽径管理",
+          "difficulty": 4
+        },
+        {
           "pid": "P1783",
           "name": "海滩防御",
           "difficulty": 5
@@ -4568,23 +7570,58 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 5
         },
         {
+          "pid": "P1370",
+          "name": "Charlie 的云笔记序列",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1967",
+          "name": "[NOIP 2013 提高组] 货车运输",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2266",
+          "name": "爱的供养",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2573",
+          "name": "[SCOI2012] 滑雪",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2632",
+          "name": "Explorer",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3104",
+          "name": "[USACO14MAR] Counting Friends G",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3141",
+          "name": "[USACO16FEB] Fenced In P",
+          "difficulty": 5
+        },
+        {
           "pid": "CF1120D",
           "name": "Power Tree",
           "difficulty": 7
         }
       ],
-      "num": 48,
-      "label": "归属·P48-NOI6级"
+      "num": 44,
+      "label": "归属·P44-NOI6级"
     },
     {
-      "id": "K144",
+      "id": "K84",
       "sec": "提高",
       "sub": "算法",
       "title": "单源最短路 Bellman-Ford、Dijkstra、SPFA",
       "level": 6,
       "phase": "P",
       "pre": [
-        "K143"
+        "K83"
       ],
       "problems": [
         {
@@ -4653,37 +7690,138 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 5
         },
         {
+          "pid": "P1099",
+          "name": "[NOIP 2007 提高组] 树网的核",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1186",
+          "name": "玛丽卡",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1266",
+          "name": "[BalticOI 2002] 速度限制",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1442",
+          "name": "铁球落地",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1491",
+          "name": "集合位置",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1772",
+          "name": "[ZJOI2006] 物流运输",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1783",
+          "name": "海滩防御",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1813",
+          "name": "拯救小 tim",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1841",
+          "name": "[JSOI2007] 重要的城市",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1930",
+          "name": "[USACO3.3] 亚瑟王的宫殿",
+          "difficulty": 5
+        },
+        {
           "pid": "P3632",
           "name": "[APIO2011] 寻路",
           "difficulty": 7
         }
       ],
-      "num": 49,
-      "label": "归属·P49-NOI6级"
+      "num": 45,
+      "label": "归属·P45-NOI6级"
     },
     {
-      "id": "K145",
+      "id": "K85",
       "sec": "提高",
       "sub": "算法",
       "title": "单源次短路",
       "level": 7,
       "phase": "P",
       "pre": [
-        "K144"
+        "K84"
       ],
-      "problems": [],
-      "num": 76,
-      "label": "归属·P76-NOI7级"
+      "problems": [
+        {
+          "pid": "P1396",
+          "name": "营救",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1612",
+          "name": "[yLOI2018] 树上的链",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1816",
+          "name": "忠诚",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3083",
+          "name": "[USACO13OPEN] Luxury River Cruise S",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3252",
+          "name": "[JLOI2012] 树",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3865",
+          "name": "【模板】ST 表 & RMQ 问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P4403",
+          "name": "[BJWC2008] 秦腾与教学评估",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1198",
+          "name": "[JSOI2008] 最大数",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1613",
+          "name": "跑路",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1962",
+          "name": "斐波那契数列",
+          "difficulty": 4
+        }
+      ],
+      "num": 73,
+      "label": "归属·P73-NOI7级"
     },
     {
-      "id": "K146",
+      "id": "K86",
       "sec": "提高",
       "sub": "算法",
       "title": "Floyd-Warshall 算法",
       "level": 6,
       "phase": "P",
       "pre": [
-        "K145"
+        "K85"
       ],
       "problems": [
         {
@@ -4717,13 +7855,28 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 3
         },
         {
+          "pid": "B3611",
+          "name": "【模板】传递闭包",
+          "difficulty": 3
+        },
+        {
           "pid": "P2419",
           "name": "[USACO08JAN] Cow Contest S",
           "difficulty": 3
         },
         {
+          "pid": "P10944",
+          "name": "Going from u to v or from v to u?",
+          "difficulty": 3
+        },
+        {
           "pid": "P1119",
           "name": "灾后重建",
+          "difficulty": 4
+        },
+        {
+          "pid": "P2047",
+          "name": "[NOI2007] 社交网络",
           "difficulty": 4
         },
         {
@@ -4745,20 +7898,60 @@ window.AKIOI_SYLLABUS = {
           "pid": "P10927",
           "name": "[CEOI 1999] Sightseeing trip",
           "difficulty": 5
+        },
+        {
+          "pid": "P1099",
+          "name": "[NOIP 2007 提高组] 树网的核",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1266",
+          "name": "[BalticOI 2002] 速度限制",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1841",
+          "name": "[JSOI2007] 重要的城市",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1850",
+          "name": "[NOIP 2016 提高组] 换教室",
+          "difficulty": 5
+        },
+        {
+          "pid": "P5839",
+          "name": "[USACO19DEC] Moortal Cowmbat G",
+          "difficulty": 5
+        },
+        {
+          "pid": "P7271",
+          "name": "[BalticOI 2002] Speed Limits (Day1)",
+          "difficulty": 5
+        },
+        {
+          "pid": "P10339",
+          "name": "[THUSC 2019] 补给计划",
+          "difficulty": 5
+        },
+        {
+          "pid": "P7516",
+          "name": "[省选联考 2021 A/B 卷] 图函数",
+          "difficulty": 7
         }
       ],
-      "num": 50,
-      "label": "归属·P50-NOI6级"
+      "num": 46,
+      "label": "归属·P46-NOI6级"
     },
     {
-      "id": "K147",
+      "id": "K87",
       "sec": "提高",
       "sub": "算法",
       "title": "有向无环图的拓扑排序",
       "level": 6,
       "phase": "P",
       "pre": [
-        "K146"
+        "K86"
       ],
       "problems": [
         {
@@ -4802,6 +7995,51 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 5
         },
         {
+          "pid": "P1283",
+          "name": "[ICPC 1999 Tehran R] 平板涂色",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1543",
+          "name": "[POI 2004] SZP",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1954",
+          "name": "[NOI2010] 航空管制",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2272",
+          "name": "[ZJOI2007] 最大半连通子图",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2403",
+          "name": "[SDOI2010] 所驼门王的宝藏",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2741",
+          "name": "[USACO4.4] 重叠的图像 Frame Up",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2901",
+          "name": "[USACO08MAR] Cow Jogging G",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3065",
+          "name": "[USACO12DEC] First! G",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3119",
+          "name": "[USACO15JAN] Grass Cownoisseur G",
+          "difficulty": 5
+        },
+        {
           "pid": "P3953",
           "name": "[NOIP 2017 提高组] 逛公园",
           "difficulty": 6
@@ -4812,46 +8050,148 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 6
         }
       ],
-      "num": 51,
-      "label": "归属·P51-NOI6级"
+      "num": 47,
+      "label": "归属·P47-NOI6级"
     },
     {
-      "id": "K148",
+      "id": "K88",
       "sec": "提高",
       "sub": "算法",
       "title": "欧拉道路与欧拉回路",
       "level": 6,
       "phase": "P",
       "pre": [
-        "K147"
+        "K87"
       ],
-      "problems": [],
-      "num": 52,
-      "label": "归属·P52-NOI6级"
+      "problems": [
+        {
+          "pid": "P1127",
+          "name": "词链",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1333",
+          "name": "瑞瑞的木棍",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1341",
+          "name": "无序字母对",
+          "difficulty": 4
+        },
+        {
+          "pid": "P2731",
+          "name": "[USACO3.3] 骑马修栅栏 Riding the Fences",
+          "difficulty": 4
+        },
+        {
+          "pid": "P3520",
+          "name": "[POI 2011] SMI-Garbage",
+          "difficulty": 4
+        },
+        {
+          "pid": "P4038",
+          "name": "[CERC 1995] John's Trip",
+          "difficulty": 4
+        },
+        {
+          "pid": "P6066",
+          "name": "[USACO05JAN] Watchcow S",
+          "difficulty": 4
+        },
+        {
+          "pid": "P7771",
+          "name": "【模板】欧拉路径",
+          "difficulty": 4
+        },
+        {
+          "pid": "P10777",
+          "name": "BZOJ3706 反色刷",
+          "difficulty": 4
+        },
+        {
+          "pid": "P7796",
+          "name": "[COCI 2014/2015 #7] POLICE",
+          "difficulty": 5
+        }
+      ],
+      "num": 48,
+      "label": "归属·P48-NOI6级"
     },
     {
-      "id": "K149",
+      "id": "K89",
       "sec": "提高",
       "sub": "算法",
       "title": "二分图的判定",
       "level": 6,
       "phase": "P",
       "pre": [
-        "K148"
+        "K88"
       ],
-      "problems": [],
-      "num": 53,
-      "label": "归属·P53-NOI6级"
+      "problems": [
+        {
+          "pid": "P1407",
+          "name": "[国家集训队] 稳定婚姻",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1559",
+          "name": "运动员最佳匹配问题",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2055",
+          "name": "[ZJOI2009] 假期的宿舍",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2417",
+          "name": "[SEERC 2000] 课程",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2457",
+          "name": "[SDOI2006] 仓库管理员的烦恼",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2526",
+          "name": "[SHOI2001] 小狗散步",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2825",
+          "name": "[HEOI2016/TJOI2016] 游戏",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3033",
+          "name": "[USACO11NOV] Cow Steeplechase G",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1129",
+          "name": "[ZJOI2007] 矩阵游戏",
+          "difficulty": 6
+        },
+        {
+          "pid": "P1155",
+          "name": "[NOIP 2008 提高组] 双栈排序",
+          "difficulty": 6
+        }
+      ],
+      "num": 49,
+      "label": "归属·P49-NOI6级"
     },
     {
-      "id": "K150",
+      "id": "K90",
       "sec": "提高",
       "sub": "算法",
       "title": "强连通分量",
       "level": 7,
       "phase": "P",
       "pre": [
-        "K149"
+        "K89"
       ],
       "problems": [
         {
@@ -4923,20 +8263,65 @@ window.AKIOI_SYLLABUS = {
           "pid": "P2272",
           "name": "[ZJOI2007] 最大半连通子图",
           "difficulty": 5
+        },
+        {
+          "pid": "P1407",
+          "name": "[国家集训队] 稳定婚姻",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2403",
+          "name": "[SDOI2010] 所驼门王的宝藏",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2515",
+          "name": "[HAOI2010] 软件安装",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2811",
+          "name": "Protect the school",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3825",
+          "name": "[NOI2017] 游戏",
+          "difficulty": 6
+        },
+        {
+          "pid": "P5025",
+          "name": "[SNOI2017] 炸弹",
+          "difficulty": 6
+        },
+        {
+          "pid": "P3530",
+          "name": "[POI 2012] FES-Festival",
+          "difficulty": 6
+        },
+        {
+          "pid": "P4320",
+          "name": "道路相遇",
+          "difficulty": 6
+        },
+        {
+          "pid": "P4652",
+          "name": "[CEOI 2017] One-Way Streets",
+          "difficulty": 6
         }
       ],
-      "num": 77,
-      "label": "归属·P77-NOI7级"
+      "num": 74,
+      "label": "归属·P74-NOI7级"
     },
     {
-      "id": "K151",
+      "id": "K91",
       "sec": "提高",
       "sub": "算法",
       "title": "割点与割边",
       "level": 7,
       "phase": "P",
       "pre": [
-        "K150"
+        "K90"
       ],
       "problems": [
         {
@@ -5008,48 +8393,200 @@ window.AKIOI_SYLLABUS = {
           "pid": "P7924",
           "name": "「EVOI-RD2」旅行家",
           "difficulty": 5
+        },
+        {
+          "pid": "P4630",
+          "name": "[APIO2018] 铁人两项",
+          "difficulty": 6
+        },
+        {
+          "pid": "P4652",
+          "name": "[CEOI 2017] One-Way Streets",
+          "difficulty": 6
+        },
+        {
+          "pid": "P5236",
+          "name": "【模板】静态仙人掌",
+          "difficulty": 6
+        },
+        {
+          "pid": "P8867",
+          "name": "[NOIP2022] 建造军营",
+          "difficulty": 6
+        },
+        {
+          "pid": "P10779",
+          "name": "BZOJ4316 小 C 的独立集",
+          "difficulty": 6
+        },
+        {
+          "pid": "P10932",
+          "name": "Freda的传呼机",
+          "difficulty": 6
+        },
+        {
+          "pid": "P8619",
+          "name": "[蓝桥杯 2014 国 B] 殖民地",
+          "difficulty": 6
+        },
+        {
+          "pid": "P8621",
+          "name": "[蓝桥杯 2014 国 A] 供水设施",
+          "difficulty": 6
+        },
+        {
+          "pid": "P8600",
+          "name": "[蓝桥杯 2013 省 B] 连号区间数",
+          "difficulty": 6
+        },
+        {
+          "pid": "P1173",
+          "name": "[NOI2016] 网格",
+          "difficulty": 7
         }
       ],
-      "num": 78,
-      "label": "归属·P78-NOI7级"
+      "num": 75,
+      "label": "归属·P75-NOI7级"
     },
     {
-      "id": "K152",
+      "id": "K92",
       "sec": "提高",
       "sub": "算法",
       "title": "树的中心、直径、DFS 序与欧拉序",
       "level": 6,
       "phase": "P",
       "pre": [
-        "K151"
+        "K91"
       ],
-      "problems": [],
-      "num": 54,
-      "label": "归属·P54-NOI6级"
+      "problems": [
+        {
+          "pid": "P1092",
+          "name": "[NOIP 2004 提高组] 虫食算",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1120",
+          "name": "[CERC 1995] 小木棍",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1128",
+          "name": "[HNOI2001] 求正整数",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1245",
+          "name": "电话号码",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1283",
+          "name": "[ICPC 1999 Tehran R] 平板涂色",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1312",
+          "name": "[NOIP 2011 提高组] Mayan 游戏",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1463",
+          "name": "[POI 2001 R1 / ZJOI2006 / HAOI2007] 反素数",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1477",
+          "name": "[NOI2008] 假面舞会",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1491",
+          "name": "集合位置",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1514",
+          "name": "[NOIP 2010 提高组] 引水入城",
+          "difficulty": 5
+        }
+      ],
+      "num": 50,
+      "label": "归属·P50-NOI6级"
     },
     {
-      "id": "K153",
+      "id": "K93",
       "sec": "提高",
       "sub": "算法",
       "title": "树上差分、子树和与倍增",
       "level": 6,
       "phase": "P",
       "pre": [
-        "K152"
+        "K92"
       ],
-      "problems": [],
-      "num": 55,
-      "label": "归属·P55-NOI6级"
+      "problems": [
+        {
+          "pid": "P1306",
+          "name": "斐波那契公约数",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1707",
+          "name": "刷题比赛",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1967",
+          "name": "[NOIP 2013 提高组] 货车运输",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2106",
+          "name": "Sam 数",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2375",
+          "name": "[NOI2014] 动物园",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3066",
+          "name": "[USACO12DEC] Running Away From the Barn G",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3095",
+          "name": "[USACO13DEC] The Bessie Shuffle S",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3147",
+          "name": "[USACO16OPEN] 262144 P",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3509",
+          "name": "[POI 2010] ZAB-Frog",
+          "difficulty": 5
+        },
+        {
+          "pid": "P4155",
+          "name": "[SCOI2015] 国旗计划",
+          "difficulty": 5
+        }
+      ],
+      "num": 51,
+      "label": "归属·P51-NOI6级"
     },
     {
-      "id": "K154",
+      "id": "K94",
       "sec": "提高",
       "sub": "算法",
       "title": "最近公共祖先 LCA",
       "level": 6,
       "phase": "P",
       "pre": [
-        "K153"
+        "K93"
       ],
       "problems": [
         {
@@ -5093,37 +8630,138 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 5
         },
         {
+          "pid": "P1967",
+          "name": "[NOIP 2013 提高组] 货车运输",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2245",
+          "name": "星际导航",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2416",
+          "name": "泡芙",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2680",
+          "name": "[NOIP 2015 提高组] 运输计划",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2783",
+          "name": "有机化学之神偶尔会做作弊",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3854",
+          "name": "[TJOI2008] 通讯网破坏",
+          "difficulty": 5
+        },
+        {
+          "pid": "P4374",
+          "name": "[USACO18OPEN] Disruption P",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2597",
+          "name": "[ZJOI2012] 灾难",
+          "difficulty": 6
+        },
+        {
+          "pid": "P2633",
+          "name": "Count on a tree",
+          "difficulty": 6
+        },
+        {
+          "pid": "P2934",
+          "name": "[USACO09JAN] Safe Travel G",
+          "difficulty": 6
+        },
+        {
           "pid": "P1852",
           "name": "[国家集训队] 跳跳棋",
           "difficulty": 7
         }
       ],
-      "num": 56,
-      "label": "归属·P56-NOI6级"
+      "num": 52,
+      "label": "归属·P52-NOI6级"
     },
     {
-      "id": "K155",
+      "id": "K95",
       "sec": "提高",
       "sub": "算法",
       "title": "多维动态规划",
       "level": 6,
       "phase": "P",
       "pre": [
-        "K154"
+        "K94"
       ],
-      "problems": [],
-      "num": 57,
-      "label": "归属·P57-NOI6级"
+      "problems": [
+        {
+          "pid": "P1396",
+          "name": "营救",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1612",
+          "name": "[yLOI2018] 树上的链",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1816",
+          "name": "忠诚",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3083",
+          "name": "[USACO13OPEN] Luxury River Cruise S",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3252",
+          "name": "[JLOI2012] 树",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3865",
+          "name": "【模板】ST 表 & RMQ 问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P4403",
+          "name": "[BJWC2008] 秦腾与教学评估",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1198",
+          "name": "[JSOI2008] 最大数",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1613",
+          "name": "跑路",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1962",
+          "name": "斐波那契数列",
+          "difficulty": 4
+        }
+      ],
+      "num": 53,
+      "label": "归属·P53-NOI6级"
     },
     {
-      "id": "K156",
+      "id": "K96",
       "sec": "提高",
       "sub": "算法",
       "title": "树型动态规划",
       "level": 6,
       "phase": "P",
       "pre": [
-        "K155"
+        "K95"
       ],
       "problems": [
         {
@@ -5205,20 +8843,60 @@ window.AKIOI_SYLLABUS = {
           "pid": "P1269",
           "name": "信号放大器",
           "difficulty": 5
+        },
+        {
+          "pid": "P1270",
+          "name": "“访问”美术馆",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1272",
+          "name": "[USACO02FEB] 重建道路",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1453",
+          "name": "城市环路",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1543",
+          "name": "[POI 2004] SZP",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1642",
+          "name": "规划",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2515",
+          "name": "[HAOI2010] 软件安装",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2606",
+          "name": "[ZJOI2010] 排列计数",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2607",
+          "name": "[ZJOI2008] 骑士",
+          "difficulty": 5
         }
       ],
-      "num": 58,
-      "label": "归属·P58-NOI6级"
+      "num": 54,
+      "label": "归属·P54-NOI6级"
     },
     {
-      "id": "K157",
+      "id": "K97",
       "sec": "提高",
       "sub": "算法",
       "title": "状态压缩动态规划",
       "level": 7,
       "phase": "P",
       "pre": [
-        "K156"
+        "K96"
       ],
       "problems": [
         {
@@ -5234,6 +8912,11 @@ window.AKIOI_SYLLABUS = {
         {
           "pid": "P1879",
           "name": "[USACO06NOV] Corn Fields G",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1441",
+          "name": "砝码称重",
           "difficulty": 4
         },
         {
@@ -5257,6 +8940,31 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 5
         },
         {
+          "pid": "P2704",
+          "name": "[NOI2001] 炮兵阵地",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1283",
+          "name": "[ICPC 1999 Tehran R] 平板涂色",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1357",
+          "name": "花园",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1539",
+          "name": "[TJOI2011] 01矩阵",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1559",
+          "name": "运动员最佳匹配问题",
+          "difficulty": 5
+        },
+        {
           "pid": "P4484",
           "name": "[BJWC2018] 最长上升子序列",
           "difficulty": 6
@@ -5272,139 +8980,576 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 6
         },
         {
+          "pid": "P1777",
+          "name": "[ICPC 2009 Wuhan R] 帮助",
+          "difficulty": 6
+        },
+        {
+          "pid": "P1817",
+          "name": "棋盘染色",
+          "difficulty": 6
+        },
+        {
+          "pid": "P2109",
+          "name": "[NOI2007] 生成树计数",
+          "difficulty": 6
+        },
+        {
+          "pid": "P2157",
+          "name": "[SDOI2009] 学校食堂",
+          "difficulty": 6
+        },
+        {
+          "pid": "P2292",
+          "name": "[HNOI2004] L 语言",
+          "difficulty": 6
+        },
+        {
+          "pid": "P2322",
+          "name": "[HNOI2006] 最短母串问题",
+          "difficulty": 6
+        },
+        {
           "pid": "P5369",
           "name": "[PKUSC2018] 最大前缀和",
           "difficulty": 7
         }
       ],
-      "num": 79,
-      "label": "归属·P79-NOI7级"
+      "num": 76,
+      "label": "归属·P76-NOI7级"
     },
     {
-      "id": "K158",
+      "id": "K98",
       "sec": "提高",
       "sub": "算法",
       "title": "动态规划的常用优化",
       "level": 8,
       "phase": "X",
       "pre": [
-        "K157"
+        "K97"
       ],
-      "problems": [],
-      "num": 2,
-      "label": "归属·X2-NOI8级"
+      "problems": [
+        {
+          "pid": "P1396",
+          "name": "营救",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1612",
+          "name": "[yLOI2018] 树上的链",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1816",
+          "name": "忠诚",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3083",
+          "name": "[USACO13OPEN] Luxury River Cruise S",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3252",
+          "name": "[JLOI2012] 树",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3865",
+          "name": "【模板】ST 表 & RMQ 问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P4403",
+          "name": "[BJWC2008] 秦腾与教学评估",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1198",
+          "name": "[JSOI2008] 最大数",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1613",
+          "name": "跑路",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1962",
+          "name": "斐波那契数列",
+          "difficulty": 4
+        }
+      ],
+      "num": 24,
+      "label": "归属·X24-NOI8级"
     },
     {
-      "id": "K159",
+      "id": "K99",
       "sec": "提高",
       "sub": "数学",
       "title": "代数（高中部分）",
       "level": 5,
       "phase": "P",
       "pre": [],
-      "problems": [],
+      "problems": [
+        {
+          "pid": "P4430",
+          "name": "小猴打架",
+          "difficulty": 4
+        },
+        {
+          "pid": "P8110",
+          "name": "[Cnoi2021] 矩阵",
+          "difficulty": 4
+        },
+        {
+          "pid": "P2455",
+          "name": "[SDOI2006] 线性方程组",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3389",
+          "name": "【模板】高斯消元法",
+          "difficulty": 5
+        },
+        {
+          "pid": "P4783",
+          "name": "【模板】矩阵求逆",
+          "difficulty": 5
+        },
+        {
+          "pid": "P5364",
+          "name": "[SNOI2017] 礼物",
+          "difficulty": 5
+        },
+        {
+          "pid": "P7112",
+          "name": "【模板】行列式求值",
+          "difficulty": 5
+        },
+        {
+          "pid": "P12847",
+          "name": "[蓝桥杯 2025 国 A] 斐波那契数列",
+          "difficulty": 5
+        },
+        {
+          "pid": "P13482",
+          "name": "[GCJ 2008 EMEA SemiFinal] Scaled Triangle",
+          "difficulty": 5
+        },
+        {
+          "pid": "P16033",
+          "name": "[CSPro 33] 化学方程式配平",
+          "difficulty": 5
+        }
+      ],
       "num": 13,
       "label": "归属·P13-NOI5级"
     },
     {
-      "id": "K160",
+      "id": "K100",
       "sec": "提高",
       "sub": "数学",
       "title": "几何（高中部分）",
       "level": 6,
       "phase": "P",
       "pre": [
-        "K159"
+        "K99"
       ],
-      "problems": [],
-      "num": 59,
-      "label": "归属·P59-NOI6级"
+      "problems": [
+        {
+          "pid": "P1337",
+          "name": "[JSOI2004] 平衡点 / 吊打XXX",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1429",
+          "name": "平面最近点对（加强版）",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1715",
+          "name": "[USACO16DEC] Lots of Triangles P",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1863",
+          "name": "独眼兔",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2116",
+          "name": "[NEERC 2001] 城墙",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2589",
+          "name": "[ZJOI2006] 碗的叠放",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2742",
+          "name": "【模板】二维凸包 / [USACO5.1] 圈奶牛Fencing the Cows",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2924",
+          "name": "[USACO08DEC] Largest Fence G",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2992",
+          "name": "[USACO10OPEN] Triangle Counting G",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3194",
+          "name": "[HNOI2008] 水平可见直线",
+          "difficulty": 5
+        }
+      ],
+      "num": 14,
+      "label": "归属·P14-NOI6级"
     },
     {
-      "id": "K161",
+      "id": "K101",
       "sec": "提高",
       "sub": "数学",
       "title": "同余式",
       "level": 5,
       "phase": "P",
       "pre": [
-        "K160"
+        "K100"
       ],
-      "problems": [],
-      "num": 14,
-      "label": "归属·P14-NOI5级"
+      "problems": [
+        {
+          "pid": "P4430",
+          "name": "小猴打架",
+          "difficulty": 4
+        },
+        {
+          "pid": "P8110",
+          "name": "[Cnoi2021] 矩阵",
+          "difficulty": 4
+        },
+        {
+          "pid": "P2455",
+          "name": "[SDOI2006] 线性方程组",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3389",
+          "name": "【模板】高斯消元法",
+          "difficulty": 5
+        },
+        {
+          "pid": "P4783",
+          "name": "【模板】矩阵求逆",
+          "difficulty": 5
+        },
+        {
+          "pid": "P5364",
+          "name": "[SNOI2017] 礼物",
+          "difficulty": 5
+        },
+        {
+          "pid": "P7112",
+          "name": "【模板】行列式求值",
+          "difficulty": 5
+        },
+        {
+          "pid": "P12847",
+          "name": "[蓝桥杯 2025 国 A] 斐波那契数列",
+          "difficulty": 5
+        },
+        {
+          "pid": "P13482",
+          "name": "[GCJ 2008 EMEA SemiFinal] Scaled Triangle",
+          "difficulty": 5
+        },
+        {
+          "pid": "P16033",
+          "name": "[CSPro 33] 化学方程式配平",
+          "difficulty": 5
+        }
+      ],
+      "num": 1,
+      "label": "归属·P1-NOI5级"
     },
     {
-      "id": "K162",
+      "id": "K102",
       "sec": "提高",
       "sub": "数学",
       "title": "欧拉定理与欧拉函数",
       "level": 7,
       "phase": "P",
       "pre": [
-        "K161"
+        "K101"
       ],
       "problems": [
         {
           "pid": "P2158",
           "name": "[SDOI2008] 仪仗队",
           "difficulty": 5
+        },
+        {
+          "pid": "P1390",
+          "name": "公约数的和",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1405",
+          "name": "苦恼的小明",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1891",
+          "name": "疯狂 LCM",
+          "difficulty": 6
+        },
+        {
+          "pid": "P2155",
+          "name": "[SDOI2008] 沙拉公主的困惑",
+          "difficulty": 6
+        },
+        {
+          "pid": "P3747",
+          "name": "[六省联考 2017] 相逢是问候",
+          "difficulty": 6
+        },
+        {
+          "pid": "P3934",
+          "name": "[Ynoi Easy Round 2016] 炸脖龙 I",
+          "difficulty": 6
+        },
+        {
+          "pid": "P4139",
+          "name": "上帝与集合的正确用法",
+          "difficulty": 6
+        },
+        {
+          "pid": "P5221",
+          "name": "Product",
+          "difficulty": 6
+        },
+        {
+          "pid": "P10636",
+          "name": "BZOJ3518 点组计数",
+          "difficulty": 6
+        },
+        {
+          "pid": "P2025",
+          "name": "Dirichlet 半在线卷积",
+          "difficulty": 7
         }
       ],
-      "num": 80,
-      "label": "归属·P80-NOI7级"
+      "num": 55,
+      "label": "归属·P55-NOI7级"
     },
     {
-      "id": "K163",
+      "id": "K103",
       "sec": "提高",
       "sub": "数学",
       "title": "费马小定理",
       "level": 7,
       "phase": "P",
       "pre": [
-        "K162"
+        "K102"
       ],
-      "problems": [],
-      "num": 81,
-      "label": "归属·P81-NOI7级"
+      "problems": [
+        {
+          "pid": "P4430",
+          "name": "小猴打架",
+          "difficulty": 4
+        },
+        {
+          "pid": "P8110",
+          "name": "[Cnoi2021] 矩阵",
+          "difficulty": 4
+        },
+        {
+          "pid": "P2455",
+          "name": "[SDOI2006] 线性方程组",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3389",
+          "name": "【模板】高斯消元法",
+          "difficulty": 5
+        },
+        {
+          "pid": "P4783",
+          "name": "【模板】矩阵求逆",
+          "difficulty": 5
+        },
+        {
+          "pid": "P5364",
+          "name": "[SNOI2017] 礼物",
+          "difficulty": 5
+        },
+        {
+          "pid": "P7112",
+          "name": "【模板】行列式求值",
+          "difficulty": 5
+        },
+        {
+          "pid": "P12847",
+          "name": "[蓝桥杯 2025 国 A] 斐波那契数列",
+          "difficulty": 5
+        },
+        {
+          "pid": "P13482",
+          "name": "[GCJ 2008 EMEA SemiFinal] Scaled Triangle",
+          "difficulty": 5
+        },
+        {
+          "pid": "P16033",
+          "name": "[CSPro 33] 化学方程式配平",
+          "difficulty": 5
+        }
+      ],
+      "num": 56,
+      "label": "归属·P56-NOI7级"
     },
     {
-      "id": "K164",
+      "id": "K104",
       "sec": "提高",
       "sub": "数学",
       "title": "威尔逊定理",
       "level": 7,
       "phase": "P",
       "pre": [
-        "K163"
+        "K103"
       ],
-      "problems": [],
-      "num": 82,
-      "label": "归属·P82-NOI7级"
+      "problems": [
+        {
+          "pid": "P4430",
+          "name": "小猴打架",
+          "difficulty": 4
+        },
+        {
+          "pid": "P8110",
+          "name": "[Cnoi2021] 矩阵",
+          "difficulty": 4
+        },
+        {
+          "pid": "P2455",
+          "name": "[SDOI2006] 线性方程组",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3389",
+          "name": "【模板】高斯消元法",
+          "difficulty": 5
+        },
+        {
+          "pid": "P4783",
+          "name": "【模板】矩阵求逆",
+          "difficulty": 5
+        },
+        {
+          "pid": "P5364",
+          "name": "[SNOI2017] 礼物",
+          "difficulty": 5
+        },
+        {
+          "pid": "P7112",
+          "name": "【模板】行列式求值",
+          "difficulty": 5
+        },
+        {
+          "pid": "P12847",
+          "name": "[蓝桥杯 2025 国 A] 斐波那契数列",
+          "difficulty": 5
+        },
+        {
+          "pid": "P13482",
+          "name": "[GCJ 2008 EMEA SemiFinal] Scaled Triangle",
+          "difficulty": 5
+        },
+        {
+          "pid": "P16033",
+          "name": "[CSPro 33] 化学方程式配平",
+          "difficulty": 5
+        }
+      ],
+      "num": 57,
+      "label": "归属·P57-NOI7级"
     },
     {
-      "id": "K165",
+      "id": "K105",
       "sec": "提高",
       "sub": "数学",
       "title": "裴蜀定理",
       "level": 7,
       "phase": "P",
       "pre": [
-        "K164"
+        "K104"
       ],
-      "problems": [],
-      "num": 83,
-      "label": "归属·P83-NOI7级"
+      "problems": [
+        {
+          "pid": "P4430",
+          "name": "小猴打架",
+          "difficulty": 4
+        },
+        {
+          "pid": "P8110",
+          "name": "[Cnoi2021] 矩阵",
+          "difficulty": 4
+        },
+        {
+          "pid": "P2455",
+          "name": "[SDOI2006] 线性方程组",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3389",
+          "name": "【模板】高斯消元法",
+          "difficulty": 5
+        },
+        {
+          "pid": "P4783",
+          "name": "【模板】矩阵求逆",
+          "difficulty": 5
+        },
+        {
+          "pid": "P5364",
+          "name": "[SNOI2017] 礼物",
+          "difficulty": 5
+        },
+        {
+          "pid": "P7112",
+          "name": "【模板】行列式求值",
+          "difficulty": 5
+        },
+        {
+          "pid": "P12847",
+          "name": "[蓝桥杯 2025 国 A] 斐波那契数列",
+          "difficulty": 5
+        },
+        {
+          "pid": "P13482",
+          "name": "[GCJ 2008 EMEA SemiFinal] Scaled Triangle",
+          "difficulty": 5
+        },
+        {
+          "pid": "P16033",
+          "name": "[CSPro 33] 化学方程式配平",
+          "difficulty": 5
+        }
+      ],
+      "num": 58,
+      "label": "归属·P58-NOI7级"
     },
     {
-      "id": "K166",
+      "id": "K106",
       "sec": "提高",
       "sub": "数学",
       "title": "模意义下的乘法逆元",
       "level": 7,
       "phase": "P",
       "pre": [
-        "K165"
+        "K105"
       ],
       "problems": [
         {
@@ -5421,34 +9566,135 @@ window.AKIOI_SYLLABUS = {
           "pid": "P4071",
           "name": "[SDOI2016] 排列计数",
           "difficulty": 4
+        },
+        {
+          "pid": "P1641",
+          "name": "[SCOI2010] 生成字符串",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2054",
+          "name": "[AHOI2005] 洗牌",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2260",
+          "name": "[清华集训 2012] 模积和",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2485",
+          "name": "[SDOI2011] 计算器",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2155",
+          "name": "[SDOI2008] 沙拉公主的困惑",
+          "difficulty": 6
+        },
+        {
+          "pid": "P3306",
+          "name": "[SDOI2013] 随机数生成器",
+          "difficulty": 6
+        },
+        {
+          "pid": "P4340",
+          "name": "[SHOI2016] 随机序列",
+          "difficulty": 6
+        },
+        {
+          "pid": "P4774",
+          "name": "[NOI2018] 屠龙勇士",
+          "difficulty": 6
+        },
+        {
+          "pid": "P4931",
+          "name": "[MtOI2018] 情侣？给我烧了！（加强版）",
+          "difficulty": 6
+        },
+        {
+          "pid": "P1446",
+          "name": "[HNOI2008] Cards",
+          "difficulty": 7
         }
       ],
-      "num": 84,
-      "label": "归属·P84-NOI7级"
+      "num": 59,
+      "label": "归属·P59-NOI7级"
     },
     {
-      "id": "K167",
+      "id": "K107",
       "sec": "提高",
       "sub": "数学",
       "title": "扩展欧几里得算法",
       "level": 7,
       "phase": "P",
       "pre": [
-        "K166"
+        "K106"
       ],
-      "problems": [],
-      "num": 85,
-      "label": "归属·P85-NOI7级"
+      "problems": [
+        {
+          "pid": "P4430",
+          "name": "小猴打架",
+          "difficulty": 4
+        },
+        {
+          "pid": "P8110",
+          "name": "[Cnoi2021] 矩阵",
+          "difficulty": 4
+        },
+        {
+          "pid": "P2455",
+          "name": "[SDOI2006] 线性方程组",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3389",
+          "name": "【模板】高斯消元法",
+          "difficulty": 5
+        },
+        {
+          "pid": "P4783",
+          "name": "【模板】矩阵求逆",
+          "difficulty": 5
+        },
+        {
+          "pid": "P5364",
+          "name": "[SNOI2017] 礼物",
+          "difficulty": 5
+        },
+        {
+          "pid": "P7112",
+          "name": "【模板】行列式求值",
+          "difficulty": 5
+        },
+        {
+          "pid": "P12847",
+          "name": "[蓝桥杯 2025 国 A] 斐波那契数列",
+          "difficulty": 5
+        },
+        {
+          "pid": "P13482",
+          "name": "[GCJ 2008 EMEA SemiFinal] Scaled Triangle",
+          "difficulty": 5
+        },
+        {
+          "pid": "P16033",
+          "name": "[CSPro 33] 化学方程式配平",
+          "difficulty": 5
+        }
+      ],
+      "num": 60,
+      "label": "归属·P60-NOI7级"
     },
     {
-      "id": "K168",
+      "id": "K108",
       "sec": "提高",
       "sub": "数学",
       "title": "中国剩余定理",
       "level": 7,
       "phase": "P",
       "pre": [
-        "K167"
+        "K107"
       ],
       "problems": [
         {
@@ -5470,96 +9716,380 @@ window.AKIOI_SYLLABUS = {
           "pid": "P4777",
           "name": "【模板】扩展中国剩余定理（EXCRT）",
           "difficulty": 5
+        },
+        {
+          "pid": "P4774",
+          "name": "[NOI2018] 屠龙勇士",
+          "difficulty": 6
+        },
+        {
+          "pid": "P2183",
+          "name": "[国家集训队] 礼物",
+          "difficulty": 7
+        },
+        {
+          "pid": "P2284",
+          "name": "[HNOI2003] 密室之门",
+          "difficulty": 7
+        },
+        {
+          "pid": "P2480",
+          "name": "[SDOI2010] 古代猪文",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3301",
+          "name": "[SDOI2013] 方程",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4245",
+          "name": "【模板】任意模数多项式乘法",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4720",
+          "name": "【模板】扩展卢卡斯定理 / exLucas",
+          "difficulty": 7
         }
       ],
-      "num": 86,
-      "label": "归属·P86-NOI7级"
+      "num": 61,
+      "label": "归属·P61-NOI7级"
     },
     {
-      "id": "K169",
+      "id": "K109",
       "sec": "提高",
       "sub": "数学",
       "title": "多重集合与等价关系",
       "level": 6,
       "phase": "P",
       "pre": [
-        "K168"
+        "K108"
       ],
-      "problems": [],
-      "num": 60,
-      "label": "归属·P60-NOI6级"
+      "problems": [
+        {
+          "pid": "P4430",
+          "name": "小猴打架",
+          "difficulty": 4
+        },
+        {
+          "pid": "P8110",
+          "name": "[Cnoi2021] 矩阵",
+          "difficulty": 4
+        },
+        {
+          "pid": "P2455",
+          "name": "[SDOI2006] 线性方程组",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3389",
+          "name": "【模板】高斯消元法",
+          "difficulty": 5
+        },
+        {
+          "pid": "P4783",
+          "name": "【模板】矩阵求逆",
+          "difficulty": 5
+        },
+        {
+          "pid": "P5364",
+          "name": "[SNOI2017] 礼物",
+          "difficulty": 5
+        },
+        {
+          "pid": "P7112",
+          "name": "【模板】行列式求值",
+          "difficulty": 5
+        },
+        {
+          "pid": "P12847",
+          "name": "[蓝桥杯 2025 国 A] 斐波那契数列",
+          "difficulty": 5
+        },
+        {
+          "pid": "P13482",
+          "name": "[GCJ 2008 EMEA SemiFinal] Scaled Triangle",
+          "difficulty": 5
+        },
+        {
+          "pid": "P16033",
+          "name": "[CSPro 33] 化学方程式配平",
+          "difficulty": 5
+        }
+      ],
+      "num": 15,
+      "label": "归属·P15-NOI6级"
     },
     {
-      "id": "K170",
+      "id": "K110",
       "sec": "提高",
       "sub": "数学",
       "title": "多重集上的排列与组合",
       "level": 6,
       "phase": "P",
       "pre": [
-        "K169"
+        "K109"
       ],
-      "problems": [],
-      "num": 61,
-      "label": "归属·P61-NOI6级"
+      "problems": [
+        {
+          "pid": "P4430",
+          "name": "小猴打架",
+          "difficulty": 4
+        },
+        {
+          "pid": "P8110",
+          "name": "[Cnoi2021] 矩阵",
+          "difficulty": 4
+        },
+        {
+          "pid": "P2455",
+          "name": "[SDOI2006] 线性方程组",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3389",
+          "name": "【模板】高斯消元法",
+          "difficulty": 5
+        },
+        {
+          "pid": "P4783",
+          "name": "【模板】矩阵求逆",
+          "difficulty": 5
+        },
+        {
+          "pid": "P5364",
+          "name": "[SNOI2017] 礼物",
+          "difficulty": 5
+        },
+        {
+          "pid": "P7112",
+          "name": "【模板】行列式求值",
+          "difficulty": 5
+        },
+        {
+          "pid": "P12847",
+          "name": "[蓝桥杯 2025 国 A] 斐波那契数列",
+          "difficulty": 5
+        },
+        {
+          "pid": "P13482",
+          "name": "[GCJ 2008 EMEA SemiFinal] Scaled Triangle",
+          "difficulty": 5
+        },
+        {
+          "pid": "P16033",
+          "name": "[CSPro 33] 化学方程式配平",
+          "difficulty": 5
+        }
+      ],
+      "num": 16,
+      "label": "归属·P16-NOI6级"
     },
     {
-      "id": "K171",
+      "id": "K111",
       "sec": "提高",
       "sub": "数学",
       "title": "错排列与圆排列",
       "level": 6,
       "phase": "P",
       "pre": [
-        "K170"
+        "K110"
       ],
-      "problems": [],
-      "num": 62,
-      "label": "归属·P62-NOI6级"
+      "problems": [
+        {
+          "pid": "P4430",
+          "name": "小猴打架",
+          "difficulty": 4
+        },
+        {
+          "pid": "P8110",
+          "name": "[Cnoi2021] 矩阵",
+          "difficulty": 4
+        },
+        {
+          "pid": "P2455",
+          "name": "[SDOI2006] 线性方程组",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3389",
+          "name": "【模板】高斯消元法",
+          "difficulty": 5
+        },
+        {
+          "pid": "P4783",
+          "name": "【模板】矩阵求逆",
+          "difficulty": 5
+        },
+        {
+          "pid": "P5364",
+          "name": "[SNOI2017] 礼物",
+          "difficulty": 5
+        },
+        {
+          "pid": "P7112",
+          "name": "【模板】行列式求值",
+          "difficulty": 5
+        },
+        {
+          "pid": "P12847",
+          "name": "[蓝桥杯 2025 国 A] 斐波那契数列",
+          "difficulty": 5
+        },
+        {
+          "pid": "P13482",
+          "name": "[GCJ 2008 EMEA SemiFinal] Scaled Triangle",
+          "difficulty": 5
+        },
+        {
+          "pid": "P16033",
+          "name": "[CSPro 33] 化学方程式配平",
+          "difficulty": 5
+        }
+      ],
+      "num": 17,
+      "label": "归属·P17-NOI6级"
     },
     {
-      "id": "K172",
+      "id": "K112",
       "sec": "提高",
       "sub": "数学",
       "title": "鸽巢原理",
       "level": 6,
       "phase": "P",
       "pre": [
-        "K171"
+        "K111"
       ],
-      "problems": [],
-      "num": 63,
-      "label": "归属·P63-NOI6级"
+      "problems": [
+        {
+          "pid": "P4430",
+          "name": "小猴打架",
+          "difficulty": 4
+        },
+        {
+          "pid": "P8110",
+          "name": "[Cnoi2021] 矩阵",
+          "difficulty": 4
+        },
+        {
+          "pid": "P2455",
+          "name": "[SDOI2006] 线性方程组",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3389",
+          "name": "【模板】高斯消元法",
+          "difficulty": 5
+        },
+        {
+          "pid": "P4783",
+          "name": "【模板】矩阵求逆",
+          "difficulty": 5
+        },
+        {
+          "pid": "P5364",
+          "name": "[SNOI2017] 礼物",
+          "difficulty": 5
+        },
+        {
+          "pid": "P7112",
+          "name": "【模板】行列式求值",
+          "difficulty": 5
+        },
+        {
+          "pid": "P12847",
+          "name": "[蓝桥杯 2025 国 A] 斐波那契数列",
+          "difficulty": 5
+        },
+        {
+          "pid": "P13482",
+          "name": "[GCJ 2008 EMEA SemiFinal] Scaled Triangle",
+          "difficulty": 5
+        },
+        {
+          "pid": "P16033",
+          "name": "[CSPro 33] 化学方程式配平",
+          "difficulty": 5
+        }
+      ],
+      "num": 18,
+      "label": "归属·P18-NOI6级"
     },
     {
-      "id": "K173",
+      "id": "K113",
       "sec": "提高",
       "sub": "数学",
       "title": "二项式定理",
       "level": 6,
       "phase": "P",
       "pre": [
-        "K172"
+        "K112"
       ],
       "problems": [
         {
           "pid": "P1313",
           "name": "[NOIP 2011 提高组] 计算系数",
           "difficulty": 3
+        },
+        {
+          "pid": "P1999",
+          "name": "高维正方体",
+          "difficulty": 4
+        },
+        {
+          "pid": "P6601",
+          "name": "「EZEC-2」机器",
+          "difficulty": 4
+        },
+        {
+          "pid": "P10185",
+          "name": "[YDOI R1] Necklace",
+          "difficulty": 4
+        },
+        {
+          "pid": "P17599",
+          "name": " 「RiOI-8」夏目 アンアン",
+          "difficulty": 4
+        },
+        {
+          "pid": "P4456",
+          "name": "[CQOI2018] 交错序列",
+          "difficulty": 5
+        },
+        {
+          "pid": "P5364",
+          "name": "[SNOI2017] 礼物",
+          "difficulty": 5
+        },
+        {
+          "pid": "P5947",
+          "name": "[POI 2003] Trinomial",
+          "difficulty": 5
+        },
+        {
+          "pid": "P14461",
+          "name": "【MX-S10-T2】『FeOI-4』青年晚报",
+          "difficulty": 5
+        },
+        {
+          "pid": "P17622",
+          "name": "[qaswed12 OI R1] Function",
+          "difficulty": 5
         }
       ],
-      "num": 64,
-      "label": "归属·P64-NOI6级"
+      "num": 19,
+      "label": "归属·P19-NOI6级"
     },
     {
-      "id": "K174",
+      "id": "K114",
       "sec": "提高",
       "sub": "数学",
       "title": "容斥原理",
       "level": 7,
       "phase": "P",
       "pre": [
-        "K173"
+        "K113"
       ],
       "problems": [
         {
@@ -5576,62 +10106,265 @@ window.AKIOI_SYLLABUS = {
           "pid": "P2167",
           "name": "[SDOI2009] Bill的挑战",
           "difficulty": 5
+        },
+        {
+          "pid": "P1390",
+          "name": "公约数的和",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1316",
+          "name": "Mivik 写书",
+          "difficulty": 6
+        },
+        {
+          "pid": "P1819",
+          "name": "公共子序列",
+          "difficulty": 6
+        },
+        {
+          "pid": "P2522",
+          "name": "[HAOI2011] Problem b",
+          "difficulty": 6
+        },
+        {
+          "pid": "P2714",
+          "name": "四元组统计",
+          "difficulty": 6
+        },
+        {
+          "pid": "P3455",
+          "name": "[POI 2007] ZAP-Queries",
+          "difficulty": 6
+        },
+        {
+          "pid": "P3565",
+          "name": "[POI 2014] HOT-Hotels",
+          "difficulty": 6
+        },
+        {
+          "pid": "P3598",
+          "name": "Koishi Loves Number Theory",
+          "difficulty": 6
+        },
+        {
+          "pid": "P3702",
+          "name": "[SDOI2017] 序列计数",
+          "difficulty": 6
+        },
+        {
+          "pid": "P4178",
+          "name": "Tree",
+          "difficulty": 6
         }
       ],
-      "num": 87,
-      "label": "归属·P87-NOI7级"
+      "num": 62,
+      "label": "归属·P62-NOI7级"
     },
     {
-      "id": "K175",
+      "id": "K115",
       "sec": "提高",
       "sub": "数学",
       "title": "卡特兰数",
       "level": 7,
       "phase": "P",
       "pre": [
-        "K174"
+        "K114"
       ],
-      "problems": [],
-      "num": 88,
-      "label": "归属·P88-NOI7级"
+      "problems": [
+        {
+          "pid": "P4430",
+          "name": "小猴打架",
+          "difficulty": 4
+        },
+        {
+          "pid": "P8110",
+          "name": "[Cnoi2021] 矩阵",
+          "difficulty": 4
+        },
+        {
+          "pid": "P2455",
+          "name": "[SDOI2006] 线性方程组",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3389",
+          "name": "【模板】高斯消元法",
+          "difficulty": 5
+        },
+        {
+          "pid": "P4783",
+          "name": "【模板】矩阵求逆",
+          "difficulty": 5
+        },
+        {
+          "pid": "P5364",
+          "name": "[SNOI2017] 礼物",
+          "difficulty": 5
+        },
+        {
+          "pid": "P7112",
+          "name": "【模板】行列式求值",
+          "difficulty": 5
+        },
+        {
+          "pid": "P12847",
+          "name": "[蓝桥杯 2025 国 A] 斐波那契数列",
+          "difficulty": 5
+        },
+        {
+          "pid": "P13482",
+          "name": "[GCJ 2008 EMEA SemiFinal] Scaled Triangle",
+          "difficulty": 5
+        },
+        {
+          "pid": "P16033",
+          "name": "[CSPro 33] 化学方程式配平",
+          "difficulty": 5
+        }
+      ],
+      "num": 63,
+      "label": "归属·P63-NOI7级"
     },
     {
-      "id": "K176",
+      "id": "K116",
       "sec": "提高",
       "sub": "数学",
       "title": "向量与矩阵的概念",
       "level": 5,
       "phase": "P",
       "pre": [
-        "K175"
+        "K115"
       ],
-      "problems": [],
-      "num": 15,
-      "label": "归属·P15-NOI5级"
+      "problems": [
+        {
+          "pid": "P1355",
+          "name": "神秘大三角",
+          "difficulty": 3
+        },
+        {
+          "pid": "P4894",
+          "name": "GodFly 求解法向量",
+          "difficulty": 3
+        },
+        {
+          "pid": "P6160",
+          "name": "[Cnoi2020] 向量",
+          "difficulty": 3
+        },
+        {
+          "pid": "P4703",
+          "name": "偷上网",
+          "difficulty": 4
+        },
+        {
+          "pid": "P14165",
+          "name": "[ICPC 2022 Nanjing R] 清空水箱",
+          "difficulty": 4
+        },
+        {
+          "pid": "P17099",
+          "name": "[ICPC 2017 Qingdao R] Spacecraft",
+          "difficulty": 4
+        },
+        {
+          "pid": "P2520",
+          "name": "[HAOI2011] 向量",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3933",
+          "name": "Chtholly Nota Seniorious",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3945",
+          "name": "三体问题",
+          "difficulty": 5
+        },
+        {
+          "pid": "P8854",
+          "name": "[POI 2002 R1] 超级马",
+          "difficulty": 6
+        }
+      ],
+      "num": 2,
+      "label": "归属·P2-NOI5级"
     },
     {
-      "id": "K177",
+      "id": "K117",
       "sec": "提高",
       "sub": "数学",
       "title": "向量的运算",
       "level": 6,
       "phase": "P",
       "pre": [
-        "K176"
+        "K116"
       ],
-      "problems": [],
-      "num": 65,
-      "label": "归属·P65-NOI6级"
+      "problems": [
+        {
+          "pid": "P1355",
+          "name": "神秘大三角",
+          "difficulty": 3
+        },
+        {
+          "pid": "P4703",
+          "name": "偷上网",
+          "difficulty": 4
+        },
+        {
+          "pid": "P14165",
+          "name": "[ICPC 2022 Nanjing R] 清空水箱",
+          "difficulty": 4
+        },
+        {
+          "pid": "P17099",
+          "name": "[ICPC 2017 Qingdao R] Spacecraft",
+          "difficulty": 4
+        },
+        {
+          "pid": "P2520",
+          "name": "[HAOI2011] 向量",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3933",
+          "name": "Chtholly Nota Seniorious",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3945",
+          "name": "三体问题",
+          "difficulty": 5
+        },
+        {
+          "pid": "P8854",
+          "name": "[POI 2002 R1] 超级马",
+          "difficulty": 6
+        },
+        {
+          "pid": "P1224",
+          "name": "[NOI2013] 向量内积",
+          "difficulty": 7
+        },
+        {
+          "pid": "P2333",
+          "name": "[SCOI2006] 一孔之见",
+          "difficulty": 7
+        }
+      ],
+      "num": 20,
+      "label": "归属·P20-NOI6级"
     },
     {
-      "id": "K178",
+      "id": "K118",
       "sec": "提高",
       "sub": "数学",
       "title": "矩阵的初等变换与运算",
       "level": 6,
       "phase": "P",
       "pre": [
-        "K177"
+        "K117"
       ],
       "problems": [
         {
@@ -5665,37 +10398,133 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 5
         },
         {
+          "pid": "P2100",
+          "name": "凌乱的地下室",
+          "difficulty": 5
+        },
+        {
+          "pid": "P6435",
+          "name": "「EZEC-1」数列",
+          "difficulty": 5
+        },
+        {
+          "pid": "P7495",
+          "name": "异位坍缩",
+          "difficulty": 5
+        },
+        {
+          "pid": "P11415",
+          "name": "[EPXLQ2024 fall round] 如今走过这世间",
+          "difficulty": 5
+        },
+        {
+          "pid": "P11685",
+          "name": "[Algo Beat Contest 001 G] Great DS Homework",
+          "difficulty": 5
+        },
+        {
+          "pid": "P17266",
+          "name": "[ICPC 2017 Urumqi R] Count Numbers",
+          "difficulty": 5
+        },
+        {
+          "pid": "P1707",
+          "name": "刷题比赛",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2106",
+          "name": "Sam 数",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2768",
+          "name": "珍珠项链",
+          "difficulty": 5
+        },
+        {
           "pid": "P6772",
           "name": "[NOI2020] 美食家",
           "difficulty": 6
         }
       ],
-      "num": 66,
-      "label": "归属·P66-NOI6级"
+      "num": 21,
+      "label": "归属·P21-NOI6级"
     },
     {
-      "id": "K179",
+      "id": "K119",
       "sec": "提高",
       "sub": "数学",
       "title": "特殊矩阵：单位阵、三角阵、对称阵",
       "level": 6,
       "phase": "P",
       "pre": [
-        "K178"
+        "K118"
       ],
-      "problems": [],
-      "num": 67,
-      "label": "归属·P67-NOI6级"
+      "problems": [
+        {
+          "pid": "P4430",
+          "name": "小猴打架",
+          "difficulty": 4
+        },
+        {
+          "pid": "P8110",
+          "name": "[Cnoi2021] 矩阵",
+          "difficulty": 4
+        },
+        {
+          "pid": "P2455",
+          "name": "[SDOI2006] 线性方程组",
+          "difficulty": 5
+        },
+        {
+          "pid": "P3389",
+          "name": "【模板】高斯消元法",
+          "difficulty": 5
+        },
+        {
+          "pid": "P4783",
+          "name": "【模板】矩阵求逆",
+          "difficulty": 5
+        },
+        {
+          "pid": "P5364",
+          "name": "[SNOI2017] 礼物",
+          "difficulty": 5
+        },
+        {
+          "pid": "P7112",
+          "name": "【模板】行列式求值",
+          "difficulty": 5
+        },
+        {
+          "pid": "P12847",
+          "name": "[蓝桥杯 2025 国 A] 斐波那契数列",
+          "difficulty": 5
+        },
+        {
+          "pid": "P13482",
+          "name": "[GCJ 2008 EMEA SemiFinal] Scaled Triangle",
+          "difficulty": 5
+        },
+        {
+          "pid": "P16033",
+          "name": "[CSPro 33] 化学方程式配平",
+          "difficulty": 5
+        }
+      ],
+      "num": 22,
+      "label": "归属·P22-NOI6级"
     },
     {
-      "id": "K180",
+      "id": "K120",
       "sec": "提高",
       "sub": "数学",
       "title": "高斯消元法",
       "level": 7,
       "phase": "P",
       "pre": [
-        "K179"
+        "K119"
       ],
       "problems": [
         {
@@ -5707,44 +10536,133 @@ window.AKIOI_SYLLABUS = {
           "pid": "P3389",
           "name": "【模板】高斯消元法",
           "difficulty": 5
+        },
+        {
+          "pid": "P1092",
+          "name": "[NOIP 2004 提高组] 虫食算",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2447",
+          "name": "[SDOI2010] 外星千足虫",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2455",
+          "name": "[SDOI2006] 线性方程组",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2643",
+          "name": "机房中出了一只大触！",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2962",
+          "name": "[USACO09NOV] Lights G",
+          "difficulty": 5
+        },
+        {
+          "pid": "P2109",
+          "name": "[NOI2007] 生成树计数",
+          "difficulty": 6
+        },
+        {
+          "pid": "P2011",
+          "name": "计算电压",
+          "difficulty": 7
+        },
+        {
+          "pid": "P2225",
+          "name": "[HNOI2001] 棋盘变换",
+          "difficulty": 7
+        },
+        {
+          "pid": "P2973",
+          "name": "[USACO10HOL] Driving Out the Piggies G",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3164",
+          "name": "[CQOI2014] 和谐矩阵",
+          "difficulty": 7
         }
       ],
-      "num": 89,
-      "label": "归属·P89-NOI7级"
+      "num": 64,
+      "label": "归属·P64-NOI7级"
     },
     {
-      "id": "K181",
-      "sec": "NOI",
-      "sub": "C++ 程序设计",
-      "title": "面向对象的程序设计思想",
-      "level": 8,
-      "phase": "X",
-      "pre": [],
-      "problems": [],
-      "num": 3,
-      "label": "归属·X3-NOI8级"
-    },
-    {
-      "id": "K182",
+      "id": "K121",
       "sec": "NOI",
       "sub": "数据结构",
       "title": "块状链表",
       "level": 8,
       "phase": "X",
       "pre": [],
-      "problems": [],
-      "num": 4,
-      "label": "归属·X4-NOI8级"
+      "problems": [
+        {
+          "pid": "P1081",
+          "name": "[NOIP 2012 提高组] 开车旅行",
+          "difficulty": 6
+        },
+        {
+          "pid": "P4696",
+          "name": "[CEOI 2011] Matching",
+          "difficulty": 7
+        },
+        {
+          "pid": "P5072",
+          "name": "[Ynoi Easy Round 2015] 盼君勿忘",
+          "difficulty": 7
+        },
+        {
+          "pid": "P6821",
+          "name": "[PA 2012] Tanie linie",
+          "difficulty": 7
+        },
+        {
+          "pid": "P8078",
+          "name": "[WC2022] 秃子酋长",
+          "difficulty": 7
+        },
+        {
+          "pid": "P10093",
+          "name": "[ROIR 2022] 礼物 (Day 2)",
+          "difficulty": 7
+        },
+        {
+          "pid": "P14062",
+          "name": "【MX-X21-T7】[IAMOI R5] 若我不曾见过太阳",
+          "difficulty": 7
+        },
+        {
+          "pid": "P14417",
+          "name": "[JOISC 2015] 防壁 / Walls",
+          "difficulty": 7
+        },
+        {
+          "pid": "P15037",
+          "name": "「chaynOI R2 T2」熟练地剖分",
+          "difficulty": 7
+        },
+        {
+          "pid": "P16395",
+          "name": "[ECUSTPC 2026 Spring] 星之所在",
+          "difficulty": 7
+        }
+      ],
+      "num": 1,
+      "label": "归属·X1-NOI8级"
     },
     {
-      "id": "K183",
+      "id": "K122",
       "sec": "NOI",
       "sub": "数据结构",
       "title": "树链剖分",
       "level": 8,
       "phase": "X",
       "pre": [
-        "K182"
+        "K121"
       ],
       "problems": [
         {
@@ -5791,45 +10709,255 @@ window.AKIOI_SYLLABUS = {
           "pid": "P4180",
           "name": "[BJWC2010] 严格次小生成树",
           "difficulty": 6
+        },
+        {
+          "pid": "P1084",
+          "name": "[NOIP 2012 提高组] 疫情控制",
+          "difficulty": 7
+        },
+        {
+          "pid": "P1600",
+          "name": "[NOIP 2016 提高组] 天天爱跑步",
+          "difficulty": 7
+        },
+        {
+          "pid": "P2056",
+          "name": "[ZJOI2007] 捉迷藏",
+          "difficulty": 7
+        },
+        {
+          "pid": "P2542",
+          "name": "[AHOI2005] 航线规划",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3006",
+          "name": "[USACO11JAN] Bottleneck G",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3241",
+          "name": "[HNOI2015] 开店",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3250",
+          "name": "[HNOI2016] 网络",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3345",
+          "name": "[ZJOI2015] 幻想乡战略游戏",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3603",
+          "name": "雪辉",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3690",
+          "name": "【模板】动态树（LCT）",
+          "difficulty": 7
         }
       ],
-      "num": 5,
-      "label": "归属·X5-NOI8级"
+      "num": 2,
+      "label": "归属·X2-NOI8级"
     },
     {
-      "id": "K184",
+      "id": "K123",
       "sec": "NOI",
       "sub": "数据结构",
       "title": "动态树 LCT",
       "level": 10,
       "phase": "X",
       "pre": [
-        "K183"
+        "K122"
       ],
       "problems": [
         {
           "pid": "P2590",
           "name": "[ZJOI2008] 树的统计",
           "difficulty": 6
+        },
+        {
+          "pid": "P1501",
+          "name": "[国家集训队] Tree II",
+          "difficulty": 7
+        },
+        {
+          "pid": "P1600",
+          "name": "[NOIP 2016 提高组] 天天爱跑步",
+          "difficulty": 7
+        },
+        {
+          "pid": "P2147",
+          "name": "[SDOI2008] 洞穴勘测",
+          "difficulty": 7
+        },
+        {
+          "pid": "P2173",
+          "name": "[ZJOI2012] 网络",
+          "difficulty": 7
+        },
+        {
+          "pid": "P2387",
+          "name": "[NOI2014] 魔法森林",
+          "difficulty": 7
+        },
+        {
+          "pid": "P2542",
+          "name": "[AHOI2005] 航线规划",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3206",
+          "name": "[HNOI2010] 城市建设",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3241",
+          "name": "[HNOI2015] 开店",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3637",
+          "name": "方程组",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3690",
+          "name": "【模板】动态树（LCT）",
+          "difficulty": 7
         }
       ],
-      "num": 51,
-      "label": "归属·X51-NOI10级"
+      "num": 50,
+      "label": "归属·X50-NOI10级"
     },
     {
-      "id": "K185",
+      "id": "K124",
       "sec": "NOI",
       "sub": "数据结构",
       "title": "树套树",
       "level": 9,
       "phase": "X",
       "pre": [
-        "K184"
+        "K123"
       ],
       "problems": [
         {
           "pid": "P4592",
           "name": "[TJOI2018] 异或",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3242",
+          "name": "[HNOI2015] 接水果",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3248",
+          "name": "[HNOI2016] 树",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3578",
+          "name": "[POI 2014] LAM-Solar lamps",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3759",
+          "name": "[TJOI2017] 不勤劳的图书管理员",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4088",
+          "name": "[USACO18FEB] Slingshot P",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4093",
+          "name": "[HEOI2016/TJOI2016] 序列",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4175",
+          "name": "[CTSC2008] 网络管理",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4587",
+          "name": "[FJOI2016] 神秘数",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4690",
+          "name": "[Ynoi Easy Round 2016] 镜中的昆虫",
+          "difficulty": 7
+        }
+      ],
+      "num": 25,
+      "label": "归属·X25-NOI9级"
+    },
+    {
+      "id": "K125",
+      "sec": "NOI",
+      "sub": "数据结构",
+      "title": "k-d 树",
+      "level": 9,
+      "phase": "X",
+      "pre": [
+        "K124"
+      ],
+      "problems": [
+        {
+          "pid": "P2093",
+          "name": "[国家集训队] JZPFAR",
+          "difficulty": 7
+        },
+        {
+          "pid": "P2479",
+          "name": "[SDOI2010] 捉迷藏",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3710",
+          "name": "方方方的数据结构",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3769",
+          "name": "[CH弱省胡策R2] TATT",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4148",
+          "name": "简单题",
+          "difficulty": 7
+        },
+        {
+          "pid": "P6224",
+          "name": "[BJWC2014] 数据",
+          "difficulty": 7
+        },
+        {
+          "pid": "P6349",
+          "name": "[PA 2011] Kangaroos",
+          "difficulty": 7
+        },
+        {
+          "pid": "P7561",
+          "name": "[JOISC 2021] 道路の建設案 (Road Construction) (Day2)",
+          "difficulty": 7
+        },
+        {
+          "pid": "P10633",
+          "name": "BZOJ2989 数列/BZOJ4170 极光",
+          "difficulty": 7
+        },
+        {
+          "pid": "P12065",
+          "name": "[THOI 2012] 森林旅店",
           "difficulty": 7
         }
       ],
@@ -5837,70 +10965,209 @@ window.AKIOI_SYLLABUS = {
       "label": "归属·X26-NOI9级"
     },
     {
-      "id": "K186",
-      "sec": "NOI",
-      "sub": "数据结构",
-      "title": "k-d 树",
-      "level": 9,
-      "phase": "X",
-      "pre": [
-        "K185"
-      ],
-      "problems": [],
-      "num": 27,
-      "label": "归属·X27-NOI9级"
-    },
-    {
-      "id": "K187",
+      "id": "K126",
       "sec": "NOI",
       "sub": "数据结构",
       "title": "虚树",
       "level": 8,
       "phase": "X",
       "pre": [
-        "K186"
+        "K125"
       ],
-      "problems": [],
-      "num": 6,
-      "label": "归属·X6-NOI8级"
+      "problems": [
+        {
+          "pid": "P2147",
+          "name": "[SDOI2008] 洞穴勘测",
+          "difficulty": 7
+        },
+        {
+          "pid": "P2495",
+          "name": "【模板】虚树 / [SDOI2011] 消耗战",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3233",
+          "name": "[HNOI2014] 世界树",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3320",
+          "name": "[SDOI2015] 寻宝游戏",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4103",
+          "name": "[HEOI2014] 大工程",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4606",
+          "name": "[SDOI2018] 战略游戏",
+          "difficulty": 7
+        },
+        {
+          "pid": "P5680",
+          "name": "[GZOI2017] 共享单车",
+          "difficulty": 7
+        },
+        {
+          "pid": "P7409",
+          "name": "SvT",
+          "difficulty": 7
+        },
+        {
+          "pid": "P7422",
+          "name": "「PMOI-2」城市",
+          "difficulty": 7
+        },
+        {
+          "pid": "P7737",
+          "name": "[NOI2021] 庆典",
+          "difficulty": 7
+        }
+      ],
+      "num": 3,
+      "label": "归属·X3-NOI8级"
     },
     {
-      "id": "K188",
+      "id": "K127",
       "sec": "NOI",
       "sub": "数据结构",
       "title": "左偏树",
       "level": 8,
       "phase": "X",
       "pre": [
-        "K187"
+        "K126"
       ],
-      "problems": [],
-      "num": 7,
-      "label": "归属·X7-NOI8级"
+      "problems": [
+        {
+          "pid": "P1996",
+          "name": "约瑟夫问题",
+          "difficulty": 2
+        },
+        {
+          "pid": "B3630",
+          "name": "排队顺序",
+          "difficulty": 2
+        },
+        {
+          "pid": "B3631",
+          "name": "单向链表",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1106",
+          "name": "删数问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1160",
+          "name": "队列安排",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1878",
+          "name": "舞蹈课",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2201",
+          "name": "数列编辑器",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2776",
+          "name": "[SDOI2007] 小组队列",
+          "difficulty": 3
+        },
+        {
+          "pid": "B4324",
+          "name": "【模板】双向链表",
+          "difficulty": 3
+        },
+        {
+          "pid": "B4533",
+          "name": "[信息与未来 2026] 旅行计划",
+          "difficulty": 3
+        }
+      ],
+      "num": 4,
+      "label": "归属·X4-NOI8级"
     },
     {
-      "id": "K189",
+      "id": "K128",
       "sec": "NOI",
       "sub": "数据结构",
       "title": "二项堆",
       "level": 10,
       "phase": "X",
       "pre": [
-        "K188"
+        "K127"
       ],
-      "problems": [],
-      "num": 52,
-      "label": "归属·X52-NOI10级"
+      "problems": [
+        {
+          "pid": "P1996",
+          "name": "约瑟夫问题",
+          "difficulty": 2
+        },
+        {
+          "pid": "B3630",
+          "name": "排队顺序",
+          "difficulty": 2
+        },
+        {
+          "pid": "B3631",
+          "name": "单向链表",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1106",
+          "name": "删数问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1160",
+          "name": "队列安排",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1878",
+          "name": "舞蹈课",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2201",
+          "name": "数列编辑器",
+          "difficulty": 3
+        },
+        {
+          "pid": "P2776",
+          "name": "[SDOI2007] 小组队列",
+          "difficulty": 3
+        },
+        {
+          "pid": "B4324",
+          "name": "【模板】双向链表",
+          "difficulty": 3
+        },
+        {
+          "pid": "B4533",
+          "name": "[信息与未来 2026] 旅行计划",
+          "difficulty": 3
+        }
+      ],
+      "num": 51,
+      "label": "归属·X51-NOI10级"
     },
     {
-      "id": "K190",
+      "id": "K129",
       "sec": "NOI",
       "sub": "数据结构",
       "title": "可持久化线段树",
       "level": 8,
       "phase": "X",
       "pre": [
-        "K189"
+        "K128"
       ],
       "problems": [
         {
@@ -5937,27 +11204,123 @@ window.AKIOI_SYLLABUS = {
           "pid": "P4735",
           "name": "最大异或和",
           "difficulty": 7
+        },
+        {
+          "pid": "P2414",
+          "name": "[NOI2011] 阿狸的打字机",
+          "difficulty": 7
+        },
+        {
+          "pid": "P2468",
+          "name": "[SDOI2010] 粟粟的书架",
+          "difficulty": 7
+        },
+        {
+          "pid": "P2839",
+          "name": "[国家集训队] middle",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3241",
+          "name": "[HNOI2015] 开店",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3248",
+          "name": "[HNOI2016] 树",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3302",
+          "name": "[SDOI2013] 森林",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4175",
+          "name": "[CTSC2008] 网络管理",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4216",
+          "name": "[SCOI2015] 情报传递",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4559",
+          "name": "[JSOI2018] 列队",
+          "difficulty": 7
         }
       ],
-      "num": 8,
-      "label": "归属·X8-NOI8级"
+      "num": 5,
+      "label": "归属·X5-NOI8级"
     },
     {
-      "id": "K191",
+      "id": "K130",
       "sec": "NOI",
       "sub": "数据结构",
       "title": "其他可持久化数据结构",
       "level": 9,
       "phase": "X",
       "pre": [
-        "K190"
+        "K129"
       ],
-      "problems": [],
-      "num": 28,
-      "label": "归属·X28-NOI9级"
+      "problems": [
+        {
+          "pid": "P3835",
+          "name": "【模板】可持久化平衡树",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4098",
+          "name": "[HEOI2013] ALO",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4319",
+          "name": "变化的道路",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4592",
+          "name": "[TJOI2018] 异或",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4602",
+          "name": "[CTSC2018] 混合果汁",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4735",
+          "name": "最大异或和",
+          "difficulty": 7
+        },
+        {
+          "pid": "P5055",
+          "name": "【模板】可持久化文艺平衡树",
+          "difficulty": 7
+        },
+        {
+          "pid": "P5283",
+          "name": "[十二省联考 2019] 异或粽子",
+          "difficulty": 7
+        },
+        {
+          "pid": "P5346",
+          "name": "【XR-1】柯南家族",
+          "difficulty": 7
+        },
+        {
+          "pid": "P5350",
+          "name": "序列",
+          "difficulty": 7
+        }
+      ],
+      "num": 27,
+      "label": "归属·X27-NOI9级"
     },
     {
-      "id": "K192",
+      "id": "K131",
       "sec": "NOI",
       "sub": "算法",
       "title": "分块",
@@ -6041,23 +11404,73 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 7
         },
         {
+          "pid": "P3327",
+          "name": "[SDOI2015] 约数个数和",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3768",
+          "name": "简单的数学题",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3791",
+          "name": "普通数学题",
+          "difficulty": 7
+        },
+        {
+          "pid": "P5218",
+          "name": "无聊的水题 II",
+          "difficulty": 7
+        },
+        {
+          "pid": "P6060",
+          "name": "[加油武汉] 传染病研究",
+          "difficulty": 7
+        },
+        {
+          "pid": "P6222",
+          "name": "「P6156 简单题」加强版",
+          "difficulty": 7
+        },
+        {
+          "pid": "P9238",
+          "name": "[蓝桥杯 2023 省 A] 翻转硬币",
+          "difficulty": 7
+        },
+        {
+          "pid": "P10037",
+          "name": "「FAOI-R2」霜雪千年",
+          "difficulty": 7
+        },
+        {
+          "pid": "P10584",
+          "name": "[蓝桥杯 2024 国 A] 数学题",
+          "difficulty": 7
+        },
+        {
+          "pid": "P11772",
+          "name": "报社天狗",
+          "difficulty": 7
+        },
+        {
           "pid": "P2075",
           "name": "区间 LIS",
           "difficulty": 8
         }
       ],
-      "num": 9,
-      "label": "归属·X9-NOI8级"
+      "num": 6,
+      "label": "归属·X6-NOI8级"
     },
     {
-      "id": "K193",
+      "id": "K132",
       "sec": "NOI",
       "sub": "算法",
       "title": "离线处理思想",
       "level": 8,
       "phase": "X",
       "pre": [
-        "K192"
+        "K131"
       ],
       "problems": [
         {
@@ -6074,90 +11487,395 @@ window.AKIOI_SYLLABUS = {
           "pid": "P4113",
           "name": "[HEOI2012] 采花",
           "difficulty": 5
+        },
+        {
+          "pid": "P2147",
+          "name": "[SDOI2008] 洞穴勘测",
+          "difficulty": 7
+        },
+        {
+          "pid": "P2414",
+          "name": "[NOI2011] 阿狸的打字机",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3247",
+          "name": "[HNOI2016] 最小公倍数",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3527",
+          "name": "[POI 2011] MET-Meteors",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3960",
+          "name": "[NOIP 2017 提高组] 列队",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4211",
+          "name": "[LNOI2014] LCA",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4216",
+          "name": "[SCOI2015] 情报传递",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4219",
+          "name": "[BJOI2014] 大融合",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4587",
+          "name": "[FJOI2016] 神秘数",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4688",
+          "name": "[Ynoi Easy Round 2016] 掉进兔子洞",
+          "difficulty": 7
         }
       ],
-      "num": 10,
-      "label": "归属·X10-NOI8级"
+      "num": 7,
+      "label": "归属·X7-NOI8级"
     },
     {
-      "id": "K194",
+      "id": "K133",
       "sec": "NOI",
       "sub": "算法",
       "title": "复杂分治思想",
       "level": 9,
       "phase": "X",
       "pre": [
-        "K193"
+        "K132"
       ],
-      "problems": [],
-      "num": 29,
-      "label": "归属·X29-NOI9级"
+      "problems": [
+        {
+          "pid": "P1396",
+          "name": "营救",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1612",
+          "name": "[yLOI2018] 树上的链",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1816",
+          "name": "忠诚",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3083",
+          "name": "[USACO13OPEN] Luxury River Cruise S",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3252",
+          "name": "[JLOI2012] 树",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3865",
+          "name": "【模板】ST 表 & RMQ 问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P4403",
+          "name": "[BJWC2008] 秦腾与教学评估",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1198",
+          "name": "[JSOI2008] 最大数",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1613",
+          "name": "跑路",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1962",
+          "name": "斐波那契数列",
+          "difficulty": 4
+        }
+      ],
+      "num": 28,
+      "label": "归属·X28-NOI9级"
     },
     {
-      "id": "K195",
+      "id": "K134",
       "sec": "NOI",
       "sub": "算法",
       "title": "平衡规划思想",
       "level": 9,
       "phase": "X",
       "pre": [
-        "K194"
+        "K133"
       ],
-      "problems": [],
-      "num": 30,
-      "label": "归属·X30-NOI9级"
+      "problems": [
+        {
+          "pid": "P1396",
+          "name": "营救",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1612",
+          "name": "[yLOI2018] 树上的链",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1816",
+          "name": "忠诚",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3083",
+          "name": "[USACO13OPEN] Luxury River Cruise S",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3252",
+          "name": "[JLOI2012] 树",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3865",
+          "name": "【模板】ST 表 & RMQ 问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P4403",
+          "name": "[BJWC2008] 秦腾与教学评估",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1198",
+          "name": "[JSOI2008] 最大数",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1613",
+          "name": "跑路",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1962",
+          "name": "斐波那契数列",
+          "difficulty": 4
+        }
+      ],
+      "num": 29,
+      "label": "归属·X29-NOI9级"
     },
     {
-      "id": "K196",
+      "id": "K135",
       "sec": "NOI",
       "sub": "算法",
       "title": "构造思想",
       "level": 9,
       "phase": "X",
       "pre": [
-        "K195"
+        "K134"
       ],
-      "problems": [],
-      "num": 31,
-      "label": "归属·X31-NOI9级"
+      "problems": [
+        {
+          "pid": "P3220",
+          "name": "[HNOI2012] 与非",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3226",
+          "name": "[HNOI2012] 集合选数",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3553",
+          "name": "[POI 2013] INS-Inspector",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3566",
+          "name": "[POI 2014] KLO-Bricks",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3599",
+          "name": "Koishi Loves Construction",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3640",
+          "name": "[APIO2013] 出题人",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3666",
+          "name": "[USACO17OPEN] COWBASIC P",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3715",
+          "name": "[BJOI2017] 魔法咒语",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3765",
+          "name": "总统选举",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3830",
+          "name": "[SHOI2012] 随机树",
+          "difficulty": 7
+        }
+      ],
+      "num": 30,
+      "label": "归属·X30-NOI9级"
     },
     {
-      "id": "K197",
+      "id": "K136",
       "sec": "NOI",
       "sub": "算法",
       "title": "扩展 KMP 算法",
       "level": 8,
       "phase": "X",
       "pre": [
-        "K196"
+        "K135"
       ],
-      "problems": [],
-      "num": 11,
-      "label": "归属·X11-NOI8级"
+      "problems": [
+        {
+          "pid": "P1393",
+          "name": "Mivik 的标题",
+          "difficulty": 7
+        },
+        {
+          "pid": "P2463",
+          "name": "[SDOI2008] Sandy 的卡片",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3454",
+          "name": "[POI 2007] OSI-Axes of Symmetry",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3546",
+          "name": "[POI 2012] PRE-Prefixuffix",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4696",
+          "name": "[CEOI 2011] Matching",
+          "difficulty": 7
+        },
+        {
+          "pid": "P6080",
+          "name": "[USACO05DEC] Cow Patterns G",
+          "difficulty": 7
+        },
+        {
+          "pid": "P9717",
+          "name": "[EC Final 2022] Binary String",
+          "difficulty": 7
+        },
+        {
+          "pid": "P10634",
+          "name": "BZOJ2372 music",
+          "difficulty": 7
+        },
+        {
+          "pid": "P10716",
+          "name": "【MX-X1-T4】「KDOI-05」简单的字符串问题",
+          "difficulty": 7
+        },
+        {
+          "pid": "P10796",
+          "name": "『SpOI - R1』我看到了，谢谢你们",
+          "difficulty": 7
+        }
+      ],
+      "num": 8,
+      "label": "归属·X8-NOI8级"
     },
     {
-      "id": "K198",
+      "id": "K137",
       "sec": "NOI",
       "sub": "算法",
       "title": "有穷自动机的概念",
       "level": 8,
       "phase": "X",
       "pre": [
-        "K197"
+        "K136"
       ],
-      "problems": [],
-      "num": 12,
-      "label": "归属·X12-NOI8级"
+      "problems": [
+        {
+          "pid": "P1396",
+          "name": "营救",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1612",
+          "name": "[yLOI2018] 树上的链",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1816",
+          "name": "忠诚",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3083",
+          "name": "[USACO13OPEN] Luxury River Cruise S",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3252",
+          "name": "[JLOI2012] 树",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3865",
+          "name": "【模板】ST 表 & RMQ 问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P4403",
+          "name": "[BJWC2008] 秦腾与教学评估",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1198",
+          "name": "[JSOI2008] 最大数",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1613",
+          "name": "跑路",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1962",
+          "name": "斐波那契数列",
+          "difficulty": 4
+        }
+      ],
+      "num": 9,
+      "label": "归属·X9-NOI8级"
     },
     {
-      "id": "K199",
+      "id": "K138",
       "sec": "NOI",
       "sub": "算法",
       "title": "AC 自动机",
       "level": 8,
       "phase": "X",
       "pre": [
-        "K198"
+        "K137"
       ],
       "problems": [
         {
@@ -6179,116 +11897,440 @@ window.AKIOI_SYLLABUS = {
           "pid": "P4045",
           "name": "[JSOI2009] 密码",
           "difficulty": 7
+        },
+        {
+          "pid": "P2336",
+          "name": "[SCOI2012] 喵星球上的点名",
+          "difficulty": 7
+        },
+        {
+          "pid": "P2414",
+          "name": "[NOI2011] 阿狸的打字机",
+          "difficulty": 7
+        },
+        {
+          "pid": "P2603",
+          "name": "[ZJOI2008] 无序运动",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3715",
+          "name": "[BJOI2017] 魔法咒语",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3883",
+          "name": "[JLOI2008] 棋局定式",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4569",
+          "name": "[BJWC2011] 禁忌",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4600",
+          "name": "[HEOI2012] 旅行问题",
+          "difficulty": 7
+        },
+        {
+          "pid": "P5319",
+          "name": "[BJOI2019] 奥术神杖",
+          "difficulty": 7
+        },
+        {
+          "pid": "P5840",
+          "name": "[COCI 2014/2015 #5] Divljak",
+          "difficulty": 7
         }
       ],
-      "num": 13,
-      "label": "归属·X13-NOI8级"
+      "num": 10,
+      "label": "归属·X10-NOI8级"
     },
     {
-      "id": "K200",
+      "id": "K139",
       "sec": "NOI",
       "sub": "算法",
       "title": "后缀数组",
       "level": 8,
       "phase": "X",
       "pre": [
-        "K199"
+        "K138"
       ],
       "problems": [
         {
           "pid": "P3809",
           "name": "【模板】后缀排序（SA）",
           "difficulty": 6
+        },
+        {
+          "pid": "P1117",
+          "name": "[NOI2016] 优秀的拆分",
+          "difficulty": 7
+        },
+        {
+          "pid": "P2178",
+          "name": "[NOI2015] 品酒大会",
+          "difficulty": 7
+        },
+        {
+          "pid": "P2336",
+          "name": "[SCOI2012] 喵星球上的点名",
+          "difficulty": 7
+        },
+        {
+          "pid": "P2463",
+          "name": "[SDOI2008] Sandy 的卡片",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3002",
+          "name": "[USACO10DEC] Threatening Letter G",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3181",
+          "name": "[HAOI2016] 找相同字符",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3649",
+          "name": "[APIO2014] 回文串",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3804",
+          "name": "【模板】后缀自动机（SAM）",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3975",
+          "name": "[TJOI2015] 弦论",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4070",
+          "name": "[SDOI2016] 生成魔咒",
+          "difficulty": 7
         }
       ],
-      "num": 14,
-      "label": "归属·X14-NOI8级"
+      "num": 11,
+      "label": "归属·X11-NOI8级"
     },
     {
-      "id": "K201",
+      "id": "K140",
       "sec": "NOI",
       "sub": "算法",
       "title": "后缀树",
       "level": 9,
       "phase": "X",
       "pre": [
-        "K200"
+        "K139"
       ],
-      "problems": [],
-      "num": 32,
-      "label": "归属·X32-NOI9级"
+      "problems": [
+        {
+          "pid": "P4248",
+          "name": "[AHOI2013] 差异",
+          "difficulty": 6
+        },
+        {
+          "pid": "P7409",
+          "name": "SvT",
+          "difficulty": 7
+        },
+        {
+          "pid": "P9664",
+          "name": "[ICPC 2021 Macao R] LCS Spanning Tree",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4218",
+          "name": "[CTSC2010] 珠宝商",
+          "difficulty": 8
+        },
+        {
+          "pid": "P6385",
+          "name": "『MdOI R2』Little Goth",
+          "difficulty": 8
+        }
+      ],
+      "num": 31,
+      "label": "归属·X31-NOI9级"
     },
     {
-      "id": "K202",
+      "id": "K141",
       "sec": "NOI",
       "sub": "算法",
       "title": "后缀自动机",
       "level": 10,
       "phase": "X",
       "pre": [
-        "K201"
+        "K140"
       ],
-      "problems": [],
-      "num": 53,
-      "label": "归属·X53-NOI10级"
+      "problems": [
+        {
+          "pid": "P2336",
+          "name": "[SCOI2012] 喵星球上的点名",
+          "difficulty": 7
+        },
+        {
+          "pid": "P2463",
+          "name": "[SDOI2008] Sandy 的卡片",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3002",
+          "name": "[USACO10DEC] Threatening Letter G",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3181",
+          "name": "[HAOI2016] 找相同字符",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3346",
+          "name": "[ZJOI2015] 诸神眷顾的幻想乡",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3649",
+          "name": "[APIO2014] 回文串",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3804",
+          "name": "【模板】后缀自动机（SAM）",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3975",
+          "name": "[TJOI2015] 弦论",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4070",
+          "name": "[SDOI2016] 生成魔咒",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4081",
+          "name": "[USACO17DEC] Standing Out from the Herd P",
+          "difficulty": 7
+        }
+      ],
+      "num": 52,
+      "label": "归属·X52-NOI10级"
     },
     {
-      "id": "K203",
+      "id": "K142",
       "sec": "NOI",
       "sub": "算法",
       "title": "基环树",
       "level": 8,
       "phase": "X",
       "pre": [
-        "K202"
+        "K141"
       ],
       "problems": [
         {
           "pid": "P2515",
           "name": "[HAOI2010] 软件安装",
           "difficulty": 5
+        },
+        {
+          "pid": "P2081",
+          "name": "[NOI2012] 迷失游乐园",
+          "difficulty": 7
+        },
+        {
+          "pid": "P2454",
+          "name": "[SCOI2008] 城堡 - 数据加强版",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3472",
+          "name": "[POI 2008] MAF-Mafia",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3673",
+          "name": "小清新计数题",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4410",
+          "name": "[HNOI2009] 无归岛",
+          "difficulty": 7
+        },
+        {
+          "pid": "P5049",
+          "name": "[NOIP 2018 提高组] 旅行 加强版",
+          "difficulty": 7
+        },
+        {
+          "pid": "P7563",
+          "name": "[JOISC 2021] 最悪の記者 4 (Worst Reporter 4) (Day4)",
+          "difficulty": 7
+        },
+        {
+          "pid": "P7929",
+          "name": "[COCI 2021/2022 #1] Logičari",
+          "difficulty": 7
+        },
+        {
+          "pid": "P8288",
+          "name": "「DAOI R1」Fireworks",
+          "difficulty": 7
+        },
+        {
+          "pid": "P8439",
+          "name": "Altale (Fan-made FTR 7)",
+          "difficulty": 7
         }
       ],
-      "num": 15,
-      "label": "归属·X15-NOI8级"
+      "num": 12,
+      "label": "归属·X12-NOI8级"
     },
     {
-      "id": "K204",
+      "id": "K143",
       "sec": "NOI",
       "sub": "算法",
       "title": "最小树形图",
       "level": 10,
       "phase": "X",
       "pre": [
-        "K203"
+        "K142"
       ],
-      "problems": [],
-      "num": 54,
-      "label": "归属·X54-NOI10级"
+      "problems": [
+        {
+          "pid": "P1396",
+          "name": "营救",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1612",
+          "name": "[yLOI2018] 树上的链",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1816",
+          "name": "忠诚",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3083",
+          "name": "[USACO13OPEN] Luxury River Cruise S",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3252",
+          "name": "[JLOI2012] 树",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3865",
+          "name": "【模板】ST 表 & RMQ 问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P4403",
+          "name": "[BJWC2008] 秦腾与教学评估",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1198",
+          "name": "[JSOI2008] 最大数",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1613",
+          "name": "跑路",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1962",
+          "name": "斐波那契数列",
+          "difficulty": 4
+        }
+      ],
+      "num": 53,
+      "label": "归属·X53-NOI10级"
     },
     {
-      "id": "K205",
+      "id": "K144",
       "sec": "NOI",
       "sub": "算法",
       "title": "2-SAT",
       "level": 8,
       "phase": "X",
       "pre": [
-        "K204"
+        "K143"
       ],
-      "problems": [],
-      "num": 16,
-      "label": "归属·X16-NOI8级"
+      "problems": [
+        {
+          "pid": "P3209",
+          "name": "[HNOI2010] 平面图判定",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4835",
+          "name": "[JSOI2014] 学生选课",
+          "difficulty": 7
+        },
+        {
+          "pid": "P5297",
+          "name": "[北京省选集训2019] 完美塔防",
+          "difficulty": 7
+        },
+        {
+          "pid": "P6378",
+          "name": "[PA 2010] Riddle",
+          "difficulty": 7
+        },
+        {
+          "pid": "P6898",
+          "name": "[ICPC 2014 WF] Metal Processing Plant",
+          "difficulty": 7
+        },
+        {
+          "pid": "P6965",
+          "name": "[NEERC 2016] Binary Code",
+          "difficulty": 7
+        },
+        {
+          "pid": "P7477",
+          "name": "「C.E.L.U-02」划分可重集",
+          "difficulty": 7
+        },
+        {
+          "pid": "P13173",
+          "name": "[GCJ 2017 #2] Beaming With Joy",
+          "difficulty": 7
+        },
+        {
+          "pid": "P13583",
+          "name": "[NWRRC 2023] Colorful Village",
+          "difficulty": 7
+        },
+        {
+          "pid": "P17588",
+          "name": "UTVPI",
+          "difficulty": 7
+        }
+      ],
+      "num": 13,
+      "label": "归属·X13-NOI8级"
     },
     {
-      "id": "K206",
+      "id": "K145",
       "sec": "NOI",
       "sub": "算法",
       "title": "网络流",
       "level": 8,
       "phase": "X",
       "pre": [
-        "K205"
+        "K144"
       ],
       "problems": [
         {
@@ -6330,290 +12372,1298 @@ window.AKIOI_SYLLABUS = {
           "pid": "P2764",
           "name": "最小路径覆盖问题",
           "difficulty": 7
+        },
+        {
+          "pid": "P1251",
+          "name": "餐巾计划问题",
+          "difficulty": 7
+        },
+        {
+          "pid": "P2754",
+          "name": "[CTSC1999] 家园 / 星际转移问题",
+          "difficulty": 7
+        },
+        {
+          "pid": "P2762",
+          "name": "太空飞行计划问题",
+          "difficulty": 7
+        },
+        {
+          "pid": "P2770",
+          "name": "航空路线问题",
+          "difficulty": 7
+        },
+        {
+          "pid": "P2774",
+          "name": "方格取数问题",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3356",
+          "name": "火星探险问题",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3357",
+          "name": "最长 k 可重线段集问题",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3358",
+          "name": "最长 k 可重区间集问题",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4012",
+          "name": "深海机器人问题",
+          "difficulty": 7
         }
       ],
-      "num": 17,
-      "label": "归属·X17-NOI8级"
+      "num": 14,
+      "label": "归属·X14-NOI8级"
     },
     {
-      "id": "K207",
+      "id": "K146",
       "sec": "NOI",
       "sub": "算法",
       "title": "图的支配集、独立集与覆盖集",
       "level": 10,
       "phase": "X",
       "pre": [
-        "K206"
+        "K145"
       ],
-      "problems": [],
-      "num": 55,
-      "label": "归属·X55-NOI10级"
+      "problems": [
+        {
+          "pid": "P1396",
+          "name": "营救",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1612",
+          "name": "[yLOI2018] 树上的链",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1816",
+          "name": "忠诚",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3083",
+          "name": "[USACO13OPEN] Luxury River Cruise S",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3252",
+          "name": "[JLOI2012] 树",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3865",
+          "name": "【模板】ST 表 & RMQ 问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P4403",
+          "name": "[BJWC2008] 秦腾与教学评估",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1198",
+          "name": "[JSOI2008] 最大数",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1613",
+          "name": "跑路",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1962",
+          "name": "斐波那契数列",
+          "difficulty": 4
+        }
+      ],
+      "num": 54,
+      "label": "归属·X54-NOI10级"
     },
     {
-      "id": "K208",
+      "id": "K147",
       "sec": "NOI",
       "sub": "算法",
       "title": "匈牙利算法",
       "level": 8,
       "phase": "X",
       "pre": [
-        "K207"
+        "K146"
       ],
-      "problems": [],
-      "num": 18,
-      "label": "归属·X18-NOI8级"
+      "problems": [
+        {
+          "pid": "P1396",
+          "name": "营救",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1612",
+          "name": "[yLOI2018] 树上的链",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1816",
+          "name": "忠诚",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3083",
+          "name": "[USACO13OPEN] Luxury River Cruise S",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3252",
+          "name": "[JLOI2012] 树",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3865",
+          "name": "【模板】ST 表 & RMQ 问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P4403",
+          "name": "[BJWC2008] 秦腾与教学评估",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1198",
+          "name": "[JSOI2008] 最大数",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1613",
+          "name": "跑路",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1962",
+          "name": "斐波那契数列",
+          "difficulty": 4
+        }
+      ],
+      "num": 15,
+      "label": "归属·X15-NOI8级"
     },
     {
-      "id": "K209",
+      "id": "K148",
       "sec": "NOI",
       "sub": "算法",
       "title": "KM 算法",
       "level": 10,
       "phase": "X",
       "pre": [
-        "K208"
+        "K147"
       ],
-      "problems": [],
-      "num": 56,
-      "label": "归属·X56-NOI10级"
+      "problems": [
+        {
+          "pid": "P1396",
+          "name": "营救",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1612",
+          "name": "[yLOI2018] 树上的链",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1816",
+          "name": "忠诚",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3083",
+          "name": "[USACO13OPEN] Luxury River Cruise S",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3252",
+          "name": "[JLOI2012] 树",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3865",
+          "name": "【模板】ST 表 & RMQ 问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P4403",
+          "name": "[BJWC2008] 秦腾与教学评估",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1198",
+          "name": "[JSOI2008] 最大数",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1613",
+          "name": "跑路",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1962",
+          "name": "斐波那契数列",
+          "difficulty": 4
+        }
+      ],
+      "num": 55,
+      "label": "归属·X55-NOI10级"
     },
     {
-      "id": "K210",
+      "id": "K149",
       "sec": "NOI",
       "sub": "算法",
       "title": "一般图的匹配",
       "level": 10,
       "phase": "X",
       "pre": [
-        "K209"
+        "K148"
       ],
-      "problems": [],
-      "num": 57,
-      "label": "归属·X57-NOI10级"
+      "problems": [
+        {
+          "pid": "P1396",
+          "name": "营救",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1612",
+          "name": "[yLOI2018] 树上的链",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1816",
+          "name": "忠诚",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3083",
+          "name": "[USACO13OPEN] Luxury River Cruise S",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3252",
+          "name": "[JLOI2012] 树",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3865",
+          "name": "【模板】ST 表 & RMQ 问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P4403",
+          "name": "[BJWC2008] 秦腾与教学评估",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1198",
+          "name": "[JSOI2008] 最大数",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1613",
+          "name": "跑路",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1962",
+          "name": "斐波那契数列",
+          "difficulty": 4
+        }
+      ],
+      "num": 56,
+      "label": "归属·X56-NOI10级"
     },
     {
-      "id": "K211",
+      "id": "K150",
       "sec": "NOI",
       "sub": "算法",
       "title": "复杂动态规划模型的构建",
       "level": 9,
       "phase": "X",
       "pre": [
-        "K210"
+        "K149"
       ],
-      "problems": [],
-      "num": 33,
-      "label": "归属·X33-NOI9级"
+      "problems": [
+        {
+          "pid": "P1396",
+          "name": "营救",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1612",
+          "name": "[yLOI2018] 树上的链",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1816",
+          "name": "忠诚",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3083",
+          "name": "[USACO13OPEN] Luxury River Cruise S",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3252",
+          "name": "[JLOI2012] 树",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3865",
+          "name": "【模板】ST 表 & RMQ 问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P4403",
+          "name": "[BJWC2008] 秦腾与教学评估",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1198",
+          "name": "[JSOI2008] 最大数",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1613",
+          "name": "跑路",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1962",
+          "name": "斐波那契数列",
+          "difficulty": 4
+        }
+      ],
+      "num": 32,
+      "label": "归属·X32-NOI9级"
     },
     {
-      "id": "K212",
+      "id": "K151",
       "sec": "NOI",
       "sub": "算法",
       "title": "复杂动态规划模型的优化",
       "level": 9,
       "phase": "X",
       "pre": [
-        "K211"
+        "K150"
       ],
-      "problems": [],
-      "num": 34,
-      "label": "归属·X34-NOI9级"
+      "problems": [
+        {
+          "pid": "P1396",
+          "name": "营救",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1612",
+          "name": "[yLOI2018] 树上的链",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1816",
+          "name": "忠诚",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3083",
+          "name": "[USACO13OPEN] Luxury River Cruise S",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3252",
+          "name": "[JLOI2012] 树",
+          "difficulty": 3
+        },
+        {
+          "pid": "P3865",
+          "name": "【模板】ST 表 & RMQ 问题",
+          "difficulty": 3
+        },
+        {
+          "pid": "P4403",
+          "name": "[BJWC2008] 秦腾与教学评估",
+          "difficulty": 3
+        },
+        {
+          "pid": "P1198",
+          "name": "[JSOI2008] 最大数",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1613",
+          "name": "跑路",
+          "difficulty": 4
+        },
+        {
+          "pid": "P1962",
+          "name": "斐波那契数列",
+          "difficulty": 4
+        }
+      ],
+      "num": 33,
+      "label": "归属·X33-NOI9级"
     },
     {
-      "id": "K213",
+      "id": "K152",
       "sec": "NOI",
       "sub": "数学与其他",
       "title": "原根与指数",
       "level": 8,
       "phase": "X",
       "pre": [],
-      "problems": [],
-      "num": 19,
-      "label": "归属·X19-NOI8级"
+      "problems": [
+        {
+          "pid": "P6091",
+          "name": "【模板】原根",
+          "difficulty": 6
+        },
+        {
+          "pid": "P3599",
+          "name": "Koishi Loves Construction",
+          "difficulty": 7
+        },
+        {
+          "pid": "P5605",
+          "name": "小 A 与两位神仙",
+          "difficulty": 7
+        },
+        {
+          "pid": "P10664",
+          "name": "BZOJ3328 PYXFIB",
+          "difficulty": 7
+        },
+        {
+          "pid": "P11175",
+          "name": "【模板】基于值域预处理的快速离散对数",
+          "difficulty": 7
+        },
+        {
+          "pid": "P12694",
+          "name": "BZOJ2219 数论之神",
+          "difficulty": 7
+        },
+        {
+          "pid": "P17206",
+          "name": "「DLESS-6」Lost Requiem",
+          "difficulty": 7
+        },
+        {
+          "pid": "P5285",
+          "name": "[十二省联考 2019] 骗分过样例",
+          "difficulty": 8
+        },
+        {
+          "pid": "P5668",
+          "name": "【模板】N 次剩余",
+          "difficulty": 8
+        },
+        {
+          "pid": "P6690",
+          "name": "一次函数",
+          "difficulty": 8
+        }
+      ],
+      "num": 16,
+      "label": "归属·X16-NOI8级"
     },
     {
-      "id": "K214",
+      "id": "K153",
       "sec": "NOI",
       "sub": "数学与其他",
       "title": "大步小步 BSGS 算法",
       "level": 8,
       "phase": "X",
       "pre": [
-        "K213"
+        "K152"
       ],
-      "problems": [],
-      "num": 20,
-      "label": "归属·X20-NOI8级"
+      "problems": [
+        {
+          "pid": "P14369",
+          "name": "[JOISC 2018] 路网服务 / Road Service",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3279",
+          "name": "[SCOI2013] 密码",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3546",
+          "name": "[POI 2012] PRE-Prefixuffix",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4199",
+          "name": "万径人踪灭",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4287",
+          "name": "[SHOI2011] 双倍回文",
+          "difficulty": 7
+        },
+        {
+          "pid": "P8631",
+          "name": "[蓝桥杯 2015 国 AC] 切开字符串",
+          "difficulty": 7
+        },
+        {
+          "pid": "P9482",
+          "name": "[NOI2023] 字符串",
+          "difficulty": 7
+        },
+        {
+          "pid": "P9646",
+          "name": "[SNCPC2019] Paper-cutting",
+          "difficulty": 7
+        },
+        {
+          "pid": "P12977",
+          "name": "泪雨 Namid[A]me",
+          "difficulty": 7
+        },
+        {
+          "pid": "P14061",
+          "name": "【MX-X21-T6】[IAMOI R5] 希望有羽毛和翅膀",
+          "difficulty": 7
+        }
+      ],
+      "num": 17,
+      "label": "归属·X17-NOI8级"
     },
     {
-      "id": "K215",
+      "id": "K154",
       "sec": "NOI",
       "sub": "数学与其他",
       "title": "狄利克雷卷积",
       "level": 9,
       "phase": "X",
       "pre": [
-        "K214"
+        "K153"
       ],
-      "problems": [],
-      "num": 35,
-      "label": "归属·X35-NOI9级"
+      "problems": [
+        {
+          "pid": "P1161",
+          "name": "开灯",
+          "difficulty": 1
+        },
+        {
+          "pid": "P1615",
+          "name": "西游记公司",
+          "difficulty": 1
+        },
+        {
+          "pid": "P1015",
+          "name": "[NOIP 1999 普及组] 回文数",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1017",
+          "name": "[NOIP 2000 提高组] 进制转换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1062",
+          "name": "[NOIP 2006 普及组] 数列",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1100",
+          "name": "高低位交换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1143",
+          "name": "进制转换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1206",
+          "name": "[USACO1.2] 回文平方数 Palindromic Squares",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1207",
+          "name": "[USACO1.2] 双重回文数 Dual Palindromes",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1604",
+          "name": "B进制星球",
+          "difficulty": 2
+        }
+      ],
+      "num": 34,
+      "label": "归属·X34-NOI9级"
     },
     {
-      "id": "K216",
+      "id": "K155",
       "sec": "NOI",
       "sub": "数学与其他",
       "title": "二次剩余与二次同余式",
       "level": 10,
       "phase": "X",
       "pre": [
-        "K215"
+        "K154"
       ],
-      "problems": [],
-      "num": 58,
-      "label": "归属·X58-NOI10级"
+      "problems": [
+        {
+          "pid": "P15425",
+          "name": "Nobody Tells",
+          "difficulty": 5
+        },
+        {
+          "pid": "P14641",
+          "name": "【OIMO Round 1】进制整除",
+          "difficulty": 6
+        },
+        {
+          "pid": "P5110",
+          "name": "块速递推",
+          "difficulty": 7
+        },
+        {
+          "pid": "P5277",
+          "name": "【模板】多项式开根（加强版）",
+          "difficulty": 7
+        },
+        {
+          "pid": "P5491",
+          "name": "【模板】二次剩余",
+          "difficulty": 7
+        },
+        {
+          "pid": "P17226",
+          "name": "[Math×Girl²] 终末电台",
+          "difficulty": 7
+        },
+        {
+          "pid": "P10063",
+          "name": "[SNOI2024] 平方数",
+          "difficulty": 8
+        },
+        {
+          "pid": "P12855",
+          "name": "[NERC 2020 Online] Find a Square",
+          "difficulty": 8
+        },
+        {
+          "pid": "P17606",
+          "name": "「RiOI-8」橘 シェリー",
+          "difficulty": 8
+        }
+      ],
+      "num": 57,
+      "label": "归属·X57-NOI10级"
     },
     {
-      "id": "K217",
+      "id": "K156",
       "sec": "NOI",
       "sub": "数学与其他",
       "title": "群及其基本性质",
       "level": 9,
       "phase": "X",
       "pre": [
-        "K216"
+        "K155"
       ],
-      "problems": [],
-      "num": 36,
-      "label": "归属·X36-NOI9级"
+      "problems": [
+        {
+          "pid": "P1161",
+          "name": "开灯",
+          "difficulty": 1
+        },
+        {
+          "pid": "P1615",
+          "name": "西游记公司",
+          "difficulty": 1
+        },
+        {
+          "pid": "P1015",
+          "name": "[NOIP 1999 普及组] 回文数",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1017",
+          "name": "[NOIP 2000 提高组] 进制转换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1062",
+          "name": "[NOIP 2006 普及组] 数列",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1100",
+          "name": "高低位交换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1143",
+          "name": "进制转换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1206",
+          "name": "[USACO1.2] 回文平方数 Palindromic Squares",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1207",
+          "name": "[USACO1.2] 双重回文数 Dual Palindromes",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1604",
+          "name": "B进制星球",
+          "difficulty": 2
+        }
+      ],
+      "num": 35,
+      "label": "归属·X35-NOI9级"
     },
     {
-      "id": "K218",
+      "id": "K157",
       "sec": "NOI",
       "sub": "数学与其他",
       "title": "置换群与循环群",
       "level": 9,
       "phase": "X",
       "pre": [
-        "K217"
+        "K156"
       ],
       "problems": [
         {
           "pid": "P2127",
           "name": "序列排序",
           "difficulty": 5
+        },
+        {
+          "pid": "P1446",
+          "name": "[HNOI2008] Cards",
+          "difficulty": 7
+        },
+        {
+          "pid": "P2561",
+          "name": "[AHOI2002] 黑白瓷砖",
+          "difficulty": 7
+        },
+        {
+          "pid": "P2565",
+          "name": "[SCOI2009] 骰子的学问",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4980",
+          "name": "【模板】Pólya（Polya）定理",
+          "difficulty": 7
+        },
+        {
+          "pid": "P5233",
+          "name": "[JSOI2012] 爱之项链",
+          "difficulty": 7
+        },
+        {
+          "pid": "P10628",
+          "name": "[JOI Open 2024] 图书馆 3 / Library 3",
+          "difficulty": 7
+        },
+        {
+          "pid": "P11028",
+          "name": "[COTS 2020] 龙猫 Totoro",
+          "difficulty": 7
+        },
+        {
+          "pid": "P11113",
+          "name": "[ROI 2024] 2026 (Day 1)",
+          "difficulty": 7
+        },
+        {
+          "pid": "P13795",
+          "name": "[SWERC 2023] Flag performance",
+          "difficulty": 7
+        },
+        {
+          "pid": "P17096",
+          "name": "[ICPC 2017 Qingdao R] Floppy Cube",
+          "difficulty": 7
         }
       ],
-      "num": 37,
-      "label": "归属·X37-NOI9级"
+      "num": 36,
+      "label": "归属·X36-NOI9级"
     },
     {
-      "id": "K219",
+      "id": "K158",
       "sec": "NOI",
       "sub": "数学与其他",
       "title": "母函数",
       "level": 9,
       "phase": "X",
       "pre": [
-        "K218"
+        "K157"
       ],
-      "problems": [],
-      "num": 38,
-      "label": "归属·X38-NOI9级"
+      "problems": [
+        {
+          "pid": "P1161",
+          "name": "开灯",
+          "difficulty": 1
+        },
+        {
+          "pid": "P1615",
+          "name": "西游记公司",
+          "difficulty": 1
+        },
+        {
+          "pid": "P1015",
+          "name": "[NOIP 1999 普及组] 回文数",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1017",
+          "name": "[NOIP 2000 提高组] 进制转换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1062",
+          "name": "[NOIP 2006 普及组] 数列",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1100",
+          "name": "高低位交换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1143",
+          "name": "进制转换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1206",
+          "name": "[USACO1.2] 回文平方数 Palindromic Squares",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1207",
+          "name": "[USACO1.2] 双重回文数 Dual Palindromes",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1604",
+          "name": "B进制星球",
+          "difficulty": 2
+        }
+      ],
+      "num": 37,
+      "label": "归属·X37-NOI9级"
     },
     {
-      "id": "K220",
+      "id": "K159",
       "sec": "NOI",
       "sub": "数学与其他",
       "title": "莫比乌斯反演",
       "level": 9,
       "phase": "X",
       "pre": [
-        "K219"
+        "K158"
       ],
-      "problems": [],
-      "num": 39,
-      "label": "归属·X39-NOI9级"
+      "problems": [
+        {
+          "pid": "P3172",
+          "name": "[CQOI2015] 选数",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3307",
+          "name": "[SDOI2013] 项链",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3312",
+          "name": "[SDOI2014] 数表",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3327",
+          "name": "[SDOI2015] 约数个数和",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3700",
+          "name": "[CQOI2017] 小 Q 的表格",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3768",
+          "name": "简单的数学题",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3790",
+          "name": "文艺数学题",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4152",
+          "name": "[WC2014] 时空穿梭",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4318",
+          "name": "完全平方数",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4449",
+          "name": "于神之怒加强版",
+          "difficulty": 7
+        }
+      ],
+      "num": 38,
+      "label": "归属·X38-NOI9级"
     },
     {
-      "id": "K221",
+      "id": "K160",
       "sec": "NOI",
       "sub": "数学与其他",
       "title": "Burnside 引理与 Pólya 定理",
       "level": 9,
       "phase": "X",
       "pre": [
-        "K220"
+        "K159"
       ],
-      "problems": [],
-      "num": 40,
-      "label": "归属·X40-NOI9级"
+      "problems": [
+        {
+          "pid": "P2561",
+          "name": "[AHOI2002] 黑白瓷砖",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4980",
+          "name": "【模板】Pólya（Polya）定理",
+          "difficulty": 7
+        },
+        {
+          "pid": "P5233",
+          "name": "[JSOI2012] 爱之项链",
+          "difficulty": 7
+        },
+        {
+          "pid": "P8633",
+          "name": "[蓝桥杯 2015 国 B] 模型染色",
+          "difficulty": 7
+        },
+        {
+          "pid": "P17096",
+          "name": "[ICPC 2017 Qingdao R] Floppy Cube",
+          "difficulty": 7
+        },
+        {
+          "pid": "P17206",
+          "name": "「DLESS-6」Lost Requiem",
+          "difficulty": 7
+        },
+        {
+          "pid": "P17813",
+          "name": "[ICPC 2019 Nanchang R] Summon",
+          "difficulty": 7
+        },
+        {
+          "pid": "P2162",
+          "name": "[SHOI2007] 宝石纪念币",
+          "difficulty": 8
+        },
+        {
+          "pid": "P4128",
+          "name": "[SHOI2006] 有色图",
+          "difficulty": 8
+        },
+        {
+          "pid": "P4708",
+          "name": "画画",
+          "difficulty": 8
+        }
+      ],
+      "num": 39,
+      "label": "归属·X39-NOI9级"
     },
     {
-      "id": "K222",
+      "id": "K161",
       "sec": "NOI",
       "sub": "数学与其他",
       "title": "斯特林数",
       "level": 9,
       "phase": "X",
       "pre": [
-        "K221"
+        "K160"
       ],
-      "problems": [],
-      "num": 41,
-      "label": "归属·X41-NOI9级"
+      "problems": [
+        {
+          "pid": "P1161",
+          "name": "开灯",
+          "difficulty": 1
+        },
+        {
+          "pid": "P1615",
+          "name": "西游记公司",
+          "difficulty": 1
+        },
+        {
+          "pid": "P1015",
+          "name": "[NOIP 1999 普及组] 回文数",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1017",
+          "name": "[NOIP 2000 提高组] 进制转换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1062",
+          "name": "[NOIP 2006 普及组] 数列",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1100",
+          "name": "高低位交换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1143",
+          "name": "进制转换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1206",
+          "name": "[USACO1.2] 回文平方数 Palindromic Squares",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1207",
+          "name": "[USACO1.2] 双重回文数 Dual Palindromes",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1604",
+          "name": "B进制星球",
+          "difficulty": 2
+        }
+      ],
+      "num": 40,
+      "label": "归属·X40-NOI9级"
     },
     {
-      "id": "K223",
+      "id": "K162",
       "sec": "NOI",
       "sub": "数学与其他",
       "title": "无根树的 Prüfer 序列",
       "level": 9,
       "phase": "X",
       "pre": [
-        "K222"
+        "K161"
       ],
-      "problems": [],
-      "num": 42,
-      "label": "归属·X42-NOI9级"
+      "problems": [
+        {
+          "pid": "P2624",
+          "name": "[HNOI2008] 明明的烦恼",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4738",
+          "name": "[CERC2017] Cumulative Code",
+          "difficulty": 7
+        },
+        {
+          "pid": "P5219",
+          "name": "无聊的水题 I",
+          "difficulty": 7
+        },
+        {
+          "pid": "P11039",
+          "name": "【MX-X3-T6】「RiOI-4」TECHNOPOLIS 2085",
+          "difficulty": 7
+        },
+        {
+          "pid": "P12355",
+          "name": "「HCOI-R2」巡回演出",
+          "difficulty": 7
+        },
+        {
+          "pid": "P12939",
+          "name": "[NERC 2019] Foolprüf Security",
+          "difficulty": 7
+        },
+        {
+          "pid": "P14587",
+          "name": "[LNCPC 2025] 广义菊花图计数",
+          "difficulty": 7
+        },
+        {
+          "pid": "P17608",
+          "name": "「RiOI-8」沢渡 ココ",
+          "difficulty": 7
+        },
+        {
+          "pid": "P17624",
+          "name": "[qaswed12 OI R1] BrrTree",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4002",
+          "name": "[清华集训 2017] 生成树计数",
+          "difficulty": 8
+        }
+      ],
+      "num": 41,
+      "label": "归属·X41-NOI9级"
     },
     {
-      "id": "K224",
+      "id": "K163",
       "sec": "NOI",
       "sub": "数学与其他",
       "title": "逆矩阵与行列式",
       "level": 9,
       "phase": "X",
       "pre": [
-        "K223"
+        "K162"
       ],
-      "problems": [],
-      "num": 43,
-      "label": "归属·X43-NOI9级"
+      "problems": [
+        {
+          "pid": "P2109",
+          "name": "[NOI2007] 生成树计数",
+          "difficulty": 6
+        },
+        {
+          "pid": "P4455",
+          "name": "[CQOI2018] 社交网络",
+          "difficulty": 7
+        },
+        {
+          "pid": "P5807",
+          "name": "【模板】BEST 定理 / Which Dreamed It",
+          "difficulty": 7
+        },
+        {
+          "pid": "P6624",
+          "name": "[省选联考 2020 A 卷] 作业题",
+          "difficulty": 7
+        },
+        {
+          "pid": "P13181",
+          "name": "[GCJ 2017 Finals] Spanning Planning",
+          "difficulty": 7
+        },
+        {
+          "pid": "P5296",
+          "name": "[北京省选集训2019] 生成树计数",
+          "difficulty": 8
+        },
+        {
+          "pid": "P8114",
+          "name": "[Cnoi2021] 六边形战士",
+          "difficulty": 8
+        },
+        {
+          "pid": "P10216",
+          "name": "【模板】Pfaffian",
+          "difficulty": 8
+        },
+        {
+          "pid": "P17617",
+          "name": "[Math+Girl×1] QuomodocunquizE / A+B>C Problem",
+          "difficulty": 8
+        },
+        {
+          "pid": "P17803",
+          "name": "[CXOI2026] 永远都要在一起",
+          "difficulty": 8
+        }
+      ],
+      "num": 42,
+      "label": "归属·X42-NOI9级"
     },
     {
-      "id": "K225",
+      "id": "K164",
       "sec": "NOI",
       "sub": "数学与其他",
       "title": "向量空间与线性相关",
       "level": 9,
       "phase": "X",
       "pre": [
-        "K224"
+        "K163"
       ],
-      "problems": [],
-      "num": 44,
-      "label": "归属·X44-NOI9级"
+      "problems": [
+        {
+          "pid": "P1224",
+          "name": "[NOI2013] 向量内积",
+          "difficulty": 7
+        },
+        {
+          "pid": "P2333",
+          "name": "[SCOI2006] 一孔之见",
+          "difficulty": 7
+        },
+        {
+          "pid": "P2603",
+          "name": "[ZJOI2008] 无序运动",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3265",
+          "name": "[JLOI2015] 装备购买",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3309",
+          "name": "[SDOI2014] 向量集",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3803",
+          "name": "【模板】多项式乘法（FFT）",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4151",
+          "name": "[WC2011] 最大 XOR 和路径",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4166",
+          "name": "[SCOI2007] 最大土地面积",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4196",
+          "name": "【模板】半平面交 / [CQOI2006] 凸多边形",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4455",
+          "name": "[CQOI2018] 社交网络",
+          "difficulty": 7
+        }
+      ],
+      "num": 43,
+      "label": "归属·X43-NOI9级"
     },
     {
-      "id": "K226",
+      "id": "K165",
       "sec": "NOI",
       "sub": "数学与其他",
       "title": "基与线性基",
       "level": 9,
       "phase": "X",
       "pre": [
-        "K225"
+        "K164"
       ],
       "problems": [
         {
@@ -6630,48 +13680,195 @@ window.AKIOI_SYLLABUS = {
           "pid": "P3292",
           "name": "[SCOI2016] 幸运数字",
           "difficulty": 7
+        },
+        {
+          "pid": "P3220",
+          "name": "[HNOI2012] 与非",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3265",
+          "name": "[JLOI2015] 装备购买",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3733",
+          "name": "[HAOI2017] 八纵八横",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4151",
+          "name": "[WC2011] 最大 XOR 和路径",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4869",
+          "name": "albus就是要第一个出场",
+          "difficulty": 7
+        },
+        {
+          "pid": "P5169",
+          "name": "xtq 的异或和",
+          "difficulty": 7
+        },
+        {
+          "pid": "P5556",
+          "name": "圣剑护符",
+          "difficulty": 7
+        },
+        {
+          "pid": "P7949",
+          "name": "[✗✓OI R1] 左方之地",
+          "difficulty": 7
+        },
+        {
+          "pid": "P9382",
+          "name": "[THUPC 2023 决赛] Freshman Dream",
+          "difficulty": 7
         }
       ],
-      "num": 45,
-      "label": "归属·X45-NOI9级"
+      "num": 44,
+      "label": "归属·X44-NOI9级"
     },
     {
-      "id": "K227",
+      "id": "K166",
       "sec": "NOI",
       "sub": "数学与其他",
       "title": "多项式函数的微分与积分",
       "level": 8,
       "phase": "X",
       "pre": [
-        "K226"
+        "K165"
       ],
-      "problems": [],
-      "num": 21,
-      "label": "归属·X21-NOI8级"
+      "problems": [
+        {
+          "pid": "P3723",
+          "name": "[AHOI2017/HNOI2017] 礼物",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3803",
+          "name": "【模板】多项式乘法（FFT）",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4238",
+          "name": "【模板】多项式乘法逆",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4239",
+          "name": "【模板】任意模数多项式乘法逆",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4245",
+          "name": "【模板】任意模数多项式乘法",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4512",
+          "name": "【模板】多项式除法",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4721",
+          "name": "【模板】分治 FFT",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4725",
+          "name": "【模板】多项式对数函数（多项式 ln）",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4726",
+          "name": "【模板】多项式指数函数（多项式 exp）",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4831",
+          "name": "Scarlet loves WenHuaKe",
+          "difficulty": 7
+        }
+      ],
+      "num": 18,
+      "label": "归属·X18-NOI8级"
     },
     {
-      "id": "K228",
+      "id": "K167",
       "sec": "NOI",
       "sub": "数学与其他",
       "title": "泰勒级数",
       "level": 10,
       "phase": "X",
       "pre": [
-        "K227"
+        "K166"
       ],
-      "problems": [],
-      "num": 59,
-      "label": "归属·X59-NOI10级"
+      "problems": [
+        {
+          "pid": "P3510",
+          "name": "[POI 2010] JED-Ones",
+          "difficulty": 0
+        },
+        {
+          "pid": "P1161",
+          "name": "开灯",
+          "difficulty": 1
+        },
+        {
+          "pid": "P1615",
+          "name": "西游记公司",
+          "difficulty": 1
+        },
+        {
+          "pid": "P1015",
+          "name": "[NOIP 1999 普及组] 回文数",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1017",
+          "name": "[NOIP 2000 提高组] 进制转换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1062",
+          "name": "[NOIP 2006 普及组] 数列",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1100",
+          "name": "高低位交换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P3789",
+          "name": "Azuki loves coloring",
+          "difficulty": 8
+        },
+        {
+          "pid": "P7289",
+          "name": "「EZEC-5」「KrOI2021」Chasse Neige",
+          "difficulty": 8
+        },
+        {
+          "pid": "P7292",
+          "name": "「EZEC-5」「KrOI2021」Chasse Neige 加强版",
+          "difficulty": 8
+        }
+      ],
+      "num": 58,
+      "label": "归属·X58-NOI10级"
     },
     {
-      "id": "K229",
+      "id": "K168",
       "sec": "NOI",
       "sub": "数学与其他",
       "title": "快速傅里叶变换 FFT",
       "level": 10,
       "phase": "X",
       "pre": [
-        "K228"
+        "K167"
       ],
       "problems": [
         {
@@ -6680,37 +13877,138 @@ window.AKIOI_SYLLABUS = {
           "difficulty": 6
         },
         {
+          "pid": "P1919",
+          "name": "【模板】高精度乘法 / A*B Problem 升级版",
+          "difficulty": 7
+        },
+        {
+          "pid": "P2000",
+          "name": "拯救世界",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3321",
+          "name": "[SDOI2015] 序列统计",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3338",
+          "name": "[ZJOI2014] 力",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3723",
+          "name": "[AHOI2017/HNOI2017] 礼物",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3803",
+          "name": "【模板】多项式乘法（FFT）",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4091",
+          "name": "[HEOI2016/TJOI2016] 求和",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4173",
+          "name": "残缺的字符串",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4199",
+          "name": "万径人踪灭",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4238",
+          "name": "【模板】多项式乘法逆",
+          "difficulty": 7
+        },
+        {
           "pid": "P5432",
           "name": "A/B Problem（高精度除法Ⅱ）",
           "difficulty": 8
         }
       ],
-      "num": 60,
-      "label": "归属·X60-NOI10级"
+      "num": 59,
+      "label": "归属·X59-NOI10级"
     },
     {
-      "id": "K230",
+      "id": "K169",
       "sec": "NOI",
       "sub": "数学与其他",
       "title": "概率的基本概念",
       "level": 8,
       "phase": "X",
       "pre": [
-        "K229"
+        "K168"
       ],
-      "problems": [],
-      "num": 22,
-      "label": "归属·X22-NOI8级"
+      "problems": [
+        {
+          "pid": "P1161",
+          "name": "开灯",
+          "difficulty": 1
+        },
+        {
+          "pid": "P1615",
+          "name": "西游记公司",
+          "difficulty": 1
+        },
+        {
+          "pid": "P1015",
+          "name": "[NOIP 1999 普及组] 回文数",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1017",
+          "name": "[NOIP 2000 提高组] 进制转换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1062",
+          "name": "[NOIP 2006 普及组] 数列",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1100",
+          "name": "高低位交换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1143",
+          "name": "进制转换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1206",
+          "name": "[USACO1.2] 回文平方数 Palindromic Squares",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1207",
+          "name": "[USACO1.2] 双重回文数 Dual Palindromes",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1604",
+          "name": "B进制星球",
+          "difficulty": 2
+        }
+      ],
+      "num": 19,
+      "label": "归属·X19-NOI8级"
     },
     {
-      "id": "K231",
+      "id": "K170",
       "sec": "NOI",
       "sub": "数学与其他",
       "title": "离散随机变量的期望与方差",
       "level": 9,
       "phase": "X",
       "pre": [
-        "K230"
+        "K169"
       ],
       "problems": [
         {
@@ -6732,156 +14030,715 @@ window.AKIOI_SYLLABUS = {
           "pid": "P1850",
           "name": "[NOIP 2016 提高组] 换教室",
           "difficulty": 5
+        },
+        {
+          "pid": "P3412",
+          "name": "仓鼠找sugar II",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4235",
+          "name": "Hash?",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4517",
+          "name": "[JSOI2018] 防御网络",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4706",
+          "name": "取石子",
+          "difficulty": 7
+        },
+        {
+          "pid": "P5298",
+          "name": "[PKUWC2018] Minimax",
+          "difficulty": 7
+        },
+        {
+          "pid": "P5299",
+          "name": "[PKUWC2018] Slay the Spire",
+          "difficulty": 7
+        },
+        {
+          "pid": "P5415",
+          "name": "[YNOI2019] 游戏",
+          "difficulty": 7
+        },
+        {
+          "pid": "P5492",
+          "name": "[PKUWC2018] 随机算法",
+          "difficulty": 7
+        },
+        {
+          "pid": "P9475",
+          "name": "[_-0 A] 考试",
+          "difficulty": 7
+        },
+        {
+          "pid": "P10141",
+          "name": "[USACO24JAN] Merging Cells P",
+          "difficulty": 7
         }
       ],
-      "num": 46,
-      "label": "归属·X46-NOI9级"
+      "num": 45,
+      "label": "归属·X45-NOI9级"
     },
     {
-      "id": "K232",
+      "id": "K171",
       "sec": "NOI",
       "sub": "数学与其他",
       "title": "条件概率与贝叶斯公式",
       "level": 9,
       "phase": "X",
       "pre": [
-        "K231"
+        "K170"
       ],
-      "problems": [],
-      "num": 47,
-      "label": "归属·X47-NOI9级"
+      "problems": [
+        {
+          "pid": "P1161",
+          "name": "开灯",
+          "difficulty": 1
+        },
+        {
+          "pid": "P1615",
+          "name": "西游记公司",
+          "difficulty": 1
+        },
+        {
+          "pid": "P1015",
+          "name": "[NOIP 1999 普及组] 回文数",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1017",
+          "name": "[NOIP 2000 提高组] 进制转换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1062",
+          "name": "[NOIP 2006 普及组] 数列",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1100",
+          "name": "高低位交换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1143",
+          "name": "进制转换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1206",
+          "name": "[USACO1.2] 回文平方数 Palindromic Squares",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1207",
+          "name": "[USACO1.2] 双重回文数 Dual Palindromes",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1604",
+          "name": "B进制星球",
+          "difficulty": 2
+        }
+      ],
+      "num": 46,
+      "label": "归属·X46-NOI9级"
     },
     {
-      "id": "K233",
+      "id": "K172",
       "sec": "NOI",
       "sub": "数学与其他",
       "title": "尼姆博弈",
       "level": 9,
       "phase": "X",
       "pre": [
-        "K232"
+        "K171"
       ],
-      "problems": [],
-      "num": 48,
-      "label": "归属·X48-NOI9级"
+      "problems": [
+        {
+          "pid": "P1161",
+          "name": "开灯",
+          "difficulty": 1
+        },
+        {
+          "pid": "P1615",
+          "name": "西游记公司",
+          "difficulty": 1
+        },
+        {
+          "pid": "P1015",
+          "name": "[NOIP 1999 普及组] 回文数",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1017",
+          "name": "[NOIP 2000 提高组] 进制转换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1062",
+          "name": "[NOIP 2006 普及组] 数列",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1100",
+          "name": "高低位交换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1143",
+          "name": "进制转换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1206",
+          "name": "[USACO1.2] 回文平方数 Palindromic Squares",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1207",
+          "name": "[USACO1.2] 双重回文数 Dual Palindromes",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1604",
+          "name": "B进制星球",
+          "difficulty": 2
+        }
+      ],
+      "num": 47,
+      "label": "归属·X47-NOI9级"
     },
     {
-      "id": "K234",
+      "id": "K173",
       "sec": "NOI",
       "sub": "数学与其他",
       "title": "SG 函数",
       "level": 9,
       "phase": "X",
       "pre": [
-        "K233"
+        "K172"
       ],
       "problems": [
         {
           "pid": "P2197",
           "name": "【模板】Nim 游戏",
           "difficulty": 4
+        },
+        {
+          "pid": "P2575",
+          "name": "高手过招",
+          "difficulty": 6
+        },
+        {
+          "pid": "P2594",
+          "name": "[ZJOI2009] 染色游戏",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3235",
+          "name": "[HNOI2014] 江南乐",
+          "difficulty": 7
+        },
+        {
+          "pid": "P7490",
+          "name": "「Stoi2031」蒲公英的约定（vol.1）",
+          "difficulty": 7
+        },
+        {
+          "pid": "P7491",
+          "name": "「Stoi2031」蒲公英的约定（vol.2）",
+          "difficulty": 7
+        },
+        {
+          "pid": "P8994",
+          "name": "[北大集训 2021] 经典游戏",
+          "difficulty": 7
+        },
+        {
+          "pid": "P9003",
+          "name": "[RC-07] Game Theory",
+          "difficulty": 7
+        },
+        {
+          "pid": "P13114",
+          "name": "[GCJ 2019 #1C] Bacterial Tactics",
+          "difficulty": 7
+        },
+        {
+          "pid": "P16790",
+          "name": "[蓝桥杯 2026 国 A] 魔法前缀",
+          "difficulty": 7
+        },
+        {
+          "pid": "P16792",
+          "name": "[蓝桥杯 2026 国 A] 不互质游戏",
+          "difficulty": 7
         }
       ],
-      "num": 49,
-      "label": "归属·X49-NOI9级"
+      "num": 48,
+      "label": "归属·X48-NOI9级"
     },
     {
-      "id": "K235",
+      "id": "K174",
       "sec": "NOI",
       "sub": "数学与其他",
       "title": "单纯形法",
       "level": 10,
       "phase": "X",
       "pre": [
-        "K234"
+        "K173"
       ],
-      "problems": [],
-      "num": 61,
-      "label": "归属·X61-NOI10级"
+      "problems": [
+        {
+          "pid": "P1161",
+          "name": "开灯",
+          "difficulty": 1
+        },
+        {
+          "pid": "P1615",
+          "name": "西游记公司",
+          "difficulty": 1
+        },
+        {
+          "pid": "P1015",
+          "name": "[NOIP 1999 普及组] 回文数",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1017",
+          "name": "[NOIP 2000 提高组] 进制转换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1062",
+          "name": "[NOIP 2006 普及组] 数列",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1100",
+          "name": "高低位交换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1143",
+          "name": "进制转换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1206",
+          "name": "[USACO1.2] 回文平方数 Palindromic Squares",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1207",
+          "name": "[USACO1.2] 双重回文数 Dual Palindromes",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1604",
+          "name": "B进制星球",
+          "difficulty": 2
+        }
+      ],
+      "num": 60,
+      "label": "归属·X60-NOI10级"
     },
     {
-      "id": "K236",
+      "id": "K175",
       "sec": "NOI",
       "sub": "数学与其他",
       "title": "点线面位置关系判定",
       "level": 8,
       "phase": "X",
       "pre": [
-        "K235"
+        "K174"
       ],
-      "problems": [],
-      "num": 23,
-      "label": "归属·X23-NOI8级"
+      "problems": [
+        {
+          "pid": "P1161",
+          "name": "开灯",
+          "difficulty": 1
+        },
+        {
+          "pid": "P1615",
+          "name": "西游记公司",
+          "difficulty": 1
+        },
+        {
+          "pid": "P1015",
+          "name": "[NOIP 1999 普及组] 回文数",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1017",
+          "name": "[NOIP 2000 提高组] 进制转换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1062",
+          "name": "[NOIP 2006 普及组] 数列",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1100",
+          "name": "高低位交换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1143",
+          "name": "进制转换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1206",
+          "name": "[USACO1.2] 回文平方数 Palindromic Squares",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1207",
+          "name": "[USACO1.2] 双重回文数 Dual Palindromes",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1604",
+          "name": "B进制星球",
+          "difficulty": 2
+        }
+      ],
+      "num": 20,
+      "label": "归属·X20-NOI8级"
     },
     {
-      "id": "K237",
+      "id": "K176",
       "sec": "NOI",
       "sub": "数学与其他",
       "title": "一般图形面积计算",
       "level": 8,
       "phase": "X",
       "pre": [
-        "K236"
+        "K175"
       ],
-      "problems": [],
-      "num": 24,
-      "label": "归属·X24-NOI8级"
+      "problems": [
+        {
+          "pid": "P1161",
+          "name": "开灯",
+          "difficulty": 1
+        },
+        {
+          "pid": "P1615",
+          "name": "西游记公司",
+          "difficulty": 1
+        },
+        {
+          "pid": "P1015",
+          "name": "[NOIP 1999 普及组] 回文数",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1017",
+          "name": "[NOIP 2000 提高组] 进制转换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1062",
+          "name": "[NOIP 2006 普及组] 数列",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1100",
+          "name": "高低位交换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1143",
+          "name": "进制转换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1206",
+          "name": "[USACO1.2] 回文平方数 Palindromic Squares",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1207",
+          "name": "[USACO1.2] 双重回文数 Dual Palindromes",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1604",
+          "name": "B进制星球",
+          "difficulty": 2
+        }
+      ],
+      "num": 21,
+      "label": "归属·X21-NOI8级"
     },
     {
-      "id": "K238",
+      "id": "K177",
       "sec": "NOI",
       "sub": "数学与其他",
       "title": "二维凸包",
       "level": 8,
       "phase": "X",
       "pre": [
-        "K237"
+        "K176"
       ],
-      "problems": [],
-      "num": 25,
-      "label": "归属·X25-NOI8级"
+      "problems": [
+        {
+          "pid": "P1452",
+          "name": "[USACO03FALL] Beauty Contest G",
+          "difficulty": 7
+        },
+        {
+          "pid": "P2287",
+          "name": "[HNOI2004] 最佳包裹",
+          "difficulty": 7
+        },
+        {
+          "pid": "P2521",
+          "name": "[HAOI2011] 防线修建",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3122",
+          "name": "[USACO15FEB] Fencing the Herd G",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3187",
+          "name": "[HNOI2007] 最小矩形覆盖",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3222",
+          "name": "[HNOI2012] 射箭",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3291",
+          "name": "[SCOI2016] 妖怪",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3299",
+          "name": "[SDOI2013] 保护出题人",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3309",
+          "name": "[SDOI2014] 向量集",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3442",
+          "name": "[POI 2006] NAJ-The Invasion",
+          "difficulty": 7
+        }
+      ],
+      "num": 22,
+      "label": "归属·X22-NOI8级"
     },
     {
-      "id": "K239",
+      "id": "K178",
       "sec": "NOI",
       "sub": "数学与其他",
       "title": "半平面交",
       "level": 9,
       "phase": "X",
       "pre": [
-        "K238"
+        "K177"
       ],
-      "problems": [],
-      "num": 50,
-      "label": "归属·X50-NOI9级"
+      "problems": [
+        {
+          "pid": "P2600",
+          "name": "[ZJOI2008] 瞭望塔",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3222",
+          "name": "[HNOI2012] 射箭",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3256",
+          "name": "[JLOI2013] 赛车",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3493",
+          "name": "[POI 2009] WSP-Island",
+          "difficulty": 7
+        },
+        {
+          "pid": "P4196",
+          "name": "【模板】半平面交 / [CQOI2006] 凸多边形",
+          "difficulty": 7
+        },
+        {
+          "pid": "P5928",
+          "name": "[清华集训 2014] 文学",
+          "difficulty": 7
+        },
+        {
+          "pid": "P7397",
+          "name": "雨水收集系统（2021 CoE-I E）",
+          "difficulty": 7
+        },
+        {
+          "pid": "P11264",
+          "name": "[COTS 2018] 逃遁 Bijeg",
+          "difficulty": 7
+        },
+        {
+          "pid": "P3297",
+          "name": "[SDOI2013] 逃考",
+          "difficulty": 8
+        },
+        {
+          "pid": "P4250",
+          "name": "[SCOI2015] 小凸想跑步",
+          "difficulty": 8
+        }
+      ],
+      "num": 49,
+      "label": "归属·X49-NOI9级"
     },
     {
-      "id": "K240",
+      "id": "K179",
       "sec": "NOI",
       "sub": "数学与其他",
       "title": "熵、互信息与相对熵",
       "level": 10,
       "phase": "X",
       "pre": [
-        "K239"
+        "K178"
       ],
-      "problems": [],
-      "num": 62,
-      "label": "归属·X62-NOI10级"
+      "problems": [
+        {
+          "pid": "P1161",
+          "name": "开灯",
+          "difficulty": 1
+        },
+        {
+          "pid": "P1615",
+          "name": "西游记公司",
+          "difficulty": 1
+        },
+        {
+          "pid": "P1015",
+          "name": "[NOIP 1999 普及组] 回文数",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1017",
+          "name": "[NOIP 2000 提高组] 进制转换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1062",
+          "name": "[NOIP 2006 普及组] 数列",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1100",
+          "name": "高低位交换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1143",
+          "name": "进制转换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1206",
+          "name": "[USACO1.2] 回文平方数 Palindromic Squares",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1207",
+          "name": "[USACO1.2] 双重回文数 Dual Palindromes",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1604",
+          "name": "B进制星球",
+          "difficulty": 2
+        }
+      ],
+      "num": 61,
+      "label": "归属·X61-NOI10级"
     },
     {
-      "id": "K241",
+      "id": "K180",
       "sec": "NOI",
       "sub": "数学与其他",
       "title": "信息复杂度与通讯复杂度",
       "level": 10,
       "phase": "X",
       "pre": [
-        "K240"
+        "K179"
       ],
-      "problems": [],
-      "num": 63,
-      "label": "归属·X63-NOI10级"
+      "problems": [
+        {
+          "pid": "P1161",
+          "name": "开灯",
+          "difficulty": 1
+        },
+        {
+          "pid": "P1615",
+          "name": "西游记公司",
+          "difficulty": 1
+        },
+        {
+          "pid": "P1015",
+          "name": "[NOIP 1999 普及组] 回文数",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1017",
+          "name": "[NOIP 2000 提高组] 进制转换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1062",
+          "name": "[NOIP 2006 普及组] 数列",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1100",
+          "name": "高低位交换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1143",
+          "name": "进制转换",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1206",
+          "name": "[USACO1.2] 回文平方数 Palindromic Squares",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1207",
+          "name": "[USACO1.2] 双重回文数 Dual Palindromes",
+          "difficulty": 2
+        },
+        {
+          "pid": "P1604",
+          "name": "B进制星球",
+          "difficulty": 2
+        }
+      ],
+      "num": 62,
+      "label": "归属·X62-NOI10级"
     }
   ]
 };

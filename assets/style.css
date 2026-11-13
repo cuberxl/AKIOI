@@ -1643,3 +1643,10 @@ body.dag-panel-open .dag-legend { opacity: .25; }
 .dag-svg .dag-box { stroke-width: 1.3; }
 .dag-svg marker path { stroke: none; }
 .dag-svg .dag-ring-bg, .dag-svg .dag-ring-fg { stroke-width: 2.6; }
+
+.dag-band { pointer-events: none; }
+.dag-sec-label { fill: var(--muted); font-size: 11px; font-family: var(--mono); letter-spacing: .06em; }
+.dag-head-t { fill: var(--text-2); font-size: 10.5px; font-weight: 600; }
+
+/* 保证图谱底板完全不透（避免底下列表透出来） */
+.dag-overlay { background-color: var(--bg); }
