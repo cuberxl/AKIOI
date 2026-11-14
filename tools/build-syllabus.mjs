@@ -21,6 +21,20 @@ const poolMeta = {};
 Object.values(tagPool).forEach((list) => list.forEach((p) => { poolMeta[p.pid] = p; }));
 const lookup = (pid) => meta[pid] || poolMeta[pid];
 const probTags = readJson(join(here, 'problem-tags.json'));
+import { createRequire } from 'node:module';
+const require_ = createRequire(import.meta.url);
+const DEPS = require_(join(here, 'deps.cjs'));
+const titleToId = {};
+outline.forEach((i) => { titleToId[i.title] = i.id; });
+const depMap = {};
+const depsMissing = [];
+DEPS.forEach(([child, parents]) => {
+  const cid = titleToId[child];
+  if (!cid) { depsMissing.push(child); return; }
+  const ids = parents.map((t) => titleToId[t]).filter(Boolean);
+  if (ids.length) depMap[cid] = ids;
+});
+if (depsMissing.length) console.warn('依赖表里找不到的条目: ' + depsMissing.join(' / '));
 
 const PHASE = (lv) => (lv <= 4 ? 'B' : lv <= 7 ? 'P' : 'X');
 
@@ -131,11 +145,13 @@ const nodes = outline.map((it, idx) => {
   const problems = pids
     .map((pid) => ({ pid, name: lookup(pid).name, difficulty: lookup(pid).difficulty }))
     .sort((a, b) => a.difficulty - b.difficulty);
+  const sem = depMap[it.id];
   const prev = outline[idx - 1];
-  const pre = prev && prev.sub === it.sub ? prev.id : [];
+  const pre = sem && sem.length ? sem : (prev && prev.sub === it.sub ? [prev.id] : []);
+  const preSem = !!(sem && sem.length);
   return {
     id: it.id, sec: it.sec, sub: it.sub, title: it.title, level: it.level,
-    phase: PHASE(it.level), pre: Array.isArray(pre) ? pre : [pre].filter(Boolean), problems
+    phase: PHASE(it.level), pre: Array.isArray(pre) ? pre : [pre].filter(Boolean), preSem, problems
   };
 });
 

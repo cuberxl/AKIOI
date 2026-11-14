@@ -1028,24 +1028,6 @@
     var gNodes = document.createElementNS(NS, 'g');
     gNodes.setAttribute('class', 'dag-nodes');
 
-    // 跨章节依赖：每个章节的入口节点挂到上一级 / 上一小节的出口节点
-    groups.forEach(function (g, gi) {
-      var entrance = g.items[0];
-      if (!entrance) return;
-      for (var k = gi - 1; k >= 0; k--) {
-        if (groups[k].sub === g.sub) {
-          var exit = groups[k].items[groups[k].items.length - 1];
-          if (exit && !entrance.pre.includes(exit.id)) entrance.pre.push(exit.id);
-          break;
-        }
-      }
-      if (gi > 0 && groups[gi - 1].sec === g.sec) {
-        var prevItems = groups[gi - 1].items;
-        var exit2 = prevItems[prevItems.length - 1];
-        if (exit2 && !entrance.pre.includes(exit2.id)) entrance.pre.push(exit2.id);
-      }
-    });
-
     nodes.forEach(function (n) {
       n.pre.forEach(function (pid) {
         var p = byId[pid];
@@ -1056,7 +1038,7 @@
         var path = document.createElementNS(NS, 'path');
         path.setAttribute('d', 'M' + x1 + ',' + y1 + ' C' + mx + ',' + y1 + ' ' + mx + ',' + y2 + ' ' + x2 + ',' + y2);
         path.setAttribute('fill', 'none');
-        path.setAttribute('class', p.sub !== n.sub ? 'dag-edge cross' : 'dag-edge');
+        path.setAttribute('class', n.preSem ? 'dag-edge sem' : 'dag-edge chain');
         path.setAttribute('stroke', n.color);
         path.setAttribute('marker-end', 'url(#dag-arrow)');
         gEdges.appendChild(path);

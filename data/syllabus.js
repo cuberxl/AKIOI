@@ -1,6 +1,6 @@
 /* 由 tools/build-syllabus.mjs 生成：NOI 大纲 2025 + 洛谷标签归类 */
 window.AKIOI_SYLLABUS = {
-  "updated": "2026-11-13",
+  "updated": "2026-11-14",
   "totalProblems": 2411,
   "nodes": [
     {
@@ -11,6 +11,7 @@ window.AKIOI_SYLLABUS = {
       "level": 3,
       "phase": "B",
       "pre": [],
+      "preSem": false,
       "problems": [
         {
           "pid": "P1996",
@@ -86,6 +87,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K1"
       ],
+      "preSem": false,
       "problems": [
         {
           "pid": "P1106",
@@ -151,6 +153,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K2"
       ],
+      "preSem": false,
       "problems": [
         {
           "pid": "P5661",
@@ -391,6 +394,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K3"
       ],
+      "preSem": false,
       "problems": [
         {
           "pid": "P1996",
@@ -456,6 +460,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K4"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1996",
@@ -519,8 +524,9 @@ window.AKIOI_SYLLABUS = {
       "level": 3,
       "phase": "B",
       "pre": [
-        "K5"
+        "K4"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1996",
@@ -586,6 +592,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K6"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1996",
@@ -651,6 +658,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K7"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1996",
@@ -716,6 +724,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K8"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "B2105",
@@ -781,6 +790,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K9"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1996",
@@ -844,8 +854,9 @@ window.AKIOI_SYLLABUS = {
       "level": 4,
       "phase": "B",
       "pre": [
-        "K10"
+        "K8"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1149",
@@ -976,6 +987,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K11"
       ],
+      "preSem": false,
       "problems": [
         {
           "pid": "P1996",
@@ -1041,6 +1053,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K12"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1996",
@@ -1104,8 +1117,9 @@ window.AKIOI_SYLLABUS = {
       "level": 4,
       "phase": "B",
       "pre": [
-        "K13"
+        "K12"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1996",
@@ -1169,6 +1183,7 @@ window.AKIOI_SYLLABUS = {
       "level": 1,
       "phase": "B",
       "pre": [],
+      "preSem": false,
       "problems": [
         {
           "pid": "P1396",
@@ -1234,6 +1249,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K15"
       ],
+      "preSem": false,
       "problems": [
         {
           "pid": "P1396",
@@ -1297,8 +1313,9 @@ window.AKIOI_SYLLABUS = {
       "level": 1,
       "phase": "B",
       "pre": [
-        "K16"
+        "K15"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P2345",
@@ -1477,8 +1494,9 @@ window.AKIOI_SYLLABUS = {
       "level": 1,
       "phase": "B",
       "pre": [
-        "K17"
+        "K15"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1001",
@@ -1624,6 +1642,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K18"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P2240",
@@ -1782,8 +1801,9 @@ window.AKIOI_SYLLABUS = {
       "level": 3,
       "phase": "B",
       "pre": [
-        "K19"
+        "K21"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1028",
@@ -1897,8 +1917,9 @@ window.AKIOI_SYLLABUS = {
       "level": 4,
       "phase": "B",
       "pre": [
-        "K20"
+        "K18"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P4924",
@@ -2002,8 +2023,9 @@ window.AKIOI_SYLLABUS = {
       "level": 4,
       "phase": "B",
       "pre": [
-        "K21"
+        "K28"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P2249",
@@ -2164,6 +2186,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K22"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1396",
@@ -2242,8 +2265,9 @@ window.AKIOI_SYLLABUS = {
       "level": 3,
       "phase": "B",
       "pre": [
-        "K23"
+        "K20"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P8218",
@@ -2399,6 +2423,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K24"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P3397",
@@ -2517,8 +2542,9 @@ window.AKIOI_SYLLABUS = {
       "level": 4,
       "phase": "B",
       "pre": [
-        "K25"
+        "K18"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1781",
@@ -2669,6 +2695,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K26"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1037",
@@ -2734,6 +2761,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K27"
       ],
+      "preSem": false,
       "problems": [
         {
           "pid": "P1152",
@@ -2964,6 +2992,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K28"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1396",
@@ -3027,8 +3056,9 @@ window.AKIOI_SYLLABUS = {
       "level": 5,
       "phase": "P",
       "pre": [
-        "K29"
+        "K21"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1706",
@@ -3142,8 +3172,9 @@ window.AKIOI_SYLLABUS = {
       "level": 5,
       "phase": "P",
       "pre": [
-        "K30"
+        "K3"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P4913",
@@ -3257,8 +3288,10 @@ window.AKIOI_SYLLABUS = {
       "level": 4,
       "phase": "B",
       "pre": [
-        "K31"
+        "K30",
+        "K14"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1396",
@@ -3324,6 +3357,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K32"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1396",
@@ -3387,8 +3421,9 @@ window.AKIOI_SYLLABUS = {
       "level": 4,
       "phase": "B",
       "pre": [
-        "K33"
+        "K20"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1019",
@@ -3454,6 +3489,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K34"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P2392",
@@ -3692,8 +3728,9 @@ window.AKIOI_SYLLABUS = {
       "level": 5,
       "phase": "P",
       "pre": [
-        "K35"
+        "K34"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1435",
@@ -3822,6 +3859,7 @@ window.AKIOI_SYLLABUS = {
       "level": 1,
       "phase": "B",
       "pre": [],
+      "preSem": false,
       "problems": [
         {
           "pid": "P1161",
@@ -3887,6 +3925,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K37"
       ],
+      "preSem": false,
       "problems": [
         {
           "pid": "P1161",
@@ -3997,6 +4036,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K38"
       ],
+      "preSem": false,
       "problems": [
         {
           "pid": "P1161",
@@ -4062,6 +4102,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K39"
       ],
+      "preSem": false,
       "problems": [
         {
           "pid": "P1403",
@@ -4127,6 +4168,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K40"
       ],
+      "preSem": false,
       "problems": [
         {
           "pid": "P1161",
@@ -4190,8 +4232,9 @@ window.AKIOI_SYLLABUS = {
       "level": 3,
       "phase": "B",
       "pre": [
-        "K41"
+        "K40"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1161",
@@ -4255,8 +4298,9 @@ window.AKIOI_SYLLABUS = {
       "level": 3,
       "phase": "B",
       "pre": [
-        "K42"
+        "K40"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P5179",
@@ -4320,8 +4364,9 @@ window.AKIOI_SYLLABUS = {
       "level": 4,
       "phase": "B",
       "pre": [
-        "K43"
+        "K40"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1161",
@@ -4387,6 +4432,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K44"
       ],
+      "preSem": false,
       "problems": [
         {
           "pid": "P1161",
@@ -4452,6 +4498,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K45"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1157",
@@ -4517,6 +4564,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K46"
       ],
+      "preSem": false,
       "problems": [
         {
           "pid": "P1161",
@@ -4580,6 +4628,7 @@ window.AKIOI_SYLLABUS = {
       "level": 5,
       "phase": "P",
       "pre": [],
+      "preSem": false,
       "problems": [
         {
           "pid": "P1141",
@@ -4643,8 +4692,9 @@ window.AKIOI_SYLLABUS = {
       "level": 5,
       "phase": "P",
       "pre": [
-        "K48"
+        "K3"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1419",
@@ -4708,8 +4758,9 @@ window.AKIOI_SYLLABUS = {
       "level": 6,
       "phase": "P",
       "pre": [
-        "K49"
+        "K3"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1382",
@@ -4773,8 +4824,9 @@ window.AKIOI_SYLLABUS = {
       "level": 6,
       "phase": "P",
       "pre": [
-        "K50"
+        "K23"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1816",
@@ -4878,8 +4930,9 @@ window.AKIOI_SYLLABUS = {
       "level": 6,
       "phase": "P",
       "pre": [
-        "K51"
+        "K5"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P3367",
@@ -4990,6 +5043,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K52"
       ],
+      "preSem": false,
       "problems": [
         {
           "pid": "P1996",
@@ -5053,8 +5107,9 @@ window.AKIOI_SYLLABUS = {
       "level": 6,
       "phase": "P",
       "pre": [
-        "K53"
+        "K50"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1996",
@@ -5118,8 +5173,9 @@ window.AKIOI_SYLLABUS = {
       "level": 6,
       "phase": "P",
       "pre": [
-        "K54"
+        "K24"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P3374",
@@ -5210,6 +5266,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K55"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P3372",
@@ -5308,8 +5365,9 @@ window.AKIOI_SYLLABUS = {
       "level": 6,
       "phase": "P",
       "pre": [
-        "K56"
+        "K5"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1481",
@@ -5413,8 +5471,10 @@ window.AKIOI_SYLLABUS = {
       "level": 7,
       "phase": "P",
       "pre": [
-        "K57"
+        "K11",
+        "K49"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P4147",
@@ -5483,8 +5543,9 @@ window.AKIOI_SYLLABUS = {
       "level": 8,
       "phase": "X",
       "pre": [
-        "K58"
+        "K11"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P5763",
@@ -5585,6 +5646,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K59"
       ],
+      "preSem": false,
       "problems": [
         {
           "pid": "P1996",
@@ -5648,8 +5710,9 @@ window.AKIOI_SYLLABUS = {
       "level": 6,
       "phase": "P",
       "pre": [
-        "K60"
+        "K12"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1330",
@@ -5733,8 +5796,9 @@ window.AKIOI_SYLLABUS = {
       "level": 6,
       "phase": "P",
       "pre": [
-        "K61"
+        "K32"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1996",
@@ -5798,8 +5862,9 @@ window.AKIOI_SYLLABUS = {
       "level": 6,
       "phase": "P",
       "pre": [
-        "K62"
+        "K14"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1996",
@@ -5865,6 +5930,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K63"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1996",
@@ -5930,6 +5996,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K64"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1996",
@@ -5995,6 +6062,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K65"
       ],
+      "preSem": false,
       "problems": [
         {
           "pid": "P1112",
@@ -6060,6 +6128,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K66"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P2670",
@@ -6248,8 +6317,9 @@ window.AKIOI_SYLLABUS = {
       "level": 6,
       "phase": "P",
       "pre": [
-        "K67"
+        "K66"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1996",
@@ -6313,6 +6383,7 @@ window.AKIOI_SYLLABUS = {
       "level": 6,
       "phase": "P",
       "pre": [],
+      "preSem": false,
       "problems": [
         {
           "pid": "P1396",
@@ -6378,6 +6449,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K69"
       ],
+      "preSem": false,
       "problems": [
         {
           "pid": "P1396",
@@ -6441,8 +6513,9 @@ window.AKIOI_SYLLABUS = {
       "level": 6,
       "phase": "P",
       "pre": [
-        "K70"
+        "K28"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1496",
@@ -6571,8 +6644,10 @@ window.AKIOI_SYLLABUS = {
       "level": 7,
       "phase": "P",
       "pre": [
+        "K56",
         "K71"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1908",
@@ -6661,8 +6736,9 @@ window.AKIOI_SYLLABUS = {
       "level": 6,
       "phase": "P",
       "pre": [
-        "K72"
+        "K21"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1923",
@@ -6753,6 +6829,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K73"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1396",
@@ -6816,8 +6893,9 @@ window.AKIOI_SYLLABUS = {
       "level": 6,
       "phase": "P",
       "pre": [
-        "K74"
+        "K54"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1396",
@@ -6881,8 +6959,9 @@ window.AKIOI_SYLLABUS = {
       "level": 6,
       "phase": "P",
       "pre": [
-        "K75"
+        "K20"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P3375",
@@ -6973,6 +7052,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K76"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1210",
@@ -7051,8 +7131,9 @@ window.AKIOI_SYLLABUS = {
       "level": 6,
       "phase": "P",
       "pre": [
-        "K77"
+        "K30"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1036",
@@ -7176,8 +7257,10 @@ window.AKIOI_SYLLABUS = {
       "level": 6,
       "phase": "P",
       "pre": [
-        "K78"
+        "K30",
+        "K34"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1464",
@@ -7286,8 +7369,9 @@ window.AKIOI_SYLLABUS = {
       "level": 7,
       "phase": "P",
       "pre": [
-        "K79"
+        "K78"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P3030",
@@ -7346,8 +7430,9 @@ window.AKIOI_SYLLABUS = {
       "level": 7,
       "phase": "P",
       "pre": [
-        "K80"
+        "K31"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1396",
@@ -7411,8 +7496,9 @@ window.AKIOI_SYLLABUS = {
       "level": 7,
       "phase": "P",
       "pre": [
-        "K81"
+        "K30"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1379",
@@ -7476,8 +7562,10 @@ window.AKIOI_SYLLABUS = {
       "level": 6,
       "phase": "P",
       "pre": [
-        "K82"
+        "K52",
+        "K14"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1902",
@@ -7621,8 +7709,10 @@ window.AKIOI_SYLLABUS = {
       "level": 6,
       "phase": "P",
       "pre": [
-        "K83"
+        "K14",
+        "K54"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P3371",
@@ -7758,6 +7848,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K84"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1396",
@@ -7821,8 +7912,9 @@ window.AKIOI_SYLLABUS = {
       "level": 6,
       "phase": "P",
       "pre": [
-        "K85"
+        "K13"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1037",
@@ -7951,8 +8043,9 @@ window.AKIOI_SYLLABUS = {
       "level": 6,
       "phase": "P",
       "pre": [
-        "K86"
+        "K63"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P7113",
@@ -8061,8 +8154,9 @@ window.AKIOI_SYLLABUS = {
       "level": 6,
       "phase": "P",
       "pre": [
-        "K87"
+        "K62"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1127",
@@ -8126,8 +8220,9 @@ window.AKIOI_SYLLABUS = {
       "level": 6,
       "phase": "P",
       "pre": [
-        "K88"
+        "K61"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1407",
@@ -8191,8 +8286,9 @@ window.AKIOI_SYLLABUS = {
       "level": 7,
       "phase": "P",
       "pre": [
-        "K89"
+        "K64"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P3916",
@@ -8321,8 +8417,9 @@ window.AKIOI_SYLLABUS = {
       "level": 7,
       "phase": "P",
       "pre": [
-        "K90"
+        "K64"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P8742",
@@ -8456,8 +8553,9 @@ window.AKIOI_SYLLABUS = {
       "level": 6,
       "phase": "P",
       "pre": [
-        "K91"
+        "K8"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1092",
@@ -8521,8 +8619,10 @@ window.AKIOI_SYLLABUS = {
       "level": 6,
       "phase": "P",
       "pre": [
-        "K92"
+        "K92",
+        "K25"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1306",
@@ -8588,6 +8688,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K93"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P3884",
@@ -8696,8 +8797,9 @@ window.AKIOI_SYLLABUS = {
       "level": 6,
       "phase": "P",
       "pre": [
-        "K94"
+        "K34"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1396",
@@ -8761,8 +8863,10 @@ window.AKIOI_SYLLABUS = {
       "level": 6,
       "phase": "P",
       "pre": [
-        "K95"
+        "K92",
+        "K34"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1364",
@@ -8896,8 +9000,9 @@ window.AKIOI_SYLLABUS = {
       "level": 7,
       "phase": "P",
       "pre": [
-        "K96"
+        "K95"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1019",
@@ -9028,6 +9133,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K97"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1396",
@@ -9091,6 +9197,7 @@ window.AKIOI_SYLLABUS = {
       "level": 5,
       "phase": "P",
       "pre": [],
+      "preSem": false,
       "problems": [
         {
           "pid": "P4430",
@@ -9156,6 +9263,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K99"
       ],
+      "preSem": false,
       "problems": [
         {
           "pid": "P1337",
@@ -9219,8 +9327,9 @@ window.AKIOI_SYLLABUS = {
       "level": 5,
       "phase": "P",
       "pre": [
-        "K100"
+        "K41"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P4430",
@@ -9286,6 +9395,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K101"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P2158",
@@ -9356,6 +9466,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K102"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P4430",
@@ -9421,6 +9532,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K103"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P4430",
@@ -9484,8 +9596,9 @@ window.AKIOI_SYLLABUS = {
       "level": 7,
       "phase": "P",
       "pre": [
-        "K104"
+        "K43"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P4430",
@@ -9551,6 +9664,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K105"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P3811",
@@ -9629,8 +9743,9 @@ window.AKIOI_SYLLABUS = {
       "level": 7,
       "phase": "P",
       "pre": [
-        "K106"
+        "K105"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P4430",
@@ -9694,8 +9809,10 @@ window.AKIOI_SYLLABUS = {
       "level": 7,
       "phase": "P",
       "pre": [
+        "K106",
         "K107"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1495",
@@ -9764,8 +9881,9 @@ window.AKIOI_SYLLABUS = {
       "level": 6,
       "phase": "P",
       "pre": [
-        "K108"
+        "K45"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P4430",
@@ -9831,6 +9949,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K109"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P4430",
@@ -9896,6 +10015,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K110"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P4430",
@@ -9959,8 +10079,9 @@ window.AKIOI_SYLLABUS = {
       "level": 6,
       "phase": "P",
       "pre": [
-        "K111"
+        "K110"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P4430",
@@ -10024,8 +10145,9 @@ window.AKIOI_SYLLABUS = {
       "level": 6,
       "phase": "P",
       "pre": [
-        "K112"
+        "K110"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1313",
@@ -10091,6 +10213,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K113"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P3197",
@@ -10169,8 +10292,9 @@ window.AKIOI_SYLLABUS = {
       "level": 7,
       "phase": "P",
       "pre": [
-        "K114"
+        "K113"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P4430",
@@ -10234,8 +10358,9 @@ window.AKIOI_SYLLABUS = {
       "level": 5,
       "phase": "P",
       "pre": [
-        "K115"
+        "K37"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1355",
@@ -10301,6 +10426,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K116"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1355",
@@ -10366,6 +10492,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K117"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P2886",
@@ -10461,6 +10588,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K118"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P4430",
@@ -10524,8 +10652,9 @@ window.AKIOI_SYLLABUS = {
       "level": 7,
       "phase": "P",
       "pre": [
-        "K119"
+        "K118"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P3812",
@@ -10599,6 +10728,7 @@ window.AKIOI_SYLLABUS = {
       "level": 8,
       "phase": "X",
       "pre": [],
+      "preSem": false,
       "problems": [
         {
           "pid": "P1081",
@@ -10662,8 +10792,10 @@ window.AKIOI_SYLLABUS = {
       "level": 8,
       "phase": "X",
       "pre": [
-        "K121"
+        "K94",
+        "K56"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P3128",
@@ -10774,6 +10906,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K122"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P2590",
@@ -10842,8 +10975,9 @@ window.AKIOI_SYLLABUS = {
       "level": 9,
       "phase": "X",
       "pre": [
-        "K123"
+        "K56"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P4592",
@@ -10907,8 +11041,9 @@ window.AKIOI_SYLLABUS = {
       "level": 9,
       "phase": "X",
       "pre": [
-        "K124"
+        "K56"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P2093",
@@ -10972,8 +11107,9 @@ window.AKIOI_SYLLABUS = {
       "level": 8,
       "phase": "X",
       "pre": [
-        "K125"
+        "K94"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P2147",
@@ -11037,8 +11173,9 @@ window.AKIOI_SYLLABUS = {
       "level": 8,
       "phase": "X",
       "pre": [
-        "K126"
+        "K54"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1996",
@@ -11104,6 +11241,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K127"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1996",
@@ -11167,8 +11305,9 @@ window.AKIOI_SYLLABUS = {
       "level": 8,
       "phase": "X",
       "pre": [
-        "K128"
+        "K56"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1972",
@@ -11264,6 +11403,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K129"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P3835",
@@ -11326,7 +11466,10 @@ window.AKIOI_SYLLABUS = {
       "title": "分块",
       "level": 8,
       "phase": "X",
-      "pre": [],
+      "pre": [
+        "K55"
+      ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P13976",
@@ -11472,6 +11615,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K131"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P2442",
@@ -11550,8 +11694,9 @@ window.AKIOI_SYLLABUS = {
       "level": 9,
       "phase": "X",
       "pre": [
-        "K132"
+        "K73"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1396",
@@ -11615,8 +11760,9 @@ window.AKIOI_SYLLABUS = {
       "level": 9,
       "phase": "X",
       "pre": [
-        "K133"
+        "K131"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1396",
@@ -11680,8 +11826,9 @@ window.AKIOI_SYLLABUS = {
       "level": 9,
       "phase": "X",
       "pre": [
-        "K134"
+        "K133"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P3220",
@@ -11745,8 +11892,9 @@ window.AKIOI_SYLLABUS = {
       "level": 8,
       "phase": "X",
       "pre": [
-        "K135"
+        "K76"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1393",
@@ -11810,8 +11958,9 @@ window.AKIOI_SYLLABUS = {
       "level": 8,
       "phase": "X",
       "pre": [
-        "K136"
+        "K76"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1396",
@@ -11875,8 +12024,10 @@ window.AKIOI_SYLLABUS = {
       "level": 8,
       "phase": "X",
       "pre": [
-        "K137"
+        "K57",
+        "K76"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1470",
@@ -11955,8 +12106,9 @@ window.AKIOI_SYLLABUS = {
       "level": 8,
       "phase": "X",
       "pre": [
-        "K138"
+        "K67"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P3809",
@@ -12027,6 +12179,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K139"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P4248",
@@ -12067,6 +12220,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K140"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P2336",
@@ -12130,8 +12284,9 @@ window.AKIOI_SYLLABUS = {
       "level": 8,
       "phase": "X",
       "pre": [
-        "K141"
+        "K63"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P2515",
@@ -12200,8 +12355,9 @@ window.AKIOI_SYLLABUS = {
       "level": 10,
       "phase": "X",
       "pre": [
-        "K142"
+        "K83"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1396",
@@ -12265,8 +12421,9 @@ window.AKIOI_SYLLABUS = {
       "level": 8,
       "phase": "X",
       "pre": [
-        "K143"
+        "K64"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P3209",
@@ -12330,8 +12487,10 @@ window.AKIOI_SYLLABUS = {
       "level": 8,
       "phase": "X",
       "pre": [
-        "K144"
+        "K84",
+        "K14"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P2756",
@@ -12430,8 +12589,9 @@ window.AKIOI_SYLLABUS = {
       "level": 10,
       "phase": "X",
       "pre": [
-        "K145"
+        "K89"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1396",
@@ -12495,8 +12655,9 @@ window.AKIOI_SYLLABUS = {
       "level": 8,
       "phase": "X",
       "pre": [
-        "K146"
+        "K89"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1396",
@@ -12562,6 +12723,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K147"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1396",
@@ -12627,6 +12789,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K148"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1396",
@@ -12690,8 +12853,9 @@ window.AKIOI_SYLLABUS = {
       "level": 9,
       "phase": "X",
       "pre": [
-        "K149"
+        "K98"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1396",
@@ -12757,6 +12921,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K150"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1396",
@@ -12819,7 +12984,10 @@ window.AKIOI_SYLLABUS = {
       "title": "原根与指数",
       "level": 8,
       "phase": "X",
-      "pre": [],
+      "pre": [
+        "K102"
+      ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P6091",
@@ -12883,8 +13051,9 @@ window.AKIOI_SYLLABUS = {
       "level": 8,
       "phase": "X",
       "pre": [
-        "K152"
+        "K106"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P14369",
@@ -12948,8 +13117,9 @@ window.AKIOI_SYLLABUS = {
       "level": 9,
       "phase": "X",
       "pre": [
-        "K153"
+        "K159"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1161",
@@ -13013,8 +13183,9 @@ window.AKIOI_SYLLABUS = {
       "level": 10,
       "phase": "X",
       "pre": [
-        "K154"
+        "K152"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P15425",
@@ -13073,8 +13244,9 @@ window.AKIOI_SYLLABUS = {
       "level": 9,
       "phase": "X",
       "pre": [
-        "K155"
+        "K109"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1161",
@@ -13140,6 +13312,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K156"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P2127",
@@ -13208,8 +13381,9 @@ window.AKIOI_SYLLABUS = {
       "level": 9,
       "phase": "X",
       "pre": [
-        "K157"
+        "K113"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1161",
@@ -13273,8 +13447,9 @@ window.AKIOI_SYLLABUS = {
       "level": 9,
       "phase": "X",
       "pre": [
-        "K158"
+        "K114"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P3172",
@@ -13338,8 +13513,9 @@ window.AKIOI_SYLLABUS = {
       "level": 9,
       "phase": "X",
       "pre": [
-        "K159"
+        "K157"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P2561",
@@ -13403,8 +13579,9 @@ window.AKIOI_SYLLABUS = {
       "level": 9,
       "phase": "X",
       "pre": [
-        "K160"
+        "K113"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1161",
@@ -13468,8 +13645,9 @@ window.AKIOI_SYLLABUS = {
       "level": 9,
       "phase": "X",
       "pre": [
-        "K161"
+        "K92"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P2624",
@@ -13533,8 +13711,9 @@ window.AKIOI_SYLLABUS = {
       "level": 9,
       "phase": "X",
       "pre": [
-        "K162"
+        "K120"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P2109",
@@ -13600,6 +13779,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K163"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1224",
@@ -13665,6 +13845,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K164"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P4301",
@@ -13738,8 +13919,9 @@ window.AKIOI_SYLLABUS = {
       "level": 8,
       "phase": "X",
       "pre": [
-        "K165"
+        "K37"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P3723",
@@ -13805,6 +13987,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K166"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P3510",
@@ -13868,8 +14051,9 @@ window.AKIOI_SYLLABUS = {
       "level": 10,
       "phase": "X",
       "pre": [
-        "K167"
+        "K118"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P3763",
@@ -13943,8 +14127,9 @@ window.AKIOI_SYLLABUS = {
       "level": 8,
       "phase": "X",
       "pre": [
-        "K168"
+        "K45"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1161",
@@ -14010,6 +14195,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K169"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P4316",
@@ -14095,6 +14281,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K170"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1161",
@@ -14158,8 +14345,9 @@ window.AKIOI_SYLLABUS = {
       "level": 9,
       "phase": "X",
       "pre": [
-        "K171"
+        "K45"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1161",
@@ -14225,6 +14413,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K172"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P2197",
@@ -14293,8 +14482,9 @@ window.AKIOI_SYLLABUS = {
       "level": 10,
       "phase": "X",
       "pre": [
-        "K173"
+        "K120"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1161",
@@ -14358,8 +14548,9 @@ window.AKIOI_SYLLABUS = {
       "level": 8,
       "phase": "X",
       "pre": [
-        "K174"
+        "K116"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1161",
@@ -14425,6 +14616,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K175"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1161",
@@ -14488,8 +14680,9 @@ window.AKIOI_SYLLABUS = {
       "level": 8,
       "phase": "X",
       "pre": [
-        "K176"
+        "K175"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1452",
@@ -14555,6 +14748,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K177"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P2600",
@@ -14618,8 +14812,9 @@ window.AKIOI_SYLLABUS = {
       "level": 10,
       "phase": "X",
       "pre": [
-        "K178"
+        "K169"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1161",
@@ -14685,6 +14880,7 @@ window.AKIOI_SYLLABUS = {
       "pre": [
         "K179"
       ],
+      "preSem": true,
       "problems": [
         {
           "pid": "P1161",
