@@ -266,6 +266,11 @@ writeFileSync(join(root, 'training', 'index.html'), SHELL({
         知识图谱
         <span class="dag-bar-sub">拖动平移 · 滚轮缩放 · 点节点跳到小题单</span>
       </div>
+      <div class="dag-levels" id="dag-levels" role="group" aria-label="按等级筛选">
+        <button type="button" data-ph="B" title="只看入门级">B</button>
+        <button type="button" data-ph="P" title="入门级 + 提高级">P</button>
+        <button type="button" data-ph="X" class="on" title="全部">X</button>
+      </div>
       <button type="button" class="dag-next" id="dag-next" hidden></button>
       <div class="dag-legend" id="dag-legend"></div>
       <div class="dag-bar-actions">
@@ -362,6 +367,7 @@ function versionize(file) {
   if (next !== html) writeFileSync(p, next, 'utf8');
 }
 ['index.html', 'tools/index.html', 'exam/index.html'].forEach(versionize);
+
 
 
 
