@@ -1011,6 +1011,7 @@
       frame.setAttribute('fill', g.soft);
       frame.setAttribute('stroke', g.color);
       gBands.appendChild(frame);
+      g.frame = { x: g.items[0].x - pad, y: minY - pad - 24, w: NW + pad * 2, h: (maxY - minY) + pad * 2 + 24 };
 
       var head = document.createElementNS(NS, 'text');
       head.setAttribute('x', g.items[0].x - 2);
@@ -1027,19 +1028,26 @@
     var gNodes = document.createElementNS(NS, 'g');
     gNodes.setAttribute('class', 'dag-nodes');
 
-    nodes.forEach(function (n) {
-      n.pre.forEach(function (pid) {
-        var p = byId[pid];
-        if (!p) return;
-        var x1 = p.x + p.w, y1 = p.y + p.h / 2;
-        var x2 = n.x, y2 = n.y + n.h / 2;
-        var mx = (x1 + x2) / 2;
-        var path = document.createElementNS(NS, 'path');
-        path.setAttribute('d', 'M' + x1 + ',' + y1 + ' C' + mx + ',' + y1 + ' ' + mx + ',' + y2 + ' ' + x2 + ',' + y2);
-        path.setAttribute('fill', 'none');
-        path.setAttribute('marker-end', 'url(#dag-arrow)');
-        gEdges.appendChild(path);
-      });
+    var chapEdges = [];
+    groups.forEach(function (g, gi) {
+      for (var k = gi - 1; k >= 0; k--) {
+        if (groups[k].sub === g.sub) { chapEdges.push([groups[k], g]); break; }
+      }
+      if (gi > 0 && groups[gi - 1].sec === g.sec) chapEdges.push([groups[gi - 1], g]);
+    });
+    chapEdges.forEach(function (pair) {
+      var ga = pair[0], gb = pair[1];
+      if (!ga.frame || !gb.frame) return;
+      var x1 = ga.frame.x + ga.frame.w, y1 = ga.frame.y + ga.frame.h / 2;
+      var x2 = gb.frame.x, y2 = gb.frame.y + gb.frame.h / 2;
+      var mx = (x1 + x2) / 2;
+      var path = document.createElementNS(NS, 'path');
+      path.setAttribute('d', 'M' + x1 + ',' + y1 + ' C' + mx + ',' + y1 + ' ' + mx + ',' + y2 + ' ' + x2 + ',' + y2);
+      path.setAttribute('fill', 'none');
+      path.setAttribute('class', 'dag-chap-edge');
+      path.setAttribute('stroke', gb.color);
+      path.setAttribute('marker-end', 'url(#dag-arrow)');
+      gEdges.appendChild(path);
     });
 
     nodes.forEach(function (n) {
