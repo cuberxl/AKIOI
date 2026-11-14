@@ -919,6 +919,8 @@
   var PHASE_NAMES = { B: '入门级', P: '提高级', X: 'NOI 级' };
   var SEC_ORDER = ['入门', '提高', 'NOI'];
   var dagPhase = 'X';
+  var dagView = { x: 0, y: 0, k: 1 };
+  var dagVP = null;
 
   function buildDag() {
     var S = window.AKIOI_SYLLABUS;
@@ -1233,7 +1235,8 @@
     document.body.classList.remove('dag-panel-open');
   }
     function initPanZoom(svg, vp, width, height) {
-    var state = { x: 0, y: 0, k: 1 };
+    dagVP = vp;
+    var state = dagView;
     var raf = null;
     function paintNow() {
       raf = null;
@@ -1271,25 +1274,27 @@
       apply();
     }, { passive: false });
 
-    var dragging = false, sx = 0, sy = 0;
-    svg.addEventListener('pointerdown', function (e) {
-      // 点在节点上时不进入拖拽，否则 pointer capture 会吃掉节点的 click
-      if (e.target.closest && e.target.closest('.dag-node')) return;
-      dragging = true; sx = e.clientX - state.x; sy = e.clientY - state.y;
-      svg.setPointerCapture(e.pointerId);
-      svg.classList.add('dragging');
-    });
-    svg.addEventListener('pointermove', function (e) {
-      if (!dragging) return;
-      state.x = e.clientX - sx; state.y = e.clientY - sy;
-      apply();
-    });
-    svg.addEventListener('pointerup', function (e) {
-      if (!dragging) return;
-      dragging = false;
-      try { svg.releasePointerCapture(e.pointerId); } catch (err) {}
-      svg.classList.remove('dragging');
-    });
+    var dragHost = svg.parentElement;
+    if (dragHost && !dragHost.__panBound) {
+      dragHost.__panBound = true;
+      dragHost.addEventListener('pointerdown', function (e) {
+        if (e.target.closest && e.target.closest('.dag-node, .dag-bar, .dag-panel')) return;
+        dragHost.__drag = true;
+        dragHost.__sx = e.clientX - dagView.x;
+        dragHost.__sy = e.clientY - dagView.y;
+        svg.classList.add('dragging');
+      });
+      dragHost.addEventListener('pointermove', function (e) {
+        if (!dragHost.__drag) return;
+        dagView.x = e.clientX - dragHost.__sx;
+        dagView.y = e.clientY - dragHost.__sy;
+        apply();
+      });
+      var stopDrag = function () { dragHost.__drag = false; svg.classList.remove('dragging'); };
+      dragHost.addEventListener('pointerup', stopDrag);
+      dragHost.addEventListener('pointercancel', stopDrag);
+      dragHost.addEventListener('pointerleave', stopDrag);
+    }
 
     var reset = document.getElementById('dag-reset');
     if (reset) reset.addEventListener('click', fit);
@@ -1382,6 +1387,9 @@
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
   else init();
 })();
+
+
+
 
 
 
